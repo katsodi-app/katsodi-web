@@ -1,0 +1,2668 @@
+{
+  "source": "https://kworb.net/spotify/songs.html",
+  "checked": "2026-11-08",
+  "tracks": [
+    {
+      "rank": 1,
+      "slug": "the-weeknd-blinding-lights",
+      "title": "Blinding Lights",
+      "artists": [
+        "The Weeknd"
+      ],
+      "released": "2020-03-20",
+      "explicit": false,
+      "streams": 5671825846,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b5097b81179824803664aaaf",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b5097b81179824803664aaaf",
+      "spotifyId": "3iRwigDWGH0z3R3wFmYmBW",
+      "soundcloud": {
+        "url": "https://soundcloud.com/theweeknd/blinding-lights",
+        "author": "The Weeknd"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 2,
+      "slug": "ed-sheeran-shape-of-you",
+      "title": "Shape of You",
+      "artists": [
+        "Ed Sheeran"
+      ],
+      "released": "2017-03-03",
+      "explicit": false,
+      "streams": 5177971714,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ba5db46f4b838ef6027e6f96",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
+      "spotifyId": "7qiZfU4dY1lWllzX7mPBI3",
+      "soundcloud": {
+        "url": "https://soundcloud.com/edsheeran/shape-of-you",
+        "author": "Ed Sheeran"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 3,
+      "slug": "the-neighbourhood-sweater-weather",
+      "title": "Sweater Weather",
+      "artists": [
+        "The Neighbourhood"
+      ],
+      "released": "2013-04-23",
+      "explicit": false,
+      "streams": 5014255148,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273354be6d543058b65075b9d16",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02354be6d543058b65075b9d16",
+      "spotifyId": "00xYOITpx6SEi1ntfdlA39",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 4,
+      "slug": "the-weeknd-starboy",
+      "title": "Starboy",
+      "artists": [
+        "The Weeknd",
+        "Daft Punk"
+      ],
+      "released": "2016-11-25",
+      "explicit": true,
+      "streams": 4854992846,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2734718e2b124f79258be7bc452",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024718e2b124f79258be7bc452",
+      "spotifyId": "7MXVkk9YMctZqd1Srtv4MB",
+      "soundcloud": {
+        "url": "https://soundcloud.com/theweeknd/starboy",
+        "author": "The Weeknd"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 5,
+      "slug": "harry-styles-as-it-was",
+      "title": "As It Was",
+      "artists": [
+        "Harry Styles"
+      ],
+      "released": "2022-05-20",
+      "explicit": false,
+      "streams": 4705640904,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27382ce362511fb3d9dda6578ee",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0282ce362511fb3d9dda6578ee",
+      "spotifyId": "4Dvkj6JhhA12EX05fT7y2e",
+      "soundcloud": {
+        "url": "https://soundcloud.com/harrystyles/as-it-was",
+        "author": "Harry Styles"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 6,
+      "slug": "drake-one-dance",
+      "title": "One Dance",
+      "artists": [
+        "Drake",
+        "Wizkid",
+        "Kyla"
+      ],
+      "released": "2016-05-06",
+      "explicit": false,
+      "streams": 4555148473,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739416ed64daf84936d89e671c",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029416ed64daf84936d89e671c",
+      "spotifyId": "1zi7xx7UVEFkmKfv06H8x0",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 7,
+      "slug": "post-malone-sunflower",
+      "title": "Sunflower - Spider-Man: Into the Spider-Verse",
+      "artists": [
+        "Post Malone",
+        "Swae Lee"
+      ],
+      "released": "2019-09-06",
+      "explicit": false,
+      "streams": 4548282985,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739478c87599550dd73bfa7e02",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029478c87599550dd73bfa7e02",
+      "spotifyId": "0RiRZpuVRbi7oqRdSMwhQY",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 8,
+      "slug": "lewis-capaldi-someone-you-loved",
+      "title": "Someone You Loved",
+      "artists": [
+        "Lewis Capaldi"
+      ],
+      "released": "2019-11-22",
+      "explicit": false,
+      "streams": 4491960334,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737b9639babbe96e25071ec1d4",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027b9639babbe96e25071ec1d4",
+      "spotifyId": "0vGWBo1b6KyE9klUQfxqwJ",
+      "soundcloud": {
+        "url": "https://soundcloud.com/lewiscapaldi/someone-you-loved",
+        "author": "Lewis Capaldi"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 9,
+      "slug": "ed-sheeran-perfect",
+      "title": "Perfect",
+      "artists": [
+        "Ed Sheeran"
+      ],
+      "released": "2017-03-03",
+      "explicit": false,
+      "streams": 4177096242,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ba5db46f4b838ef6027e6f96",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ba5db46f4b838ef6027e6f96",
+      "spotifyId": "0tgVpDi06FyKpA1z0VMD4v",
+      "soundcloud": {
+        "url": "https://soundcloud.com/edsheeran/perfect",
+        "author": "Ed Sheeran"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 10,
+      "slug": "the-kid-laroi-stay",
+      "title": "STAY (with Justin Bieber)",
+      "artists": [
+        "The Kid LAROI",
+        "Justin Bieber"
+      ],
+      "released": "2021-07-27",
+      "explicit": true,
+      "streams": 4130375672,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273b4d59e6fa7e5e7cbc57ac33a",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b4d59e6fa7e5e7cbc57ac33a",
+      "spotifyId": "567e29TDzLwZwfDuEpGTwo",
+      "soundcloud": {
+        "url": "https://soundcloud.com/thekidlaroi/stay",
+        "author": "The Kid LAROI."
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 11,
+      "slug": "lady-gaga-die-with-a-smile",
+      "title": "Die With A Smile",
+      "artists": [
+        "Lady Gaga",
+        "Bruno Mars"
+      ],
+      "released": "2025-03-07",
+      "explicit": false,
+      "streams": 4127812214,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b0860cf0a98e09663c82290c",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b0860cf0a98e09663c82290c",
+      "spotifyId": "7so0lgd0zP2Sbgs2d7a1SZ",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 12,
+      "slug": "arctic-monkeys-i-wanna-be-yours",
+      "title": "I Wanna Be Yours",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "released": "2013-09-09",
+      "explicit": false,
+      "streams": 4098842519,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2734ae1c4c5c45aabe565499163",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024ae1c4c5c45aabe565499163",
+      "spotifyId": "5XeFesFbtLpXzIVDNQP22n",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 13,
+      "slug": "billie-eilish-birds-of-a-feather",
+      "title": "BIRDS OF A FEATHER",
+      "artists": [
+        "Billie Eilish"
+      ],
+      "released": "2024-05-17",
+      "explicit": false,
+      "streams": 4092458309,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27371d62ea7ea8a5be92d3c1f62",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0271d62ea7ea8a5be92d3c1f62",
+      "spotifyId": "6dOtVTDdiauQNBQEDOtlAB",
+      "soundcloud": {
+        "url": "https://soundcloud.com/billieeilish/birds-of-a-feather",
+        "author": "Billie Eilish"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 14,
+      "slug": "coldplay-yellow",
+      "title": "Yellow",
+      "artists": [
+        "Coldplay"
+      ],
+      "released": "2000-07-10",
+      "explicit": false,
+      "streams": 4078198361,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739164bafe9aaa168d93f4816a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029164bafe9aaa168d93f4816a",
+      "spotifyId": "3AJwUDP919kvQ9QcozQPxg",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 15,
+      "slug": "lord-huron-the-night-we-met",
+      "title": "The Night We Met",
+      "artists": [
+        "Lord Huron"
+      ],
+      "released": "2015-04-06",
+      "explicit": false,
+      "streams": 4026328952,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27317875a0610c23d8946454583",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0217875a0610c23d8946454583",
+      "spotifyId": "3hRV0jL3vUpRrcy398teAU",
+      "soundcloud": {
+        "url": "https://soundcloud.com/lord-huron/the-night-we-met-1",
+        "author": "Lord Huron"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 16,
+      "slug": "imagine-dragons-believer",
+      "title": "Believer",
+      "artists": [
+        "Imagine Dragons"
+      ],
+      "released": "2017-06-23",
+      "explicit": false,
+      "streams": 4010020873,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2735675e83f707f1d7271e5cf8a",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
+      "spotifyId": "0pqnGHJpmpxLKifKRmU6WP",
+      "soundcloud": {
+        "url": "https://soundcloud.com/imaginedragons/believer",
+        "author": "Imagine Dragons"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 17,
+      "slug": "vance-joy-riptide",
+      "title": "Riptide",
+      "artists": [
+        "Vance Joy"
+      ],
+      "released": "2014-08-05",
+      "explicit": false,
+      "streams": 4001046469,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b27305d081cbdc2f67d37a364d63",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0205d081cbdc2f67d37a364d63",
+      "spotifyId": "2uXlHCUbq9OMUwx3hrk06o",
+      "soundcloud": {
+        "url": "https://soundcloud.com/vancejoy/riptide",
+        "author": "Vance  Joy"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 18,
+      "slug": "glass-animals-heat-waves",
+      "title": "Heat Waves",
+      "artists": [
+        "Glass Animals"
+      ],
+      "released": "2021-09-09",
+      "explicit": false,
+      "streams": 3988927368,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27399393d90f3c4ebd60d09d23e",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0299393d90f3c4ebd60d09d23e",
+      "spotifyId": "4TPrUBWVY8y0X5RCh4QDfJ",
+      "soundcloud": {
+        "url": "https://soundcloud.com/glassanimals/heat-waves",
+        "author": "Glass Animals"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 19,
+      "slug": "the-chainsmokers-closer",
+      "title": "Closer",
+      "artists": [
+        "The Chainsmokers",
+        "Halsey"
+      ],
+      "released": "2016-07-29",
+      "explicit": false,
+      "streams": 3950733440,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273495ce6da9aeb159e94eaa453",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02495ce6da9aeb159e94eaa453",
+      "spotifyId": "7BKLCZ1jbUBVqRi2FVlTVw",
+      "soundcloud": {
+        "url": "https://soundcloud.com/thechainsmokers/closer",
+        "author": "The Chainsmokers"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 20,
+      "slug": "billie-eilish-lovely",
+      "title": "lovely (with Khalid)",
+      "artists": [
+        "Billie Eilish",
+        "Khalid"
+      ],
+      "released": "2018-04-19",
+      "explicit": false,
+      "streams": 3931090411,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738a3f0a3ca7929dea23cd274c",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028a3f0a3ca7929dea23cd274c",
+      "spotifyId": "0u2P5u6lvoDfwTYjAADbn4",
+      "soundcloud": {
+        "url": "https://soundcloud.com/billieeilish/lovely",
+        "author": "Billie Eilish"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 21,
+      "slug": "the-police-every-breath-you-take",
+      "title": "Every Breath You Take",
+      "artists": [
+        "The Police"
+      ],
+      "released": "1983-06-17",
+      "explicit": false,
+      "streams": 3863812019,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273c8e97cafeb2acb85b21a777e",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c8e97cafeb2acb85b21a777e",
+      "spotifyId": "1JSTJqkT5qHq8MDJnJbRE1",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 22,
+      "slug": "the-goo-goo-dolls-iris",
+      "title": "Iris",
+      "artists": [
+        "The Goo Goo Dolls"
+      ],
+      "released": "1998-01-01",
+      "explicit": false,
+      "streams": 3848504094,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273eda9478c39a21e1cdc6609ca",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eda9478c39a21e1cdc6609ca",
+      "spotifyId": "6Qyc6fS4DsZjB2mRW9DsQs",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 23,
+      "slug": "the-chainsmokers-something-just-like-this",
+      "title": "Something Just Like This",
+      "artists": [
+        "The Chainsmokers",
+        "Coldplay"
+      ],
+      "released": "2017-04-07",
+      "explicit": false,
+      "streams": 3831071338,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2730c13d3d5a503c84fcc60ae94",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020c13d3d5a503c84fcc60ae94",
+      "spotifyId": "6RUKPb4LETWmmr3iAEQktW",
+      "soundcloud": {
+        "url": "https://soundcloud.com/thechainsmokers/something-just-like-this-1",
+        "author": "The Chainsmokers"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 24,
+      "slug": "tom-odell-another-love",
+      "title": "Another Love",
+      "artists": [
+        "Tom Odell"
+      ],
+      "released": "2013-06-24",
+      "explicit": true,
+      "streams": 3764158562,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2731917a0f3f4152622a040913f",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021917a0f3f4152622a040913f",
+      "spotifyId": "3JvKfv6T31zO0ini8iNItO",
+      "soundcloud": {
+        "url": "https://soundcloud.com/tomodell/another-love",
+        "author": "Tom Odell"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 25,
+      "slug": "james-arthur-say-you-wont-let-go",
+      "title": "Say You Won't Let Go",
+      "artists": [
+        "James Arthur"
+      ],
+      "released": "2016-10-28",
+      "explicit": false,
+      "streams": 3737771342,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b5f59a23dd515f62f785984b",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b5f59a23dd515f62f785984b",
+      "spotifyId": "0p6RzKrGeXzyYYd2RZPKd8",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 26,
+      "slug": "onerepublic-counting-stars",
+      "title": "Counting Stars",
+      "artists": [
+        "OneRepublic"
+      ],
+      "released": "2013-01-01",
+      "explicit": false,
+      "streams": 3719029672,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739e2f95ae77cf436017ada9cb",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029e2f95ae77cf436017ada9cb",
+      "spotifyId": "2tpWsVSb9UEmDRxAl1zhX1",
+      "soundcloud": {
+        "url": "https://soundcloud.com/onerepublic/counting-stars",
+        "author": "OneRepublic"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 27,
+      "slug": "hozier-take-me-to-church",
+      "title": "Take Me to Church",
+      "artists": [
+        "Hozier"
+      ],
+      "released": "2014-09-19",
+      "explicit": false,
+      "streams": 3645415403,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273bd5c6f1a9461fc68c5dc1623",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02bd5c6f1a9461fc68c5dc1623",
+      "spotifyId": "1CS7Sd1u5tWkstBhpssyjP",
+      "soundcloud": {
+        "url": "https://soundcloud.com/hozier/take-me-to-church-1",
+        "author": "Hozier"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 28,
+      "slug": "ed-sheeran-photograph",
+      "title": "Photograph",
+      "artists": [
+        "Ed Sheeran"
+      ],
+      "released": "2013-01-01",
+      "explicit": false,
+      "streams": 3608298162,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273036cb2ddc525efe3420f3791",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02036cb2ddc525efe3420f3791",
+      "spotifyId": "3FSPaBp49Clqq2p4zc9dbA",
+      "soundcloud": {
+        "url": "https://soundcloud.com/edsheeran/photograph",
+        "author": "Ed Sheeran"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 29,
+      "slug": "coldplay-viva-la-vida",
+      "title": "Viva La Vida",
+      "artists": [
+        "Coldplay"
+      ],
+      "released": "2008-06-06",
+      "explicit": false,
+      "streams": 3601237009,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737749ecd2742e95db24897759",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027749ecd2742e95db24897759",
+      "spotifyId": "2LnmFzNEQ2N79WVCWQzKwz",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 30,
+      "slug": "bruno-mars-locked-out-of-heaven",
+      "title": "Locked out of Heaven",
+      "artists": [
+        "Bruno Mars"
+      ],
+      "released": "2012-12-07",
+      "explicit": false,
+      "streams": 3596436549,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273926f43e7cce571e62720fd46",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02926f43e7cce571e62720fd46",
+      "spotifyId": "3w3y8KPTfNeOKPiqUTakBh",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 31,
+      "slug": "the-killers-mr-brightside",
+      "title": "Mr. Brightside",
+      "artists": [
+        "The Killers"
+      ],
+      "released": "2013-01-01",
+      "explicit": false,
+      "streams": 3586887635,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b27348488c2eee5727efc30bf657",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0248488c2eee5727efc30bf657",
+      "spotifyId": "2RvbnvBX3XKkHy8daq3PUT",
+      "soundcloud": {
+        "url": "https://soundcloud.com/thekillers/mr-brightside-1",
+        "author": "The Killers"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 32,
+      "slug": "macklemore-cant-hold-us",
+      "title": "Can't Hold Us (feat. Ray Dalton)",
+      "artists": [
+        "Macklemore",
+        "Ryan Lewis",
+        "Macklemore & Ryan Lewis",
+        "Ray Dalton"
+      ],
+      "released": "2012-10-09",
+      "explicit": false,
+      "streams": 3584001521,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2732a6b364528b128a4a17d100d",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022a6b364528b128a4a17d100d",
+      "spotifyId": "22skzmqfdWrjJylampe0kt",
+      "soundcloud": {
+        "url": "https://soundcloud.com/macklemore/cant-hold-us",
+        "author": "Macklemore"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 33,
+      "slug": "bruno-mars-just-the-way-you-are",
+      "title": "Just the Way You Are",
+      "artists": [
+        "Bruno Mars"
+      ],
+      "released": "2010-05-11",
+      "explicit": false,
+      "streams": 3557197414,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738a9eb5a1f701d1d367a5ea10",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028a9eb5a1f701d1d367a5ea10",
+      "spotifyId": "47Slg6LuqLaX0VodpSCvPt",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 34,
+      "slug": "tones-and-i-dance-monkey",
+      "title": "Dance Monkey",
+      "artists": [
+        "Tones And I"
+      ],
+      "released": "2021-07-16",
+      "explicit": false,
+      "streams": 3541922030,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273931a1c33d7850f20ee23a5e1",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02931a1c33d7850f20ee23a5e1",
+      "spotifyId": "2N8m6CYs74qQO4mjVcXO30",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 35,
+      "slug": "taylor-swift-cruel-summer",
+      "title": "Cruel Summer",
+      "artists": [
+        "Taylor Swift"
+      ],
+      "released": "2019-08-23",
+      "explicit": false,
+      "streams": 3531529351,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273e787cffec20aa2a396a61647",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e787cffec20aa2a396a61647",
+      "spotifyId": "1BxfuPKGuaTgP7aM0Bbdwr",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 36,
+      "slug": "the-weeknd-die-for-you",
+      "title": "Die For You",
+      "artists": [
+        "The Weeknd"
+      ],
+      "released": "2016-11-25",
+      "explicit": false,
+      "streams": 3494310719,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2734718e2b124f79258be7bc452",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024718e2b124f79258be7bc452",
+      "spotifyId": "2Ch7LmS7r2Gy2kc64wv3Bz",
+      "soundcloud": {
+        "url": "https://soundcloud.com/theweeknd/die-for-you",
+        "author": "The Weeknd"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 37,
+      "slug": "post-malone-rockstar",
+      "title": "rockstar (feat. 21 Savage)",
+      "artists": [
+        "Post Malone",
+        "21 Savage"
+      ],
+      "released": "2018-04-27",
+      "explicit": true,
+      "streams": 3482626735,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273b1c4b76e23414c9f20242268",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b1c4b76e23414c9f20242268",
+      "spotifyId": "0e7ipj03S05BNilyu5bRzt",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 38,
+      "slug": "bruno-mars-thats-what-i-like",
+      "title": "That's What I Like",
+      "artists": [
+        "Bruno Mars"
+      ],
+      "released": "2016-11-18",
+      "explicit": false,
+      "streams": 3466198015,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273232711f7d66a1e19e89e28c5",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02232711f7d66a1e19e89e28c5",
+      "spotifyId": "0KKkJNfGyhkQ5aFogxQAPU",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 39,
+      "slug": "shawn-mendes-senorita",
+      "title": "Señorita",
+      "artists": [
+        "Shawn Mendes",
+        "Camila Cabello"
+      ],
+      "released": "2019-06-19",
+      "explicit": false,
+      "streams": 3466152418,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273c820f033bd82bef4355d1563",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c820f033bd82bef4355d1563",
+      "spotifyId": "6v3KW9xbzN5yKLt9YKDYA2",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 40,
+      "slug": "linkin-park-in-the-end",
+      "title": "In the End",
+      "artists": [
+        "Linkin Park"
+      ],
+      "released": "2000-10-24",
+      "explicit": false,
+      "streams": 3454991709,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273e2f039481babe23658fc719a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e2f039481babe23658fc719a",
+      "spotifyId": "60a0Rd6pjrkxjPbaKzXjfq",
+      "soundcloud": {
+        "url": "https://soundcloud.com/linkinpark/in-the-end",
+        "author": "LINKIN PARK"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 41,
+      "slug": "harry-styles-watermelon-sugar",
+      "title": "Watermelon Sugar",
+      "artists": [
+        "Harry Styles"
+      ],
+      "released": "2019-12-13",
+      "explicit": false,
+      "streams": 3436692278,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27325180571abce9472f61bd722",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0225180571abce9472f61bd722",
+      "spotifyId": "6UelLqGlWMcVH1E5c4H7lY",
+      "soundcloud": {
+        "url": "https://soundcloud.com/harrystyles/watermelon-sugar",
+        "author": "Harry Styles"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 42,
+      "slug": "justin-bieber-love-yourself",
+      "title": "Love Yourself",
+      "artists": [
+        "Justin Bieber"
+      ],
+      "released": "2015-11-13",
+      "explicit": false,
+      "streams": 3418018406,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273f46b9d202509a8f7384b90de",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f46b9d202509a8f7384b90de",
+      "spotifyId": "50kpGaPAhYJ3sGmk6vplg0",
+      "soundcloud": {
+        "url": "https://soundcloud.com/justinbieber/love-yourself",
+        "author": "Justin Bieber"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 43,
+      "slug": "michael-jackson-billie-jean",
+      "title": "Billie Jean",
+      "artists": [
+        "Michael Jackson"
+      ],
+      "released": "1995-06-16",
+      "explicit": false,
+      "streams": 3361251361,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273b4a878f008a0eda552446701",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b4a878f008a0eda552446701",
+      "spotifyId": "6vR5u5b8JeRESx5nZaIWx6",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 44,
+      "slug": "dua-lipa-dont-start-now",
+      "title": "Don't Start Now",
+      "artists": [
+        "Dua Lipa"
+      ],
+      "released": "2020-03-27",
+      "explicit": false,
+      "streams": 3360947532,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273bb1e7090e662ce98b0e1b4c0",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02bb1e7090e662ce98b0e1b4c0",
+      "spotifyId": "2ThsBNtjuUEERqcpXQEoYR",
+      "soundcloud": {
+        "url": "https://soundcloud.com/dualipa/dont-start-now",
+        "author": "Dua Lipa"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 45,
+      "slug": "bruno-mars-when-i-was-your-man",
+      "title": "When I Was Your Man",
+      "artists": [
+        "Bruno Mars"
+      ],
+      "released": "2012-12-07",
+      "explicit": false,
+      "streams": 3358176761,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273926f43e7cce571e62720fd46",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02926f43e7cce571e62720fd46",
+      "spotifyId": "0nJW01T7XtvILxQgC5J7Wh",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 46,
+      "slug": "post-malone-circles",
+      "title": "Circles",
+      "artists": [
+        "Post Malone"
+      ],
+      "released": "2019-09-06",
+      "explicit": false,
+      "streams": 3332395789,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739478c87599550dd73bfa7e02",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029478c87599550dd73bfa7e02",
+      "spotifyId": "21jGcNKet2qwijlDFuPiPb",
+      "soundcloud": {
+        "url": "https://soundcloud.com/postmalone/circles",
+        "author": "Post Malone"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 47,
+      "slug": "queen-bohemian-rhapsody",
+      "title": "Bohemian Rhapsody",
+      "artists": [
+        "Queen"
+      ],
+      "released": "2018-10-19",
+      "explicit": false,
+      "streams": 3326004077,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2730cb397024b7a1185c070d65a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020cb397024b7a1185c070d65a",
+      "spotifyId": "2ODUgS9kk95bqVaf9EzyOU",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 48,
+      "slug": "eminem-without-me",
+      "title": "Without Me",
+      "artists": [
+        "Eminem"
+      ],
+      "released": "2005-12-06",
+      "explicit": true,
+      "streams": 3291737309,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273eab40fc794b88b9d1e012578",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eab40fc794b88b9d1e012578",
+      "spotifyId": "2RsTjad1nVUGrQmSoL1m8Y",
+      "soundcloud": {
+        "url": "https://soundcloud.com/eminemofficial/without-me",
+        "author": "Eminem"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 49,
+      "slug": "dj-snake-let-me-love-you",
+      "title": "Let Me Love You",
+      "artists": [
+        "DJ Snake",
+        "Justin Bieber"
+      ],
+      "released": "2016-08-05",
+      "explicit": false,
+      "streams": 3291237450,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273212d776c31027c511f0ee3bc",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02212d776c31027c511f0ee3bc",
+      "spotifyId": "0lYBSQXN6rCTvUZvg9S0lU",
+      "soundcloud": {
+        "url": "https://soundcloud.com/djsnake/let-me-love-you",
+        "author": "DJ SNAKE"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 50,
+      "slug": "avicii-wake-me-up",
+      "title": "Wake Me Up",
+      "artists": [
+        "Avicii"
+      ],
+      "released": "2013-09-16",
+      "explicit": false,
+      "streams": 3282658558,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273e14f11f796cef9f9a82691a7",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e14f11f796cef9f9a82691a7",
+      "spotifyId": "0nrRP2bk19rLc0orkWPQk2",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 51,
+      "slug": "travis-scott-goosebumps",
+      "title": "goosebumps",
+      "artists": [
+        "Travis Scott"
+      ],
+      "released": "2016-09-16",
+      "explicit": true,
+      "streams": 3265280436,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738752a7355996e64709247c53",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028752a7355996e64709247c53",
+      "spotifyId": "6gBFPUFcJLzWGx4lenP6h2",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 52,
+      "slug": "ed-sheeran-thinking-out-loud",
+      "title": "Thinking out Loud",
+      "artists": [
+        "Ed Sheeran"
+      ],
+      "released": "2013-01-01",
+      "explicit": false,
+      "streams": 3264968042,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273036cb2ddc525efe3420f3791",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02036cb2ddc525efe3420f3791",
+      "spotifyId": "0k4nrrCsMr0Tao5WvQ8Osq",
+      "soundcloud": {
+        "url": "https://soundcloud.com/edsheeran/thinking-out-loud",
+        "author": "Ed Sheeran"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 53,
+      "slug": "sabrina-carpenter-espresso",
+      "title": "Espresso",
+      "artists": [
+        "Sabrina Carpenter"
+      ],
+      "released": "2025-02-14",
+      "explicit": true,
+      "streams": 3246511621,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273047d6b756e8f5e3f8b50f025",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02047d6b756e8f5e3f8b50f025",
+      "spotifyId": "2LU2CYKUZUc1iAErxJb1dK",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 54,
+      "slug": "kendrick-lamar-all-the-stars",
+      "title": "All The Stars (with SZA) - From \"Black Panther: The Album\"",
+      "artists": [
+        "Kendrick Lamar",
+        "SZA"
+      ],
+      "released": "2018-02-09",
+      "explicit": true,
+      "streams": 3243459582,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273c027ad28821777b00dcaa888",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c027ad28821777b00dcaa888",
+      "spotifyId": "3GCdLUSnKSMJhs4Tj6CV3s",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 55,
+      "slug": "shawn-mendes-treat-you-better",
+      "title": "Treat You Better",
+      "artists": [
+        "Shawn Mendes"
+      ],
+      "released": "2017-04-20",
+      "explicit": false,
+      "streams": 3242568070,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2731376b4b16f4bfcba02dc571b",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021376b4b16f4bfcba02dc571b",
+      "spotifyId": "3QGsuHI8jO1Rx4JWLUh9jd",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 56,
+      "slug": "benson-boone-beautiful-things",
+      "title": "Beautiful Things",
+      "artists": [
+        "Benson Boone"
+      ],
+      "released": "2024-04-05",
+      "explicit": false,
+      "streams": 3240499401,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273831949037a1db10b87b005fa",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02831949037a1db10b87b005fa",
+      "spotifyId": "3xkHsmpQCBMytMJNiDf3Ii",
+      "soundcloud": {
+        "url": "https://soundcloud.com/bensonboone/beautiful-things",
+        "author": "Benson Boone"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 57,
+      "slug": "radiohead-creep",
+      "title": "Creep",
+      "artists": [
+        "Radiohead"
+      ],
+      "released": "1993-02-22",
+      "explicit": true,
+      "streams": 3238905734,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ec548c00d3ac2f10be73366d",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ec548c00d3ac2f10be73366d",
+      "spotifyId": "70LcF31zb1H0PyJoS1Sx1r",
+      "soundcloud": {
+        "url": "https://soundcloud.com/radiohead/creep",
+        "author": "Radiohead"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 58,
+      "slug": "john-legend-all-of-me",
+      "title": "All of Me",
+      "artists": [
+        "John Legend"
+      ],
+      "released": "2013-08-30",
+      "explicit": false,
+      "streams": 3238728202,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273bdcc3b587b5249932bc415c2",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02bdcc3b587b5249932bc415c2",
+      "spotifyId": "3U4isOIWM3VvDubwSI3y7a",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 59,
+      "slug": "juice-wrld-lucid-dreams",
+      "title": "Lucid Dreams",
+      "artists": [
+        "Juice WRLD"
+      ],
+      "released": "2018-12-10",
+      "explicit": true,
+      "streams": 3235584071,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273f7db43292a6a99b21b51d5b4",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02f7db43292a6a99b21b51d5b4",
+      "spotifyId": "285pBltuF7vW8TeWk8hdRR",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 60,
+      "slug": "twenty-one-pilots-stressed-out",
+      "title": "Stressed Out",
+      "artists": [
+        "Twenty One Pilots"
+      ],
+      "released": "2015-05-15",
+      "explicit": false,
+      "streams": 3226044266,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2732df0d98a423025032d0db1f7",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022df0d98a423025032d0db1f7",
+      "spotifyId": "3CRDbSIZ4r5MsZ0YwxuEkn",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 61,
+      "slug": "drake-gods-plan",
+      "title": "God's Plan",
+      "artists": [
+        "Drake"
+      ],
+      "released": "2018-06-29",
+      "explicit": true,
+      "streams": 3225115198,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273f907de96b9a4fbc04accc0d5",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f907de96b9a4fbc04accc0d5",
+      "spotifyId": "6DCZcSspjsKoFjzjrWoCdn",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 62,
+      "slug": "the-weeknd-the-hills",
+      "title": "The Hills",
+      "artists": [
+        "The Weeknd"
+      ],
+      "released": "2015-08-28",
+      "explicit": true,
+      "streams": 3210201802,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737fcead687e99583072cc217b",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027fcead687e99583072cc217b",
+      "spotifyId": "7fBv7CLKzipRk6EC6TWHOB",
+      "soundcloud": {
+        "url": "https://soundcloud.com/theweeknd/the-hills",
+        "author": "The Weeknd"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 63,
+      "slug": "arctic-monkeys-do-i-wanna-know",
+      "title": "Do I Wanna Know?",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "released": "2013-09-09",
+      "explicit": false,
+      "streams": 3209718138,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2734ae1c4c5c45aabe565499163",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024ae1c4c5c45aabe565499163",
+      "spotifyId": "5FVd6KXrgO9B3JPmC8OPst",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 64,
+      "slug": "lady-gaga-shallow",
+      "title": "Shallow - Radio Edit",
+      "artists": [
+        "Lady Gaga",
+        "Bradley Cooper"
+      ],
+      "released": "2018-10-05",
+      "explicit": false,
+      "streams": 3209102968,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b5d4b4ed17ec86c4b3944af2",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b5d4b4ed17ec86c4b3944af2",
+      "spotifyId": "6QfS2wq5sSC1xAJCQsTSlj",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 65,
+      "slug": "imagine-dragons-demons",
+      "title": "Demons",
+      "artists": [
+        "Imagine Dragons"
+      ],
+      "released": "2012-09-04",
+      "explicit": false,
+      "streams": 3190798221,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273ef2e4d695cb2d76681855b8f",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ef2e4d695cb2d76681855b8f",
+      "spotifyId": "5VC29kHMkzcaorzPKUqJbl",
+      "soundcloud": {
+        "url": "https://soundcloud.com/imaginedragons/demons",
+        "author": "Imagine Dragons"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 66,
+      "slug": "tyler-the-creator-see-you-again",
+      "title": "See You Again (feat. Kali Uchis)",
+      "artists": [
+        "Tyler, The Creator",
+        "Kali Uchis"
+      ],
+      "released": "2017-07-21",
+      "explicit": true,
+      "streams": 3186165846,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738940ac99f49e44f59e6f7fb3",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028940ac99f49e44f59e6f7fb3",
+      "spotifyId": "7KA4W4McWYRpgf0fWsJZWB",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 67,
+      "slug": "oasis-wonderwall",
+      "title": "Wonderwall - Remastered",
+      "artists": [
+        "Oasis"
+      ],
+      "released": "1995-10-02",
+      "explicit": false,
+      "streams": 3183756284,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27385e5dcc05cc216a10f141480",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0285e5dcc05cc216a10f141480",
+      "spotifyId": "5qqabIl2vWzo9ApSC317sa",
+      "soundcloud": {
+        "url": "https://soundcloud.com/oasisofficial/wonderwall",
+        "author": "Oasis"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 68,
+      "slug": "nirvana-smells-like-teen-spirit",
+      "title": "Smells Like Teen Spirit",
+      "artists": [
+        "Nirvana"
+      ],
+      "released": "1991-09-26",
+      "explicit": false,
+      "streams": 3166159761,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273fbc71c99f9c1296c56dd51b6",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02fbc71c99f9c1296c56dd51b6",
+      "spotifyId": "4CeeEOM32jQcH3eN9Q2dGj",
+      "soundcloud": {
+        "url": "https://soundcloud.com/nirvana/smells-like-teen-spirit",
+        "author": "Nirvana"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 69,
+      "slug": "imagine-dragons-thunder",
+      "title": "Thunder",
+      "artists": [
+        "Imagine Dragons"
+      ],
+      "released": "2017-06-23",
+      "explicit": false,
+      "streams": 3150477194,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2735675e83f707f1d7271e5cf8a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
+      "spotifyId": "1zB4vmk8tFRmM9UULNzbLB",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 70,
+      "slug": "jung-kook-seven",
+      "title": "Seven (feat. Latto) (Explicit Ver.)",
+      "artists": [
+        "Jung Kook",
+        "Latto"
+      ],
+      "released": "2023-11-03",
+      "explicit": true,
+      "streams": 3137404193,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273741fd4807f442af3f7359316",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02741fd4807f442af3f7359316",
+      "spotifyId": "2HRgqmZQC0MC7GeNuDIXHN",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 71,
+      "slug": "french-montana-unforgettable",
+      "title": "Unforgettable",
+      "artists": [
+        "French Montana",
+        "Swae Lee"
+      ],
+      "released": "2017-07-14",
+      "explicit": true,
+      "streams": 3136335986,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738a31195a371b2233456f6c07",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028a31195a371b2233456f6c07",
+      "spotifyId": "3B54sVLJ402zGa6Xm4YGNe",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 72,
+      "slug": "justin-bieber-sorry",
+      "title": "Sorry",
+      "artists": [
+        "Justin Bieber"
+      ],
+      "released": "2021-08-18",
+      "explicit": false,
+      "streams": 3132628965,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2733645eb6909301b39e530911a",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023645eb6909301b39e530911a",
+      "spotifyId": "1KtogTnUKQzEKdF0ymAfnf",
+      "soundcloud": {
+        "url": "https://soundcloud.com/justinbieber/sorry",
+        "author": "Justin Bieber"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 73,
+      "slug": "arctic-monkeys-505",
+      "title": "505",
+      "artists": [
+        "Arctic Monkeys"
+      ],
+      "released": "2007-04-24",
+      "explicit": false,
+      "streams": 3122502468,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2730c8ac83035e9588e8ad34b90",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020c8ac83035e9588e8ad34b90",
+      "spotifyId": "58ge6dfP91o9oXMzq3XkIS",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 74,
+      "slug": "dream-supplier-clean-baby-sleep-white-noise",
+      "title": "Clean Baby Sleep White Noise (Loopable)",
+      "artists": [
+        "Dream Supplier"
+      ],
+      "released": "2022-02-15",
+      "explicit": false,
+      "streams": 3118215057,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b27351de7c4c3c8f854e75d1e6f9",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0251de7c4c3c8f854e75d1e6f9",
+      "spotifyId": "6OFCzD4d8kjBOJHxz41gqA",
+      "soundcloud": {
+        "url": "https://soundcloud.com/dreamsupplier/clean-baby-sleep-white-noise",
+        "author": "Dream Supplier"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 75,
+      "slug": "j-cole-no-role-modelz",
+      "title": "No Role Modelz",
+      "artists": [
+        "J. Cole"
+      ],
+      "released": "2014-12-09",
+      "explicit": true,
+      "streams": 3092182425,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273c6e0948bbb0681ff29cdbae8",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c6e0948bbb0681ff29cdbae8",
+      "spotifyId": "68Dni7IE4VyPkTOH9mRWHr",
+      "soundcloud": {
+        "url": "https://soundcloud.com/j-cole/no-role-modelz-1",
+        "author": "J. Cole"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 76,
+      "slug": "eminem-lose-yourself",
+      "title": "Lose Yourself",
+      "artists": [
+        "Eminem"
+      ],
+      "released": "2004-01-01",
+      "explicit": true,
+      "streams": 3069255465,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273b6ef2ebd34efb08cb76f6eec",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02b6ef2ebd34efb08cb76f6eec",
+      "spotifyId": "1v7L65Lzy0j0vdpRjJewt1",
+      "soundcloud": {
+        "url": "https://soundcloud.com/eminemofficial/lose-yourself",
+        "author": "Eminem"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 77,
+      "slug": "coldplay-the-scientist",
+      "title": "The Scientist",
+      "artists": [
+        "Coldplay"
+      ],
+      "released": "2002-08-27",
+      "explicit": false,
+      "streams": 3060985381,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273de09e02aa7febf30b7c02d82",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02de09e02aa7febf30b7c02d82",
+      "spotifyId": "75JFxkI2RXiU7L9VXzMkle",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 78,
+      "slug": "journey-dont-stop-believin",
+      "title": "Don't Stop Believin' (2022 Remaster)",
+      "artists": [
+        "Journey"
+      ],
+      "released": "1981-07-17",
+      "explicit": false,
+      "streams": 3059517114,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27323290120a609a65e14cfe018",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0223290120a609a65e14cfe018",
+      "spotifyId": "5RKQ5NdjSh2QzD4MaunT91",
+      "soundcloud": {
+        "url": "https://soundcloud.com/journey-official/dont-stop-believin",
+        "author": "Journey"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 79,
+      "slug": "djo-end-of-beginning",
+      "title": "End of Beginning",
+      "artists": [
+        "Djo"
+      ],
+      "released": "2022-09-16",
+      "explicit": false,
+      "streams": 3057545292,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273987466cc3363ea26094ca3c4",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02987466cc3363ea26094ca3c4",
+      "spotifyId": "3qhlB30KknSejmIvZZLjOD",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 80,
+      "slug": "shawn-mendes-theres-nothing-holdin-me-back",
+      "title": "There's Nothing Holdin' Me Back",
+      "artists": [
+        "Shawn Mendes"
+      ],
+      "released": "2017-04-20",
+      "explicit": false,
+      "streams": 3057492024,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2731376b4b16f4bfcba02dc571b",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021376b4b16f4bfcba02dc571b",
+      "spotifyId": "3bBknFVxhFjBIFX91HcneQ",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 81,
+      "slug": "miley-cyrus-flowers",
+      "title": "Flowers",
+      "artists": [
+        "Miley Cyrus"
+      ],
+      "released": "2023-08-18",
+      "explicit": false,
+      "streams": 3027394463,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27366fd0917f38d472c8576754e",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0266fd0917f38d472c8576754e",
+      "spotifyId": "7DSAEUvxU8FajXtRloy8M0",
+      "soundcloud": {
+        "url": "https://soundcloud.com/mileycyrus/flowers-1",
+        "author": "Miley Cyrus"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 82,
+      "slug": "fleetwood-mac-dreams",
+      "title": "Dreams",
+      "artists": [
+        "Fleetwood Mac"
+      ],
+      "released": "1988-11-22",
+      "explicit": false,
+      "streams": 3019511292,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273eb832efe061888ee7ef10456",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eb832efe061888ee7ef10456",
+      "spotifyId": "1lbXEepatjRVjoG8pZMtdp",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 83,
+      "slug": "kendrick-lamar-humble",
+      "title": "HUMBLE.",
+      "artists": [
+        "Kendrick Lamar"
+      ],
+      "released": "2017-04-14",
+      "explicit": true,
+      "streams": 3018692151,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738b52c6b9bc4e43d873869699",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028b52c6b9bc4e43d873869699",
+      "spotifyId": "7KXjTSCq5nL1LoYtL7XAwS",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 84,
+      "slug": "olivia-rodrigo-drivers-license",
+      "title": "drivers license",
+      "artists": [
+        "Olivia Rodrigo"
+      ],
+      "released": "2021-05-21",
+      "explicit": true,
+      "streams": 3005177545,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273a91c10fe9472d9bd89802e5a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a91c10fe9472d9bd89802e5a",
+      "spotifyId": "5wANPM4fQCJwkGd4rN57mH",
+      "soundcloud": {
+        "url": "https://soundcloud.com/oliviarodrigo/drivers-license",
+        "author": "Olivia Rodrigo"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 85,
+      "slug": "billie-eilish-bad-guy",
+      "title": "bad guy",
+      "artists": [
+        "Billie Eilish"
+      ],
+      "released": "2019-03-29",
+      "explicit": false,
+      "streams": 3002643880,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27350a3147b4edd7701a876c6ce",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0250a3147b4edd7701a876c6ce",
+      "spotifyId": "2Fxmhks0bxGSBdJ92vM42m",
+      "soundcloud": {
+        "url": "https://soundcloud.com/billieeilish/bad-guy",
+        "author": "Billie Eilish"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 86,
+      "slug": "a-ha-take-on-me",
+      "title": "Take on Me",
+      "artists": [
+        "a-ha"
+      ],
+      "released": "2010-09-22",
+      "explicit": false,
+      "streams": 2992103579,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2738119dc666ec0879859553a54",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028119dc666ec0879859553a54",
+      "spotifyId": "3vSamvYCxvaBCV8YPkWIkN",
+      "soundcloud": {
+        "url": "https://soundcloud.com/a-ha/take-on-me",
+        "author": "a-ha"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 87,
+      "slug": "linkin-park-numb",
+      "title": "Numb",
+      "artists": [
+        "Linkin Park"
+      ],
+      "released": "2003-03-25",
+      "explicit": false,
+      "streams": 2985432410,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2738b5b6fa1326d996181e71dd7",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e028b5b6fa1326d996181e71dd7",
+      "spotifyId": "1y1sChqjzdNWzwdHQADMrR",
+      "soundcloud": {
+        "url": "https://soundcloud.com/linkinpark/numb",
+        "author": "LINKIN PARK"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 88,
+      "slug": "ariana-grande-7-rings",
+      "title": "7 rings",
+      "artists": [
+        "Ariana Grande"
+      ],
+      "released": "2019-02-08",
+      "explicit": true,
+      "streams": 2966643990,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27356ac7b86e090f307e218e9c8",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0256ac7b86e090f307e218e9c8",
+      "spotifyId": "6ocbgoVGwYJhOv1GgI9NsF",
+      "soundcloud": {
+        "url": "https://soundcloud.com/arianagrande/7-rings",
+        "author": "Ariana Grande"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 89,
+      "slug": "guns-n-roses-sweet-child-o-mine",
+      "title": "Sweet Child O' Mine",
+      "artists": [
+        "Guns N' Roses"
+      ],
+      "released": "1987-07-21",
+      "explicit": false,
+      "streams": 2954472003,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27321ebf49b3292c3f0f575f0f5",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0221ebf49b3292c3f0f575f0f5",
+      "spotifyId": "7snQQk1zcKl8gZ92AnueZW",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 90,
+      "slug": "the-weeknd-one-of-the-girls",
+      "title": "One Of The Girls (with JENNIE, Lily Rose Depp)",
+      "artists": [
+        "The Weeknd",
+        "JENNIE",
+        "Lily-Rose Depp"
+      ],
+      "released": "2023-06-23",
+      "explicit": false,
+      "streams": 2947440554,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b0dd6a5cd1dec96c4119c262",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b0dd6a5cd1dec96c4119c262",
+      "spotifyId": "7CyPwkp0oE8Ro9Dd5CUDjW",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 91,
+      "slug": "maroon-5-payphone",
+      "title": "Payphone",
+      "artists": [
+        "Maroon 5",
+        "Wiz Khalifa"
+      ],
+      "released": "2012-01-01",
+      "explicit": true,
+      "streams": 2938521334,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273fc8633e22a7dba6aab817bff",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02fc8633e22a7dba6aab817bff",
+      "spotifyId": "1XGmzt0PVuFgQYYnV2It7A",
+      "soundcloud": {
+        "url": "https://soundcloud.com/maroon-5/payphone",
+        "author": "Maroon 5"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 92,
+      "slug": "sza-kill-bill",
+      "title": "Kill Bill",
+      "artists": [
+        "SZA"
+      ],
+      "released": "2024-12-20",
+      "explicit": false,
+      "streams": 2937537000,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b27316fdde9f6b5606419ca9b7ca",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0216fdde9f6b5606419ca9b7ca",
+      "spotifyId": "4zozL5lnFIG0P5ZZ7l2NcR",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 93,
+      "slug": "passenger-let-her-go",
+      "title": "Let Her Go",
+      "artists": [
+        "Passenger"
+      ],
+      "released": "2012-02-24",
+      "explicit": false,
+      "streams": 2936491784,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2732753d9786604e09ebdbf0244",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022753d9786604e09ebdbf0244",
+      "spotifyId": "4bzBPrGYD3fQfAadLgIiwT",
+      "soundcloud": {
+        "url": "https://soundcloud.com/passengerofficial/let-her-go",
+        "author": "Passenger"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 94,
+      "slug": "the-weeknd-save-your-tears",
+      "title": "Save Your Tears",
+      "artists": [
+        "The Weeknd"
+      ],
+      "released": "2020-03-20",
+      "explicit": false,
+      "streams": 2895214469,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b5097b81179824803664aaaf",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b5097b81179824803664aaaf",
+      "spotifyId": "6HcH1QtJDLSr2MK9ePUDL1",
+      "soundcloud": {
+        "url": "https://soundcloud.com/theweeknd/save-your-tears",
+        "author": "The Weeknd"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 95,
+      "slug": "elton-john-cold-heart",
+      "title": "Cold Heart - PNAU Remix",
+      "artists": [
+        "Elton John",
+        "Dua Lipa",
+        "PNAU"
+      ],
+      "released": "2021-10-22",
+      "explicit": false,
+      "streams": 2852524220,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273523458c391fe8180a19a1069",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02523458c391fe8180a19a1069",
+      "spotifyId": "7rglLriMNBPAyuJOMGwi39",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 96,
+      "slug": "major-lazer-lean-on",
+      "title": "Lean On",
+      "artists": [
+        "Major Lazer",
+        "DJ Snake",
+        "MØ"
+      ],
+      "released": "2018-10-19",
+      "explicit": false,
+      "streams": 2846240141,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2733ba5c71caff3ec4f019f5613",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e023ba5c71caff3ec4f019f5613",
+      "spotifyId": "7LHhNWdKxgg3yxBhfF1Onq",
+      "soundcloud": {
+        "url": "https://soundcloud.com/majorlazer/lean-on",
+        "author": "Major Lazer"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 97,
+      "slug": "mark-ronson-uptown-funk",
+      "title": "Uptown Funk (feat. Bruno Mars)",
+      "artists": [
+        "Mark Ronson",
+        "Bruno Mars"
+      ],
+      "released": "2015-01-12",
+      "explicit": false,
+      "streams": 2840902663,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739860171ddfee17f77a570cf6",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029860171ddfee17f77a570cf6",
+      "spotifyId": "32OlwWuMpZ6b0aN2RZOeMS",
+      "soundcloud": {
+        "url": "https://soundcloud.com/markronson/uptown-funk",
+        "author": "Mark Ronson"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 98,
+      "slug": "don-omar-danza-kuduro",
+      "title": "Danza Kuduro",
+      "artists": [
+        "Don Omar",
+        "Lucenzo"
+      ],
+      "released": "2018-05-11",
+      "explicit": false,
+      "streams": 2832958888,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2730cfb4b26088bfc681e9058fc",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e020cfb4b26088bfc681e9058fc",
+      "spotifyId": "3Jp89TtkR1IJAWQE5UDKuk",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 99,
+      "slug": "calvin-harris-one-kiss",
+      "title": "One Kiss (with Dua Lipa)",
+      "artists": [
+        "Calvin Harris",
+        "Dua Lipa"
+      ],
+      "released": "2024-08-08",
+      "explicit": false,
+      "streams": 2827752727,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2738daa8ac6367fc997c1873b9b",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e028daa8ac6367fc997c1873b9b",
+      "spotifyId": "76dIZzTdrNO15mGBrU3MHi",
+      "soundcloud": {
+        "url": "https://soundcloud.com/calvinharris/one-kiss",
+        "author": "Calvin Harris"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 100,
+      "slug": "toto-africa",
+      "title": "Africa",
+      "artists": [
+        "TOTO"
+      ],
+      "released": "1982-04-08",
+      "explicit": false,
+      "streams": 2820797226,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ebd6d20c0082524244ef83df",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ebd6d20c0082524244ef83df",
+      "spotifyId": "2374M0fQpWi3dLnB54qaLX",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 101,
+      "slug": "queen-dont-stop-me-now",
+      "title": "Don't Stop Me Now - Remastered 2011",
+      "artists": [
+        "Queen"
+      ],
+      "released": "1978-11-10",
+      "explicit": false,
+      "streams": 2817205541,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2737c39dd133836c2c1c87e34d6",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e027c39dd133836c2c1c87e34d6",
+      "spotifyId": "5T8EDUDqKcs6OSOwEsfqG7",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 102,
+      "slug": "charlie-puth-we-dont-talk-anymore",
+      "title": "We Don't Talk Anymore (feat. Selena Gomez)",
+      "artists": [
+        "Charlie Puth",
+        "Selena Gomez"
+      ],
+      "released": "2015-11-05",
+      "explicit": false,
+      "streams": 2809455168,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27315145482a542a9adb282250b",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0215145482a542a9adb282250b",
+      "spotifyId": "54PbBpquVfhfrwRwvjSXbI",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 103,
+      "slug": "one-direction-night-changes",
+      "title": "Night Changes",
+      "artists": [
+        "One Direction"
+      ],
+      "released": "2014-11-17",
+      "explicit": false,
+      "streams": 2780612813,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27334a29f220057810cce98e1b4",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0234a29f220057810cce98e1b4",
+      "spotifyId": "5O2P9iiztwhomNh8xkR9lJ",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 104,
+      "slug": "keane-somewhere-only-we-know",
+      "title": "Somewhere Only We Know",
+      "artists": [
+        "Keane"
+      ],
+      "released": "2004-05-10",
+      "explicit": false,
+      "streams": 2778420137,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737d6cd95a046a3c0dacbc7d33",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027d6cd95a046a3c0dacbc7d33",
+      "spotifyId": "1SKPmfSYaPsETbRHaiA18G",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 105,
+      "slug": "j-balvin-la-cancion",
+      "title": "LA CANCIÓN",
+      "artists": [
+        "J Balvin",
+        "Bad Bunny"
+      ],
+      "released": "2019-06-28",
+      "explicit": false,
+      "streams": 2771545833,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2734891d9b25d8919448388f3bb",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e024891d9b25d8919448388f3bb",
+      "spotifyId": "0fea68AdmYNygeTGI4RC18",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 106,
+      "slug": "tears-for-fears-everybody-wants-to-rule-the-world",
+      "title": "Everybody Wants To Rule The World",
+      "artists": [
+        "Tears For Fears"
+      ],
+      "released": "1985-02-25",
+      "explicit": false,
+      "streams": 2765787556,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2739565c4df27be4aee5edc8009",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029565c4df27be4aee5edc8009",
+      "spotifyId": "2GOGDZ9wAJbmznIstAxiU4",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 107,
+      "slug": "shakira-hips-dont-lie",
+      "title": "Hips Don't Lie (feat. Wyclef Jean)",
+      "artists": [
+        "Shakira",
+        "Wyclef Jean"
+      ],
+      "released": "2026-04-24",
+      "explicit": false,
+      "streams": 2758149528,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ffb27f9337dbb82468b2661a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ffb27f9337dbb82468b2661a",
+      "spotifyId": "4NPA29e6xdKSLQuhkOe2iA",
+      "soundcloud": {
+        "url": "https://soundcloud.com/shakira/hips-dont-lie",
+        "author": "Shakira"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 108,
+      "slug": "olivia-rodrigo-good-4-u",
+      "title": "good 4 u",
+      "artists": [
+        "Olivia Rodrigo"
+      ],
+      "released": "2021-05-21",
+      "explicit": true,
+      "streams": 2751974812,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273a91c10fe9472d9bd89802e5a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02a91c10fe9472d9bd89802e5a",
+      "spotifyId": "4ZtFanR9U6ndgddUvNcjcG",
+      "soundcloud": {
+        "url": "https://soundcloud.com/oliviarodrigo/good-4-u",
+        "author": "Olivia Rodrigo"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 109,
+      "slug": "adele-someone-like-you",
+      "title": "Someone Like You",
+      "artists": [
+        "Adele"
+      ],
+      "released": "2011-01-24",
+      "explicit": false,
+      "streams": 2750977953,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737e7e5dd9d1ab19fcded8a17f",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027e7e5dd9d1ab19fcded8a17f",
+      "spotifyId": "1zwMYTA5nlNjZxYrvBB2pV",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 110,
+      "slug": "calvin-harris-we-found-love",
+      "title": "We Found Love (feat. Rihanna)",
+      "artists": [
+        "Calvin Harris",
+        "Rihanna"
+      ],
+      "released": "2012-10-29",
+      "explicit": false,
+      "streams": 2738050363,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273dcef905cb144d4867119850b",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02dcef905cb144d4867119850b",
+      "spotifyId": "0385HqYimoTQaHZP17KwG1",
+      "soundcloud": {
+        "url": "https://soundcloud.com/calvinharris/we-found-love",
+        "author": "Calvin Harris"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 111,
+      "slug": "marshmello-happier",
+      "title": "Happier",
+      "artists": [
+        "Marshmello",
+        "Bastille"
+      ],
+      "released": "2018-08-17",
+      "explicit": false,
+      "streams": 2728888436,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273dd0a40eecd4b13e4c59988da",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02dd0a40eecd4b13e4c59988da",
+      "spotifyId": "7BqHUALzNBTanL6OvsqmC1",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 112,
+      "slug": "teddy-swims-lose-control",
+      "title": "Lose Control",
+      "artists": [
+        "Teddy Swims"
+      ],
+      "released": "2023-09-15",
+      "explicit": false,
+      "streams": 2719548315,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ebea8d4457c4db5b2088f287",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ebea8d4457c4db5b2088f287",
+      "spotifyId": "17phhZDn6oGtzMe56NuWvj",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 113,
+      "slug": "dua-lipa-levitating",
+      "title": "Levitating",
+      "artists": [
+        "Dua Lipa"
+      ],
+      "released": "2020-03-27",
+      "explicit": false,
+      "streams": 2708311595,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273bb1e7090e662ce98b0e1b4c0",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02bb1e7090e662ce98b0e1b4c0",
+      "spotifyId": "5uu0D02efCoFMQiLYFT32e",
+      "soundcloud": {
+        "url": "https://soundcloud.com/dualipa/levitating",
+        "author": "Dua Lipa"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 114,
+      "slug": "coolio-gangstas-paradise",
+      "title": "Gangsta's Paradise",
+      "artists": [
+        "Coolio",
+        "L.V."
+      ],
+      "released": "1995-11-07",
+      "explicit": false,
+      "streams": 2701918377,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2739d29bb8d9e2c9d707933b14f",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e029d29bb8d9e2c9d707933b14f",
+      "spotifyId": "3iXI6ZaNBoL2dNv9K7LBh3",
+      "soundcloud": {
+        "url": "https://soundcloud.com/coolio/gangstas-paradise",
+        "author": "Coolio"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 115,
+      "slug": "rose-apt",
+      "title": "APT.",
+      "artists": [
+        "ROSÉ",
+        "Bruno Mars"
+      ],
+      "released": "2024-12-06",
+      "explicit": false,
+      "streams": 2700869627,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737be65ce6672ed7e5aac6e966",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027be65ce6672ed7e5aac6e966",
+      "spotifyId": "4wJ5Qq0jBN4ajy7ouZIV1c",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 116,
+      "slug": "travis-scott-sicko-mode",
+      "title": "SICKO MODE",
+      "artists": [
+        "Travis Scott"
+      ],
+      "released": "2018-08-02",
+      "explicit": false,
+      "streams": 2699887161,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273ee1358e06fa1805759508862",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02ee1358e06fa1805759508862",
+      "spotifyId": "1YfBk0pJhG9JHV5Ni60IDZ",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 117,
+      "slug": "zara-larsson-lush-life",
+      "title": "Lush Life",
+      "artists": [
+        "Zara Larsson"
+      ],
+      "released": "2017-03-17",
+      "explicit": false,
+      "streams": 2682943391,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273401bf6103d4b7f5230a21582",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02401bf6103d4b7f5230a21582",
+      "spotifyId": "1rIKgCH4H52lrvDcz50hS8",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 118,
+      "slug": "charlie-puth-attention",
+      "title": "Attention",
+      "artists": [
+        "Charlie Puth"
+      ],
+      "released": "2018-05-11",
+      "explicit": false,
+      "streams": 2681512466,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273897f73256b9128a9d70eaf66",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02897f73256b9128a9d70eaf66",
+      "spotifyId": "5cF0dROlMOK5uNZtivgu50",
+      "soundcloud": {
+        "url": "https://soundcloud.com/charlieputh/attention",
+        "author": "Charlie Puth"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 119,
+      "slug": "shawn-mendes-stitches",
+      "title": "Stitches",
+      "artists": [
+        "Shawn Mendes"
+      ],
+      "released": "2015-04-14",
+      "explicit": false,
+      "streams": 2676661424,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2732d6a4125a1d62dc6185f74ea",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022d6a4125a1d62dc6185f74ea",
+      "spotifyId": "4dLMVmmQC74C4p3AWdwhff",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 120,
+      "slug": "danny-ocean-me-rehuso",
+      "title": "Me Rehúso",
+      "artists": [
+        "Danny Ocean"
+      ],
+      "released": "2019-03-22",
+      "explicit": false,
+      "streams": 2673514500,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273d8243a13e6f41310a5fa7b96",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d8243a13e6f41310a5fa7b96",
+      "spotifyId": "6ifUES3keWjwXgae8pXI3o",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 121,
+      "slug": "tame-impala-the-less-i-know-the-better",
+      "title": "The Less I Know The Better",
+      "artists": [
+        "Tame Impala"
+      ],
+      "released": "2015-07-17",
+      "explicit": true,
+      "streams": 2672887244,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2739e1cfc756886ac782e363d79",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029e1cfc756886ac782e363d79",
+      "spotifyId": "6K4t31amVTZDgR3sKmwUJJ",
+      "soundcloud": {
+        "url": "https://soundcloud.com/tame-impala/the-less-i-know-the-better",
+        "author": "Tame Impala"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 122,
+      "slug": "dua-lipa-new-rules",
+      "title": "New Rules",
+      "artists": [
+        "Dua Lipa"
+      ],
+      "released": "2015-01-01",
+      "explicit": false,
+      "streams": 2664081953,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737833c9a792ad032d788d4011",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027833c9a792ad032d788d4011",
+      "spotifyId": "2xJCMIJfcNYDc5iR0sAm2O",
+      "soundcloud": {
+        "url": "https://soundcloud.com/dualipa/new-rules",
+        "author": "Dua Lipa"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 123,
+      "slug": "taylor-swift-blank-space",
+      "title": "Blank Space",
+      "artists": [
+        "Taylor Swift"
+      ],
+      "released": "2014-10-27",
+      "explicit": false,
+      "streams": 2663363927,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2739abdf14e6058bd3903686148",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e029abdf14e6058bd3903686148",
+      "spotifyId": "1p80LdxRV74UKvL8gnD7ky",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 124,
+      "slug": "lukas-graham-7-years",
+      "title": "7 Years",
+      "artists": [
+        "Lukas Graham"
+      ],
+      "released": "2016-03-25",
+      "explicit": false,
+      "streams": 2660811260,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27377029eb01ff27c5f4a25c3f3",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0277029eb01ff27c5f4a25c3f3",
+      "spotifyId": "0VQjTLPG8l3egUHmIxe265",
+      "soundcloud": {
+        "url": "https://soundcloud.com/lukasgraham/7-years",
+        "author": "Lukas Graham"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 125,
+      "slug": "cigarettes-after-sex-apocalypse",
+      "title": "Apocalypse",
+      "artists": [
+        "Cigarettes After Sex"
+      ],
+      "released": "2017-06-09",
+      "explicit": false,
+      "streams": 2659701722,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273030234caa8b2d0e92e69db78",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02030234caa8b2d0e92e69db78",
+      "spotifyId": "2N66X8ltrzANr0o6rfwIRi",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 126,
+      "slug": "gotye-somebody-that-i-used-to-know",
+      "title": "Somebody That I Used To Know",
+      "artists": [
+        "Gotye",
+        "Kimbra"
+      ],
+      "released": "2011-01-01",
+      "explicit": false,
+      "streams": 2653403225,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273e1d47c00ddecbfb810c807ed",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02e1d47c00ddecbfb810c807ed",
+      "spotifyId": "4wCmqSrbyCgxEXROQE6vtV",
+      "soundcloud": {
+        "url": "https://soundcloud.com/gotye/somebody-that-i-used-to-know",
+        "author": "Gotye"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 127,
+      "slug": "foster-the-people-pumped-up-kicks",
+      "title": "Pumped Up Kicks",
+      "artists": [
+        "Foster The People"
+      ],
+      "released": "2011-05-23",
+      "explicit": false,
+      "streams": 2651855661,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273121d5f92cf90576907dfb1e5",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02121d5f92cf90576907dfb1e5",
+      "spotifyId": "7w87IxuO7BDcJ3YUqCyMTT",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 128,
+      "slug": "sam-smith-im-not-the-only-one",
+      "title": "I'm Not The Only One",
+      "artists": [
+        "Sam Smith"
+      ],
+      "released": "2014-05-26",
+      "explicit": false,
+      "streams": 2643399588,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b11bdc91cb9ac6b14f5c1dae",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b11bdc91cb9ac6b14f5c1dae",
+      "spotifyId": "7795WJLVKJoAyVoOtCWqXN",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 129,
+      "slug": "eminem-mockingbird",
+      "title": "Mockingbird",
+      "artists": [
+        "Eminem"
+      ],
+      "released": "2004-11-12",
+      "explicit": true,
+      "streams": 2643012045,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2731bec21e57fff76db49e15a70",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e021bec21e57fff76db49e15a70",
+      "spotifyId": "561jH07mF1jHuk7KlaeF0s",
+      "soundcloud": {
+        "url": "https://soundcloud.com/eminemofficial/mockingbird",
+        "author": "Eminem"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 130,
+      "slug": "halsey-without-me",
+      "title": "Without Me",
+      "artists": [
+        "Halsey"
+      ],
+      "released": "2020-01-17",
+      "explicit": true,
+      "streams": 2637613205,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2737636e1c9e67eaafc9f49aefd",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e027636e1c9e67eaafc9f49aefd",
+      "spotifyId": "6FZDfxM3a3UCqtzo5pxSLZ",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 131,
+      "slug": "creedence-clearwater-revival-have-you-ever-seen-the-rain",
+      "title": "Have You Ever Seen The Rain",
+      "artists": [
+        "Creedence Clearwater Revival"
+      ],
+      "released": "1970-12-07",
+      "explicit": false,
+      "streams": 2630870527,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b27351f311c2fb06ad2789e3ff91",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e0251f311c2fb06ad2789e3ff91",
+      "spotifyId": "2LawezPeJhN4AWuSB0GtAU",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 132,
+      "slug": "gorillaz-feel-good-inc",
+      "title": "Feel Good Inc.",
+      "artists": [
+        "Gorillaz",
+        "De La Soul"
+      ],
+      "released": "2005-05-23",
+      "explicit": false,
+      "streams": 2623652136,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273622aefd794f6fe4d8e714358",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02622aefd794f6fe4d8e714358",
+      "spotifyId": "0d28khcov6AiegSCpG5TuT",
+      "soundcloud": {
+        "url": "https://soundcloud.com/gorillaz/feel-good-inc",
+        "author": "Gorillaz"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 133,
+      "slug": "eminem-till-i-collapse",
+      "title": "Till I Collapse",
+      "artists": [
+        "Eminem",
+        "Nate Dogg"
+      ],
+      "released": "2002-05-26",
+      "explicit": true,
+      "streams": 2616285404,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2736ca5c90113b30c3c43ffb8f4",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e026ca5c90113b30c3c43ffb8f4",
+      "spotifyId": "4xkOaSrkexMciUUogZKVTS",
+      "soundcloud": {
+        "url": "https://soundcloud.com/eminemofficial/till-i-collapse",
+        "author": "Eminem"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 134,
+      "slug": "lil-uzi-vert-xo-tour-llif3",
+      "title": "XO Tour Llif3",
+      "artists": [
+        "Lil Uzi Vert"
+      ],
+      "released": "2017-08-25",
+      "explicit": true,
+      "streams": 2614463217,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273d7e1c68ed8e464b03095afda",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02d7e1c68ed8e464b03095afda",
+      "spotifyId": "3EWaR09H3TkRgaLTIheYFr",
+      "soundcloud": {
+        "url": "https://soundcloud.com/liluzivert/xo-tour-llif3",
+        "author": "Lil Uzi Vert"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 135,
+      "slug": "sam-smith-stay-with-me",
+      "title": "Stay With Me",
+      "artists": [
+        "Sam Smith"
+      ],
+      "released": "2014-05-26",
+      "explicit": false,
+      "streams": 2611459026,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273b11bdc91cb9ac6b14f5c1dae",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02b11bdc91cb9ac6b14f5c1dae",
+      "spotifyId": "5Nm9ERjJZ5oyfXZTECKmRt",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 136,
+      "slug": "sam-smith-too-good-at-goodbyes",
+      "title": "Too Good At Goodbyes",
+      "artists": [
+        "Sam Smith"
+      ],
+      "released": "2017-11-03",
+      "explicit": false,
+      "streams": 2610748210,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273005cd7d0ae87b081601f6cca",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02005cd7d0ae87b081601f6cca",
+      "spotifyId": "1mXVgsBdtIVeCLJnSnmtdV",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 137,
+      "slug": "bad-bunny-dakiti",
+      "title": "DÁKITI",
+      "artists": [
+        "Bad Bunny",
+        "JHAYCO"
+      ],
+      "released": "2020-11-27",
+      "explicit": true,
+      "streams": 2596327681,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273005ee342f4eef2cc6e8436ab",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02005ee342f4eef2cc6e8436ab",
+      "spotifyId": "4MzXwWMhyBbmu6hOcLVD49",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 138,
+      "slug": "eminem-the-real-slim-shady",
+      "title": "The Real Slim Shady",
+      "artists": [
+        "Eminem"
+      ],
+      "released": "2005-12-06",
+      "explicit": true,
+      "streams": 2596303247,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273eab40fc794b88b9d1e012578",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02eab40fc794b88b9d1e012578",
+      "spotifyId": "5v8F7GFQgmCESBpPFbC9DN",
+      "soundcloud": {
+        "url": "https://soundcloud.com/eminemofficial/the-real-slim-shady",
+        "author": "Eminem"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 139,
+      "slug": "xxxtentacion-sad",
+      "title": "SAD!",
+      "artists": [
+        "XXXTENTACION"
+      ],
+      "released": "2018-03-16",
+      "explicit": true,
+      "streams": 2596101681,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273806c160566580d6335d1f16c",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02806c160566580d6335d1f16c",
+      "spotifyId": "3ee8Jmje8o58CHK66QrVC2",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 140,
+      "slug": "adele-easy-on-me",
+      "title": "Easy On Me",
+      "artists": [
+        "Adele"
+      ],
+      "released": "2021-11-19",
+      "explicit": false,
+      "streams": 2595527848,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273c6b577e4c4a6d326354a89f7",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c6b577e4c4a6d326354a89f7",
+      "spotifyId": "46IZ0fSY2mpAiktS3KOqds",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 141,
+      "slug": "billie-eilish-when-the-partys-over",
+      "title": "when the party's over",
+      "artists": [
+        "Billie Eilish"
+      ],
+      "released": "2019-03-29",
+      "explicit": false,
+      "streams": 2590034427,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27350a3147b4edd7701a876c6ce",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0250a3147b4edd7701a876c6ce",
+      "spotifyId": "43zdsphuZLzwA9k4DJhU0I",
+      "soundcloud": {
+        "url": "https://soundcloud.com/billieeilish/when-the-partys-over",
+        "author": "Billie Eilish"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 142,
+      "slug": "camila-cabello-havana",
+      "title": "Havana (feat. Young Thug)",
+      "artists": [
+        "Camila Cabello",
+        "Young Thug"
+      ],
+      "released": "2018-01-12",
+      "explicit": false,
+      "streams": 2587914713,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273652c9f55dfbf3cfe1800daea",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02652c9f55dfbf3cfe1800daea",
+      "spotifyId": "1rfofaqEpACxVEHIZBJe6W",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 143,
+      "slug": "jason-mraz-im-yours",
+      "title": "I'm Yours",
+      "artists": [
+        "Jason Mraz"
+      ],
+      "released": "2008-05-01",
+      "explicit": false,
+      "streams": 2583678556,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273125b1a330b6f6100ab19dbed",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02125b1a330b6f6100ab19dbed",
+      "spotifyId": "1EzrEOXmMH3G43AXT1y7pA",
+      "soundcloud": {
+        "url": "https://soundcloud.com/jasonmraz/im-yours",
+        "author": "Jason Mraz"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 144,
+      "slug": "jimin-who",
+      "title": "Who",
+      "artists": [
+        "Jimin"
+      ],
+      "released": "2024-07-19",
+      "explicit": false,
+      "streams": 2582537881,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b273f02c451189a709b9a952aaec",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02f02c451189a709b9a952aaec",
+      "spotifyId": "7tI8dRuH2Yc6RuoTjxo4dU",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 145,
+      "slug": "maroon-5-memories",
+      "title": "Memories",
+      "artists": [
+        "Maroon 5"
+      ],
+      "released": "2021-06-11",
+      "explicit": false,
+      "streams": 2577070383,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b27386a8ab515de4b7aef28cd631",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e0286a8ab515de4b7aef28cd631",
+      "spotifyId": "4cktbXiXOapiLBMprHFErI",
+      "soundcloud": {
+        "url": "https://soundcloud.com/maroon-5/memories",
+        "author": "Maroon 5"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 146,
+      "slug": "queen-another-one-bites-the-dust",
+      "title": "Another One Bites The Dust",
+      "artists": [
+        "Queen"
+      ],
+      "released": "2018-10-19",
+      "explicit": false,
+      "streams": 2564520378,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2730cb397024b7a1185c070d65a",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e020cb397024b7a1185c070d65a",
+      "spotifyId": "02x5WpUkefFzA7CmJP4qEn",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 147,
+      "slug": "manuel-turizo-la-bachata",
+      "title": "La Bachata",
+      "artists": [
+        "Manuel Turizo"
+      ],
+      "released": "2023-03-17",
+      "explicit": false,
+      "streams": 2563344030,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b2732a2cea2167b62a7822a48e6a",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e022a2cea2167b62a7822a48e6a",
+      "spotifyId": "3tt9i3Hhzq84dPS8H7iSiJ",
+      "soundcloud": {
+        "url": "https://soundcloud.com/manuelturizo/la-bachata",
+        "author": "Manuel Turizo"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 148,
+      "slug": "wiz-khalifa-see-you-again",
+      "title": "See You Again (feat. Charlie Puth)",
+      "artists": [
+        "Wiz Khalifa",
+        "Charlie Puth"
+      ],
+      "released": "2015-01-01",
+      "explicit": false,
+      "streams": 2560428768,
+      "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67616d0000b2734e5df11b17b2727da2b718d8",
+      "thumb": "https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e024e5df11b17b2727da2b718d8",
+      "spotifyId": "2JzZzZUQj3Qff7wapcbKjc",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 149,
+      "slug": "maroon-5-maps",
+      "title": "Maps",
+      "artists": [
+        "Maroon 5"
+      ],
+      "released": "2014-09-02",
+      "explicit": false,
+      "streams": 2555836519,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273442b53773d50e1b5369bb16c",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02442b53773d50e1b5369bb16c",
+      "spotifyId": "4gbVRS8gloEluzf0GzDOFc",
+      "soundcloud": {
+        "url": "https://soundcloud.com/maroon-5/maps",
+        "author": "Maroon 5"
+      },
+      "checked": "2026-11-08"
+    },
+    {
+      "rank": 150,
+      "slug": "mariah-carey-all-i-want-for-christmas-is-you",
+      "title": "All I Want for Christmas Is You",
+      "artists": [
+        "Mariah Carey"
+      ],
+      "released": "1994-10-28",
+      "explicit": false,
+      "streams": 2553455465,
+      "cover": "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273c0862332847213b151ffab31",
+      "thumb": "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02c0862332847213b151ffab31",
+      "spotifyId": "0bYg9bo50gSsH3LtXe2SQn",
+      "soundcloud": null,
+      "checked": "2026-11-08"
+    }
+  ]
+}

@@ -1,0 +1,989 @@
+/* Shared component layer (design system v0.5). Loaded after globals.css and
+   brand.css and before room.css. What it still sets is what Katsodi Signal
+   (signal.css) does not override: filled surfaces, spacing and sizes of the
+   common building blocks, profile and admin screens. Tokens live in
+   signal.css; see docs/Design System.md, "Stylesheet structure". */
+
+/* ---------- Buttons ---------- */
+.button {
+  padding: 0 var(--space-5);
+  border: 1px solid transparent;
+  font-size: var(--text-sm);
+  line-height: 1;
+}
+.button-primary {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+.button-secondary {
+  color: var(--foreground);
+}
+.button-small {
+  padding: 0 var(--space-4);
+  font-size: var(--text-xs);
+}
+
+/* ---------- Text roles ---------- */
+.notice,
+.error {
+  font-size: var(--text-sm);
+}
+
+/* ---------- Inputs ---------- */
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not(
+    [type="file"]
+  ):not([type="hidden"]),
+select,
+textarea {
+  font-size: var(--text-base);
+}
+.search-box input::placeholder {
+  font-size: var(--text-sm);
+}
+
+/* ---------- Chips / filters ---------- */
+:is(.brand-app, body) .chip {
+  min-height: 36px;
+  padding: 0 var(--space-4);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+:is(.brand-app, body) .chip.active,
+:is(.brand-app, body) .chip[aria-pressed="true"] {
+  border: 0;
+}
+:is(.brand-app, body) .filter-bar {
+  border: 0;
+  background: none;
+  padding: 0;
+}
+
+/* ---------- Surfaces / cards ----------
+   :is(.brand-app, body) carries the app wrapper's weight, so these rules win
+   over the older ".brand-app ..." card rules and still apply in fixtures. */
+:is(.brand-app, body) .home-spaces > a,
+:is(.brand-app, body) .page-intro,
+:is(.brand-app, body) .demo-banner,
+:is(.brand-app, body) .brand-surface,
+:is(.brand-app, body) .brand-state,
+:is(.brand-app, body) .settings-card,
+:is(.brand-app, body) .appearance-section,
+:is(.brand-app, body) .form-card,
+:is(.brand-app, body) .music-rows,
+:is(.brand-app, body) .friends-panel,
+:is(.brand-app, body) .source-panel {
+  border: var(--card-outline);
+  border-radius: var(--card-radius);
+  box-shadow: none;
+}
+:is(.brand-app, body) .page-intro {
+  background: var(--surface);
+}
+:is(.brand-app, body) .page-intro::before,
+:is(.brand-app, body) .page-intro::after {
+  opacity: 0.35;
+}
+:is(.brand-app, body) .brand-surface,
+:is(.brand-app, body) .settings-card,
+:is(.brand-app, body) .form-card,
+:is(.brand-app, body) .music-rows,
+:is(.brand-app, body) .friends-panel,
+:is(.brand-app, body) .source-panel {
+  background: var(--surface);
+}
+:is(.brand-app, body) .demo-banner {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  font-size: var(--text-xs);
+}
+
+/* Editorial hero: artwork carries the frame; no outline. */
+:is(.brand-app, body) .editorial-hero {
+  border: var(--card-outline);
+  border-radius: var(--card-radius);
+}
+:is(.brand-app, body) .hero-bottom {
+  border-color: transparent;
+}
+
+/* Room cards: a filled tile that lightens on hover, like a media card. */
+:is(.brand-app, body) .home-spaces > a,
+:is(.brand-app, body) .room-card {
+  padding: var(--space-3);
+  border: var(--card-outline);
+  border-radius: var(--card-radius);
+  background: var(--surface);
+  box-shadow: none;
+  transition: background-color var(--duration-normal) ease;
+}
+:is(.brand-app, body) .home-spaces > a:hover,
+:is(.brand-app, body) .room-card:hover,
+:is(.brand-app, body) .room-card:focus-within {
+  border-color: transparent;
+  background: var(--surface-hover);
+  box-shadow: none;
+  transform: none;
+}
+[data-theme="paper"] :is(.brand-app, body) .room-card:hover {
+  border-color: var(--border-strong);
+}
+.cover-tag,
+.format-tag,
+.fandom-caption,
+.card-meta,
+.brand-status {
+  font-size: var(--text-xs);
+}
+
+/* ---------- Shell ---------- */
+/* Sidebar and top bar separate by surface contrast, not divider lines
+   (Paper keeps them through --card-outline). */
+:is(.brand-app, body) .sidebar {
+  border-right: var(--card-outline);
+  background: var(--background);
+}
+:is(.brand-app, body) .topbar {
+  border-bottom: var(--card-outline);
+}
+:is(.brand-app, body) .sidebar-search-btn,
+:is(.brand-app, body) .topbar-search-trigger {
+  border-color: transparent;
+  background: var(--surface-elevated);
+}
+.language-switch button {
+  font-size: var(--text-xs);
+}
+main > footer {
+  font-size: var(--text-xs);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .button,
+  :is(.brand-app, body) .room-card {
+    transition: none;
+  }
+  .button:hover:not(:disabled),
+  .button:active:not(:disabled) {
+    transform: none;
+  }
+}
+
+/* ---------- Profile header: banner with an overlapping avatar ---------- */
+.profile-hero {
+  overflow: hidden;
+  margin-bottom: var(--space-5);
+  border: var(--card-outline);
+  border-radius: var(--card-radius);
+  background: var(--surface);
+}
+.profile-banner {
+  position: relative;
+  aspect-ratio: 3 / 1;
+  max-height: 260px;
+  width: 100%;
+  background:
+    radial-gradient(
+      ellipse at 20% 30%,
+      color-mix(in srgb, var(--primary) 30%, transparent),
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse at 85% 80%,
+      color-mix(in srgb, var(--info) 22%, transparent),
+      transparent 55%
+    ),
+    var(--surface-elevated);
+}
+.profile-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.profile-hero-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-4);
+  padding: 0 var(--space-5) var(--space-5);
+}
+.profile-avatar {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 128px;
+  height: 128px;
+  margin-top: -64px;
+  overflow: hidden;
+  border: 4px solid var(--surface);
+  border-radius: 50%;
+  background: var(--surface-elevated);
+  color: var(--foreground);
+  font-size: 48px;
+  font-weight: var(--weight-bold);
+}
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-identity {
+  min-width: 0;
+}
+.profile-identity h1 {
+  margin: 0;
+  font-size: var(--text-xl);
+  line-height: var(--leading-tight);
+  overflow-wrap: anywhere;
+}
+.profile-identity p {
+  margin: var(--space-1) 0 0;
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+}
+.profile-media-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-left: auto;
+}
+.profile-media-actions > span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+.profile-media-remove {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted-foreground);
+}
+.profile-media-remove:hover {
+  background: var(--surface-hover);
+  color: var(--danger);
+}
+.profile-media-hint {
+  margin: calc(var(--space-3) * -1) 0 var(--space-5);
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+.profile-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+.profile-fandoms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.profile-fandoms a {
+  display: inline-flex;
+  flex-direction: column;
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--surface-elevated);
+  transition: background-color var(--duration-fast) ease;
+}
+.profile-fandoms a:hover {
+  background: var(--surface-hover);
+}
+.profile-fandoms strong {
+  font-size: var(--text-sm);
+}
+.profile-fandoms span {
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+
+/* ---------- Crop dialog ---------- */
+.crop-dialog {
+  /* A global reset removes the UA margin that centres modal dialogs. */
+  margin: auto;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  width: min(560px, calc(100vw - 32px));
+  padding: var(--space-5);
+  border: 0;
+  border-radius: var(--card-radius);
+  background: var(--surface);
+  color: var(--foreground);
+}
+.crop-dialog::backdrop {
+  background: var(--overlay);
+}
+.crop-dialog h2 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-lg);
+}
+.crop-hint {
+  margin: 0 0 var(--space-4);
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+}
+.crop-viewport {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  border-radius: var(--radius-md);
+  background: #000;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+.crop-viewport:active {
+  cursor: grabbing;
+}
+.crop-viewport:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+.crop-avatar {
+  max-width: 320px;
+  margin-inline: auto;
+}
+.crop-avatar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 999px rgb(0 0 0 / 45%);
+  pointer-events: none;
+}
+.crop-viewport img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: none;
+  pointer-events: none;
+}
+.crop-zoom {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+  color: var(--muted-foreground);
+}
+.crop-zoom input {
+  flex: 1;
+  accent-color: var(--primary);
+}
+.crop-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  margin-top: var(--space-5);
+}
+@media (max-width: 600px) {
+  .profile-avatar {
+    width: 96px;
+    height: 96px;
+    margin-top: -48px;
+    font-size: 36px;
+  }
+  .profile-hero-row {
+    padding: 0 var(--space-4) var(--space-4);
+  }
+  .profile-media-actions {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* ---------- Friends ---------- */
+.friends-workspace {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border: var(--card-outline);
+  border-radius: var(--card-radius);
+  background: var(--surface);
+}
+.friend-add label {
+  display: block;
+  margin-bottom: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+}
+.friend-add > div {
+  display: flex;
+  gap: var(--space-2);
+}
+.friend-add input {
+  flex: 1;
+  min-width: 0;
+  min-height: 40px;
+  padding: 0 var(--space-4);
+  border: 1px solid transparent;
+  border-radius: var(--radius-pill);
+  background: var(--surface-elevated);
+  color: var(--foreground);
+}
+.friend-add input:focus-visible {
+  border-color: var(--border-strong);
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+.friend-add .notice,
+.friend-add .error {
+  margin: var(--space-2) 0 0;
+}
+.friend-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.friend-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2);
+  border-radius: var(--radius-md);
+}
+.friend-row:hover {
+  background: var(--surface-hover);
+}
+.friend-avatar {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--surface-elevated);
+  font-weight: var(--weight-bold);
+}
+.friend-name {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-width: 0;
+}
+.friend-name strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.friend-name span {
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+.friend-actions form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-1);
+}
+.friend-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted-foreground);
+}
+.friend-icon:hover:not(:disabled) {
+  background: var(--surface-elevated);
+  color: var(--foreground);
+}
+.friend-icon:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+.friend-danger {
+  border-color: var(--danger);
+  color: var(--danger);
+}
+.friend-empty,
+.friend-privacy {
+  margin: 0;
+  color: var(--muted-foreground);
+  font-size: var(--text-sm);
+}
+.friend-privacy {
+  font-size: var(--text-xs);
+}
+.friends-workspace .room-panel-title {
+  margin: var(--space-2) 0 0;
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ---------- Level and achievements ---------- */
+.profile-progress {
+  margin-bottom: var(--space-5);
+}
+.level-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+.level-badge {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-lg);
+  background: var(--primary);
+  color: var(--primary-foreground);
+  line-height: 1;
+}
+.level-badge small {
+  font-size: 10px;
+  font-weight: var(--weight-bold);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.level-badge strong {
+  font-size: 28px;
+}
+.level-track {
+  flex: 1;
+  min-width: 0;
+}
+.level-bar {
+  height: 10px;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--surface-elevated);
+}
+.level-bar span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: var(--primary);
+  transition: width var(--duration-smooth) var(--ease-spring);
+}
+.level-track p {
+  margin: var(--space-2) 0 0;
+  font-size: var(--text-sm);
+}
+.level-track .level-total {
+  margin-top: var(--space-1);
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+.achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.achievement {
+  display: flex;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-left: 3px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  background: var(--surface-elevated);
+}
+/* Rarity is also written in text; colour is only an accent. */
+.achievement-rare {
+  border-left-color: var(--info);
+}
+.achievement-epic {
+  border-left-color: #c49bff;
+}
+.achievement-legendary {
+  border-left-color: var(--warning);
+}
+/* Locked: readable text (no opacity, which failed WCAG contrast); the state
+   shows through a faded icon, a dashed edge and the "not unlocked" text. */
+.achievement.is-locked {
+  border-left-style: dashed;
+  border-left-color: var(--border-strong);
+}
+.achievement.is-locked .achievement-icon {
+  opacity: 0.5;
+}
+.achievement.is-locked strong {
+  color: var(--muted-foreground);
+}
+.achievement-icon {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-hover);
+  color: var(--accent);
+}
+.achievement-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+.achievement-text strong {
+  font-size: var(--text-sm);
+}
+.achievement-text span {
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+.achievement-text small {
+  margin-top: var(--space-1);
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+.progress-how {
+  margin: var(--space-4) 0 0;
+  color: var(--muted-foreground);
+  font-size: var(--text-xs);
+}
+@media (prefers-reduced-motion: reduce) {
+  .level-bar span {
+    transition: none;
+  }
+}
+.profile-progress h2.section-index {
+  margin: 0 0 var(--space-3);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-regular);
+  letter-spacing: 0.02em;
+}
+
+/* Icon-only search on narrow screens: the text stays as the accessible name
+   (visually hidden), instead of display:none leaving the button unnamed. */
+@media (max-width: 900px) {
+  .topbar-search-text {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+}
+
+/* Room dock (Task 4): the room the user is in, on every page. */
+:is(.brand-app, body) .room-dock .dock-live {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--primary, #d4ef8b);
+  font-weight: 600;
+}
+:is(.brand-app, body) .room-dock .dock-return {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  height: 36px;
+  min-width: 44px;
+  padding: 0 14px;
+  gap: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  white-space: nowrap;
+}
+@media (max-width: 600px) {
+  :is(.brand-app, body) .room-dock .dock-return span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  :is(.brand-app, body) .room-dock .dock-return {
+    padding: 0;
+    width: 44px;
+  }
+}
+
+/* Profile fandoms (Task 6): poster cards linking to each fandom page. */
+.profile-fandom-section {
+  margin-top: 16px;
+}
+.profile-fandom-section .section-index {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.profile-fandom-count {
+  min-width: 22px;
+  padding: 1px 7px;
+  background: var(--selected, rgba(255, 255, 255, 0.08));
+  font-size: 12px;
+  text-align: center;
+}
+.profile-fandom-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(118px, 1fr));
+  gap: 14px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.profile-fandom-cards a {
+  display: grid;
+  gap: 4px;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 12px;
+}
+.profile-fandom-cards a:focus-visible {
+  outline: 2px solid var(--primary, #d4ef8b);
+  outline-offset: 3px;
+}
+.profile-fandom-cards .profile-fandom-poster {
+  aspect-ratio: 2 / 3;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 4px;
+  transition: transform 0.2s ease;
+}
+.profile-fandom-cards .profile-fandom-poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-fandom-cards a:hover .profile-fandom-poster {
+  transform: translateY(-2px);
+}
+@media (prefers-reduced-motion: reduce) {
+  .profile-fandom-cards .profile-fandom-poster {
+    transition: none;
+  }
+}
+.profile-fandom-cards strong {
+  font-size: 14px;
+  line-height: 1.25;
+}
+.profile-fandom-cards span {
+  font-size: 12px;
+  color: var(--muted-foreground, rgba(255, 255, 255, 0.65));
+}
+@media (max-width: 600px) {
+  .profile-fandom-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
+}
+
+/* Fandom requests (Task 8) and the admin panel (Task 9). */
+.request-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .request-layout {
+    grid-template-columns: 1fr;
+  }
+}
+.request-form {
+  display: grid;
+  gap: 10px;
+}
+.request-form h2,
+.request-history h2 {
+  margin: 0 0 6px;
+  font-size: 20px;
+}
+.request-panel {
+  display: grid;
+  gap: 14px;
+  justify-items: start;
+}
+.request-list {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.request-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px 12px;
+  align-items: start;
+  padding: 12px 14px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.1));
+  border-radius: 12px;
+}
+.request-list li > div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+.request-list li span {
+  font-size: 13px;
+  color: var(--muted-foreground, rgba(255, 255, 255, 0.65));
+}
+.request-list li p {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+.request-list li > .text-link,
+.request-list li > .admin-decide {
+  grid-column: 1 / -1;
+}
+.request-reason {
+  font-style: italic;
+}
+.request-status {
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.request-status.request-pending {
+  background: rgba(255, 213, 128, 0.16);
+  color: #ffd580;
+}
+.request-status.request-approved {
+  background: rgba(212, 239, 139, 0.16);
+  color: var(--primary, #d4ef8b);
+}
+.request-status.request-rejected {
+  background: rgba(255, 138, 128, 0.14);
+  color: #ffb4ab;
+}
+:root[data-theme="paper"] .request-status.request-pending {
+  color: #7a5200;
+}
+:root[data-theme="paper"] .request-status.request-approved {
+  color: #3d5a00;
+}
+:root[data-theme="paper"] .request-status.request-rejected {
+  color: #8c1d18;
+}
+.admin-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.admin-tabs button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.admin-tabs button:focus-visible,
+.admin-filter button:focus-visible {
+  outline: 2px solid var(--primary, #d4ef8b);
+  outline-offset: 2px;
+}
+.admin-count {
+  min-width: 22px;
+  padding: 1px 7px;
+  background: rgba(127, 127, 127, 0.18);
+  font-size: 12px;
+}
+.admin-count-alert {
+  background: #ffd580;
+  color: #121212;
+}
+.admin-section {
+  display: grid;
+  gap: 12px;
+}
+.admin-table-wrap {
+  overflow-x: auto;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+.admin-table th,
+.admin-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border, rgba(255, 255, 255, 0.08));
+  text-align: left;
+  vertical-align: top;
+}
+.admin-table th {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted-foreground, rgba(255, 255, 255, 0.65));
+}
+.admin-table td a {
+  display: block;
+  font-size: 13px;
+}
+.admin-badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 1px 8px;
+  background: rgba(212, 239, 139, 0.16);
+  color: var(--primary, #d4ef8b);
+  font-size: 11px;
+  font-weight: 700;
+}
+.admin-filter {
+  display: flex;
+  gap: 6px;
+}
+.admin-filter button {
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--border, rgba(255, 255, 255, 0.12));
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.admin-filter button[aria-pressed="true"] {
+  font-weight: 700;
+}
+.admin-decide {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+.admin-decide input {
+  flex: 1 1 200px;
+  min-height: 36px;
+}
+.admin-link {
+  margin-top: 6px;
+}
+
+/* Room lifecycle (Task 3.1): an empty room's countdown in the catalogue. */
+.room-card .room-inactive {
+  margin-top: 6px;
+  background: rgba(255, 213, 128, 0.14);
+  color: #ffd580;
+}
+:root[data-theme="paper"] .room-card .room-inactive {
+  color: #7a5200;
+}

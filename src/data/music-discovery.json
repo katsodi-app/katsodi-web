@@ -1,0 +1,3150 @@
+[
+  {
+    "provider": "spotify",
+    "source": "https://kworb.net/spotify/country/global_weekly.html",
+    "scope": "global",
+    "checked": "2026-11-08T17:11:34.207Z",
+    "attempted": "2026-11-08T17:11:34.207Z",
+    "period": "2026/11/05",
+    "status": "ready",
+    "tracks": [
+      {
+        "id": "spotify:2sFepQNyl1WjpROruP8bJ0",
+        "rank": 1,
+        "title": "Housewife",
+        "artists": [
+          "Tate McRae"
+        ],
+        "url": "https://open.spotify.com/track/2sFepQNyl1WjpROruP8bJ0",
+        "cover": null,
+        "plays": 36335218
+      },
+      {
+        "id": "spotify:3h5T5JypYU7huFiVYhv1dr",
+        "rank": 2,
+        "title": "BbY WOW",
+        "artists": [
+          "KAROL G",
+          "Judeline",
+          "rusowsky"
+        ],
+        "url": "https://open.spotify.com/track/3h5T5JypYU7huFiVYhv1dr",
+        "cover": null,
+        "plays": 33720659
+      },
+      {
+        "id": "spotify:70cHKK8bHAfJrOGVnfRG9J",
+        "rank": 3,
+        "title": "Nicole Kidman",
+        "artists": [
+          "ADÉLA"
+        ],
+        "url": "https://open.spotify.com/track/70cHKK8bHAfJrOGVnfRG9J",
+        "cover": null,
+        "plays": 29446080
+      },
+      {
+        "id": "spotify:3zOYmiNOuyDL0ClxJcEJ0T",
+        "rank": 4,
+        "title": "Stop The Wedding!",
+        "artists": [
+          "Ashe"
+        ],
+        "url": "https://open.spotify.com/track/3zOYmiNOuyDL0ClxJcEJ0T",
+        "cover": null,
+        "plays": 26907929
+      },
+      {
+        "id": "spotify:6U9VpmP3dEinuezxCJ2Zg9",
+        "rank": 5,
+        "title": "Ain't In LA",
+        "artists": [
+          "ADÉLA"
+        ],
+        "url": "https://open.spotify.com/track/6U9VpmP3dEinuezxCJ2Zg9",
+        "cover": null,
+        "plays": 23873110
+      },
+      {
+        "id": "spotify:55pBIZO1cqoldeqpp5WR7H",
+        "rank": 6,
+        "title": "the cure",
+        "artists": [
+          "Olivia Rodrigo"
+        ],
+        "url": "https://open.spotify.com/track/55pBIZO1cqoldeqpp5WR7H",
+        "cover": null,
+        "plays": 22601393
+      },
+      {
+        "id": "spotify:7qjZnBKE73H4Oxkopwulqe",
+        "rank": 7,
+        "title": "back to friends",
+        "artists": [
+          "sombr"
+        ],
+        "url": "https://open.spotify.com/track/7qjZnBKE73H4Oxkopwulqe",
+        "cover": null,
+        "plays": 19793069
+      },
+      {
+        "id": "spotify:6QFCMUUq1T2Vf5sFUXcuQ7",
+        "rank": 8,
+        "title": "Beauty And A Beat",
+        "artists": [
+          "Justin Bieber",
+          "Nicki Minaj"
+        ],
+        "url": "https://open.spotify.com/track/6QFCMUUq1T2Vf5sFUXcuQ7",
+        "cover": null,
+        "plays": 18998862
+      },
+      {
+        "id": "spotify:2009X8GyWTqyxIdzAEYW6N",
+        "rank": 9,
+        "title": "The One That Got Away",
+        "artists": [
+          "Katy Perry"
+        ],
+        "url": "https://open.spotify.com/track/2009X8GyWTqyxIdzAEYW6N",
+        "cover": null,
+        "plays": 18197595
+      },
+      {
+        "id": "spotify:0eAuGrXyGFYwur9ARUe7LJ",
+        "rank": 10,
+        "title": "Earrings",
+        "artists": [
+          "Malcolm Todd"
+        ],
+        "url": "https://open.spotify.com/track/0eAuGrXyGFYwur9ARUe7LJ",
+        "cover": null,
+        "plays": 18024702
+      },
+      {
+        "id": "spotify:7so0lgd0zP2Sbgs2d7a1SZ",
+        "rank": 11,
+        "title": "Die With A Smile",
+        "artists": [
+          "Lady Gaga",
+          "Bruno Mars"
+        ],
+        "url": "https://open.spotify.com/track/7so0lgd0zP2Sbgs2d7a1SZ",
+        "cover": null,
+        "plays": 17777592
+      },
+      {
+        "id": "spotify:6Qyc6fS4DsZjB2mRW9DsQs",
+        "rank": 12,
+        "title": "Iris",
+        "artists": [
+          "The Goo Goo Dolls"
+        ],
+        "url": "https://open.spotify.com/track/6Qyc6fS4DsZjB2mRW9DsQs",
+        "cover": null,
+        "plays": 17743072
+      },
+      {
+        "id": "spotify:1o9mAOmNm3wT2NdyGV1Ard",
+        "rank": 13,
+        "title": "Babydoll",
+        "artists": [
+          "Jamie Miller"
+        ],
+        "url": "https://open.spotify.com/track/1o9mAOmNm3wT2NdyGV1Ard",
+        "cover": null,
+        "plays": 17328412
+      },
+      {
+        "id": "spotify:1mKXFLRA179hdOWQBwUk9e",
+        "rank": 14,
+        "title": "Just Give Me a Reason",
+        "artists": [
+          "P!nk",
+          "Nate Ruess"
+        ],
+        "url": "https://open.spotify.com/track/1mKXFLRA179hdOWQBwUk9e",
+        "cover": null,
+        "plays": 17213963
+      },
+      {
+        "id": "spotify:2QjOHCTQ1Jl3zawyYOpxh6",
+        "rank": 15,
+        "title": "Sweater Weather",
+        "artists": [
+          "The Neighbourhood"
+        ],
+        "url": "https://open.spotify.com/track/2QjOHCTQ1Jl3zawyYOpxh6",
+        "cover": null,
+        "plays": 16982875
+      },
+      {
+        "id": "spotify:1uDn0nbzeGPVw97jp7SvzR",
+        "rank": 16,
+        "title": "Pós - Ao Vivo",
+        "artists": [
+          "Felipe e Rodrigo"
+        ],
+        "url": "https://open.spotify.com/track/1uDn0nbzeGPVw97jp7SvzR",
+        "cover": null,
+        "plays": 16980875
+      },
+      {
+        "id": "spotify:2LlQb7Uoj1kKyGhlkBf9aC",
+        "rank": 17,
+        "title": "Thriller",
+        "artists": [
+          "Michael Jackson"
+        ],
+        "url": "https://open.spotify.com/track/2LlQb7Uoj1kKyGhlkBf9aC",
+        "cover": null,
+        "plays": 16901511
+      },
+      {
+        "id": "spotify:49j6SvuvWfbEKZKzsHCdLJ",
+        "rank": 18,
+        "title": "stupid song",
+        "artists": [
+          "Olivia Rodrigo"
+        ],
+        "url": "https://open.spotify.com/track/49j6SvuvWfbEKZKzsHCdLJ",
+        "cover": null,
+        "plays": 16375435
+      },
+      {
+        "id": "spotify:4WFgvKVfEhb3IUAFGrutTR",
+        "rank": 19,
+        "title": "Love Me Not",
+        "artists": [
+          "Ravyn Lenae"
+        ],
+        "url": "https://open.spotify.com/track/4WFgvKVfEhb3IUAFGrutTR",
+        "cover": null,
+        "plays": 15946970
+      },
+      {
+        "id": "spotify:7ujApz6iFP3PmKIDGcaGbe",
+        "rank": 20,
+        "title": "Great Expectation",
+        "artists": [
+          "SIENNA SPIRO"
+        ],
+        "url": "https://open.spotify.com/track/7ujApz6iFP3PmKIDGcaGbe",
+        "cover": null,
+        "plays": 15690292
+      },
+      {
+        "id": "spotify:7J1uxwnxfQLu4APicE5Rnj",
+        "rank": 21,
+        "title": "Billie Jean",
+        "artists": [
+          "Michael Jackson"
+        ],
+        "url": "https://open.spotify.com/track/7J1uxwnxfQLu4APicE5Rnj",
+        "cover": null,
+        "plays": 15679256
+      },
+      {
+        "id": "spotify:3qhlB30KknSejmIvZZLjOD",
+        "rank": 22,
+        "title": "End of Beginning",
+        "artists": [
+          "Djo"
+        ],
+        "url": "https://open.spotify.com/track/3qhlB30KknSejmIvZZLjOD",
+        "cover": null,
+        "plays": 15641339
+      },
+      {
+        "id": "spotify:68lbSrXDORS51pmyjZv712",
+        "rank": 23,
+        "title": "SWIM",
+        "artists": [
+          "BTS"
+        ],
+        "url": "https://open.spotify.com/track/68lbSrXDORS51pmyjZv712",
+        "cover": null,
+        "plays": 15415526
+      },
+      {
+        "id": "spotify:1qbmS6ep2hbBRaEZFpn7BX",
+        "rank": 24,
+        "title": "Man I Need",
+        "artists": [
+          "Olivia Dean"
+        ],
+        "url": "https://open.spotify.com/track/1qbmS6ep2hbBRaEZFpn7BX",
+        "cover": null,
+        "plays": 15404305
+      },
+      {
+        "id": "spotify:7scFxt9VhL4FJwuPSfRlfN",
+        "rank": 25,
+        "title": "Choosin' Texas",
+        "artists": [
+          "Ella Langley"
+        ],
+        "url": "https://open.spotify.com/track/7scFxt9VhL4FJwuPSfRlfN",
+        "cover": null,
+        "plays": 15358144
+      },
+      {
+        "id": "spotify:6VDw2mGBIa4csypjOhS6JT",
+        "rank": 26,
+        "title": "Suzuki (from GTAVI: The Album)",
+        "artists": [
+          "Fuerza Regida",
+          "Grand Theft Auto VI"
+        ],
+        "url": "https://open.spotify.com/track/6VDw2mGBIa4csypjOhS6JT",
+        "cover": null,
+        "plays": 15140311
+      },
+      {
+        "id": "spotify:4qW3BbQAwZsrnu8a3ZRdyT",
+        "rank": 27,
+        "title": "Self Aware",
+        "artists": [
+          "Temper City"
+        ],
+        "url": "https://open.spotify.com/track/4qW3BbQAwZsrnu8a3ZRdyT",
+        "cover": null,
+        "plays": 15086434
+      },
+      {
+        "id": "spotify:7yNf9YjeO5JXUE3JEBgnYc",
+        "rank": 28,
+        "title": "Babydoll",
+        "artists": [
+          "Dominic Fike"
+        ],
+        "url": "https://open.spotify.com/track/7yNf9YjeO5JXUE3JEBgnYc",
+        "cover": null,
+        "plays": 14906210
+      },
+      {
+        "id": "spotify:7bxaFZ1O3cHkgLKMsdC3xR",
+        "rank": 29,
+        "title": "Loser",
+        "artists": [
+          "Tame Impala"
+        ],
+        "url": "https://open.spotify.com/track/7bxaFZ1O3cHkgLKMsdC3xR",
+        "cover": null,
+        "plays": 14642618
+      },
+      {
+        "id": "spotify:003vvx7Niy0yvhvHt4a68B",
+        "rank": 30,
+        "title": "Mr. Brightside",
+        "artists": [
+          "The Killers"
+        ],
+        "url": "https://open.spotify.com/track/003vvx7Niy0yvhvHt4a68B",
+        "cover": null,
+        "plays": 14607005
+      },
+      {
+        "id": "spotify:3XmwAZpIMNpTJy8faw3ajD",
+        "rank": 31,
+        "title": "expectations",
+        "artists": [
+          "Olivia Rodrigo",
+          "Chappell Roan"
+        ],
+        "url": "https://open.spotify.com/track/3XmwAZpIMNpTJy8faw3ajD",
+        "cover": null,
+        "plays": 14605369
+      },
+      {
+        "id": "spotify:70LcF31zb1H0PyJoS1Sx1r",
+        "rank": 32,
+        "title": "Creep",
+        "artists": [
+          "Radiohead"
+        ],
+        "url": "https://open.spotify.com/track/70LcF31zb1H0PyJoS1Sx1r",
+        "cover": null,
+        "plays": 14292276
+      },
+      {
+        "id": "spotify:3QGsuHI8jO1Rx4JWLUh9jd",
+        "rank": 33,
+        "title": "Treat You Better",
+        "artists": [
+          "Shawn Mendes"
+        ],
+        "url": "https://open.spotify.com/track/3QGsuHI8jO1Rx4JWLUh9jd",
+        "cover": null,
+        "plays": 14236881
+      },
+      {
+        "id": "spotify:6dOtVTDdiauQNBQEDOtlAB",
+        "rank": 34,
+        "title": "BIRDS OF A FEATHER",
+        "artists": [
+          "Billie Eilish"
+        ],
+        "url": "https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB",
+        "cover": null,
+        "plays": 14031191
+      },
+      {
+        "id": "spotify:7CyPwkp0oE8Ro9Dd5CUDjW",
+        "rank": 35,
+        "title": "One Of The Girls",
+        "artists": [
+          "The Weeknd",
+          "JENNIE",
+          "Lily-Rose Depp"
+        ],
+        "url": "https://open.spotify.com/track/7CyPwkp0oE8Ro9Dd5CUDjW",
+        "cover": null,
+        "plays": 13957192
+      },
+      {
+        "id": "spotify:1JSTJqkT5qHq8MDJnJbRE1",
+        "rank": 36,
+        "title": "Every Breath You Take",
+        "artists": [
+          "The Police"
+        ],
+        "url": "https://open.spotify.com/track/1JSTJqkT5qHq8MDJnJbRE1",
+        "cover": null,
+        "plays": 13734556
+      },
+      {
+        "id": "spotify:0tW2gwaRzFQQrgr2UCO56G",
+        "rank": 37,
+        "title": "Alfaaz",
+        "artists": [
+          "Hamza Malik",
+          "Zain Zohaib"
+        ],
+        "url": "https://open.spotify.com/track/0tW2gwaRzFQQrgr2UCO56G",
+        "cover": null,
+        "plays": 13685775
+      },
+      {
+        "id": "spotify:5Ohxk2dO5COHF1krpoPigN",
+        "rank": 38,
+        "title": "Sign of the Times",
+        "artists": [
+          "Harry Styles"
+        ],
+        "url": "https://open.spotify.com/track/5Ohxk2dO5COHF1krpoPigN",
+        "cover": null,
+        "plays": 13637324
+      },
+      {
+        "id": "spotify:21IYMdzTrzSe191Cy5eMap",
+        "rank": 39,
+        "title": "Sailor Song",
+        "artists": [
+          "Gigi Perez"
+        ],
+        "url": "https://open.spotify.com/track/21IYMdzTrzSe191Cy5eMap",
+        "cover": null,
+        "plays": 13548568
+      },
+      {
+        "id": "spotify:0QPdjsMOUhwouq1NS3HwfQ",
+        "rank": 40,
+        "title": "Coming Up Roses",
+        "artists": [
+          "Harry Styles"
+        ],
+        "url": "https://open.spotify.com/track/0QPdjsMOUhwouq1NS3HwfQ",
+        "cover": null,
+        "plays": 13319341
+      },
+      {
+        "id": "spotify:3iy2QuCtCzpWnR6tia39AB",
+        "rank": 41,
+        "title": "hate that i made you love me",
+        "artists": [
+          "Ariana Grande"
+        ],
+        "url": "https://open.spotify.com/track/3iy2QuCtCzpWnR6tia39AB",
+        "cover": null,
+        "plays": 13284783
+      },
+      {
+        "id": "spotify:2RkZ5LkEzeHGRsmDqKwmaJ",
+        "rank": 42,
+        "title": "Ordinary",
+        "artists": [
+          "Alex Warren"
+        ],
+        "url": "https://open.spotify.com/track/2RkZ5LkEzeHGRsmDqKwmaJ",
+        "cover": null,
+        "plays": 12954292
+      },
+      {
+        "id": "spotify:2lpygKqzPFtItQ4ss3cgfb",
+        "rank": 43,
+        "title": "Cinderella",
+        "artists": [
+          "Mac Miller",
+          "Ty Dolla $ign"
+        ],
+        "url": "https://open.spotify.com/track/2lpygKqzPFtItQ4ss3cgfb",
+        "cover": null,
+        "plays": 12738351
+      },
+      {
+        "id": "spotify:5XeFesFbtLpXzIVDNQP22n",
+        "rank": 44,
+        "title": "I Wanna Be Yours",
+        "artists": [
+          "Arctic Monkeys"
+        ],
+        "url": "https://open.spotify.com/track/5XeFesFbtLpXzIVDNQP22n",
+        "cover": null,
+        "plays": 12681807
+      },
+      {
+        "id": "spotify:4RuRAwMmuBxw4QsKeFVhxh",
+        "rank": 45,
+        "title": "Postinho de Gasolina",
+        "artists": [
+          "João Gustavo e Murilo",
+          "Grelo"
+        ],
+        "url": "https://open.spotify.com/track/4RuRAwMmuBxw4QsKeFVhxh",
+        "cover": null,
+        "plays": 12603423
+      },
+      {
+        "id": "spotify:7MXVkk9YMctZqd1Srtv4MB",
+        "rank": 46,
+        "title": "Starboy",
+        "artists": [
+          "The Weeknd",
+          "Daft Punk"
+        ],
+        "url": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB",
+        "cover": null,
+        "plays": 12355227
+      },
+      {
+        "id": "spotify:0COqiPhxzoWICwFCS4eZcp",
+        "rank": 47,
+        "title": "Bring Me To Life",
+        "artists": [
+          "Evanescence"
+        ],
+        "url": "https://open.spotify.com/track/0COqiPhxzoWICwFCS4eZcp",
+        "cover": null,
+        "plays": 12349717
+      },
+      {
+        "id": "spotify:3BovdzfaX4jb5KFQwoPfAw",
+        "rank": 48,
+        "title": "Beat It",
+        "artists": [
+          "Michael Jackson"
+        ],
+        "url": "https://open.spotify.com/track/3BovdzfaX4jb5KFQwoPfAw",
+        "cover": null,
+        "plays": 12297831
+      },
+      {
+        "id": "spotify:5qqabIl2vWzo9ApSC317sa",
+        "rank": 49,
+        "title": "Wonderwall - Remastered",
+        "artists": [
+          "Oasis"
+        ],
+        "url": "https://open.spotify.com/track/5qqabIl2vWzo9ApSC317sa",
+        "cover": null,
+        "plays": 12191167
+      },
+      {
+        "id": "spotify:53iuhJlwXhSER5J2IYYv1W",
+        "rank": 50,
+        "title": "The Fate of Ophelia",
+        "artists": [
+          "Taylor Swift"
+        ],
+        "url": "https://open.spotify.com/track/53iuhJlwXhSER5J2IYYv1W",
+        "cover": null,
+        "plays": 12167018
+      },
+      {
+        "id": "spotify:0kosUz0jePvjiz4ctmR6wL",
+        "rank": 51,
+        "title": "Dai Dai",
+        "artists": [
+          "Shakira",
+          "Burna Boy"
+        ],
+        "url": "https://open.spotify.com/track/0kosUz0jePvjiz4ctmR6wL",
+        "cover": null,
+        "plays": 12129457
+      },
+      {
+        "id": "spotify:3AJwUDP919kvQ9QcozQPxg",
+        "rank": 52,
+        "title": "Yellow",
+        "artists": [
+          "Coldplay"
+        ],
+        "url": "https://open.spotify.com/track/3AJwUDP919kvQ9QcozQPxg",
+        "cover": null,
+        "plays": 12087750
+      },
+      {
+        "id": "spotify:3fRCAPMMZ8l8P9YKI6OCzD",
+        "rank": 53,
+        "title": "drop dead",
+        "artists": [
+          "Olivia Rodrigo"
+        ],
+        "url": "https://open.spotify.com/track/3fRCAPMMZ8l8P9YKI6OCzD",
+        "cover": null,
+        "plays": 12085657
+      },
+      {
+        "id": "spotify:5b5cPscqVEMChvDqscVw26",
+        "rank": 54,
+        "title": "Training Season",
+        "artists": [
+          "Dua Lipa"
+        ],
+        "url": "https://open.spotify.com/track/5b5cPscqVEMChvDqscVw26",
+        "cover": null,
+        "plays": 11896957
+      },
+      {
+        "id": "spotify:569uHYIB0X324FZOBEhvit",
+        "rank": 55,
+        "title": "Ghostbusters",
+        "artists": [
+          "Ray Parker Jr."
+        ],
+        "url": "https://open.spotify.com/track/569uHYIB0X324FZOBEhvit",
+        "cover": null,
+        "plays": 11857522
+      },
+      {
+        "id": "spotify:56V7nzrqr6Sq1uFym4odwa",
+        "rank": 56,
+        "title": "Cuando No Era Cantante RMX - Remix",
+        "artists": [
+          "El Bogueto",
+          "Anuel AA",
+          "Fuerza Regida",
+          "Yung Beef"
+        ],
+        "url": "https://open.spotify.com/track/56V7nzrqr6Sq1uFym4odwa",
+        "cover": null,
+        "plays": 11717516
+      },
+      {
+        "id": "spotify:0VjIjW4GlUZAMYd2vXMi3b",
+        "rank": 57,
+        "title": "Blinding Lights",
+        "artists": [
+          "The Weeknd"
+        ],
+        "url": "https://open.spotify.com/track/0VjIjW4GlUZAMYd2vXMi3b",
+        "cover": null,
+        "plays": 11712988
+      },
+      {
+        "id": "spotify:3ouNEk0tv5TTi8VWMe1xbX",
+        "rank": 58,
+        "title": "Animal",
+        "artists": [
+          "KATSEYE"
+        ],
+        "url": "https://open.spotify.com/track/3ouNEk0tv5TTi8VWMe1xbX",
+        "cover": null,
+        "plays": 11674532
+      },
+      {
+        "id": "spotify:5g7sDjBhZ4I3gcFIpkrLuI",
+        "rank": 59,
+        "title": "Locked out of Heaven",
+        "artists": [
+          "Bruno Mars"
+        ],
+        "url": "https://open.spotify.com/track/5g7sDjBhZ4I3gcFIpkrLuI",
+        "cover": null,
+        "plays": 11555630
+      },
+      {
+        "id": "spotify:3QaPy1KgI7nu9FJEQUgn6h",
+        "rank": 60,
+        "title": "WILDFLOWER",
+        "artists": [
+          "Billie Eilish"
+        ],
+        "url": "https://open.spotify.com/track/3QaPy1KgI7nu9FJEQUgn6h",
+        "cover": null,
+        "plays": 11391585
+      },
+      {
+        "id": "spotify:5y2ijHECwFYWqcAHKTZgzD",
+        "rank": 61,
+        "title": "Risk It All",
+        "artists": [
+          "Bruno Mars"
+        ],
+        "url": "https://open.spotify.com/track/5y2ijHECwFYWqcAHKTZgzD",
+        "cover": null,
+        "plays": 11355697
+      },
+      {
+        "id": "spotify:58ge6dfP91o9oXMzq3XkIS",
+        "rank": 62,
+        "title": "505",
+        "artists": [
+          "Arctic Monkeys"
+        ],
+        "url": "https://open.spotify.com/track/58ge6dfP91o9oXMzq3XkIS",
+        "cover": null,
+        "plays": 11327036
+      },
+      {
+        "id": "spotify:5yvVYFDUpbnjcnRBgjwTzM",
+        "rank": 63,
+        "title": "Dracula - JENNIE Remix",
+        "artists": [
+          "Tame Impala",
+          "JENNIE"
+        ],
+        "url": "https://open.spotify.com/track/5yvVYFDUpbnjcnRBgjwTzM",
+        "cover": null,
+        "plays": 11321382
+      },
+      {
+        "id": "spotify:3hRV0jL3vUpRrcy398teAU",
+        "rank": 64,
+        "title": "The Night We Met",
+        "artists": [
+          "Lord Huron"
+        ],
+        "url": "https://open.spotify.com/track/3hRV0jL3vUpRrcy398teAU",
+        "cover": null,
+        "plays": 11298523
+      },
+      {
+        "id": "spotify:0JXXNGljqupsJaZsgSbMZV",
+        "rank": 65,
+        "title": "Sure Thing",
+        "artists": [
+          "Miguel"
+        ],
+        "url": "https://open.spotify.com/track/0JXXNGljqupsJaZsgSbMZV",
+        "cover": null,
+        "plays": 11165278
+      },
+      {
+        "id": "spotify:2gYTC8DsplN3RNdpdBcCOQ",
+        "rank": 66,
+        "title": "Die On This Hill",
+        "artists": [
+          "SIENNA SPIRO"
+        ],
+        "url": "https://open.spotify.com/track/2gYTC8DsplN3RNdpdBcCOQ",
+        "cover": null,
+        "plays": 11077130
+      },
+      {
+        "id": "spotify:60a0Rd6pjrkxjPbaKzXjfq",
+        "rank": 67,
+        "title": "In the End",
+        "artists": [
+          "Linkin Park"
+        ],
+        "url": "https://open.spotify.com/track/60a0Rd6pjrkxjPbaKzXjfq",
+        "cover": null,
+        "plays": 10991252
+      },
+      {
+        "id": "spotify:3sK8wGT43QFpWrvNQsrQya",
+        "rank": 68,
+        "title": "DtMF",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "url": "https://open.spotify.com/track/3sK8wGT43QFpWrvNQsrQya",
+        "cover": null,
+        "plays": 10977079
+      },
+      {
+        "id": "spotify:3oTuTpF1F3A7rEC6RKsMRz",
+        "rank": 69,
+        "title": "Raindance",
+        "artists": [
+          "Dave",
+          "Tems"
+        ],
+        "url": "https://open.spotify.com/track/3oTuTpF1F3A7rEC6RKsMRz",
+        "cover": null,
+        "plays": 10959088
+      },
+      {
+        "id": "spotify:6sGIMrtIzQjdzNndVxe397",
+        "rank": 70,
+        "title": "So Easy (To Fall In Love)",
+        "artists": [
+          "Olivia Dean"
+        ],
+        "url": "https://open.spotify.com/track/6sGIMrtIzQjdzNndVxe397",
+        "cover": null,
+        "plays": 10851095
+      },
+      {
+        "id": "spotify:1KGi9sZVMeszgZOWivFpxs",
+        "rank": 71,
+        "title": "No Scrubs",
+        "artists": [
+          "TLC"
+        ],
+        "url": "https://open.spotify.com/track/1KGi9sZVMeszgZOWivFpxs",
+        "cover": null,
+        "plays": 10738724
+      },
+      {
+        "id": "spotify:7yq4Qj7cqayVTp3FF9CWbm",
+        "rank": 72,
+        "title": "Riptide",
+        "artists": [
+          "Vance Joy"
+        ],
+        "url": "https://open.spotify.com/track/7yq4Qj7cqayVTp3FF9CWbm",
+        "cover": null,
+        "plays": 10695806
+      },
+      {
+        "id": "spotify:0MUXBhPUDF8or0kfQ0EHwV",
+        "rank": 73,
+        "title": "Rein Me In",
+        "artists": [
+          "Sam Fender",
+          "Olivia Dean"
+        ],
+        "url": "https://open.spotify.com/track/0MUXBhPUDF8or0kfQ0EHwV",
+        "cover": null,
+        "plays": 10688899
+      },
+      {
+        "id": "spotify:1zi7xx7UVEFkmKfv06H8x0",
+        "rank": 74,
+        "title": "One Dance",
+        "artists": [
+          "Drake",
+          "Wizkid",
+          "Kyla"
+        ],
+        "url": "https://open.spotify.com/track/1zi7xx7UVEFkmKfv06H8x0",
+        "cover": null,
+        "plays": 10679772
+      },
+      {
+        "id": "spotify:5UJbgR4XF4y1DvbkxEqe8S",
+        "rank": 75,
+        "title": "Sports car",
+        "artists": [
+          "Tate McRae"
+        ],
+        "url": "https://open.spotify.com/track/5UJbgR4XF4y1DvbkxEqe8S",
+        "cover": null,
+        "plays": 10596388
+      },
+      {
+        "id": "spotify:4vTsKN15Kqo3Geo9r7FhAN",
+        "rank": 76,
+        "title": "Movin' To The Sun",
+        "artists": [
+          "HUGEL",
+          "Imael Angel",
+          "Ultra Naté"
+        ],
+        "url": "https://open.spotify.com/track/4vTsKN15Kqo3Geo9r7FhAN",
+        "cover": null,
+        "plays": 10383729
+      },
+      {
+        "id": "spotify:7e4zDInS6tA2jwzphvs2Ay",
+        "rank": 77,
+        "title": "Jamaican (Bam Bam)",
+        "artists": [
+          "HUGEL",
+          "SOLTO (FR)"
+        ],
+        "url": "https://open.spotify.com/track/7e4zDInS6tA2jwzphvs2Ay",
+        "cover": null,
+        "plays": 10380737
+      },
+      {
+        "id": "spotify:7qiZfU4dY1lWllzX7mPBI3",
+        "rank": 78,
+        "title": "Shape of You",
+        "artists": [
+          "Ed Sheeran"
+        ],
+        "url": "https://open.spotify.com/track/7qiZfU4dY1lWllzX7mPBI3",
+        "cover": null,
+        "plays": 10359673
+      },
+      {
+        "id": "spotify:3xkHsmpQCBMytMJNiDf3Ii",
+        "rank": 79,
+        "title": "Beautiful Things",
+        "artists": [
+          "Benson Boone"
+        ],
+        "url": "https://open.spotify.com/track/3xkHsmpQCBMytMJNiDf3Ii",
+        "cover": null,
+        "plays": 10350371
+      },
+      {
+        "id": "spotify:5FVd6KXrgO9B3JPmC8OPst",
+        "rank": 80,
+        "title": "Do I Wanna Know?",
+        "artists": [
+          "Arctic Monkeys"
+        ],
+        "url": "https://open.spotify.com/track/5FVd6KXrgO9B3JPmC8OPst",
+        "cover": null,
+        "plays": 10327431
+      },
+      {
+        "id": "spotify:0pMoUGdpD8nupNP1mSdZUn",
+        "rank": 81,
+        "title": "You’re Under Arrest",
+        "artists": [
+          "ILLIT"
+        ],
+        "url": "https://open.spotify.com/track/0pMoUGdpD8nupNP1mSdZUn",
+        "cover": null,
+        "plays": 10270049
+      },
+      {
+        "id": "spotify:7BqBn9nzAq8spo5e7cZ0dJ",
+        "rank": 82,
+        "title": "Just the Way You Are",
+        "artists": [
+          "Bruno Mars"
+        ],
+        "url": "https://open.spotify.com/track/7BqBn9nzAq8spo5e7cZ0dJ",
+        "cover": null,
+        "plays": 10255232
+      },
+      {
+        "id": "spotify:55lijDD6OAjLFFUHU9tcDm",
+        "rank": 83,
+        "title": "WHERE IS MY HUSBAND!",
+        "artists": [
+          "RAYE"
+        ],
+        "url": "https://open.spotify.com/track/55lijDD6OAjLFFUHU9tcDm",
+        "cover": null,
+        "plays": 10236540
+      },
+      {
+        "id": "spotify:1mea3bSkSGXuIRvnydlB5b",
+        "rank": 84,
+        "title": "Viva La Vida",
+        "artists": [
+          "Coldplay"
+        ],
+        "url": "https://open.spotify.com/track/1mea3bSkSGXuIRvnydlB5b",
+        "cover": null,
+        "plays": 10227324
+      },
+      {
+        "id": "spotify:2lTm559tuIvatlT1u0JYG2",
+        "rank": 85,
+        "title": "BAILE INoLVIDABLE",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "url": "https://open.spotify.com/track/2lTm559tuIvatlT1u0JYG2",
+        "cover": null,
+        "plays": 10182405
+      },
+      {
+        "id": "spotify:2LBqCSwhJGcFQeTHMVGwy3",
+        "rank": 86,
+        "title": "Die For You",
+        "artists": [
+          "The Weeknd"
+        ],
+        "url": "https://open.spotify.com/track/2LBqCSwhJGcFQeTHMVGwy3",
+        "cover": null,
+        "plays": 10176723
+      },
+      {
+        "id": "spotify:1NXbNEAcPvY5G1xvfN57aA",
+        "rank": 87,
+        "title": "Dracula",
+        "artists": [
+          "Tame Impala"
+        ],
+        "url": "https://open.spotify.com/track/1NXbNEAcPvY5G1xvfN57aA",
+        "cover": null,
+        "plays": 10144858
+      },
+      {
+        "id": "spotify:1XGmzt0PVuFgQYYnV2It7A",
+        "rank": 88,
+        "title": "Payphone",
+        "artists": [
+          "Maroon 5",
+          "Wiz Khalifa"
+        ],
+        "url": "https://open.spotify.com/track/1XGmzt0PVuFgQYYnV2It7A",
+        "cover": null,
+        "plays": 10115846
+      },
+      {
+        "id": "spotify:4kX7xkopoXZCfE1D6fNwl2",
+        "rank": 89,
+        "title": "honeybee",
+        "artists": [
+          "Olivia Rodrigo"
+        ],
+        "url": "https://open.spotify.com/track/4kX7xkopoXZCfE1D6fNwl2",
+        "cover": null,
+        "plays": 10111197
+      },
+      {
+        "id": "spotify:2FRnf9qhLbvw8fu4IBXx78",
+        "rank": 90,
+        "title": "Last Christmas",
+        "artists": [
+          "Wham!"
+        ],
+        "url": "https://open.spotify.com/track/2FRnf9qhLbvw8fu4IBXx78",
+        "cover": null,
+        "plays": 10077811
+      },
+      {
+        "id": "spotify:11hcBLPtbMp4aQI6zGQLub",
+        "rank": 91,
+        "title": "Patient Zero",
+        "artists": [
+          "Taylor Swift"
+        ],
+        "url": "https://open.spotify.com/track/11hcBLPtbMp4aQI6zGQLub",
+        "cover": null,
+        "plays": 10051620
+      },
+      {
+        "id": "spotify:1oAwsWBovWRIp7qLMGPIet",
+        "rank": 92,
+        "title": "Apocalypse",
+        "artists": [
+          "Cigarettes After Sex"
+        ],
+        "url": "https://open.spotify.com/track/1oAwsWBovWRIp7qLMGPIet",
+        "cover": null,
+        "plays": 10048292
+      },
+      {
+        "id": "spotify:0RiRZpuVRbi7oqRdSMwhQY",
+        "rank": 93,
+        "title": "Sunflower - Spider-Man: Into the Spider-Verse",
+        "artists": [
+          "Post Malone",
+          "Swae Lee"
+        ],
+        "url": "https://open.spotify.com/track/0RiRZpuVRbi7oqRdSMwhQY",
+        "cover": null,
+        "plays": 9976241
+      },
+      {
+        "id": "spotify:6HU7h9RYOaPRFeh0R3UeAr",
+        "rank": 94,
+        "title": "deja vu",
+        "artists": [
+          "Olivia Rodrigo"
+        ],
+        "url": "https://open.spotify.com/track/6HU7h9RYOaPRFeh0R3UeAr",
+        "cover": null,
+        "plays": 9955297
+      },
+      {
+        "id": "spotify:1CPZ5BxNNd0n0nF4Orb9JS",
+        "rank": 95,
+        "title": "Golden",
+        "artists": [
+          "HUNTR/X",
+          "EJae",
+          "AUDREY NUNA",
+          "REI AMI",
+          "KPop Demon Hunters Cast"
+        ],
+        "url": "https://open.spotify.com/track/1CPZ5BxNNd0n0nF4Orb9JS",
+        "cover": null,
+        "plays": 9916834
+      },
+      {
+        "id": "spotify:2xql0pid3EUwW38AsywxhV",
+        "rank": 96,
+        "title": "Reflections",
+        "artists": [
+          "The Neighbourhood"
+        ],
+        "url": "https://open.spotify.com/track/2xql0pid3EUwW38AsywxhV",
+        "cover": null,
+        "plays": 9893594
+      },
+      {
+        "id": "spotify:6J5kc12BW5HuP3d7C3vvx8",
+        "rank": 97,
+        "title": "EoO",
+        "artists": [
+          "Bad Bunny"
+        ],
+        "url": "https://open.spotify.com/track/6J5kc12BW5HuP3d7C3vvx8",
+        "cover": null,
+        "plays": 9867538
+      },
+      {
+        "id": "spotify:4Dvkj6JhhA12EX05fT7y2e",
+        "rank": 98,
+        "title": "As It Was",
+        "artists": [
+          "Harry Styles"
+        ],
+        "url": "https://open.spotify.com/track/4Dvkj6JhhA12EX05fT7y2e",
+        "cover": null,
+        "plays": 9822640
+      },
+      {
+        "id": "spotify:4uUVNaxpS4zYcXkTrrRp6R",
+        "rank": 99,
+        "title": "Monster Mash",
+        "artists": [
+          "Bobby \"Boris\" Pickett"
+        ],
+        "url": "https://open.spotify.com/track/4uUVNaxpS4zYcXkTrrRp6R",
+        "cover": null,
+        "plays": 9730640
+      },
+      {
+        "id": "spotify:0gucTLf7trAf37Ua1uAyAu",
+        "rank": 100,
+        "title": "Smells Like Teen Spirit - Remastered",
+        "artists": [
+          "Nirvana"
+        ],
+        "url": "https://open.spotify.com/track/0gucTLf7trAf37Ua1uAyAu",
+        "cover": null,
+        "plays": 9644249
+      },
+      {
+        "id": "spotify:1Jo0Zg7XlrA6z0mFTZVdkn",
+        "rank": 101,
+        "title": "Don't Stop The Music",
+        "artists": [
+          "Rihanna"
+        ],
+        "url": "https://open.spotify.com/track/1Jo0Zg7XlrA6z0mFTZVdkn",
+        "cover": null,
+        "plays": 9634975
+      },
+      {
+        "id": "spotify:2tpWsVSb9UEmDRxAl1zhX1",
+        "rank": 102,
+        "title": "Counting Stars",
+        "artists": [
+          "OneRepublic"
+        ],
+        "url": "https://open.spotify.com/track/2tpWsVSb9UEmDRxAl1zhX1",
+        "cover": null,
+        "plays": 9609525
+      },
+      {
+        "id": "spotify:0bYg9bo50gSsH3LtXe2SQn",
+        "rank": 103,
+        "title": "All I Want for Christmas Is You",
+        "artists": [
+          "Mariah Carey"
+        ],
+        "url": "https://open.spotify.com/track/0bYg9bo50gSsH3LtXe2SQn",
+        "cover": null,
+        "plays": 9553077
+      },
+      {
+        "id": "spotify:7BKLCZ1jbUBVqRi2FVlTVw",
+        "rank": 104,
+        "title": "Closer",
+        "artists": [
+          "The Chainsmokers",
+          "Halsey"
+        ],
+        "url": "https://open.spotify.com/track/7BKLCZ1jbUBVqRi2FVlTVw",
+        "cover": null,
+        "plays": 9551640
+      },
+      {
+        "id": "spotify:1rIKgCH4H52lrvDcz50hS8",
+        "rank": 105,
+        "title": "Lush Life",
+        "artists": [
+          "Zara Larsson"
+        ],
+        "url": "https://open.spotify.com/track/1rIKgCH4H52lrvDcz50hS8",
+        "cover": null,
+        "plays": 9544417
+      },
+      {
+        "id": "spotify:4EVSMqqVEehvyyOBmjNTlA",
+        "rank": 106,
+        "title": "Lies",
+        "artists": [
+          "Zach Bryan",
+          "Lana Del Rey"
+        ],
+        "url": "https://open.spotify.com/track/4EVSMqqVEehvyyOBmjNTlA",
+        "cover": null,
+        "plays": 9539097
+      },
+      {
+        "id": "spotify:6WatFBLVB0x077xWeoVc2k",
+        "rank": 107,
+        "title": "Si Antes Te Hubiera Conocido",
+        "artists": [
+          "KAROL G"
+        ],
+        "url": "https://open.spotify.com/track/6WatFBLVB0x077xWeoVc2k",
+        "cover": null,
+        "plays": 9537644
+      },
+      {
+        "id": "spotify:7ne4VBA60CxGM75vw0EYad",
+        "rank": 108,
+        "title": "That’s So True",
+        "artists": [
+          "Gracie Abrams"
+        ],
+        "url": "https://open.spotify.com/track/7ne4VBA60CxGM75vw0EYad",
+        "cover": null,
+        "plays": 9535788
+      },
+      {
+        "id": "spotify:3gjHnylel3PTRpjS44ocqr",
+        "rank": 109,
+        "title": "Zombie - 2025 Remastered",
+        "artists": [
+          "The Cranberries"
+        ],
+        "url": "https://open.spotify.com/track/3gjHnylel3PTRpjS44ocqr",
+        "cover": null,
+        "plays": 9505379
+      },
+      {
+        "id": "spotify:2nLtzopw4rPReszdYBJU6h",
+        "rank": 110,
+        "title": "Numb",
+        "artists": [
+          "Linkin Park"
+        ],
+        "url": "https://open.spotify.com/track/2nLtzopw4rPReszdYBJU6h",
+        "cover": null,
+        "plays": 9501304
+      },
+      {
+        "id": "spotify:7G8EmDx7L5zRHb6rBJDqEG",
+        "rank": 111,
+        "title": "UNETHICAL",
+        "artists": [
+          "Faouzia"
+        ],
+        "url": "https://open.spotify.com/track/7G8EmDx7L5zRHb6rBJDqEG",
+        "cover": null,
+        "plays": 9479585
+      },
+      {
+        "id": "spotify:22NHkFYbgxB2Zirj29Gbp8",
+        "rank": 112,
+        "title": "oh yeah?",
+        "artists": [
+          "Steve Lacy"
+        ],
+        "url": "https://open.spotify.com/track/22NHkFYbgxB2Zirj29Gbp8",
+        "cover": null,
+        "plays": 9435924
+      },
+      {
+        "id": "spotify:02XnQdf7sipaKBBHixz3Zp",
+        "rank": 113,
+        "title": "Paparazzi",
+        "artists": [
+          "Lady Gaga"
+        ],
+        "url": "https://open.spotify.com/track/02XnQdf7sipaKBBHixz3Zp",
+        "cover": null,
+        "plays": 9423397
+      },
+      {
+        "id": "spotify:53qkszfgztIvkFyF31GfdQ",
+        "rank": 114,
+        "title": "Dreams - 2001 Remaster",
+        "artists": [
+          "Fleetwood Mac"
+        ],
+        "url": "https://open.spotify.com/track/53qkszfgztIvkFyF31GfdQ",
+        "cover": null,
+        "plays": 9385377
+      },
+      {
+        "id": "spotify:63y2aL2dT6zzw8FOSLaNrp",
+        "rank": 115,
+        "title": "This Is Halloween",
+        "artists": [
+          "The Citizens of Halloween"
+        ],
+        "url": "https://open.spotify.com/track/63y2aL2dT6zzw8FOSLaNrp",
+        "cover": null,
+        "plays": 9380113
+      },
+      {
+        "id": "spotify:4xoY4lZNoTjEuHsSmhgF1G",
+        "rank": 116,
+        "title": "Sesi Potret",
+        "artists": [
+          "eńau",
+          "Ari Lesmana"
+        ],
+        "url": "https://open.spotify.com/track/4xoY4lZNoTjEuHsSmhgF1G",
+        "cover": null,
+        "plays": 9350951
+      },
+      {
+        "id": "spotify:4QNpBfC0zvjKqPJcyqBy9W",
+        "rank": 117,
+        "title": "Give Me Everything",
+        "artists": [
+          "Pitbull",
+          "Ne-Yo",
+          "AFROJACK",
+          "Nayer"
+        ],
+        "url": "https://open.spotify.com/track/4QNpBfC0zvjKqPJcyqBy9W",
+        "cover": null,
+        "plays": 9285577
+      },
+      {
+        "id": "spotify:04aigH9HRGebQZu1JAN6X1",
+        "rank": 118,
+        "title": "Take on Me - 2015 Remaster",
+        "artists": [
+          "a-ha"
+        ],
+        "url": "https://open.spotify.com/track/04aigH9HRGebQZu1JAN6X1",
+        "cover": null,
+        "plays": 9268608
+      },
+      {
+        "id": "spotify:6r6IPuFvUX72kQGc9b46rk",
+        "rank": 119,
+        "title": "Amor",
+        "artists": [
+          "Emmanuel Cortes"
+        ],
+        "url": "https://open.spotify.com/track/6r6IPuFvUX72kQGc9b46rk",
+        "cover": null,
+        "plays": 9252799
+      },
+      {
+        "id": "spotify:7snQQk1zcKl8gZ92AnueZW",
+        "rank": 120,
+        "title": "Sweet Child O' Mine",
+        "artists": [
+          "Guns N' Roses"
+        ],
+        "url": "https://open.spotify.com/track/7snQQk1zcKl8gZ92AnueZW",
+        "cover": null,
+        "plays": 9200259
+      },
+      {
+        "id": "spotify:2ENexcMEMsYk0rVJigVD3i",
+        "rank": 121,
+        "title": "Only Girl (In The World)",
+        "artists": [
+          "Rihanna"
+        ],
+        "url": "https://open.spotify.com/track/2ENexcMEMsYk0rVJigVD3i",
+        "cover": null,
+        "plays": 9184060
+      },
+      {
+        "id": "spotify:1uvyZBs4IZYRebHIB1747m",
+        "rank": 122,
+        "title": "Purple Rain",
+        "artists": [
+          "Prince"
+        ],
+        "url": "https://open.spotify.com/track/1uvyZBs4IZYRebHIB1747m",
+        "cover": null,
+        "plays": 9129164
+      },
+      {
+        "id": "spotify:2a1o6ZejUi8U3wzzOtCOYw",
+        "rank": 123,
+        "title": "Danza Kuduro",
+        "artists": [
+          "Don Omar",
+          "Lucenzo"
+        ],
+        "url": "https://open.spotify.com/track/2a1o6ZejUi8U3wzzOtCOYw",
+        "cover": null,
+        "plays": 9123196
+      },
+      {
+        "id": "spotify:1QV6tiMFM6fSOKOGLMHYYg",
+        "rank": 124,
+        "title": "Poker Face",
+        "artists": [
+          "Lady Gaga"
+        ],
+        "url": "https://open.spotify.com/track/1QV6tiMFM6fSOKOGLMHYYg",
+        "cover": null,
+        "plays": 9103172
+      },
+      {
+        "id": "spotify:4RvWPyQ5RL0ao9LPZeSouE",
+        "rank": 125,
+        "title": "Everybody Wants To Rule The World",
+        "artists": [
+          "Tears For Fears"
+        ],
+        "url": "https://open.spotify.com/track/4RvWPyQ5RL0ao9LPZeSouE",
+        "cover": null,
+        "plays": 9092934
+      },
+      {
+        "id": "spotify:3d0WouFnFmr0K3kjeza3fF",
+        "rank": 126,
+        "title": "Hips Don't Lie",
+        "artists": [
+          "Shakira",
+          "Wyclef Jean"
+        ],
+        "url": "https://open.spotify.com/track/3d0WouFnFmr0K3kjeza3fF",
+        "cover": null,
+        "plays": 9070029
+      },
+      {
+        "id": "spotify:0ll8uFnc0nANY35E0Lfxvg",
+        "rank": 127,
+        "title": "Somewhere Only We Know",
+        "artists": [
+          "Keane"
+        ],
+        "url": "https://open.spotify.com/track/0ll8uFnc0nANY35E0Lfxvg",
+        "cover": null,
+        "plays": 9042466
+      },
+      {
+        "id": "spotify:7KA4W4McWYRpgf0fWsJZWB",
+        "rank": 128,
+        "title": "See You Again",
+        "artists": [
+          "Tyler, The Creator",
+          "Kali Uchis"
+        ],
+        "url": "https://open.spotify.com/track/7KA4W4McWYRpgf0fWsJZWB",
+        "cover": null,
+        "plays": 9033560
+      },
+      {
+        "id": "spotify:7tICCrK3CcyRFKza7yrR0z",
+        "rank": 129,
+        "title": "Homewrecker",
+        "artists": [
+          "sombr"
+        ],
+        "url": "https://open.spotify.com/track/7tICCrK3CcyRFKza7yrR0z",
+        "cover": null,
+        "plays": 9011964
+      },
+      {
+        "id": "spotify:6IPwKM3fUUzlElbvKw2sKl",
+        "rank": 130,
+        "title": "we fell in love in october",
+        "artists": [
+          "girl in red"
+        ],
+        "url": "https://open.spotify.com/track/6IPwKM3fUUzlElbvKw2sKl",
+        "cover": null,
+        "plays": 9011205
+      },
+      {
+        "id": "spotify:5U3UOiWDos9P2NWV7xTNwJ",
+        "rank": 131,
+        "title": "Na Para Bang",
+        "artists": [
+          "Mariah Deborah"
+        ],
+        "url": "https://open.spotify.com/track/5U3UOiWDos9P2NWV7xTNwJ",
+        "cover": null,
+        "plays": 9005585
+      },
+      {
+        "id": "spotify:1EqRuhrJZU5R7aeWyw1z8D",
+        "rank": 132,
+        "title": "ako ang bagyo",
+        "artists": [
+          "SHEAN"
+        ],
+        "url": "https://open.spotify.com/track/1EqRuhrJZU5R7aeWyw1z8D",
+        "cover": null,
+        "plays": 8980122
+      },
+      {
+        "id": "spotify:2yPoXCs7BSIUrucMdK5PzV",
+        "rank": 133,
+        "title": "Umbrella",
+        "artists": [
+          "Rihanna",
+          "JAŸ-Z"
+        ],
+        "url": "https://open.spotify.com/track/2yPoXCs7BSIUrucMdK5PzV",
+        "cover": null,
+        "plays": 8964729
+      },
+      {
+        "id": "spotify:4wJ5Qq0jBN4ajy7ouZIV1c",
+        "rank": 134,
+        "title": "APT.",
+        "artists": [
+          "ROSÉ",
+          "Bruno Mars"
+        ],
+        "url": "https://open.spotify.com/track/4wJ5Qq0jBN4ajy7ouZIV1c",
+        "cover": null,
+        "plays": 8964140
+      },
+      {
+        "id": "spotify:4pdPtRcBmOSQDlJ3Fk945m",
+        "rank": 135,
+        "title": "Let Me Love You",
+        "artists": [
+          "DJ Snake",
+          "Justin Bieber"
+        ],
+        "url": "https://open.spotify.com/track/4pdPtRcBmOSQDlJ3Fk945m",
+        "cover": null,
+        "plays": 8946925
+      },
+      {
+        "id": "spotify:0DpUQ3mpAGy3bYsEKVy6t5",
+        "rank": 136,
+        "title": "Barsaat",
+        "artists": [
+          "Banjaare",
+          "Roni"
+        ],
+        "url": "https://open.spotify.com/track/0DpUQ3mpAGy3bYsEKVy6t5",
+        "cover": null,
+        "plays": 8938436
+      },
+      {
+        "id": "spotify:0UHB9METy4VCXNgkcGqHqS",
+        "rank": 137,
+        "title": "Kiss It Better",
+        "artists": [
+          "Rihanna"
+        ],
+        "url": "https://open.spotify.com/track/0UHB9METy4VCXNgkcGqHqS",
+        "cover": null,
+        "plays": 8932460
+      },
+      {
+        "id": "spotify:0vGKL7wzfkhzGEJScbYt7N",
+        "rank": 138,
+        "title": "Olimpo",
+        "artists": [
+          "Neton Vega",
+          "Fuerza Regida"
+        ],
+        "url": "https://open.spotify.com/track/0vGKL7wzfkhzGEJScbYt7N",
+        "cover": null,
+        "plays": 8930279
+      },
+      {
+        "id": "spotify:79cuOz3SPQTuFrp8WgftAu",
+        "rank": 139,
+        "title": "There's Nothing Holdin' Me Back",
+        "artists": [
+          "Shawn Mendes"
+        ],
+        "url": "https://open.spotify.com/track/79cuOz3SPQTuFrp8WgftAu",
+        "cover": null,
+        "plays": 8911100
+      },
+      {
+        "id": "spotify:2nMeu6UenVvwUktBCpLMK9",
+        "rank": 140,
+        "title": "Young And Beautiful",
+        "artists": [
+          "Lana Del Rey"
+        ],
+        "url": "https://open.spotify.com/track/2nMeu6UenVvwUktBCpLMK9",
+        "cover": null,
+        "plays": 8905220
+      },
+      {
+        "id": "spotify:79RJg6MqIJlBuedcMqB9F0",
+        "rank": 141,
+        "title": "My Body Isn't Ready",
+        "artists": [
+          "sombr"
+        ],
+        "url": "https://open.spotify.com/track/79RJg6MqIJlBuedcMqB9F0",
+        "cover": null,
+        "plays": 8878444
+      },
+      {
+        "id": "spotify:1DwscornXpj8fmOmYVlqZt",
+        "rank": 142,
+        "title": "Stateside + Zara Larsson",
+        "artists": [
+          "PinkPantheress",
+          "Zara Larsson"
+        ],
+        "url": "https://open.spotify.com/track/1DwscornXpj8fmOmYVlqZt",
+        "cover": null,
+        "plays": 8876355
+      },
+      {
+        "id": "spotify:1zv3WFUbZ5vPxFq9I2jAU1",
+        "rank": 143,
+        "title": "We Found Love",
+        "artists": [
+          "Rihanna",
+          "Calvin Harris"
+        ],
+        "url": "https://open.spotify.com/track/1zv3WFUbZ5vPxFq9I2jAU1",
+        "cover": null,
+        "plays": 8859988
+      },
+      {
+        "id": "spotify:3nqqDo8CcCLke3ZoTgiOKf",
+        "rank": 144,
+        "title": "The Man Who Can't Be Moved",
+        "artists": [
+          "The Script"
+        ],
+        "url": "https://open.spotify.com/track/3nqqDo8CcCLke3ZoTgiOKf",
+        "cover": null,
+        "plays": 8850595
+      },
+      {
+        "id": "spotify:1PREzVLuDT6PSE9sej4wnV",
+        "rank": 145,
+        "title": "COQUETA",
+        "artists": [
+          "Fuerza Regida",
+          "Grupo Frontera"
+        ],
+        "url": "https://open.spotify.com/track/1PREzVLuDT6PSE9sej4wnV",
+        "cover": null,
+        "plays": 8818028
+      },
+      {
+        "id": "spotify:7ySUcLPVX7KudhnmNcgY2D",
+        "rank": 146,
+        "title": "S&M",
+        "artists": [
+          "Rihanna"
+        ],
+        "url": "https://open.spotify.com/track/7ySUcLPVX7KudhnmNcgY2D",
+        "cover": null,
+        "plays": 8753623
+      },
+      {
+        "id": "spotify:3C0nOe05EIt1390bVABLyN",
+        "rank": 147,
+        "title": "On The Floor",
+        "artists": [
+          "Jennifer Lopez",
+          "Pitbull"
+        ],
+        "url": "https://open.spotify.com/track/3C0nOe05EIt1390bVABLyN",
+        "cover": null,
+        "plays": 8752341
+      },
+      {
+        "id": "spotify:77fL8ATR0dpUDLI0XLmDBV",
+        "rank": 148,
+        "title": "Orbiter",
+        "artists": [
+          "Noah Kahan"
+        ],
+        "url": "https://open.spotify.com/track/77fL8ATR0dpUDLI0XLmDBV",
+        "cover": null,
+        "plays": 8743439
+      },
+      {
+        "id": "spotify:2gam98EZKrF9XuOkU13ApN",
+        "rank": 149,
+        "title": "Promiscuous",
+        "artists": [
+          "Nelly Furtado",
+          "Timbaland"
+        ],
+        "url": "https://open.spotify.com/track/2gam98EZKrF9XuOkU13ApN",
+        "cover": null,
+        "plays": 8737914
+      },
+      {
+        "id": "spotify:1fDFHXcykq4iw8Gg7s5hG9",
+        "rank": 150,
+        "title": "About You",
+        "artists": [
+          "The 1975"
+        ],
+        "url": "https://open.spotify.com/track/1fDFHXcykq4iw8Gg7s5hG9",
+        "cover": null,
+        "plays": 8733196
+      }
+    ]
+  },
+  {
+    "provider": "youtube",
+    "source": "https://kworb.net/youtube/weekly/",
+    "scope": "global",
+    "checked": "2026-11-08T17:11:34.207Z",
+    "attempted": "2026-11-08T17:11:34.207Z",
+    "period": "2026/11/05 – 2026/10/29",
+    "status": "ready",
+    "tracks": [
+      {
+        "id": "youtube:BPZkZpGMpXA",
+        "rank": 1,
+        "title": "KING: Tu Mil Jaaye | Shah Rukh Khan, Deepika | Sachin-Jigar, Arijit, Ed Sheeran, Madhubanti, Kumaar",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=BPZkZpGMpXA",
+        "cover": "https://i.ytimg.com/vi/BPZkZpGMpXA/mqdefault.jpg",
+        "plays": 60152374
+      },
+      {
+        "id": "youtube:4rPcOxl-cyM",
+        "rank": 2,
+        "title": "Dard-E-Dil Dard-E-Jigar | Gunmaaster G9| Emraan, Genelia, Aditya | Himesh | Akasa| Sonia| Deepak M",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=4rPcOxl-cyM",
+        "cover": "https://i.ytimg.com/vi/4rPcOxl-cyM/mqdefault.jpg",
+        "plays": 60001533
+      },
+      {
+        "id": "youtube:u_hpZueWI9g",
+        "rank": 3,
+        "title": "TREASURE - ‘SHOCK’ M/V",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=u_hpZueWI9g",
+        "cover": "https://i.ytimg.com/vi/u_hpZueWI9g/mqdefault.jpg",
+        "plays": 38819230
+      },
+      {
+        "id": "youtube:oC6brLXQe4I",
+        "rank": 4,
+        "title": "BABYMONSTER - 'DESERVE' M/V",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=oC6brLXQe4I",
+        "cover": "https://i.ytimg.com/vi/oC6brLXQe4I/mqdefault.jpg",
+        "plays": 38392773
+      },
+      {
+        "id": "youtube:XO1h5G6xytU",
+        "rank": 5,
+        "title": "Daddy Yankee and Diljit Dosanjh - POKITO (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=XO1h5G6xytU",
+        "cover": "https://i.ytimg.com/vi/XO1h5G6xytU/mqdefault.jpg",
+        "plays": 34626280
+      },
+      {
+        "id": "youtube:fcnDmrtj6Sk",
+        "rank": 6,
+        "title": "Shakira, Burna Boy - Dai Dai (Official Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=fcnDmrtj6Sk",
+        "cover": "https://i.ytimg.com/vi/fcnDmrtj6Sk/mqdefault.jpg",
+        "plays": 31344085
+      },
+      {
+        "id": "youtube:wODprPLcgvo",
+        "rank": 7,
+        "title": "Jhumka Patola | Yeh Prem Mol Liya| Ayushmann, Sharvari, Sooraj Barjatya| Himesh R, Shreya G, Sonia K",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=wODprPLcgvo",
+        "cover": "https://i.ytimg.com/vi/wODprPLcgvo/mqdefault.jpg",
+        "plays": 29138340
+      },
+      {
+        "id": "youtube:vSA7yMrTETg",
+        "rank": 8,
+        "title": "Xamdam Sobirov - Peshta / Хамдам Собиров - Пешта / Video Klip",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=vSA7yMrTETg",
+        "cover": "https://i.ytimg.com/vi/vSA7yMrTETg/mqdefault.jpg",
+        "plays": 22516107
+      },
+      {
+        "id": "youtube:AETFvQonfV8",
+        "rank": 9,
+        "title": "श्री हनुमान चालीसा 🌺🙏| Shree Hanuman Chalisa Original Video |🙏🌺| GULSHAN KUMAR | HARIHARAN | 8K",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=AETFvQonfV8",
+        "cover": "https://i.ytimg.com/vi/AETFvQonfV8/mqdefault.jpg",
+        "plays": 21202096
+      },
+      {
+        "id": "youtube:vRjaGgDsWSo",
+        "rank": 10,
+        "title": "Casa Tupka Anthemo | @YoYoHoneySingh feat. Priyanshi | Full Video",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=vRjaGgDsWSo",
+        "cover": "https://i.ytimg.com/vi/vRjaGgDsWSo/mqdefault.jpg",
+        "plays": 20900811
+      },
+      {
+        "id": "youtube:A-G-OnSD8OA",
+        "rank": 11,
+        "title": "Saawan Aaya Hai– Yeh Prem Mol Liya | Ayushmann, Sharvari, Sooraj B | Himesh | Shreya | Keshav| Mayur",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=A-G-OnSD8OA",
+        "cover": "https://i.ytimg.com/vi/A-G-OnSD8OA/mqdefault.jpg",
+        "plays": 20472979
+      },
+      {
+        "id": "youtube:Pksr9T8m_aA",
+        "rank": 12,
+        "title": "JISOO - ADDICTED (Official MV)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Pksr9T8m_aA",
+        "cover": "https://i.ytimg.com/vi/Pksr9T8m_aA/mqdefault.jpg",
+        "plays": 18419784
+      },
+      {
+        "id": "youtube:iCQ1MfeI2d0",
+        "rank": 13,
+        "title": "Qasam | Coke Studio Nu.WAV | Shae Gill x Afusic x Abdullah Kasumbi",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=iCQ1MfeI2d0",
+        "cover": "https://i.ytimg.com/vi/iCQ1MfeI2d0/mqdefault.jpg",
+        "plays": 17674687
+      },
+      {
+        "id": "youtube:7qcq8wAX9pU",
+        "rank": 14,
+        "title": "Felipe & Rodrigo - Pós (Ao Vivo) #NoSentimento",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=7qcq8wAX9pU",
+        "cover": "https://i.ytimg.com/vi/7qcq8wAX9pU/mqdefault.jpg",
+        "plays": 17336467
+      },
+      {
+        "id": "youtube:CEbB9kdu8ng",
+        "rank": 15,
+        "title": "GUZARISH (गुज़ारिश) - SATINDER SARTAAJ | BHUSHAN KUMAR",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=CEbB9kdu8ng",
+        "cover": "https://i.ytimg.com/vi/CEbB9kdu8ng/mqdefault.jpg",
+        "plays": 16715108
+      },
+      {
+        "id": "youtube:xvT1jH8B9AM",
+        "rank": 16,
+        "title": "KALYANI (with Shreya Ghoshal) OFFICIAL MUSIC VIDEO | ARJN | KDS | FIFTY4 | RONN | SHREYA GHOSHAL |",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=xvT1jH8B9AM",
+        "cover": "https://i.ytimg.com/vi/xvT1jH8B9AM/mqdefault.jpg",
+        "plays": 16413832
+      },
+      {
+        "id": "youtube:VUIgT-E4IS0",
+        "rank": 17,
+        "title": "Bulin 47 X Kevin Wai - Dame Hombro (Video Oficial)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=VUIgT-E4IS0",
+        "cover": "https://i.ytimg.com/vi/VUIgT-E4IS0/mqdefault.jpg",
+        "plays": 15620790
+      },
+      {
+        "id": "youtube:k85mRPqvMbE",
+        "rank": 18,
+        "title": "Crazy Frog - Axel F (Official Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=k85mRPqvMbE",
+        "cover": "https://i.ytimg.com/vi/k85mRPqvMbE/mqdefault.jpg",
+        "plays": 13836986
+      },
+      {
+        "id": "youtube:yebNIHKAC4A",
+        "rank": 19,
+        "title": "“Golden” Official Lyric Video | KPop Demon Hunters | Sony Animation",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=yebNIHKAC4A",
+        "cover": "https://i.ytimg.com/vi/yebNIHKAC4A/mqdefault.jpg",
+        "plays": 13759158
+      },
+      {
+        "id": "youtube:akkCnFdhPWo",
+        "rank": 20,
+        "title": "Hugo e Guilherme, Zé Vaqueiro - Flash (Minha Mente)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=akkCnFdhPWo",
+        "cover": "https://i.ytimg.com/vi/akkCnFdhPWo/mqdefault.jpg",
+        "plays": 12730910
+      },
+      {
+        "id": "youtube:FzG4uDgje3M",
+        "rank": 21,
+        "title": "El Chombo, Dancing Green Alien - Dame Tu Cosita feat. Cutty Ranks (Official Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=FzG4uDgje3M",
+        "cover": "https://i.ytimg.com/vi/FzG4uDgje3M/mqdefault.jpg",
+        "plays": 12228977
+      },
+      {
+        "id": "youtube:F8YyP5wtvVw",
+        "rank": 22,
+        "title": "M!LK - ザッツ！超常 (Dance Performance Movie)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=F8YyP5wtvVw",
+        "cover": "https://i.ytimg.com/vi/F8YyP5wtvVw/mqdefault.jpg",
+        "plays": 12104214
+      },
+      {
+        "id": "youtube:kwwdY1bp-Ck",
+        "rank": 23,
+        "title": "Todo Lo Fue - (Video Oficial) - Lenin Ramirez - DEL Records 2026",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=kwwdY1bp-Ck",
+        "cover": "https://i.ytimg.com/vi/kwwdY1bp-Ck/mqdefault.jpg",
+        "plays": 11675496
+      },
+      {
+        "id": "youtube:YyepU5ztLf4",
+        "rank": 24,
+        "title": "Shararat | Dhurandhar | Ranveer, Aditya Dhar, Shashwat Sachdev, Jasmine, Madhubanti, Ayesha, Krystle",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=YyepU5ztLf4",
+        "cover": "https://i.ytimg.com/vi/YyepU5ztLf4/mqdefault.jpg",
+        "plays": 11480866
+      },
+      {
+        "id": "youtube:kPa7bsKwL-c",
+        "rank": 25,
+        "title": "Lady Gaga, Bruno Mars - Die With A Smile (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=kPa7bsKwL-c",
+        "cover": "https://i.ytimg.com/vi/kPa7bsKwL-c/mqdefault.jpg",
+        "plays": 10888650
+      },
+      {
+        "id": "youtube:GsOBaZh6cZo",
+        "rank": 26,
+        "title": "So Swaezy | Yo Yo Honey Singh | Hommie Dilliwaala | Full Song",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=GsOBaZh6cZo",
+        "cover": "https://i.ytimg.com/vi/GsOBaZh6cZo/mqdefault.jpg",
+        "plays": 10710551
+      },
+      {
+        "id": "youtube:fRIhCiUVaKs",
+        "rank": 27,
+        "title": "KAROL G, Judeline, rusowsky - BbY WOW (Visualizer)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=fRIhCiUVaKs",
+        "cover": "https://i.ytimg.com/vi/fRIhCiUVaKs/mqdefault.jpg",
+        "plays": 10435632
+      },
+      {
+        "id": "youtube:QCZZwZQ4qNs",
+        "rank": 28,
+        "title": "KAROL G - Si Antes Te Hubiera Conocido | Coke Studio",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=QCZZwZQ4qNs",
+        "cover": "https://i.ytimg.com/vi/QCZZwZQ4qNs/mqdefault.jpg",
+        "plays": 10205695
+      },
+      {
+        "id": "youtube:F2m4HPLvj-4",
+        "rank": 29,
+        "title": "JAIYE SAJANA (Video): Dhurandhar The Revenge | Ranveer Singh | Shashwat S | Satinder S | Jasmine S",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=F2m4HPLvj-4",
+        "cover": "https://i.ytimg.com/vi/F2m4HPLvj-4/mqdefault.jpg",
+        "plays": 10088028
+      },
+      {
+        "id": "youtube:3MPUCncZBR0",
+        "rank": 30,
+        "title": "TWS (투어스) '내 이름을 불러줘' Official MV",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=3MPUCncZBR0",
+        "cover": "https://i.ytimg.com/vi/3MPUCncZBR0/mqdefault.jpg",
+        "plays": 10018107
+      },
+      {
+        "id": "youtube:-ZnYdmreOrk",
+        "rank": 31,
+        "title": "Veezha Veera Lyrical (Tamil) | OM | Dhanush | Mammootty | Sai Pallavi | Rajkumar | Sai Abhyankkar",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=-ZnYdmreOrk",
+        "cover": "https://i.ytimg.com/vi/-ZnYdmreOrk/mqdefault.jpg",
+        "plays": 9947853
+      },
+      {
+        "id": "youtube:z5y8Clp_TdE",
+        "rank": 32,
+        "title": "KALYANI (with Shreya Ghoshal) ARJN | KDS | FIFTY4 | RONN | Kya Fitoor Door Raha Kyun JaayeNa Lyrical",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=z5y8Clp_TdE",
+        "cover": "https://i.ytimg.com/vi/z5y8Clp_TdE/mqdefault.jpg",
+        "plays": 9739634
+      },
+      {
+        "id": "youtube:XXYlFuWEuKI",
+        "rank": 33,
+        "title": "The Weeknd - Save Your Tears (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=XXYlFuWEuKI",
+        "cover": "https://i.ytimg.com/vi/XXYlFuWEuKI/mqdefault.jpg",
+        "plays": 9730953
+      },
+      {
+        "id": "youtube:ekr2nIex040",
+        "rank": 34,
+        "title": "ROSÉ & Bruno Mars - APT. (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ekr2nIex040",
+        "cover": "https://i.ytimg.com/vi/ekr2nIex040/mqdefault.jpg",
+        "plays": 9712220
+      },
+      {
+        "id": "youtube:6Db-cEgbmC4",
+        "rank": 35,
+        "title": "Dj Goja x Jason Derulo x Melody - Mi Chico (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=6Db-cEgbmC4",
+        "cover": "https://i.ytimg.com/vi/6Db-cEgbmC4/mqdefault.jpg",
+        "plays": 9684468
+      },
+      {
+        "id": "youtube:sQ74S7cZ3Kg",
+        "rank": 36,
+        "title": "Ramayana: Judi Jodi (Song) | Namit M, Nitesh T | Ranbir K, Sai P | AR Rahman, Shreya G, Kumar V",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=sQ74S7cZ3Kg",
+        "cover": "https://i.ytimg.com/vi/sQ74S7cZ3Kg/mqdefault.jpg",
+        "plays": 9644714
+      },
+      {
+        "id": "youtube:A7ShtPRP2Mc",
+        "rank": 37,
+        "title": "BLOK3 - KAYIP KALP (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=A7ShtPRP2Mc",
+        "cover": "https://i.ytimg.com/vi/A7ShtPRP2Mc/mqdefault.jpg",
+        "plays": 9174321
+      },
+      {
+        "id": "youtube:ApXoWvfEYVU",
+        "rank": 38,
+        "title": "Post Malone, Swae Lee - Sunflower (Spider-Man: Into the Spider-Verse)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ApXoWvfEYVU",
+        "cover": "https://i.ytimg.com/vi/ApXoWvfEYVU/mqdefault.jpg",
+        "plays": 9127242
+      },
+      {
+        "id": "youtube:96S27C0p66w",
+        "rank": 39,
+        "title": "Ramayana: Shree Hanuman Chalisa | Namit M, Nitesh T | Ranbir Kapoor, Sunny Deol | AR Rahman",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=96S27C0p66w",
+        "cover": "https://i.ytimg.com/vi/96S27C0p66w/mqdefault.jpg",
+        "plays": 9012285
+      },
+      {
+        "id": "youtube:vutbVGewIcg",
+        "rank": 40,
+        "title": "Anuel AA - Las Mas Bonitas Son P*tas (Video Oficial)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=vutbVGewIcg",
+        "cover": "https://i.ytimg.com/vi/vutbVGewIcg/mqdefault.jpg",
+        "plays": 8889115
+      },
+      {
+        "id": "youtube:V2V9-9VhYJo",
+        "rank": 41,
+        "title": "ILLIT (아일릿) '체포하겠어 (You’re Under Arrest)’ Official MV",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=V2V9-9VhYJo",
+        "cover": "https://i.ytimg.com/vi/V2V9-9VhYJo/mqdefault.jpg",
+        "plays": 8850612
+      },
+      {
+        "id": "youtube:euCqAq6BRa4",
+        "rank": 42,
+        "title": "DJ Snake - Let Me Love You (Official Music Video) ft. Justin Bieber",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=euCqAq6BRa4",
+        "cover": "https://i.ytimg.com/vi/euCqAq6BRa4/mqdefault.jpg",
+        "plays": 8788668
+      },
+      {
+        "id": "youtube:Mmw-PpWhKFg",
+        "rank": 43,
+        "title": "K/DA - FIRESTARTER ft. MIYEON and SOYEON of i-dle, Sophie Powers, Mimi Webb (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Mmw-PpWhKFg",
+        "cover": "https://i.ytimg.com/vi/Mmw-PpWhKFg/mqdefault.jpg",
+        "plays": 8438691
+      },
+      {
+        "id": "youtube:9bZkp7q19f0",
+        "rank": 44,
+        "title": "PSY - GANGNAM STYLE(강남스타일) M/V",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=9bZkp7q19f0",
+        "cover": "https://i.ytimg.com/vi/9bZkp7q19f0/mqdefault.jpg",
+        "plays": 8392943
+      },
+      {
+        "id": "youtube:0rW7Fbm4S7g",
+        "rank": 45,
+        "title": "manifest - TRALALA | Official Music Video",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=0rW7Fbm4S7g",
+        "cover": "https://i.ytimg.com/vi/0rW7Fbm4S7g/mqdefault.jpg",
+        "plays": 8391030
+      },
+      {
+        "id": "youtube:3DcoC8p9az8",
+        "rank": 46,
+        "title": "Dua Lipa - Training Season (Live from the Royal Albert Hall) [Official Performance Video]",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=3DcoC8p9az8",
+        "cover": "https://i.ytimg.com/vi/3DcoC8p9az8/mqdefault.jpg",
+        "plays": 8224672
+      },
+      {
+        "id": "youtube:q2IMrkhSjSA",
+        "rank": 47,
+        "title": "BLOK3 x POİZİ - ÇOK GÜZEL GÜLÜYORSUN (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=q2IMrkhSjSA",
+        "cover": "https://i.ytimg.com/vi/q2IMrkhSjSA/mqdefault.jpg",
+        "plays": 7904940
+      },
+      {
+        "id": "youtube:-FBwd9cWJoQ",
+        "rank": 48,
+        "title": "BLOK3 - KIRGINIM (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=-FBwd9cWJoQ",
+        "cover": "https://i.ytimg.com/vi/-FBwd9cWJoQ/mqdefault.jpg",
+        "plays": 7734190
+      },
+      {
+        "id": "youtube:7TaRIreSQ6M",
+        "rank": 49,
+        "title": "Full Video: Endhayya Saami | Ranabaali | Vijay Deverakonda | Rashmika | Rahul Sankrityan | Ajay–Atul",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=7TaRIreSQ6M",
+        "cover": "https://i.ytimg.com/vi/7TaRIreSQ6M/mqdefault.jpg",
+        "plays": 7659618
+      },
+      {
+        "id": "youtube:b4b1cMVZOUU",
+        "rank": 50,
+        "title": "Full Video: Hookah Bar | Khiladi 786 | Akshay Kumar & Asin | Himesh Reshammiya",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=b4b1cMVZOUU",
+        "cover": "https://i.ytimg.com/vi/b4b1cMVZOUU/mqdefault.jpg",
+        "plays": 7610067
+      },
+      {
+        "id": "youtube:V9PVRfjEBTI",
+        "rank": 51,
+        "title": "Billie Eilish - BIRDS OF A FEATHER (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=V9PVRfjEBTI",
+        "cover": "https://i.ytimg.com/vi/V9PVRfjEBTI/mqdefault.jpg",
+        "plays": 7543842
+      },
+      {
+        "id": "youtube:GVizJ_jpUnw",
+        "rank": 52,
+        "title": "Gehra Hua - Lyrical (Full Version) | Dhurandhar, Ranveer Singh, Sara A,Shashwat Sachdev,Arijit Singh",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=GVizJ_jpUnw",
+        "cover": "https://i.ytimg.com/vi/GVizJ_jpUnw/mqdefault.jpg",
+        "plays": 7543639
+      },
+      {
+        "id": "youtube:RgKAFK5djSk",
+        "rank": 53,
+        "title": "Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=RgKAFK5djSk",
+        "cover": "https://i.ytimg.com/vi/RgKAFK5djSk/mqdefault.jpg",
+        "plays": 7309330
+      },
+      {
+        "id": "youtube:co-TFLbaZAE",
+        "rank": 54,
+        "title": "“Gabriela” Performance Video | KATSEYE",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=co-TFLbaZAE",
+        "cover": "https://i.ytimg.com/vi/co-TFLbaZAE/mqdefault.jpg",
+        "plays": 7265913
+      },
+      {
+        "id": "youtube:69L-nKRY3ac",
+        "rank": 55,
+        "title": "BLOK3 - SEBEBİ YAR (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=69L-nKRY3ac",
+        "cover": "https://i.ytimg.com/vi/69L-nKRY3ac/mqdefault.jpg",
+        "plays": 7251826
+      },
+      {
+        "id": "youtube:aAkMkVFwAoo",
+        "rank": 56,
+        "title": "Mariah Carey - All I Want for Christmas Is You (Make My Wish Come True Edition)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=aAkMkVFwAoo",
+        "cover": "https://i.ytimg.com/vi/aAkMkVFwAoo/mqdefault.jpg",
+        "plays": 7135346
+      },
+      {
+        "id": "youtube:ddkbVYutRXA",
+        "rank": 57,
+        "title": "FUERZA REGIDA - MARLBORO ROJO (VIDEO OFICIAL)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ddkbVYutRXA",
+        "cover": "https://i.ytimg.com/vi/ddkbVYutRXA/mqdefault.jpg",
+        "plays": 7126755
+      },
+      {
+        "id": "youtube:rlYOsUfpi3M",
+        "rank": 58,
+        "title": "NEON",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=rlYOsUfpi3M",
+        "cover": "https://i.ytimg.com/vi/rlYOsUfpi3M/mqdefault.jpg",
+        "plays": 7085360
+      },
+      {
+        "id": "youtube:hGu7BVQy5G0",
+        "rank": 59,
+        "title": "Như Một Người Rưng - Chủ Tịch Mai x Giám Đốc Hà | Official M/V",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=hGu7BVQy5G0",
+        "cover": "https://i.ytimg.com/vi/hGu7BVQy5G0/mqdefault.jpg",
+        "plays": 7039016
+      },
+      {
+        "id": "youtube:aRNfSqsgrgE",
+        "rank": 60,
+        "title": "Sheesha (Official Music Video) | Mitta Ror ft. Swara Verma | Sorab Bedi | Niharika Tiwari",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=aRNfSqsgrgE",
+        "cover": "https://i.ytimg.com/vi/aRNfSqsgrgE/mqdefault.jpg",
+        "plays": 7031118
+      },
+      {
+        "id": "youtube:7SsmyjVF1Oo",
+        "rank": 61,
+        "title": "Herencia De Grandes - Ya Borracho [Official Video]",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=7SsmyjVF1Oo",
+        "cover": "https://i.ytimg.com/vi/7SsmyjVF1Oo/mqdefault.jpg",
+        "plays": 7027965
+      },
+      {
+        "id": "youtube:GEP8WwFblF8",
+        "rank": 62,
+        "title": "Aykut Aksöz - Yüreğime mi Sorsam? (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=GEP8WwFblF8",
+        "cover": "https://i.ytimg.com/vi/GEP8WwFblF8/mqdefault.jpg",
+        "plays": 7023574
+      },
+      {
+        "id": "youtube:D968qfUZMUE",
+        "rank": 63,
+        "title": "A2O LITE 'NEON' Official Video",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=D968qfUZMUE",
+        "cover": "https://i.ytimg.com/vi/D968qfUZMUE/mqdefault.jpg",
+        "plays": 6993060
+      },
+      {
+        "id": "youtube:ko70cExuzZM",
+        "rank": 64,
+        "title": "Taylor Swift - The Fate of Ophelia (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ko70cExuzZM",
+        "cover": "https://i.ytimg.com/vi/ko70cExuzZM/mqdefault.jpg",
+        "plays": 6947814
+      },
+      {
+        "id": "youtube:jR3rWCBeO6M",
+        "rank": 65,
+        "title": "@SaiAbhyankkar - Radhimaa (Music Video) | Bhagyashri Borse | Vivek | Thejo Bharathwaj | Think Indie",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=jR3rWCBeO6M",
+        "cover": "https://i.ytimg.com/vi/jR3rWCBeO6M/mqdefault.jpg",
+        "plays": 6928996
+      },
+      {
+        "id": "youtube:JqFzhcWo3EU",
+        "rank": 66,
+        "title": "Yeshanagula | The Paradise | Nani | Keerthy Suresh | Anirudh Ravichander | Srikanth Odela",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=JqFzhcWo3EU",
+        "cover": "https://i.ytimg.com/vi/JqFzhcWo3EU/mqdefault.jpg",
+        "plays": 6888807
+      },
+      {
+        "id": "youtube:ZvXN0TcZLfQ",
+        "rank": 67,
+        "title": "Fortuner (Official Video) Gulshan Music,Jaat Nia,Ruchika Jangid | New Haryanvi Songs Haryanavi 2026",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ZvXN0TcZLfQ",
+        "cover": "https://i.ytimg.com/vi/ZvXN0TcZLfQ/mqdefault.jpg",
+        "plays": 6862192
+      },
+      {
+        "id": "youtube:Zi_XLOBDo_Y",
+        "rank": 68,
+        "title": "Michael Jackson - Billie Jean (Official Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Zi_XLOBDo_Y",
+        "cover": "https://i.ytimg.com/vi/Zi_XLOBDo_Y/mqdefault.jpg",
+        "plays": 6780548
+      },
+      {
+        "id": "youtube:Pd1yGW_g2T8",
+        "rank": 69,
+        "title": "Ashke (Music Video) Karan Aujla | Mxrci | Aujla Szn 1",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Pd1yGW_g2T8",
+        "cover": "https://i.ytimg.com/vi/Pd1yGW_g2T8/mqdefault.jpg",
+        "plays": 6743504
+      },
+      {
+        "id": "youtube:lY2yjAdbvdQ",
+        "rank": 70,
+        "title": "Shawn Mendes - Treat You Better",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=lY2yjAdbvdQ",
+        "cover": "https://i.ytimg.com/vi/lY2yjAdbvdQ/mqdefault.jpg",
+        "plays": 6697971
+      },
+      {
+        "id": "youtube:XFmoMUIjrvA",
+        "rank": 71,
+        "title": "Jozi - One of One | Prod . MB Music",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=XFmoMUIjrvA",
+        "cover": "https://i.ytimg.com/vi/XFmoMUIjrvA/mqdefault.jpg",
+        "plays": 6554731
+      },
+      {
+        "id": "youtube:XFkzRNyygfk",
+        "rank": 72,
+        "title": "Radiohead - Creep",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=XFkzRNyygfk",
+        "cover": "https://i.ytimg.com/vi/XFkzRNyygfk/mqdefault.jpg",
+        "plays": 6553596
+      },
+      {
+        "id": "youtube:NVLgkXylEuQ",
+        "rank": 73,
+        "title": "El Bogueto ❌ Anuel AA ❌ Yung Beef ❌ Fuerza Regida - Cuando No Era Cantante Remix , Official video",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=NVLgkXylEuQ",
+        "cover": "https://i.ytimg.com/vi/NVLgkXylEuQ/mqdefault.jpg",
+        "plays": 6531267
+      },
+      {
+        "id": "youtube:9ofUM-_3uQ4",
+        "rank": 74,
+        "title": "Megan Thee Stallion - Thin Ice - Tina Tuesday Freestyle",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=9ofUM-_3uQ4",
+        "cover": "https://i.ytimg.com/vi/9ofUM-_3uQ4/mqdefault.jpg",
+        "plays": 6487990
+      },
+      {
+        "id": "youtube:kJQP7kiw5Fk",
+        "rank": 75,
+        "title": "Luis Fonsi - Despacito ft. Daddy Yankee",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+        "cover": "https://i.ytimg.com/vi/kJQP7kiw5Fk/mqdefault.jpg",
+        "plays": 6377332
+      },
+      {
+        "id": "youtube:9udS0mpi1L4",
+        "rank": 76,
+        "title": "Udaarian (Badi lambi hai kahani mere pyaar di) - Satinder Sartaaj | Love Songs | New Punjabi Songs",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=9udS0mpi1L4",
+        "cover": "https://i.ytimg.com/vi/9udS0mpi1L4/mqdefault.jpg",
+        "plays": 6373382
+      },
+      {
+        "id": "youtube:iIgsCYgo5P4",
+        "rank": 77,
+        "title": "Grupo Firme - El Beneficio De La Duda (Video Oficial)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=iIgsCYgo5P4",
+        "cover": "https://i.ytimg.com/vi/iIgsCYgo5P4/mqdefault.jpg",
+        "plays": 6335578
+      },
+      {
+        "id": "youtube:nJlbqQEFYaE",
+        "rank": 78,
+        "title": "Parvati Song (8K Video) | Jab Zid Pe Aa Gayi Parvati | Hanuman Ansh | Sadhu Tiwari | Parvati Parvati",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=nJlbqQEFYaE",
+        "cover": "https://i.ytimg.com/vi/nJlbqQEFYaE/mqdefault.jpg",
+        "plays": 6325981
+      },
+      {
+        "id": "youtube:WcIcVapfqXw",
+        "rank": 79,
+        "title": "Rema, Selena Gomez - Calm Down (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=WcIcVapfqXw",
+        "cover": "https://i.ytimg.com/vi/WcIcVapfqXw/mqdefault.jpg",
+        "plays": 6314426
+      },
+      {
+        "id": "youtube:6NXnxTNIWkc",
+        "rank": 80,
+        "title": "4 Non Blondes - What's Up (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=6NXnxTNIWkc",
+        "cover": "https://i.ytimg.com/vi/6NXnxTNIWkc/mqdefault.jpg",
+        "plays": 6298588
+      },
+      {
+        "id": "youtube:pRpeEdMmmQ0",
+        "rank": 81,
+        "title": "Shakira - Waka Waka (This Time for Africa) (The Official 2010 FIFA World Cup™ Song)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=pRpeEdMmmQ0",
+        "cover": "https://i.ytimg.com/vi/pRpeEdMmmQ0/mqdefault.jpg",
+        "plays": 6271129
+      },
+      {
+        "id": "youtube:5qm8PH4xAss",
+        "rank": 82,
+        "title": "50 Cent - In Da Club (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=5qm8PH4xAss",
+        "cover": "https://i.ytimg.com/vi/5qm8PH4xAss/mqdefault.jpg",
+        "plays": 6266277
+      },
+      {
+        "id": "youtube:asG7cwxi1sA",
+        "rank": 83,
+        "title": "Saiyaara Reprise - Female | Full Song | Ahaan, Aneet | Tanishk, Faheem, Arslan | Shreya | Irshad",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=asG7cwxi1sA",
+        "cover": "https://i.ytimg.com/vi/asG7cwxi1sA/mqdefault.jpg",
+        "plays": 6213232
+      },
+      {
+        "id": "youtube:QFkL82O38Xk",
+        "rank": 84,
+        "title": "Sundara Ravanan - Lyric Video | Athimanoharam | Mohanlal | Tharun Moorthy | Ashiq Usman |Jakes bejoy",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=QFkL82O38Xk",
+        "cover": "https://i.ytimg.com/vi/QFkL82O38Xk/mqdefault.jpg",
+        "plays": 6204855
+      },
+      {
+        "id": "youtube:3juuih0WdH8",
+        "rank": 85,
+        "title": "Anuel AA - Vuelve (Video Oficial)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=3juuih0WdH8",
+        "cover": "https://i.ytimg.com/vi/3juuih0WdH8/mqdefault.jpg",
+        "plays": 6137224
+      },
+      {
+        "id": "youtube:3lOsboT-IWU",
+        "rank": 86,
+        "title": "SixTONES – マイオンリー",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=3lOsboT-IWU",
+        "cover": "https://i.ytimg.com/vi/3lOsboT-IWU/mqdefault.jpg",
+        "plays": 6136222
+      },
+      {
+        "id": "youtube:a1Femq4NPxs",
+        "rank": 87,
+        "title": "BAD BUNNY - BAILE INoLVIDABLE (Video Oficial) | DeBÍ TiRAR MáS FOToS",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=a1Femq4NPxs",
+        "cover": "https://i.ytimg.com/vi/a1Femq4NPxs/mqdefault.jpg",
+        "plays": 6081432
+      },
+      {
+        "id": "youtube:m7k9UMcHbr0",
+        "rank": 88,
+        "title": "KATSEYE (캣츠아이) \"Animal\" Official MV",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=m7k9UMcHbr0",
+        "cover": "https://i.ytimg.com/vi/m7k9UMcHbr0/mqdefault.jpg",
+        "plays": 6021636
+      },
+      {
+        "id": "youtube:cL0KKSPjZf8",
+        "rank": 89,
+        "title": "Boom Shaka (Official Music Video) | KR$NA | Dhanda Nyoliwala",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=cL0KKSPjZf8",
+        "cover": "https://i.ytimg.com/vi/cL0KKSPjZf8/mqdefault.jpg",
+        "plays": 6002812
+      },
+      {
+        "id": "youtube:uYxgvjB5lfg",
+        "rank": 90,
+        "title": "Maiara e Maraisa - JÁ TE NAMORO [ IN CONCERT ]",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=uYxgvjB5lfg",
+        "cover": "https://i.ytimg.com/vi/uYxgvjB5lfg/mqdefault.jpg",
+        "plays": 6000606
+      },
+      {
+        "id": "youtube:-oqVoNoC978",
+        "rank": 91,
+        "title": "EL ALBAÑIL CUMBIERO (El Lauti) ENGANCHADO en VIVO en LA JUNTADA DE LOS ARTISTAS",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=-oqVoNoC978",
+        "cover": "https://i.ytimg.com/vi/-oqVoNoC978/mqdefault.jpg",
+        "plays": 5937950
+      },
+      {
+        "id": "youtube:4V90AmXnguw",
+        "rank": 92,
+        "title": "Michael Jackson - Thriller (Official Video - Shortened Version)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=4V90AmXnguw",
+        "cover": "https://i.ytimg.com/vi/4V90AmXnguw/mqdefault.jpg",
+        "plays": 5898196
+      },
+      {
+        "id": "youtube:SOJpE1KMUbo",
+        "rank": 93,
+        "title": "Dave - Raindance (ft. Tems)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=SOJpE1KMUbo",
+        "cover": "https://i.ytimg.com/vi/SOJpE1KMUbo/mqdefault.jpg",
+        "plays": 5800283
+      },
+      {
+        "id": "youtube:kffacxfA7G4",
+        "rank": 94,
+        "title": "Justin Bieber - Baby ft. Ludacris",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=kffacxfA7G4",
+        "cover": "https://i.ytimg.com/vi/kffacxfA7G4/mqdefault.jpg",
+        "plays": 5795686
+      },
+      {
+        "id": "youtube:Vr1M_l-1wjc",
+        "rank": 95,
+        "title": "Grupo Frontera x Grupo Firme - EL AMOR DE SU VIDA (Video Oficial)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Vr1M_l-1wjc",
+        "cover": "https://i.ytimg.com/vi/Vr1M_l-1wjc/mqdefault.jpg",
+        "plays": 5775289
+      },
+      {
+        "id": "youtube:S9bCLPwzSC0",
+        "rank": 96,
+        "title": "Eminem - Mockingbird [Official Music Video]",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=S9bCLPwzSC0",
+        "cover": "https://i.ytimg.com/vi/S9bCLPwzSC0/mqdefault.jpg",
+        "plays": 5753742
+      },
+      {
+        "id": "youtube:SWzfm9PED6s",
+        "rank": 97,
+        "title": "Mrs. GREEN APPLE「シンデレラ」Official Music Video",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=SWzfm9PED6s",
+        "cover": "https://i.ytimg.com/vi/SWzfm9PED6s/mqdefault.jpg",
+        "plays": 5741741
+      },
+      {
+        "id": "youtube:bMhDJ0S0OBA",
+        "rank": 98,
+        "title": "ILLIT (아일릿) ‘It’s Me’ Official MV",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=bMhDJ0S0OBA",
+        "cover": "https://i.ytimg.com/vi/bMhDJ0S0OBA/mqdefault.jpg",
+        "plays": 5714861
+      },
+      {
+        "id": "youtube:HH_a6aRO1TE",
+        "rank": 99,
+        "title": "संकटमोचन हनुमान अष्टक, Sankat Mochan Hanuman Ashtak,HARIHARAN,Hindi, English Lyrics, Hanuman Chalisa",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=HH_a6aRO1TE",
+        "cover": "https://i.ytimg.com/vi/HH_a6aRO1TE/mqdefault.jpg",
+        "plays": 5708603
+      },
+      {
+        "id": "youtube:zC3UbTf4qrM",
+        "rank": 100,
+        "title": "Afghan Jalebi (Ya Baba) FULL VIDEO Song | Phantom | Saif Ali Khan Katrina Kaif Pritam Asrar T-Series",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=zC3UbTf4qrM",
+        "cover": "https://i.ytimg.com/vi/zC3UbTf4qrM/mqdefault.jpg",
+        "plays": 5701879
+      },
+      {
+        "id": "youtube:5RT6QMKJTjQ",
+        "rank": 101,
+        "title": "Ishq Sufiyana Lyrical | The Dirty Picture | Emraan Hashmi,Vidya Balan | Vishal - Shekhar",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=5RT6QMKJTjQ",
+        "cover": "https://i.ytimg.com/vi/5RT6QMKJTjQ/mqdefault.jpg",
+        "plays": 5700864
+      },
+      {
+        "id": "youtube:FyS5dAywkEo",
+        "rank": 102,
+        "title": "LISA - SaWaDiKa (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=FyS5dAywkEo",
+        "cover": "https://i.ytimg.com/vi/FyS5dAywkEo/mqdefault.jpg",
+        "plays": 5682094
+      },
+      {
+        "id": "youtube:-5ZXrO_lYSA",
+        "rank": 103,
+        "title": "LISA - Tarantino (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=-5ZXrO_lYSA",
+        "cover": "https://i.ytimg.com/vi/-5ZXrO_lYSA/mqdefault.jpg",
+        "plays": 5678783
+      },
+      {
+        "id": "youtube:is8UDe2PhKQ",
+        "rank": 104,
+        "title": "KATSEYE (캣츠아이) 'Hootie Frutti' Official MV",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=is8UDe2PhKQ",
+        "cover": "https://i.ytimg.com/vi/is8UDe2PhKQ/mqdefault.jpg",
+        "plays": 5641992
+      },
+      {
+        "id": "youtube:t4H_Zoh7G5A",
+        "rank": 105,
+        "title": "Jennifer Lopez, Pitbull - On The Floor (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=t4H_Zoh7G5A",
+        "cover": "https://i.ytimg.com/vi/t4H_Zoh7G5A/mqdefault.jpg",
+        "plays": 5630650
+      },
+      {
+        "id": "youtube:7KpwlP7SFnw",
+        "rank": 106,
+        "title": "Allah Kare Dil Na Lage (Official Full Video) | Andaaz | Akshay & Priyanka | Sonu Nigam | Alka Yagnik",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=7KpwlP7SFnw",
+        "cover": "https://i.ytimg.com/vi/7KpwlP7SFnw/mqdefault.jpg",
+        "plays": 5551545
+      },
+      {
+        "id": "youtube:GX9x62kFsVU",
+        "rank": 107,
+        "title": "Gehra Hua | Dhurandhar | Ranveer Singh, Sara Arjun, Shashwat Sachdev, Arijit Singh, Irshad Kamil",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=GX9x62kFsVU",
+        "cover": "https://i.ytimg.com/vi/GX9x62kFsVU/mqdefault.jpg",
+        "plays": 5543314
+      },
+      {
+        "id": "youtube:6e6Hp6R5SVU",
+        "rank": 108,
+        "title": "छठ पूजा Special उगs हे सूरज देव Uga Hai Suraj Dev,ANURADHA PAUDWAL,Hindi English Lyrics,Chhath Puja",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=6e6Hp6R5SVU",
+        "cover": "https://i.ytimg.com/vi/6e6Hp6R5SVU/mqdefault.jpg",
+        "plays": 5511606
+      },
+      {
+        "id": "youtube:5j8fIDh1V0A",
+        "rank": 109,
+        "title": "Myke Towers - TE IMAGINO (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=5j8fIDh1V0A",
+        "cover": "https://i.ytimg.com/vi/5j8fIDh1V0A/mqdefault.jpg",
+        "plays": 5511430
+      },
+      {
+        "id": "youtube:GG1_DsScm6U",
+        "rank": 110,
+        "title": "VAARI JAAVAN (Full Video)| Dhurandhar The Revenge| Ranveer Singh| Shashwat Sachdev,Jyoti N,Jasmine S",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=GG1_DsScm6U",
+        "cover": "https://i.ytimg.com/vi/GG1_DsScm6U/mqdefault.jpg",
+        "plays": 5498886
+      },
+      {
+        "id": "youtube:Kw3935PH01E",
+        "rank": 111,
+        "title": "Shakira - Zoo (From \"Zootopia 2\") Official Music Video",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Kw3935PH01E",
+        "cover": "https://i.ytimg.com/vi/Kw3935PH01E/mqdefault.jpg",
+        "plays": 5491971
+      },
+      {
+        "id": "youtube:u9BdaJTWeiw",
+        "rank": 112,
+        "title": "#Video | बर्बादी होई | #शिल्पी राज का सुपरहिट वायरल भोजपुरी गाना | Barbaadi Hoi | Bhojpuri Song 2026",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=u9BdaJTWeiw",
+        "cover": "https://i.ytimg.com/vi/u9BdaJTWeiw/mqdefault.jpg",
+        "plays": 5486553
+      },
+      {
+        "id": "youtube:fLnMzPk_p_M",
+        "rank": 113,
+        "title": "Magale Video Song | Baththa | Vijay Sethupathi | @SaiAbhyankkar | Balaji Tharaneetharan",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=fLnMzPk_p_M",
+        "cover": "https://i.ytimg.com/vi/fLnMzPk_p_M/mqdefault.jpg",
+        "plays": 5486404
+      },
+      {
+        "id": "youtube:OpQFFLBMEPI",
+        "rank": 114,
+        "title": "P!nk - Just Give Me a Reason (Official Video) ft. Nate Ruess",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=OpQFFLBMEPI",
+        "cover": "https://i.ytimg.com/vi/OpQFFLBMEPI/mqdefault.jpg",
+        "plays": 5481357
+      },
+      {
+        "id": "youtube:aM7ZcE-Q1o4",
+        "rank": 115,
+        "title": "Yeshanagula - Video Song | The Paradise | Nani | Keerthy Suresh | Anirudh Ravichander | Srikanth",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=aM7ZcE-Q1o4",
+        "cover": "https://i.ytimg.com/vi/aM7ZcE-Q1o4/mqdefault.jpg",
+        "plays": 5462756
+      },
+      {
+        "id": "youtube:YQ-qToZUybM",
+        "rank": 116,
+        "title": "The Weeknd, Ariana Grande - Die For You (Remix / Lyric Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=YQ-qToZUybM",
+        "cover": "https://i.ytimg.com/vi/YQ-qToZUybM/mqdefault.jpg",
+        "plays": 5454342
+      },
+      {
+        "id": "youtube:kE1-O0tU-UU",
+        "rank": 117,
+        "title": "Xavi, Manuel Turizo - En Privado (Official Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=kE1-O0tU-UU",
+        "cover": "https://i.ytimg.com/vi/kE1-O0tU-UU/mqdefault.jpg",
+        "plays": 5453944
+      },
+      {
+        "id": "youtube:rZWeR8bQlaE",
+        "rank": 118,
+        "title": "Eypio - Şahidim",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=rZWeR8bQlaE",
+        "cover": "https://i.ytimg.com/vi/rZWeR8bQlaE/mqdefault.jpg",
+        "plays": 5406256
+      },
+      {
+        "id": "youtube:oRdxUFDoQe0",
+        "rank": 119,
+        "title": "Michael Jackson - Beat It (Official 4K Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=oRdxUFDoQe0",
+        "cover": "https://i.ytimg.com/vi/oRdxUFDoQe0/mqdefault.jpg",
+        "plays": 5374585
+      },
+      {
+        "id": "youtube:S3OPdoM-We4",
+        "rank": 120,
+        "title": "Hugo e Guilherme - Flash | Colecionando Momentos 💠",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=S3OPdoM-We4",
+        "cover": "https://i.ytimg.com/vi/S3OPdoM-We4/mqdefault.jpg",
+        "plays": 5360907
+      },
+      {
+        "id": "youtube:iqQWCYMlMw0",
+        "rank": 121,
+        "title": "ATEEZ(에이티즈) - 'Drip' Official MV",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=iqQWCYMlMw0",
+        "cover": "https://i.ytimg.com/vi/iqQWCYMlMw0/mqdefault.jpg",
+        "plays": 5357873
+      },
+      {
+        "id": "youtube:hT_nvWreIhg",
+        "rank": 122,
+        "title": "OneRepublic - Counting Stars",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=hT_nvWreIhg",
+        "cover": "https://i.ytimg.com/vi/hT_nvWreIhg/mqdefault.jpg",
+        "plays": 5312332
+      },
+      {
+        "id": "youtube:ptwUYrguUI8",
+        "rank": 123,
+        "title": "Pesamale - Official Music Video Song | Siri Xander | Arra Aria Khayal |Tamil Indie Pop",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ptwUYrguUI8",
+        "cover": "https://i.ytimg.com/vi/ptwUYrguUI8/mqdefault.jpg",
+        "plays": 5306957
+      },
+      {
+        "id": "youtube:ri1Ar5nEq4s",
+        "rank": 124,
+        "title": "Aaj Ki Raat - 8K Video | Stree 2 | Tamannaah Bhatia, Rajkummar Rao, Sachin-Jigar, Madhubanti B,Divya",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ri1Ar5nEq4s",
+        "cover": "https://i.ytimg.com/vi/ri1Ar5nEq4s/mqdefault.jpg",
+        "plays": 5306550
+      },
+      {
+        "id": "youtube:MYFFA242azM",
+        "rank": 125,
+        "title": "Natanael Cano x Tito Double P x Victor Mendivil x Ovi - OLIVIA LA FLAKA [Oficial Video]",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=MYFFA242azM",
+        "cover": "https://i.ytimg.com/vi/MYFFA242azM/mqdefault.jpg",
+        "plays": 5269879
+      },
+      {
+        "id": "youtube:Oa_RSwwpPaA",
+        "rank": 126,
+        "title": "Benson Boone - Beautiful Things (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Oa_RSwwpPaA",
+        "cover": "https://i.ytimg.com/vi/Oa_RSwwpPaA/mqdefault.jpg",
+        "plays": 5249194
+      },
+      {
+        "id": "youtube:znlFu_lemsU",
+        "rank": 127,
+        "title": "Mary J. Blige - Family Affair (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=znlFu_lemsU",
+        "cover": "https://i.ytimg.com/vi/znlFu_lemsU/mqdefault.jpg",
+        "plays": 5239616
+      },
+      {
+        "id": "youtube:pMpTUqJMnzM",
+        "rank": 128,
+        "title": "ITHINNO AADAME | DISCO | Ullas Chemban | Manikandan Ayyappa | Chemban Vinod | Dev | Lukman",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=pMpTUqJMnzM",
+        "cover": "https://i.ytimg.com/vi/pMpTUqJMnzM/mqdefault.jpg",
+        "plays": 5215040
+      },
+      {
+        "id": "youtube:INJuqE_34eQ",
+        "rank": 129,
+        "title": "3 PHẢI 6 ĐỪNG - Quân A.P (Official MV)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=INJuqE_34eQ",
+        "cover": "https://i.ytimg.com/vi/INJuqE_34eQ/mqdefault.jpg",
+        "plays": 5213981
+      },
+      {
+        "id": "youtube:0KSOMA3QBU0",
+        "rank": 130,
+        "title": "Katy Perry - Dark Horse ft. Juicy J",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=0KSOMA3QBU0",
+        "cover": "https://i.ytimg.com/vi/0KSOMA3QBU0/mqdefault.jpg",
+        "plays": 5210850
+      },
+      {
+        "id": "youtube:6rvUyBiBtik",
+        "rank": 131,
+        "title": "Tera Mera Rishta - New Version | Awarapan 2 | Emraan, Disha | Mithoon, Saaj, Sayeed, Mustafa",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=6rvUyBiBtik",
+        "cover": "https://i.ytimg.com/vi/6rvUyBiBtik/mqdefault.jpg",
+        "plays": 5209078
+      },
+      {
+        "id": "youtube:ZfdwnCz-kiA",
+        "rank": 132,
+        "title": "DADDY YANKEE- BOTZ (Bésame OTra veZ) Official Video",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=ZfdwnCz-kiA",
+        "cover": "https://i.ytimg.com/vi/ZfdwnCz-kiA/mqdefault.jpg",
+        "plays": 5198313
+      },
+      {
+        "id": "youtube:tLqtnGLfm4Q",
+        "rank": 133,
+        "title": "Lyrical: Tum Hi Aana | Marjaavaan | Riteish D, Sidharth M, Tara S |Jubin Nautiyal,Payal Dev,Kunaal V",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=tLqtnGLfm4Q",
+        "cover": "https://i.ytimg.com/vi/tLqtnGLfm4Q/mqdefault.jpg",
+        "plays": 5162930
+      },
+      {
+        "id": "youtube:eVTXPUF4Oz4",
+        "rank": 134,
+        "title": "In The End [Official HD Music Video] - Linkin Park",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=eVTXPUF4Oz4",
+        "cover": "https://i.ytimg.com/vi/eVTXPUF4Oz4/mqdefault.jpg",
+        "plays": 5142863
+      },
+      {
+        "id": "youtube:5GCfYLguTIs",
+        "rank": 135,
+        "title": "BOYFRIEND(MUSIC VIDEO) KARAN AUJLA| SUNANDA | IKKY | Latest Punjabi Songs 2025",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=5GCfYLguTIs",
+        "cover": "https://i.ytimg.com/vi/5GCfYLguTIs/mqdefault.jpg",
+        "plays": 5132484
+      },
+      {
+        "id": "youtube:DPEodkHzH-s",
+        "rank": 136,
+        "title": "Tate McRae - Housewife (Official Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=DPEodkHzH-s",
+        "cover": "https://i.ytimg.com/vi/DPEodkHzH-s/mqdefault.jpg",
+        "plays": 5128918
+      },
+      {
+        "id": "youtube:a9Hxkc9YxGE",
+        "rank": 137,
+        "title": "Bulleya | Full Song | Sultan | Salman Khan, Anushka Sharma | Papon | Vishal & Shekhar | Irshad Kamil",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=a9Hxkc9YxGE",
+        "cover": "https://i.ytimg.com/vi/a9Hxkc9YxGE/mqdefault.jpg",
+        "plays": 5128788
+      },
+      {
+        "id": "youtube:cgEnBkmcpuQ",
+        "rank": 138,
+        "title": "CantaJuego - Soy Una Taza (Version Mexico)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=cgEnBkmcpuQ",
+        "cover": "https://i.ytimg.com/vi/cgEnBkmcpuQ/mqdefault.jpg",
+        "plays": 5125773
+      },
+      {
+        "id": "youtube:Hz9lhqxl_gQ",
+        "rank": 139,
+        "title": "Romeo Santos - La Diabla/Mi Santa (Official Video) ft. Tomatito",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=Hz9lhqxl_gQ",
+        "cover": "https://i.ytimg.com/vi/Hz9lhqxl_gQ/mqdefault.jpg",
+        "plays": 5112124
+      },
+      {
+        "id": "youtube:M4qX5wzx-wY",
+        "rank": 140,
+        "title": "Harry Styles - Coming Up Roses (Official Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=M4qX5wzx-wY",
+        "cover": "https://i.ytimg.com/vi/M4qX5wzx-wY/mqdefault.jpg",
+        "plays": 5108861
+      },
+      {
+        "id": "youtube:uelHwf8o7_U",
+        "rank": 141,
+        "title": "Eminem - Love The Way You Lie ft. Rihanna",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=uelHwf8o7_U",
+        "cover": "https://i.ytimg.com/vi/uelHwf8o7_U/mqdefault.jpg",
+        "plays": 5102681
+      },
+      {
+        "id": "youtube:d_HlPboLRL8",
+        "rank": 142,
+        "title": "AURORA - Runaway",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=d_HlPboLRL8",
+        "cover": "https://i.ytimg.com/vi/d_HlPboLRL8/mqdefault.jpg",
+        "plays": 5061418
+      },
+      {
+        "id": "youtube:bESGLojNYSo",
+        "rank": 143,
+        "title": "Lady Gaga - Poker Face (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=bESGLojNYSo",
+        "cover": "https://i.ytimg.com/vi/bESGLojNYSo/mqdefault.jpg",
+        "plays": 5058530
+      },
+      {
+        "id": "youtube:5gwy0gcjIkI",
+        "rank": 144,
+        "title": "Tere Sang Yaara - Rustom | Akshay Kumar & Ileana D'cruz | Arko | Manoj Muntashir",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=5gwy0gcjIkI",
+        "cover": "https://i.ytimg.com/vi/5gwy0gcjIkI/mqdefault.jpg",
+        "plays": 5043872
+      },
+      {
+        "id": "youtube:8SbUC-UaAxE",
+        "rank": 145,
+        "title": "Guns N' Roses - November Rain",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=8SbUC-UaAxE",
+        "cover": "https://i.ytimg.com/vi/8SbUC-UaAxE/mqdefault.jpg",
+        "plays": 5037793
+      },
+      {
+        "id": "youtube:z_e1d5_VVfw",
+        "rank": 146,
+        "title": "Ramayana: Mangal Rang (Song) | Namit M, Nitesh T | AR Rahman, Arijit Singh, Shreya Ghoshal, Kumar V",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=z_e1d5_VVfw",
+        "cover": "https://i.ytimg.com/vi/z_e1d5_VVfw/mqdefault.jpg",
+        "plays": 5034440
+      },
+      {
+        "id": "youtube:yZ7cBunq8xo",
+        "rank": 147,
+        "title": "Luis Ángel Gómez Jaramillo, Gael García Bernal - Un Poco Loco (De \"Coco\")",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=yZ7cBunq8xo",
+        "cover": "https://i.ytimg.com/vi/yZ7cBunq8xo/mqdefault.jpg",
+        "plays": 5023195
+      },
+      {
+        "id": "youtube:zoBTw-1vzyY",
+        "rank": 148,
+        "title": "Endhayya Saami | Ranabaali | Full Song | Vijay Deverakonda, Rashmika | Rahul Sankrityan | Ajay–Atul",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=zoBTw-1vzyY",
+        "cover": "https://i.ytimg.com/vi/zoBTw-1vzyY/mqdefault.jpg",
+        "plays": 4992360
+      },
+      {
+        "id": "youtube:8F2s8ivKXNY",
+        "rank": 149,
+        "title": "Oliver Tree - Life Goes On [Music Video]",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=8F2s8ivKXNY",
+        "cover": "https://i.ytimg.com/vi/8F2s8ivKXNY/mqdefault.jpg",
+        "plays": 4989579
+      },
+      {
+        "id": "youtube:OMOGaugKpzs",
+        "rank": 150,
+        "title": "The Police - Every Breath You Take (Official Music Video)",
+        "artists": [],
+        "url": "https://www.youtube.com/watch?v=OMOGaugKpzs",
+        "cover": "https://i.ytimg.com/vi/OMOGaugKpzs/mqdefault.jpg",
+        "plays": 4985619
+      }
+    ]
+  },
+  {
+    "provider": "soundcloud",
+    "source": "https://soundcloud.com/music-charts-us/sets/all-music-genres",
+    "scope": "US",
+    "checked": "2026-11-08T17:11:34.207Z",
+    "attempted": "2026-11-08T17:11:34.207Z",
+    "period": null,
+    "status": "partial",
+    "tracks": [
+      {
+        "id": "soundcloud:2389204014",
+        "rank": 1,
+        "title": "Dope Girl",
+        "artists": [
+          "Rod Wave"
+        ],
+        "url": "https://soundcloud.com/rodwave/dope-girl",
+        "cover": "https://i1.sndcdn.com/artworks-27hLf2bIqesN-0-large.jpg",
+        "plays": 1748922
+      },
+      {
+        "id": "soundcloud:2424793566",
+        "rank": 2,
+        "title": "same language",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/same-language",
+        "cover": "https://i1.sndcdn.com/artworks-J7UTCLXVIeJL-0-large.jpg",
+        "plays": 300737
+      },
+      {
+        "id": "soundcloud:2424791304",
+        "rank": 3,
+        "title": "Get Guap",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/get-guap",
+        "cover": "https://i1.sndcdn.com/artworks-7Slx6qNsQaAD-0-large.jpg",
+        "plays": 271512
+      },
+      {
+        "id": "soundcloud:2389202610",
+        "rank": 4,
+        "title": "TP",
+        "artists": [
+          "Rod Wave"
+        ],
+        "url": "https://soundcloud.com/rodwave/tp",
+        "cover": "https://i1.sndcdn.com/artworks-v8WJnuQZiFIw-0-large.jpg",
+        "plays": 1361183
+      },
+      {
+        "id": "soundcloud:2383385982",
+        "rank": 5,
+        "title": "BANKS HOUSE",
+        "artists": [
+          "Fatt Smaxk"
+        ],
+        "url": "https://soundcloud.com/fattsmaxk-sc/banks-house",
+        "cover": "https://i1.sndcdn.com/artworks-6FgfQHgC1zXS-0-large.jpg",
+        "plays": 1701416
+      }
+    ]
+  },
+  {
+    "provider": "tiktok",
+    "source": "https://ads.tiktok.com/creative/creativeCenter/trends",
+    "scope": "global",
+    "attempted": "2026-11-08T17:11:34.207Z",
+    "checked": null,
+    "period": null,
+    "status": "unavailable",
+    "tracks": []
+  }
+]

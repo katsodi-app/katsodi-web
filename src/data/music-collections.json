@@ -1,0 +1,3216 @@
+{
+  "popular": {
+    "provider": "soundcloud-popular",
+    "checked": "2026-11-08T21:47:00.856Z",
+    "method": "Artist popular-track indexes, official public SoundCloud play counts and embed eligibility; curated, not an official platform-wide chart.",
+    "tracks": [
+      {
+        "id": "soundcloud:309689093",
+        "rank": 1,
+        "title": "1.5- XO TOUR Llif3 (Produced By TM88)",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/15-xo-tour-llif3",
+        "cover": "https://i1.sndcdn.com/artworks-000209741436-qfq484-large.jpg",
+        "plays": 273301250,
+        "duration": 180,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/15-xo-tour-llif3",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:44.053Z",
+          "likes": 2773887,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:259258214",
+        "rank": 2,
+        "title": "You Was Right [Produced By Metro Boomin]",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/you-was-right-produced-by-metro-boomin",
+        "cover": "https://i1.sndcdn.com/artworks-000158334289-tcyj15-large.jpg",
+        "plays": 160888714,
+        "duration": 164,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/you-was-right-produced-by-metro-boomin",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:44.669Z",
+          "likes": 1859017,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:239793212",
+        "rank": 3,
+        "title": "Wonderful Ft.The Weeknd",
+        "artists": [
+          "Travis Scott"
+        ],
+        "url": "https://soundcloud.com/travisscott-2/wonderful-ftthe-weeknd",
+        "cover": "https://i1.sndcdn.com/artworks-000141413966-u0z1jg-large.jpg",
+        "plays": 146141589,
+        "duration": 217,
+        "evidence": {
+          "url": "https://soundcloud.com/travisscott-2/wonderful-ftthe-weeknd",
+          "indexUrl": "https://soundcloud.com/travisscott-2/popular-tracks",
+          "checked": "2026-11-08T21:46:48.443Z",
+          "likes": 2114236,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:276234413",
+        "rank": 4,
+        "title": "Erase Your Social [Produced By Don Cannon + Lyle LeDuff]",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/erase-your-social-produced-by-don-cannon-lyle-leduff",
+        "cover": "https://i1.sndcdn.com/artworks-000174202587-hp90k6-large.jpg",
+        "plays": 130399339,
+        "duration": 200,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/erase-your-social-produced-by-don-cannon-lyle-leduff",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:44.431Z",
+          "likes": 1248595,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:279733461",
+        "rank": 5,
+        "title": "Buy It  [Produced By Zaytoven] $$$$",
+        "artists": [
+          "LIL UZI VERT"
+        ],
+        "url": "https://soundcloud.com/liluzivert/buy-it-prod-zaytoven",
+        "cover": "https://i1.sndcdn.com/artworks-000178487637-x9kc29-large.jpg",
+        "plays": 126189477,
+        "duration": 160,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/buy-it-prod-zaytoven",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:43.765Z",
+          "likes": 1437688,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:281126358",
+        "rank": 6,
+        "title": "Travis Scott ft Lil Uzi vert - RaRa",
+        "artists": [
+          "Travis Scott"
+        ],
+        "url": "https://soundcloud.com/travisscott-2/travis-scott-uzi-ra-ra-1",
+        "cover": "https://i1.sndcdn.com/artworks-000180380992-q2o2rl-large.jpg",
+        "plays": 107598822,
+        "duration": 188,
+        "evidence": {
+          "url": "https://soundcloud.com/travisscott-2/travis-scott-uzi-ra-ra-1",
+          "indexUrl": "https://soundcloud.com/travisscott-2/popular-tracks",
+          "checked": "2026-11-08T21:46:48.424Z",
+          "likes": 1527773,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:224914368",
+        "rank": 7,
+        "title": "KILL YOURSELF (Part III)",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/killyourselfpartiii",
+        "cover": "https://i1.sndcdn.com/artworks-000130262684-rnilan-large.jpg",
+        "plays": 98223563,
+        "duration": 145,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/killyourselfpartiii",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:46.645Z",
+          "likes": 1031204,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:259273264",
+        "rank": 8,
+        "title": "Ps & Qs [Produced By Don Cannon]",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/ps-qs-produced-by-don-cannon",
+        "cover": "https://i1.sndcdn.com/artworks-000158348578-eh3zyq-large.jpg",
+        "plays": 98126981,
+        "duration": 222,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/ps-qs-produced-by-don-cannon",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:45.101Z",
+          "likes": 1107508,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:276206960",
+        "rank": 9,
+        "title": "Do What I Want [Produced By Maaly Raw + Don Cannon]",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/do-what-i-want-produced-by-maaly-raw-don-cannon",
+        "cover": "https://i1.sndcdn.com/artworks-000174195399-iw6seg-large.jpg",
+        "plays": 91972057,
+        "duration": 175,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/do-what-i-want-produced-by-maaly-raw-don-cannon",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:44.963Z",
+          "likes": 977089,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:230726323",
+        "rank": 10,
+        "title": "4 7am (Produced By DP Beatz)",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/4-7am-produced-by-dp-beatz",
+        "cover": "https://i1.sndcdn.com/artworks-000134425890-ihcqdu-large.jpg",
+        "plays": 88127598,
+        "duration": 220,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/4-7am-produced-by-dp-beatz",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:44.932Z",
+          "likes": 1010762,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:501298839",
+        "rank": 11,
+        "title": "New Patek",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/new-patek",
+        "cover": "https://i1.sndcdn.com/artworks-000406996236-ffmpky-large.jpg",
+        "plays": 81072270,
+        "duration": 343,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/new-patek",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:44.322Z",
+          "likes": 1021078,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:759762697",
+        "rank": 12,
+        "title": "...AND TO THOSE I LOVE, THANKS FOR STICKING AROUND",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/andtothoseilovethanksforstickingaround",
+        "cover": "https://i1.sndcdn.com/artworks-ClfnOZbcgp4fB4nx-dXL7rQ-large.jpg",
+        "plays": 69494806,
+        "duration": 169,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/andtothoseilovethanksforstickingaround",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:46.805Z",
+          "likes": 830921,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:322834576",
+        "rank": 13,
+        "title": "Green & Purple f/Playboi Carti",
+        "artists": [
+          "Travis Scott"
+        ],
+        "url": "https://soundcloud.com/travisscott-2/green-purple",
+        "cover": "https://i1.sndcdn.com/artworks-000222759967-qgmutg-large.jpg",
+        "plays": 67687266,
+        "duration": 278,
+        "evidence": {
+          "url": "https://soundcloud.com/travisscott-2/green-purple",
+          "indexUrl": "https://soundcloud.com/travisscott-2/popular-tracks",
+          "checked": "2026-11-08T21:46:48.389Z",
+          "likes": 1053218,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:322833885",
+        "rank": 14,
+        "title": "A man",
+        "artists": [
+          "Travis Scott"
+        ],
+        "url": "https://soundcloud.com/travisscott-2/a-man",
+        "cover": "https://i1.sndcdn.com/artworks-000223014649-ofuim8-large.jpg",
+        "plays": 64069050,
+        "duration": 193,
+        "evidence": {
+          "url": "https://soundcloud.com/travisscott-2/a-man",
+          "indexUrl": "https://soundcloud.com/travisscott-2/popular-tracks",
+          "checked": "2026-11-08T21:46:48.365Z",
+          "likes": 940388,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:233678134",
+        "rank": 15,
+        "title": "PARIS",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/paris",
+        "cover": "https://i1.sndcdn.com/artworks-000136593793-rscjd0-large.jpg",
+        "plays": 62671390,
+        "duration": 111,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/paris",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.040Z",
+          "likes": 697115,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:341047816",
+        "rank": 16,
+        "title": "FOR THE LAST TIME",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/forthelasttime",
+        "cover": "https://i1.sndcdn.com/artworks-000241361587-tkxh9n-large.jpg",
+        "plays": 56741599,
+        "duration": 156,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/forthelasttime",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.267Z",
+          "likes": 652936,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:286911839",
+        "rank": 17,
+        "title": "KILL YOURSELF (PART IV)",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/killyourself4",
+        "cover": "https://i1.sndcdn.com/artworks-000187451170-5w6jpj-large.jpg",
+        "plays": 47404445,
+        "duration": 114,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/killyourself4",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.383Z",
+          "likes": 486026,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:263996543",
+        "rank": 18,
+        "title": "Fuck feat. Jeremih (Prod. by FKi)",
+        "artists": [
+          "Post Malone, Jeremih"
+        ],
+        "url": "https://soundcloud.com/postmalone/fuck-feat-jeremih-prod-by-fki",
+        "cover": "https://i1.sndcdn.com/artworks-000162718604-91gbaa-large.jpg",
+        "plays": 44366753,
+        "duration": 214,
+        "evidence": {
+          "url": "https://soundcloud.com/postmalone/fuck-feat-jeremih-prod-by-fki",
+          "indexUrl": "https://soundcloud.com/postmalone/popular-tracks",
+          "checked": "2026-11-08T21:46:45.916Z",
+          "likes": 676809,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:324670978",
+        "rank": 19,
+        "title": "2ND HAND",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/2ndhand",
+        "cover": "https://i1.sndcdn.com/artworks-000224531519-1nh8ma-large.jpg",
+        "plays": 41386507,
+        "duration": 124,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/2ndhand",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.617Z",
+          "likes": 450182,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:282444006",
+        "rank": 20,
+        "title": "O PANA!",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/opana",
+        "cover": "https://i1.sndcdn.com/artworks-000181908741-oo2mja-large.jpg",
+        "plays": 40678568,
+        "duration": 128,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/opana",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.576Z",
+          "likes": 411133,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:324685119",
+        "rank": 21,
+        "title": "NEW CHAINS, SAME SHACKLES",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/newchainssameshackles",
+        "cover": "https://i1.sndcdn.com/artworks-000224543484-lpswzp-large.jpg",
+        "plays": 32560817,
+        "duration": 139,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/newchainssameshackles",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.163Z",
+          "likes": 339222,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:118714349",
+        "rank": 22,
+        "title": "Gangsta's Paradise",
+        "artists": [
+          "Coolio"
+        ],
+        "url": "https://soundcloud.com/coolio/gangstas-paradise",
+        "cover": "https://i1.sndcdn.com/artworks-000061968805-tnpnib-large.jpg",
+        "plays": 30513079,
+        "duration": 241,
+        "evidence": {
+          "url": "https://soundcloud.com/coolio/gangstas-paradise",
+          "indexUrl": "https://kworb.net/spotify/songs.html",
+          "checked": "2026-11-08T21:46:42.981Z",
+          "likes": 414305,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:341974130",
+        "rank": 23,
+        "title": "NOW I'M UP TO MY NECK WITH OFFERS",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/nowimuptomyneckwithoffers",
+        "cover": "https://i1.sndcdn.com/artworks-000242249602-12tpc4-large.jpg",
+        "plays": 29857140,
+        "duration": 167,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/nowimuptomyneckwithoffers",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:48.138Z",
+          "likes": 317085,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:204523265",
+        "rank": 24,
+        "title": "LTE",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/lte",
+        "cover": "https://i1.sndcdn.com/artworks-000116078795-43v7jt-large.jpg",
+        "plays": 29759694,
+        "duration": 134,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/lte",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.454Z",
+          "likes": 329030,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1043855476",
+        "rank": 25,
+        "title": "AVALON",
+        "artists": [
+          "$UICIDEBOY$"
+        ],
+        "url": "https://soundcloud.com/g59/avalon",
+        "cover": "https://i1.sndcdn.com/artworks-uhrbBlZDKfT7EtUX-cSEtMQ-large.jpg",
+        "plays": 28922141,
+        "duration": 141,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/avalon",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:46.989Z",
+          "likes": 329152,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:93264017",
+        "rank": 26,
+        "title": "Hell of a Night",
+        "artists": [
+          "Travis Scott"
+        ],
+        "url": "https://soundcloud.com/travisscott-2/06-hell-of-a-night",
+        "cover": "https://i1.sndcdn.com/artworks-000048622882-92hn84-large.jpg",
+        "plays": 27155794,
+        "duration": 194,
+        "evidence": {
+          "url": "https://soundcloud.com/travisscott-2/06-hell-of-a-night",
+          "indexUrl": "https://soundcloud.com/travisscott-2/popular-tracks",
+          "checked": "2026-11-08T21:46:48.191Z",
+          "likes": 517023,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:210440392",
+        "rank": 27,
+        "title": "MOUNT SINAI",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/mountsinai",
+        "cover": "https://i1.sndcdn.com/artworks-000120313953-b1vvxg-large.jpg",
+        "plays": 26383691,
+        "duration": 146,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/mountsinai",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.707Z",
+          "likes": 270177,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:250680341",
+        "rank": 28,
+        "title": "Madeintokyo Uber Everywhere",
+        "artists": [
+          "Travis Scott"
+        ],
+        "url": "https://soundcloud.com/travisscott-2/uber-everywhere",
+        "cover": "https://i1.sndcdn.com/artworks-000150003555-0mndki-large.jpg",
+        "plays": 24341182,
+        "duration": 164,
+        "evidence": {
+          "url": "https://soundcloud.com/travisscott-2/uber-everywhere",
+          "indexUrl": "https://soundcloud.com/travisscott-2/popular-tracks",
+          "checked": "2026-11-08T21:46:48.544Z",
+          "likes": 367766,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:222690682",
+        "rank": 29,
+        "title": "Finessin Hearts [Prod.DP Beats]",
+        "artists": [
+          "Lil Uzi Vert"
+        ],
+        "url": "https://soundcloud.com/liluzivert/finessin-hearts-proddp-beats",
+        "cover": "https://i1.sndcdn.com/artworks-000128733276-ac5hr9-large.jpg",
+        "plays": 24050560,
+        "duration": 249,
+        "evidence": {
+          "url": "https://soundcloud.com/liluzivert/finessin-hearts-proddp-beats",
+          "indexUrl": "https://soundcloud.com/liluzivert/popular-tracks",
+          "checked": "2026-11-08T21:46:45.133Z",
+          "likes": 329839,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1296298285",
+        "rank": 30,
+        "title": "1000 BLUNTS",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/1000-blunts",
+        "cover": "https://i1.sndcdn.com/artworks-bSQV8JX7QqQARb9f-On7f0w-large.jpg",
+        "plays": 23669967,
+        "duration": 176,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/1000-blunts",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:46.774Z",
+          "likes": 303695,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:210440507",
+        "rank": 31,
+        "title": "DIEMONDS",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/diemonds",
+        "cover": "https://i1.sndcdn.com/artworks-000120314037-s3beaq-large.jpg",
+        "plays": 22435723,
+        "duration": 192,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/diemonds",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.788Z",
+          "likes": 234391,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:245268735",
+        "rank": 32,
+        "title": "ANTARCTICA",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/antarctica",
+        "cover": "https://i1.sndcdn.com/artworks-m13xFgn7UBMzYlge-KgoOHQ-large.jpg",
+        "plays": 21924363,
+        "duration": 127,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/antarctica",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:46.773Z",
+          "likes": 344672,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1296297622",
+        "rank": 33,
+        "title": "MATTE BLACK",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/matte-black",
+        "cover": "https://i1.sndcdn.com/artworks-bSQV8JX7QqQARb9f-On7f0w-large.jpg",
+        "plays": 21855053,
+        "duration": 238,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/matte-black",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:46.846Z",
+          "likes": 270880,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:210440444",
+        "rank": 34,
+        "title": "UGLY",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/ugly",
+        "cover": "https://i1.sndcdn.com/artworks-000120313988-h86utq-large.jpg",
+        "plays": 21303700,
+        "duration": 155,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/ugly",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.787Z",
+          "likes": 224822,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1387240912",
+        "rank": 35,
+        "title": "SMOKE IT OFF! ft. jnhygs",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-jnhygs-2",
+        "cover": "https://i1.sndcdn.com/artworks-0Xug9iLl5vzXsV6c-1dp4Wg-large.jpg",
+        "plays": 20930400,
+        "duration": 120,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-jnhygs-2",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.841Z",
+          "likes": 251086,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:759763765",
+        "rank": 36,
+        "title": "THAT JUST ISN'T EMPIRICALLY POSSIBLE",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/thatjustisntempiricallypossible",
+        "cover": "https://i1.sndcdn.com/artworks-ClfnOZbcgp4fB4nx-dXL7rQ-large.jpg",
+        "plays": 18769616,
+        "duration": 124,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/thatjustisntempiricallypossible",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.208Z",
+          "likes": 199013,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:193994626",
+        "rank": 37,
+        "title": "CLOUDS AS WITNESSES",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/cloudsaswitnesses",
+        "cover": "https://i1.sndcdn.com/artworks-000108740198-s36wwr-large.jpg",
+        "plays": 18359263,
+        "duration": 154,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/cloudsaswitnesses",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.345Z",
+          "likes": 198739,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1496403421",
+        "rank": 38,
+        "title": "poster boy",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/posterboy",
+        "cover": "https://i1.sndcdn.com/artworks-KnGklXWu8hzpUDIU-QzVpdQ-large.jpg",
+        "plays": 18255749,
+        "duration": 121,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/posterboy",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.617Z",
+          "likes": 265161,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1083312091",
+        "rank": 39,
+        "title": "UGLIEST",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/ugliest",
+        "cover": "https://i1.sndcdn.com/artworks-yQHWJTxMZ5MZVWIS-OCyq0g-large.jpg",
+        "plays": 17674672,
+        "duration": 178,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/ugliest",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.597Z",
+          "likes": 201534,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1469497612",
+        "rank": 40,
+        "title": "GOOD LOYAL THOTS",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/good-loyal-thots",
+        "cover": "https://i1.sndcdn.com/artworks-V7LHrWlq18EBWIzK-P3qdwA-large.jpg",
+        "plays": 16974960,
+        "duration": 103,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/good-loyal-thots",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.704Z",
+          "likes": 222828,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:263995115",
+        "rank": 41,
+        "title": "Monta feat. Lil Yachty (Prod. by Cashio)",
+        "artists": [
+          "Post Malone, Lil Yachty"
+        ],
+        "url": "https://soundcloud.com/postmalone/monta-feat-lil-yachty-prod-by-cashio",
+        "cover": "https://i1.sndcdn.com/artworks-000162717473-vjddjx-large.jpg",
+        "plays": 16845896,
+        "duration": 235,
+        "evidence": {
+          "url": "https://soundcloud.com/postmalone/monta-feat-lil-yachty-prod-by-cashio",
+          "indexUrl": "https://soundcloud.com/postmalone/popular-tracks",
+          "checked": "2026-11-08T21:46:46.435Z",
+          "likes": 250120,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1482843661",
+        "rank": 42,
+        "title": "NARCISSISTIC PERSONALITY DISORDER",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/narcissistic-personality-disorder",
+        "cover": "https://i1.sndcdn.com/artworks-udl0wTFQ5WMdWKJP-a01i0g-large.jpg",
+        "plays": 16610707,
+        "duration": 111,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/narcissistic-personality-disorder",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.730Z",
+          "likes": 204858,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:263994790",
+        "rank": 43,
+        "title": "Hollywood Dreams /  Comedown (Prod. by FKi & Louis Bell)",
+        "artists": [
+          "Post Malone "
+        ],
+        "url": "https://soundcloud.com/postmalone/hollywood-dreams-comedown-fki-louis-bell",
+        "cover": "https://i1.sndcdn.com/artworks-000162717034-va8aky-large.jpg",
+        "plays": 15459799,
+        "duration": 302,
+        "evidence": {
+          "url": "https://soundcloud.com/postmalone/hollywood-dreams-comedown-fki-louis-bell",
+          "indexUrl": "https://soundcloud.com/postmalone/popular-tracks",
+          "checked": "2026-11-08T21:46:46.090Z",
+          "likes": 226080,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2157170529",
+        "rank": 44,
+        "title": "BUCKSHOT & FAKEMINK - FEVER (PROD. OSCAR18 + GRIMOIRE)",
+        "artists": [
+          "BUCKSHOT, fakemink"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-fakemink-fever",
+        "cover": "https://i1.sndcdn.com/artworks-p7TjGkxivzrv6Tz7-IX16GQ-large.png",
+        "plays": 14649133,
+        "duration": 145,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-fakemink-fever",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:49.993Z",
+          "likes": 202618,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1809943716",
+        "rank": 45,
+        "title": "nothing like uuu",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/nothing-like-uuu",
+        "cover": "https://i1.sndcdn.com/artworks-zht9hratcfdEUywo-73HUNg-large.jpg",
+        "plays": 13419620,
+        "duration": 112,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/nothing-like-uuu",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.211Z",
+          "likes": 211693,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1581507155",
+        "rank": 46,
+        "title": "I NO LONGER FEAR THE RAZOR GUARDING MY HEEL (V)",
+        "artists": [
+          "$UICIDEBOY$"
+        ],
+        "url": "https://soundcloud.com/g59/i-no-longer-fear-the-razor-guarding-my-heel-v",
+        "cover": "https://i1.sndcdn.com/artworks-ZjQattzqqz5ycDR3-RdYLyw-large.jpg",
+        "plays": 11505582,
+        "duration": 455,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/i-no-longer-fear-the-razor-guarding-my-heel-v",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.385Z",
+          "likes": 146014,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:263997268",
+        "rank": 47,
+        "title": "Never Understand feat. Larry June (Prod. by FKi & Post Malone)",
+        "artists": [
+          "Post Malone, Larry June "
+        ],
+        "url": "https://soundcloud.com/postmalone/never-understand-feat-larry-june-prod-by-fki-post-malone-rex-kudo-charlie-handsome",
+        "cover": "https://i1.sndcdn.com/artworks-000162719205-bn49k2-large.jpg",
+        "plays": 9623591,
+        "duration": 272,
+        "evidence": {
+          "url": "https://soundcloud.com/postmalone/never-understand-feat-larry-june-prod-by-fki-post-malone-rex-kudo-charlie-handsome",
+          "indexUrl": "https://soundcloud.com/postmalone/popular-tracks",
+          "checked": "2026-11-08T21:46:46.260Z",
+          "likes": 135512,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1480474165",
+        "rank": 48,
+        "title": "YOU'RE TOO SLOW",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/youre-too-slow",
+        "cover": "https://i1.sndcdn.com/artworks-BRIpKIi0KfnqQUY5-1ngKKw-large.jpg",
+        "plays": 9568473,
+        "duration": 117,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/youre-too-slow",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.782Z",
+          "likes": 124746,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1542219691",
+        "rank": 49,
+        "title": "LET ME SEE YA MOVE! (feat. cade clair)",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/lemme-see-ya-move-feat-cade-clair-1",
+        "cover": "https://i1.sndcdn.com/artworks-VfX6aVKXkP6fjrtE-KuusWg-large.jpg",
+        "plays": 9001659,
+        "duration": 122,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/lemme-see-ya-move-feat-cade-clair-1",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.877Z",
+          "likes": 126680,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1650888186",
+        "rank": 50,
+        "title": "jeans",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/jeans",
+        "cover": "https://i1.sndcdn.com/artworks-my2hN5wVoAxZnASJ-mKN8BA-large.jpg",
+        "plays": 8918937,
+        "duration": 181,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/jeans",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.635Z",
+          "likes": 164724,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1801833621",
+        "rank": 51,
+        "title": "Burgundy",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/06-burgundy-master",
+        "cover": "https://i1.sndcdn.com/artworks-XdDtrBqkxAJsWay1-tbOzGg-large.jpg",
+        "plays": 8823897,
+        "duration": 269,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/06-burgundy-master",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.186Z",
+          "likes": 116967,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1442754355",
+        "rank": 52,
+        "title": "$UICIDEBOY$ x SHAKEWELL - SIX LINES, TWO DRAGONS, AND A MESSIAH",
+        "artists": [
+          "$UICIDEBOY$"
+        ],
+        "url": "https://soundcloud.com/g59/uicideboy-x-shakewell-six-lines-two-dragons-and-a-messiah",
+        "cover": "https://i1.sndcdn.com/artworks-eumpFxeTACeISpbP-z5BGsA-large.jpg",
+        "plays": 8541074,
+        "duration": 166,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/uicideboy-x-shakewell-six-lines-two-dragons-and-a-messiah",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:48.235Z",
+          "likes": 104745,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1782082554",
+        "rank": 53,
+        "title": "Us Vs. Them",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/us-vs-them",
+        "cover": "https://i1.sndcdn.com/artworks-s7nybL200dzQTr0n-Rq0vhw-large.jpg",
+        "plays": 8260582,
+        "duration": 185,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/us-vs-them",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.989Z",
+          "likes": 119709,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1975006943",
+        "rank": 54,
+        "title": "Shut Up",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/shut-up-1",
+        "cover": "https://i1.sndcdn.com/artworks-JabqEqcwLLeomO6v-OHizyw-large.png",
+        "plays": 7669542,
+        "duration": 126,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/shut-up-1",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.165Z",
+          "likes": 114432,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1779885312",
+        "rank": 55,
+        "title": "DICE AND ROLL",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/dice-and-roll",
+        "cover": "https://i1.sndcdn.com/artworks-o8eSmxHaWvMf-0-large.png",
+        "plays": 7016694,
+        "duration": 120,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/dice-and-roll",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.754Z",
+          "likes": 103683,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1589079639",
+        "rank": 56,
+        "title": "we not like you (zoot)",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/off-a-jet-zoot",
+        "cover": "https://i1.sndcdn.com/artworks-7zEa827cBVCzsFZw-se2BBw-large.jpg",
+        "plays": 6996125,
+        "duration": 65,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/off-a-jet-zoot",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.255Z",
+          "likes": 102828,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1467503620",
+        "rank": 57,
+        "title": "ICEWHORE!",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/icewhore-1",
+        "cover": "https://i1.sndcdn.com/artworks-GS6MBANkdXalik2M-MKyFdA-large.jpg",
+        "plays": 6920827,
+        "duration": 79,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/icewhore-1",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.880Z",
+          "likes": 111272,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:198926480",
+        "rank": 58,
+        "title": "DRUGS/HOES/MONEY/ETC.",
+        "artists": [
+          "$uicideboy$, Budd Dwyer"
+        ],
+        "url": "https://soundcloud.com/g59/drugshoesmoneyetc",
+        "cover": "https://i1.sndcdn.com/artworks-000112103484-wfkaum-large.jpg",
+        "plays": 6894696,
+        "duration": 144,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/drugshoesmoneyetc",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.905Z",
+          "likes": 91711,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1801833693",
+        "rank": 59,
+        "title": "The Thin Grey Line",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/03-the-thin-grey-line-master",
+        "cover": "https://i1.sndcdn.com/artworks-u8TUojmJgyeDYv1z-Xk9DOg-large.jpg",
+        "plays": 6840584,
+        "duration": 106,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/03-the-thin-grey-line-master",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:47.823Z",
+          "likes": 97323,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1802327166",
+        "rank": 60,
+        "title": "crush",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/crush-1",
+        "cover": "https://i1.sndcdn.com/artworks-aygAPGioTUcO-0-large.jpg",
+        "plays": 6487850,
+        "duration": 146,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/crush-1",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.573Z",
+          "likes": 131843,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1801833648",
+        "rank": 61,
+        "title": "Misery In Waking Hours",
+        "artists": [
+          "$uicideboy$"
+        ],
+        "url": "https://soundcloud.com/g59/05-misery-in-waking-hours-master",
+        "cover": "https://i1.sndcdn.com/artworks-XdDtrBqkxAJsWay1-tbOzGg-large.jpg",
+        "plays": 6073101,
+        "duration": 220,
+        "evidence": {
+          "url": "https://soundcloud.com/g59/05-misery-in-waking-hours-master",
+          "indexUrl": "https://soundcloud.com/g59/popular-tracks",
+          "checked": "2026-11-08T21:46:48.127Z",
+          "likes": 73925,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1874145069",
+        "rank": 62,
+        "title": "trauma",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/trauma-1",
+        "cover": "https://i1.sndcdn.com/artworks-9PWBAmx13g4Q-0-large.jpg",
+        "plays": 5218891,
+        "duration": 132,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/trauma-1",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.745Z",
+          "likes": 96051,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1975006935",
+        "rank": 63,
+        "title": "Skipping Class",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/skipping-class-1",
+        "cover": "https://i1.sndcdn.com/artworks-JabqEqcwLLeomO6v-OHizyw-large.png",
+        "plays": 5028187,
+        "duration": 132,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/skipping-class-1",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.594Z",
+          "likes": 74555,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1487747734",
+        "rank": 64,
+        "title": "DOUBLE TROUBLE",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/double-trouble",
+        "cover": "https://i1.sndcdn.com/artworks-6ZHWHy4e8lbiyGzw-zNwwzg-large.jpg",
+        "plays": 4893501,
+        "duration": 113,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/double-trouble",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.903Z",
+          "likes": 70829,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1928283983",
+        "rank": 65,
+        "title": "F*CK SWAG",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/fck-swag-1",
+        "cover": "https://i1.sndcdn.com/artworks-T844zVc2hzN1dKCv-zniW5g-large.png",
+        "plays": 4819756,
+        "duration": 122,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/fck-swag-1",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.596Z",
+          "likes": 78436,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2009856663",
+        "rank": 66,
+        "title": "Easter Pink (Prod Suzy Sheer)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/easter-pink-prod-suzy-sheer",
+        "cover": "https://i1.sndcdn.com/artworks-dPUpLCo4VWpfZbzo-SAa1fQ-large.jpg",
+        "plays": 4699255,
+        "duration": 85,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/easter-pink-prod-suzy-sheer",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.168Z",
+          "likes": 84421,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1421571487",
+        "rank": 67,
+        "title": "what they say¿  (JJ1DA)",
+        "artists": [
+          "nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/what-they-say-jj1da",
+        "cover": "https://i1.sndcdn.com/artworks-wHjv1IjfHOEi6xAp-lTrs1w-large.jpg",
+        "plays": 4675416,
+        "duration": 92,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/what-they-say-jj1da",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.312Z",
+          "likes": 70205,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:26460191",
+        "rank": 68,
+        "title": "I'm Yours",
+        "artists": [
+          "Jason Mraz"
+        ],
+        "url": "https://soundcloud.com/jasonmraz/im-yours",
+        "cover": "https://i1.sndcdn.com/artworks-000015101556-tngl4a-large.jpg",
+        "plays": 4620397,
+        "duration": 243,
+        "evidence": {
+          "url": "https://soundcloud.com/jasonmraz/im-yours",
+          "indexUrl": "https://kworb.net/spotify/songs.html",
+          "checked": "2026-11-08T21:46:43.549Z",
+          "likes": 55410,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1679838105",
+        "rank": 69,
+        "title": "2024 Freestyle",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/2024-freestyle",
+        "cover": "https://i1.sndcdn.com/artworks-uZIk8VIzEjcmv3CR-abao7w-large.jpg",
+        "plays": 4501006,
+        "duration": 85,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/2024-freestyle",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:56.277Z",
+          "likes": 58400,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1475401099",
+        "rank": 70,
+        "title": "I <3 LATINAS",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/i-3-latinas",
+        "cover": "https://i1.sndcdn.com/artworks-nFdTL1WHFP1YFKgf-9RW0tQ-large.jpg",
+        "plays": 4496903,
+        "duration": 94,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/i-3-latinas",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:53.473Z",
+          "likes": 67240,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1975006919",
+        "rank": 71,
+        "title": "Tommy",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/tommy-1",
+        "cover": "https://i1.sndcdn.com/artworks-JabqEqcwLLeomO6v-OHizyw-large.png",
+        "plays": 4218048,
+        "duration": 119,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/tommy-1",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.846Z",
+          "likes": 52123,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2066455600",
+        "rank": 72,
+        "title": "Music And Me (Prod OK)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/music-and-me101",
+        "cover": "https://i1.sndcdn.com/artworks-eQQDD7UOnTSGhLKp-I0aqtA-large.jpg",
+        "plays": 4186766,
+        "duration": 126,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/music-and-me101",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.301Z",
+          "likes": 84671,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1565566225",
+        "rank": 73,
+        "title": "shine n peace (mag & xionorion)",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/2mybrother-mag",
+        "cover": "https://i1.sndcdn.com/artworks-4ciO1fjgIWe1KXSd-oqHGdg-large.jpg",
+        "plays": 4147058,
+        "duration": 91,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/2mybrother-mag",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.404Z",
+          "likes": 61427,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1498889728",
+        "rank": 74,
+        "title": "RED EYES BLACK DRAGON CHAIN",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/red-eyes-black-dragon-chain",
+        "cover": "https://i1.sndcdn.com/artworks-HvnfYz3i4gsEVJi2-dVeeWA-large.jpg",
+        "plays": 4041834,
+        "duration": 113,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/red-eyes-black-dragon-chain",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:53.274Z",
+          "likes": 51755,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1802328000",
+        "rank": 75,
+        "title": "BREAK A NECK (w/ Ayesha Erotica) [prod. Odetari]",
+        "artists": [
+          "Odetari and Ayesha Erotica"
+        ],
+        "url": "https://soundcloud.com/odetari/break-a-neck-w-ayesha-erotica",
+        "cover": "https://i1.sndcdn.com/artworks-RwjgoLoLZsHE-0-large.png",
+        "plays": 3841597,
+        "duration": 116,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/break-a-neck-w-ayesha-erotica",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.993Z",
+          "likes": 58017,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1975006939",
+        "rank": 76,
+        "title": "Beach Leak",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/beach-leak-1",
+        "cover": "https://i1.sndcdn.com/artworks-JabqEqcwLLeomO6v-OHizyw-large.png",
+        "plays": 3770286,
+        "duration": 106,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/beach-leak-1",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:56.006Z",
+          "likes": 53340,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1495086241",
+        "rank": 77,
+        "title": "BORDERLINE PERSONALITY DISORDER",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/borderline-personality-disorder",
+        "cover": "https://i1.sndcdn.com/artworks-2WzbVP38h3TLnwwi-YYuHbg-large.jpg",
+        "plays": 3663044,
+        "duration": 106,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/borderline-personality-disorder",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:53.273Z",
+          "likes": 51441,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1456556899",
+        "rank": 78,
+        "title": "SMOKE IT OFF! ft. cade clair",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-cade-clair",
+        "cover": "https://i1.sndcdn.com/artworks-zi3GdZgHGtaCb7Zy-65Z2MA-large.jpg",
+        "plays": 3546482,
+        "duration": 118,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-cade-clair",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.933Z",
+          "likes": 40389,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2057364780",
+        "rank": 79,
+        "title": "IMPACT W/ XAVIERSOBASED",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/impact-w-xaviersobased",
+        "cover": "https://i1.sndcdn.com/artworks-NPt0zZMwhSGTNdAc-KzzNFw-large.jpg",
+        "plays": 3476923,
+        "duration": 116,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/impact-w-xaviersobased",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.580Z",
+          "likes": 63908,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1833051684",
+        "rank": 80,
+        "title": "lie",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/lie",
+        "cover": "https://i1.sndcdn.com/artworks-cwGJ7EIEnPqP-0-large.jpg",
+        "plays": 2956637,
+        "duration": 143,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/lie",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.893Z",
+          "likes": 54853,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1508079937",
+        "rank": 81,
+        "title": "THROAT GOAT",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/throat-goat",
+        "cover": "https://i1.sndcdn.com/artworks-DCfCRu3IMzNIcL2w-EdpYEA-large.jpg",
+        "plays": 2699168,
+        "duration": 113,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/throat-goat",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:53.621Z",
+          "likes": 35617,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2157357420",
+        "rank": 82,
+        "title": "her friends",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/her-friends-2",
+        "cover": "https://i1.sndcdn.com/artworks-2Qmw4jS51w5UEnmf-Sg9oZA-large.png",
+        "plays": 2635422,
+        "duration": 101,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/her-friends-2",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.681Z",
+          "likes": 53640,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2157941607",
+        "rank": 83,
+        "title": "KEEP FOLLOWING",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/keep-following",
+        "cover": "https://i1.sndcdn.com/artworks-0cZTxcdoFxno-0-large.png",
+        "plays": 2541935,
+        "duration": 114,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/keep-following",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.583Z",
+          "likes": 43383,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1881634344",
+        "rank": 84,
+        "title": "RUN! (feat. Lay Bankz)",
+        "artists": [
+          "VALORANT, Odetari, Lay Bankz"
+        ],
+        "url": "https://soundcloud.com/odetari/run-feat-lay-bankz",
+        "cover": "https://i1.sndcdn.com/artworks-e4PI35tqWyot-0-large.png",
+        "plays": 2505250,
+        "duration": 148,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/run-feat-lay-bankz",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:53.348Z",
+          "likes": 40915,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520900",
+        "rank": 85,
+        "title": "you ready?",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/85ec957d-8633-4742-814c-3c5f6d23460b",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 2379270,
+        "duration": 148,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/85ec957d-8633-4742-814c-3c5f6d23460b",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.150Z",
+          "likes": 52325,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1906017347",
+        "rank": 86,
+        "title": "Crush (Prod Ok)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/orgasm-blush-prod-ok",
+        "cover": "https://i1.sndcdn.com/artworks-4ysbVJaA7LicIz0g-P3Hwyw-large.jpg",
+        "plays": 2211264,
+        "duration": 107,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/orgasm-blush-prod-ok",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.611Z",
+          "likes": 43659,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2134375554",
+        "rank": 87,
+        "title": "Forever prod ok",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/forever-prod-ok",
+        "cover": "https://i1.sndcdn.com/artworks-2y5HFQHNOsNS0xAE-M7LQtQ-large.jpg",
+        "plays": 2205490,
+        "duration": 142,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/forever-prod-ok",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.436Z",
+          "likes": 54775,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2095669983",
+        "rank": 88,
+        "title": "MAKKA",
+        "artists": [
+          "Fakemink, Ecco2K, Mechatok"
+        ],
+        "url": "https://soundcloud.com/fakemink/makka",
+        "cover": "https://i1.sndcdn.com/artworks-dmZmyZI6eBpMNcXW-oqX7jA-large.jpg",
+        "plays": 1825384,
+        "duration": 180,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/makka",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:52.127Z",
+          "likes": 41558,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1819394190",
+        "rank": 89,
+        "title": "Ragebait (Prod Deer Park)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/ragebait-prod-deer-park",
+        "cover": "https://i1.sndcdn.com/artworks-bNswLiQD2Xz6Octj-ZGkhEw-large.jpg",
+        "plays": 1814887,
+        "duration": 118,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/ragebait-prod-deer-park",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.302Z",
+          "likes": 40108,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520912",
+        "rank": 90,
+        "title": "masked up",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/ed92f7a3-877e-4784-b464-27643d46e354",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 1684354,
+        "duration": 137,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/ed92f7a3-877e-4784-b464-27643d46e354",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.811Z",
+          "likes": 40277,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2127233088",
+        "rank": 91,
+        "title": "Under Your Skin (Prod Me & Clearo)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/14b41e76-b436-418f-92c1-346e87c75d37",
+        "cover": "https://i1.sndcdn.com/artworks-tFMmnsOeorzIpJmR-q5RZUw-large.png",
+        "plays": 1679579,
+        "duration": 132,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/14b41e76-b436-418f-92c1-346e87c75d37",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.902Z",
+          "likes": 35653,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2037553340",
+        "rank": 92,
+        "title": "Face to Face (Prod Wraith9)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/face-to-face-prod-wraith",
+        "cover": "https://i1.sndcdn.com/artworks-LKEcNLqVEJqJ7rY6-Y28nPw-large.jpg",
+        "plays": 1670965,
+        "duration": 96,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/face-to-face-prod-wraith",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.705Z",
+          "likes": 35739,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520888",
+        "rank": 93,
+        "title": "ce",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/3d638794-a593-4376-a2a0-2ab53c9f6e90",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 1520995,
+        "duration": 160,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/3d638794-a593-4376-a2a0-2ab53c9f6e90",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.512Z",
+          "likes": 30681,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2055375268",
+        "rank": 94,
+        "title": "Milk (Prod Me)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/25cccb3d-29b4-4ed8-92ba-902237e93c6a",
+        "cover": "https://i1.sndcdn.com/artworks-rypuviAHG1XzhlMi-yeYwzQ-large.jpg",
+        "plays": 1497999,
+        "duration": 106,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/25cccb3d-29b4-4ed8-92ba-902237e93c6a",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:52.330Z",
+          "likes": 32055,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1833053400",
+        "rank": 95,
+        "title": "two bad",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/two-bad",
+        "cover": "https://i1.sndcdn.com/artworks-Cd9o0ETfyFEV-0-large.jpg",
+        "plays": 1461591,
+        "duration": 215,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/two-bad",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.985Z",
+          "likes": 30094,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520948",
+        "rank": 96,
+        "title": "paris hilton",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/15fe73da-9255-4791-8ec7-8ac8a8611d8e",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 1452220,
+        "duration": 124,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/15fe73da-9255-4791-8ec7-8ac8a8611d8e",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.409Z",
+          "likes": 32572,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520930",
+        "rank": 97,
+        "title": "trap house 2016",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/6f93dc9f-9d95-4d49-8eff-590bd55e5d40",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 1401511,
+        "duration": 159,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/6f93dc9f-9d95-4d49-8eff-590bd55e5d40",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.752Z",
+          "likes": 30086,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1092399820",
+        "rank": 98,
+        "title": "BUCKSHOT - OVER THE HILLS (PROD. OSCAR18)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-over-the-hills-prod-oscar18",
+        "cover": "https://i1.sndcdn.com/artworks-yGJzL70xk4lrtLMb-py6ksQ-large.jpg",
+        "plays": 1399168,
+        "duration": 149,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-over-the-hills-prod-oscar18",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.023Z",
+          "likes": 21789,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1583449491",
+        "rank": 99,
+        "title": "cliche",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/cliche",
+        "cover": "https://i1.sndcdn.com/artworks-lJuzgnyQTx6IMA05-wrSmzw-large.jpg",
+        "plays": 1358064,
+        "duration": 179,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/cliche",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.806Z",
+          "likes": 32166,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1815339285",
+        "rank": 100,
+        "title": "Wookies (Prod Me & Deer Park)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/wookies-prod-deer-park",
+        "cover": "https://i1.sndcdn.com/artworks-tCOvo63IvhE1io6x-OVzmzQ-large.jpg",
+        "plays": 1340782,
+        "duration": 124,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/wookies-prod-deer-park",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.930Z",
+          "likes": 28810,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      }
+    ]
+  },
+  "trending": {
+    "provider": "trending",
+    "checked": "2026-11-08T21:47:00.856Z",
+    "method": "Artist popular-track indexes, official public SoundCloud play counts and embed eligibility; curated, not an official platform-wide chart.",
+    "tracks": [
+      {
+        "id": "soundcloud:1802327166",
+        "rank": 1,
+        "title": "crush",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/crush-1",
+        "cover": "https://i1.sndcdn.com/artworks-aygAPGioTUcO-0-large.jpg",
+        "plays": 6487850,
+        "duration": 146,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/crush-1",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.573Z",
+          "likes": 131843,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2157170529",
+        "rank": 2,
+        "title": "BUCKSHOT & FAKEMINK - FEVER (PROD. OSCAR18 + GRIMOIRE)",
+        "artists": [
+          "BUCKSHOT, fakemink"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-fakemink-fever",
+        "cover": "https://i1.sndcdn.com/artworks-p7TjGkxivzrv6Tz7-IX16GQ-large.png",
+        "plays": 14649133,
+        "duration": 145,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-fakemink-fever",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:49.993Z",
+          "likes": 202618,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2009856663",
+        "rank": 3,
+        "title": "Easter Pink (Prod Suzy Sheer)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/easter-pink-prod-suzy-sheer",
+        "cover": "https://i1.sndcdn.com/artworks-dPUpLCo4VWpfZbzo-SAa1fQ-large.jpg",
+        "plays": 4699255,
+        "duration": 85,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/easter-pink-prod-suzy-sheer",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.168Z",
+          "likes": 84421,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2322689333",
+        "rank": 4,
+        "title": "NEVER A MEMORY",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/never-a-memory",
+        "cover": "https://i1.sndcdn.com/artworks-KLIqv4QI7Iz6-0-large.png",
+        "plays": 909729,
+        "duration": 109,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/never-a-memory",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.497Z",
+          "likes": 17181,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1387240912",
+        "rank": 5,
+        "title": "SMOKE IT OFF! ft. jnhygs",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-jnhygs-2",
+        "cover": "https://i1.sndcdn.com/artworks-0Xug9iLl5vzXsV6c-1dp4Wg-large.jpg",
+        "plays": 20930400,
+        "duration": 120,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-jnhygs-2",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.841Z",
+          "likes": 251086,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1809943716",
+        "rank": 6,
+        "title": "nothing like uuu",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/nothing-like-uuu",
+        "cover": "https://i1.sndcdn.com/artworks-zht9hratcfdEUywo-73HUNg-large.jpg",
+        "plays": 13419620,
+        "duration": 112,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/nothing-like-uuu",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.211Z",
+          "likes": 211693,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1496403421",
+        "rank": 7,
+        "title": "poster boy",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/posterboy",
+        "cover": "https://i1.sndcdn.com/artworks-KnGklXWu8hzpUDIU-QzVpdQ-large.jpg",
+        "plays": 18255749,
+        "duration": 121,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/posterboy",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.617Z",
+          "likes": 265161,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1092399820",
+        "rank": 8,
+        "title": "BUCKSHOT - OVER THE HILLS (PROD. OSCAR18)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-over-the-hills-prod-oscar18",
+        "cover": "https://i1.sndcdn.com/artworks-yGJzL70xk4lrtLMb-py6ksQ-large.jpg",
+        "plays": 1399168,
+        "duration": 149,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-over-the-hills-prod-oscar18",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.023Z",
+          "likes": 21789,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2066455600",
+        "rank": 9,
+        "title": "Music And Me (Prod OK)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/music-and-me101",
+        "cover": "https://i1.sndcdn.com/artworks-eQQDD7UOnTSGhLKp-I0aqtA-large.jpg",
+        "plays": 4186766,
+        "duration": 126,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/music-and-me101",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.301Z",
+          "likes": 84671,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2412181314",
+        "rank": 10,
+        "title": "IM A BLACKHOLE",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/im-a-blackhole",
+        "cover": "https://i1.sndcdn.com/artworks-3ZQDKyQtt7oIpzqy-6OFuqA-large.jpg",
+        "plays": 588064,
+        "duration": 199,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/im-a-blackhole",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.553Z",
+          "likes": 19024,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1467503620",
+        "rank": 11,
+        "title": "ICEWHORE!",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/icewhore-1",
+        "cover": "https://i1.sndcdn.com/artworks-GS6MBANkdXalik2M-MKyFdA-large.jpg",
+        "plays": 6920827,
+        "duration": 79,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/icewhore-1",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.880Z",
+          "likes": 111272,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520900",
+        "rank": 12,
+        "title": "you ready?",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/85ec957d-8633-4742-814c-3c5f6d23460b",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 2379270,
+        "duration": 148,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/85ec957d-8633-4742-814c-3c5f6d23460b",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.150Z",
+          "likes": 52325,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1650888186",
+        "rank": 13,
+        "title": "jeans",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/jeans",
+        "cover": "https://i1.sndcdn.com/artworks-my2hN5wVoAxZnASJ-mKN8BA-large.jpg",
+        "plays": 8918937,
+        "duration": 181,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/jeans",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.635Z",
+          "likes": 164724,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:955154086",
+        "rank": 14,
+        "title": "BUCKSHOT & SEMATARY - STRAWMAN (PROD. OSCAR18)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-sematary-strawman-prod-oscar18",
+        "cover": "https://i1.sndcdn.com/artworks-JfUKGzIgeYj9rEzU-5lSkgw-large.jpg",
+        "plays": 815412,
+        "duration": 217,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-sematary-strawman-prod-oscar18",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.053Z",
+          "likes": 11958,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1819394190",
+        "rank": 15,
+        "title": "Ragebait (Prod Deer Park)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/ragebait-prod-deer-park",
+        "cover": "https://i1.sndcdn.com/artworks-bNswLiQD2Xz6Octj-ZGkhEw-large.jpg",
+        "plays": 1814887,
+        "duration": 118,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/ragebait-prod-deer-park",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.302Z",
+          "likes": 40108,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2157941607",
+        "rank": 16,
+        "title": "KEEP FOLLOWING",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/keep-following",
+        "cover": "https://i1.sndcdn.com/artworks-0cZTxcdoFxno-0-large.png",
+        "plays": 2541935,
+        "duration": 114,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/keep-following",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.583Z",
+          "likes": 43383,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1542219691",
+        "rank": 17,
+        "title": "LET ME SEE YA MOVE! (feat. cade clair)",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/lemme-see-ya-move-feat-cade-clair-1",
+        "cover": "https://i1.sndcdn.com/artworks-VfX6aVKXkP6fjrtE-KuusWg-large.jpg",
+        "plays": 9001659,
+        "duration": 122,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/lemme-see-ya-move-feat-cade-clair-1",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.877Z",
+          "likes": 126680,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1975006943",
+        "rank": 18,
+        "title": "Shut Up",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/shut-up-1",
+        "cover": "https://i1.sndcdn.com/artworks-JabqEqcwLLeomO6v-OHizyw-large.png",
+        "plays": 7669542,
+        "duration": 126,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/shut-up-1",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.165Z",
+          "likes": 114432,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1874145069",
+        "rank": 19,
+        "title": "trauma",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/trauma-1",
+        "cover": "https://i1.sndcdn.com/artworks-9PWBAmx13g4Q-0-large.jpg",
+        "plays": 5218891,
+        "duration": 132,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/trauma-1",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.745Z",
+          "likes": 96051,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1221128299",
+        "rank": 20,
+        "title": "BUCKSHOT - KEEPE OUT (PROD. OSCAR18 + ASA NISI MASA)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-keepe-out-prod-oscar18-asa-nisi-masa",
+        "cover": "https://i1.sndcdn.com/artworks-c49ckLmt43uEsiHG-WZdlBg-large.jpg",
+        "plays": 1035855,
+        "duration": 153,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-keepe-out-prod-oscar18-asa-nisi-masa",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.083Z",
+          "likes": 15072,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2420603220",
+        "rank": 21,
+        "title": "Chiltern Firehouse .",
+        "artists": [
+          "fakemink, Skepta"
+        ],
+        "url": "https://soundcloud.com/fakemink/chiltern-firehouse",
+        "cover": "https://i1.sndcdn.com/artworks-Yg7Uhts3oRIk-0-large.png",
+        "plays": 321763,
+        "duration": 147,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/chiltern-firehouse",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.303Z",
+          "likes": 13319,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1469497612",
+        "rank": 22,
+        "title": "GOOD LOYAL THOTS",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/good-loyal-thots",
+        "cover": "https://i1.sndcdn.com/artworks-V7LHrWlq18EBWIzK-P3qdwA-large.jpg",
+        "plays": 16974960,
+        "duration": 103,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/good-loyal-thots",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.704Z",
+          "likes": 222828,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1456556899",
+        "rank": 23,
+        "title": "SMOKE IT OFF! ft. cade clair",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-cade-clair",
+        "cover": "https://i1.sndcdn.com/artworks-zi3GdZgHGtaCb7Zy-65Z2MA-large.jpg",
+        "plays": 3546482,
+        "duration": 118,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/smoke-it-off-feat-cade-clair",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:53.933Z",
+          "likes": 40389,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1589079639",
+        "rank": 24,
+        "title": "we not like you (zoot)",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/off-a-jet-zoot",
+        "cover": "https://i1.sndcdn.com/artworks-7zEa827cBVCzsFZw-se2BBw-large.jpg",
+        "plays": 6996125,
+        "duration": 65,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/off-a-jet-zoot",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.255Z",
+          "likes": 102828,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1833051684",
+        "rank": 25,
+        "title": "lie",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/lie",
+        "cover": "https://i1.sndcdn.com/artworks-cwGJ7EIEnPqP-0-large.jpg",
+        "plays": 2956637,
+        "duration": 143,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/lie",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.893Z",
+          "likes": 54853,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1221128578",
+        "rank": 26,
+        "title": "BUCKSHOT - IN THE MORNING (PROD.  GRAVE MAN)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-in-the-morning-prod-grave-man",
+        "cover": "https://i1.sndcdn.com/artworks-c49ckLmt43uEsiHG-WZdlBg-large.jpg",
+        "plays": 706631,
+        "duration": 199,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-in-the-morning-prod-grave-man",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.270Z",
+          "likes": 10646,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2377092872",
+        "rank": 27,
+        "title": "Love Is A Dog From Hell .  (Prod OK)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/love-is-a-dog-from-hell-prod",
+        "cover": "https://i1.sndcdn.com/artworks-HWFMbu9UxMTGSEhS-IlAawQ-large.jpg",
+        "plays": 326434,
+        "duration": 144,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/love-is-a-dog-from-hell-prod",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.331Z",
+          "likes": 11302,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1482843661",
+        "rank": 28,
+        "title": "NARCISSISTIC PERSONALITY DISORDER",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/narcissistic-personality-disorder",
+        "cover": "https://i1.sndcdn.com/artworks-udl0wTFQ5WMdWKJP-a01i0g-large.jpg",
+        "plays": 16610707,
+        "duration": 111,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/narcissistic-personality-disorder",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.730Z",
+          "likes": 204858,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1572285859",
+        "rank": 29,
+        "title": "THIRST FOR ME!",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/thirst-for-me-4",
+        "cover": "https://i1.sndcdn.com/artworks-Zf1HkR4mB84WEgDQ-rPkttQ-large.jpg",
+        "plays": 602537,
+        "duration": 86,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/thirst-for-me-4",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:54.035Z",
+          "likes": 9246,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1421571487",
+        "rank": 30,
+        "title": "what they say¿  (JJ1DA)",
+        "artists": [
+          "nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/what-they-say-jj1da",
+        "cover": "https://i1.sndcdn.com/artworks-wHjv1IjfHOEi6xAp-lTrs1w-large.jpg",
+        "plays": 4675416,
+        "duration": 92,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/what-they-say-jj1da",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.312Z",
+          "likes": 70205,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1583449491",
+        "rank": 31,
+        "title": "cliche",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/cliche",
+        "cover": "https://i1.sndcdn.com/artworks-lJuzgnyQTx6IMA05-wrSmzw-large.jpg",
+        "plays": 1358064,
+        "duration": 179,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/cliche",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.806Z",
+          "likes": 32166,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1221128515",
+        "rank": 32,
+        "title": "BUCKSHOT - IF I HAD A GUN (PROD. OSCAR18)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-if-i-had-a-gun-prod-oscar18",
+        "cover": "https://i1.sndcdn.com/artworks-c49ckLmt43uEsiHG-WZdlBg-large.jpg",
+        "plays": 465382,
+        "duration": 155,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-if-i-had-a-gun-prod-oscar18",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.223Z",
+          "likes": 7051,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2325370706",
+        "rank": 33,
+        "title": "51 Ttashpel Pony Ave .",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/51-ttashpel-pony-ave-7",
+        "cover": "https://i1.sndcdn.com/artworks-hxnsySVXsnafmSnS-yr0Jwg-large.png",
+        "plays": 621530,
+        "duration": 125,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/51-ttashpel-pony-ave-7",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.454Z",
+          "likes": 16102,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1779885312",
+        "rank": 34,
+        "title": "DICE AND ROLL",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/dice-and-roll",
+        "cover": "https://i1.sndcdn.com/artworks-o8eSmxHaWvMf-0-large.png",
+        "plays": 7016694,
+        "duration": 120,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/dice-and-roll",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.754Z",
+          "likes": 103683,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1324912672",
+        "rank": 35,
+        "title": "SEX & DRUGS AIN'T ENOUGH! ft. Ripmos",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/white-girl-party-anthem-ft-ripmoss",
+        "cover": "https://i1.sndcdn.com/artworks-ozmy2cy3jBGUzfXa-EF8Uyw-large.jpg",
+        "plays": 387869,
+        "duration": 89,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/white-girl-party-anthem-ft-ripmoss",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:54.120Z",
+          "likes": 5583,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1565566225",
+        "rank": 36,
+        "title": "shine n peace (mag & xionorion)",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/2mybrother-mag",
+        "cover": "https://i1.sndcdn.com/artworks-4ciO1fjgIWe1KXSd-oqHGdg-large.jpg",
+        "plays": 4147058,
+        "duration": 91,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/2mybrother-mag",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.404Z",
+          "likes": 61427,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1833053400",
+        "rank": 37,
+        "title": "two bad",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/two-bad",
+        "cover": "https://i1.sndcdn.com/artworks-Cd9o0ETfyFEV-0-large.jpg",
+        "plays": 1461591,
+        "duration": 215,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/two-bad",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:48.985Z",
+          "likes": 30094,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1221128353",
+        "rank": 38,
+        "title": "BUCKSHOT - REVENANT (PROD. OSCAR18)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-revenant-prod-oscar18",
+        "cover": "https://i1.sndcdn.com/artworks-c49ckLmt43uEsiHG-WZdlBg-large.jpg",
+        "plays": 484149,
+        "duration": 189,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-revenant-prod-oscar18",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.267Z",
+          "likes": 7009,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2256070802",
+        "rank": 39,
+        "title": "Young Millionaire .",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/young-millionaire",
+        "cover": "https://i1.sndcdn.com/artworks-Ox1smp44u9hr-0-large.png",
+        "plays": 1208094,
+        "duration": 111,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/young-millionaire",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.519Z",
+          "likes": 27231,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1480474165",
+        "rank": 40,
+        "title": "YOU'RE TOO SLOW",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/youre-too-slow",
+        "cover": "https://i1.sndcdn.com/artworks-BRIpKIi0KfnqQUY5-1ngKKw-large.jpg",
+        "plays": 9568473,
+        "duration": 117,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/youre-too-slow",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.782Z",
+          "likes": 124746,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1454291029",
+        "rank": 41,
+        "title": "SEX OBSESSION! ft. cade clair",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/sex-obsession-feat-cade-clair",
+        "cover": "https://i1.sndcdn.com/artworks-DEyERunA1VC55ZNz-ZcZQHw-large.jpg",
+        "plays": 731753,
+        "duration": 172,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/sex-obsession-feat-cade-clair",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:54.168Z",
+          "likes": 10347,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520948",
+        "rank": 42,
+        "title": "paris hilton",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/15fe73da-9255-4791-8ec7-8ac8a8611d8e",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 1452220,
+        "duration": 124,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/15fe73da-9255-4791-8ec7-8ac8a8611d8e",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.409Z",
+          "likes": 32572,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1833051927",
+        "rank": 43,
+        "title": "teenage soldier",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/teenage-soldier",
+        "cover": "https://i1.sndcdn.com/artworks-TcCv1ShyiXXu-0-large.jpg",
+        "plays": 1253689,
+        "duration": 186,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/teenage-soldier",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:49.025Z",
+          "likes": 27770,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1221128476",
+        "rank": 44,
+        "title": "BUCKSHOT FT. SEMATARY - HALLOW'D GROUND (PROD. GRIMOIRE + SEMATARY)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-ft-sematary-hallowd-ground-prod-grimoire-sematary",
+        "cover": "https://i1.sndcdn.com/artworks-c49ckLmt43uEsiHG-WZdlBg-large.jpg",
+        "plays": 534316,
+        "duration": 231,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-ft-sematary-hallowd-ground-prod-grimoire-sematary",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.395Z",
+          "likes": 7753,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2325370748",
+        "rank": 45,
+        "title": "Rétard Angel .",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/retard-angel-18",
+        "cover": "https://i1.sndcdn.com/artworks-hxnsySVXsnafmSnS-yr0Jwg-large.png",
+        "plays": 462686,
+        "duration": 173,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/retard-angel-18",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.510Z",
+          "likes": 12061,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1487747734",
+        "rank": 46,
+        "title": "DOUBLE TROUBLE",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/double-trouble",
+        "cover": "https://i1.sndcdn.com/artworks-6ZHWHy4e8lbiyGzw-zNwwzg-large.jpg",
+        "plays": 4893501,
+        "duration": 113,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/double-trouble",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.903Z",
+          "likes": 70829,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1404190810",
+        "rank": 47,
+        "title": "SHE IS CRAZY, BUT I ♡ HER!",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/she-is-crazy-but-i-her",
+        "cover": "https://i1.sndcdn.com/artworks-g2mOAswsDd1WUCXf-uOFJMg-large.jpg",
+        "plays": 365207,
+        "duration": 74,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/she-is-crazy-but-i-her",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:54.288Z",
+          "likes": 7793,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2134375554",
+        "rank": 48,
+        "title": "Forever prod ok",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/forever-prod-ok",
+        "cover": "https://i1.sndcdn.com/artworks-2y5HFQHNOsNS0xAE-M7LQtQ-large.jpg",
+        "plays": 2205490,
+        "duration": 142,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/forever-prod-ok",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.436Z",
+          "likes": 54775,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1754243526",
+        "rank": 49,
+        "title": "light",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/light",
+        "cover": "https://i1.sndcdn.com/artworks-DcU64tKekXUN-0-large.jpg",
+        "plays": 1277109,
+        "duration": 165,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/light",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:49.081Z",
+          "likes": 26562,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1199093809",
+        "rank": 50,
+        "title": "BUCKSHOT - HAUNTED HAYRIDE",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-haunted-hayride-prod-oscar18",
+        "cover": "https://i1.sndcdn.com/artworks-0vJK7svfpNTBKqDY-6yfUCg-large.jpg",
+        "plays": 507386,
+        "duration": 142,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-haunted-hayride-prod-oscar18",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.434Z",
+          "likes": 7387,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2256070367",
+        "rank": 51,
+        "title": "Blow The Speaker .",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/blow-the-speaker",
+        "cover": "https://i1.sndcdn.com/artworks-ODRZyDy9UOjh-0-large.png",
+        "plays": 1183348,
+        "duration": 145,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/blow-the-speaker",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.520Z",
+          "likes": 28542,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1802328000",
+        "rank": 52,
+        "title": "BREAK A NECK (w/ Ayesha Erotica) [prod. Odetari]",
+        "artists": [
+          "Odetari and Ayesha Erotica"
+        ],
+        "url": "https://soundcloud.com/odetari/break-a-neck-w-ayesha-erotica",
+        "cover": "https://i1.sndcdn.com/artworks-RwjgoLoLZsHE-0-large.png",
+        "plays": 3841597,
+        "duration": 116,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/break-a-neck-w-ayesha-erotica",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:52.993Z",
+          "likes": 58017,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1409874766",
+        "rank": 53,
+        "title": "R4VAMPED KETAMINE!",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/r4vamped-ketamine",
+        "cover": "https://i1.sndcdn.com/artworks-fnYgTVJFyW3rDh15-Q59Y1g-large.jpg",
+        "plays": 227354,
+        "duration": 72,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/r4vamped-ketamine",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:54.441Z",
+          "likes": 5407,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2278520888",
+        "rank": 54,
+        "title": "ce",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/3d638794-a593-4376-a2a0-2ab53c9f6e90",
+        "cover": "https://i1.sndcdn.com/artworks-jGyR6rCtQztCiPyg-kZhcrQ-large.png",
+        "plays": 1520995,
+        "duration": 160,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/3d638794-a593-4376-a2a0-2ab53c9f6e90",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.512Z",
+          "likes": 30681,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1583448963",
+        "rank": 55,
+        "title": "whiplash",
+        "artists": [
+          "2hollis"
+        ],
+        "url": "https://soundcloud.com/2hollis/whiplash",
+        "cover": "https://i1.sndcdn.com/artworks-zQn3NUdfOLRBUHza-G8NR2w-large.jpg",
+        "plays": 890889,
+        "duration": 167,
+        "evidence": {
+          "url": "https://soundcloud.com/2hollis/whiplash",
+          "indexUrl": "https://soundcloud.com/2hollis/popular-tracks",
+          "checked": "2026-11-08T21:46:49.164Z",
+          "likes": 19845,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1221128413",
+        "rank": 56,
+        "title": "BUCKSHOT FT. SEMATARY - BARN OWLS (PROD. OSCAR18 + GRAVE MAN)",
+        "artists": [
+          "BUCKSHOT"
+        ],
+        "url": "https://soundcloud.com/buckshottt/buckshot-ft-sematary-barn-owls-prod-oscar-grave-man",
+        "cover": "https://i1.sndcdn.com/artworks-c49ckLmt43uEsiHG-WZdlBg-large.jpg",
+        "plays": 363844,
+        "duration": 207,
+        "evidence": {
+          "url": "https://soundcloud.com/buckshottt/buckshot-ft-sematary-barn-owls-prod-oscar-grave-man",
+          "indexUrl": "https://soundcloud.com/buckshottt/popular-tracks",
+          "checked": "2026-11-08T21:46:50.543Z",
+          "likes": 5073,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1906017347",
+        "rank": 57,
+        "title": "Crush (Prod Ok)",
+        "artists": [
+          "fakemink"
+        ],
+        "url": "https://soundcloud.com/fakemink/orgasm-blush-prod-ok",
+        "cover": "https://i1.sndcdn.com/artworks-4ysbVJaA7LicIz0g-P3Hwyw-large.jpg",
+        "plays": 2211264,
+        "duration": 107,
+        "evidence": {
+          "url": "https://soundcloud.com/fakemink/orgasm-blush-prod-ok",
+          "indexUrl": "https://soundcloud.com/fakemink/popular-tracks",
+          "checked": "2026-11-08T21:46:51.611Z",
+          "likes": 43659,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2423187987",
+        "rank": 58,
+        "title": "I'M A BLACKHOLE (STAR)",
+        "artists": [
+          "Odetari"
+        ],
+        "url": "https://soundcloud.com/odetari/im-a-blackhole-star",
+        "cover": "https://i1.sndcdn.com/artworks-aIO0D5ibgocP-0-large.png",
+        "plays": 125116,
+        "duration": 199,
+        "evidence": {
+          "url": "https://soundcloud.com/odetari/im-a-blackhole-star",
+          "indexUrl": "https://soundcloud.com/odetari/popular-tracks",
+          "checked": "2026-11-08T21:46:53.195Z",
+          "likes": 6133,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:1391564659",
+        "rank": 59,
+        "title": "HIM OVER ME! ft. Marluxiam",
+        "artists": [
+          "Lumi Athena"
+        ],
+        "url": "https://soundcloud.com/lumiathena/him-over-me-feat-wastedmarluxiam",
+        "cover": "https://i1.sndcdn.com/artworks-UiXSeXLrJ0tZOIbL-3WwgqQ-large.jpg",
+        "plays": 174868,
+        "duration": 112,
+        "evidence": {
+          "url": "https://soundcloud.com/lumiathena/him-over-me-feat-wastedmarluxiam",
+          "indexUrl": "https://soundcloud.com/lumiathena/popular-tracks",
+          "checked": "2026-11-08T21:46:54.496Z",
+          "likes": 3408,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      },
+      {
+        "id": "soundcloud:2057364780",
+        "rank": 60,
+        "title": "IMPACT W/ XAVIERSOBASED",
+        "artists": [
+          "Nettspend"
+        ],
+        "url": "https://soundcloud.com/nettspend/impact-w-xaviersobased",
+        "cover": "https://i1.sndcdn.com/artworks-NPt0zZMwhSGTNdAc-KzzNFw-large.jpg",
+        "plays": 3476923,
+        "duration": 116,
+        "evidence": {
+          "url": "https://soundcloud.com/nettspend/impact-w-xaviersobased",
+          "indexUrl": "https://soundcloud.com/nettspend/popular-tracks",
+          "checked": "2026-11-08T21:46:55.580Z",
+          "likes": 63908,
+          "policy": "ALLOW",
+          "embedVerified": true
+        }
+      }
+    ]
+  }
+}

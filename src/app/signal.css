@@ -1,0 +1,796 @@
+/* ==========================================================================
+   Katsodi Signal — design system v1 (redesign, Task 1)
+   Loaded last. The single home of every token and theme palette, and of the
+   rules every page uses for surfaces, controls, navigation, chat and voice.
+   Older layers keep only what this file does not override (layout and page
+   rules). Documented in docs/Design System.md.
+   ========================================================================== */
+
+/* ---- Tokens ------------------------------------------------------------ */
+/* Every custom property of the product is defined here, and only here.
+   Tailwind's `@theme inline` mapping stays in globals.css next to
+   `@import "tailwindcss"`, which it must follow. */
+:root {
+  /* Shape: soft-square controls, larger radii only for big surfaces. */
+  --r-control: 10px;
+  --r-card: 16px;
+  --r-panel: 20px;
+  --r-hero: 24px;
+  /* Type: one family (Manrope), one scale. */
+  --type-label: 11px;
+  --type-meta: 12px;
+  --type-ui: 14px;
+  --type-body: 15px;
+  --type-lead: 17px;
+  --type-h3: 18px;
+  --type-h2: clamp(22px, 2.4vw, 30px);
+  --type-h1: clamp(30px, 4.4vw, 56px);
+  --tracking-label: 0.14em;
+  /* Motion: short, and none when reduced motion is requested. */
+  --t-quick: 140ms;
+  --t-base: 220ms;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Signal: the accent used as a thin line, never as a large fill. */
+  --signal: var(--accent);
+  --signal-soft: color-mix(in srgb, var(--accent) 14%, transparent);
+  --signal-line: linear-gradient(
+    90deg,
+    var(--accent),
+    color-mix(in srgb, var(--accent) 0%, transparent)
+  );
+  --hairline: color-mix(in srgb, var(--foreground) 9%, transparent);
+  --field-dot: color-mix(in srgb, var(--foreground) 5%, transparent);
+  --lift: 0 1px 0 color-mix(in srgb, var(--foreground) 6%, transparent) inset;
+  /* Shape and motion scales of the older component rules. Every former pill
+     takes the control radius, so one shape runs through the product. */
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-smooth: 450ms;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --glass-bg: rgba(255, 255, 255, 0.04);
+  --glass-border: rgba(255, 255, 255, 0.08);
+  --glass-highlight: inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  --glass-hover-bg: rgba(255, 255, 255, 0.08);
+  --glass-hover-border: rgba(255, 255, 255, 0.16);
+  --glass-blur: 24px;
+  --radius-pill: var(--r-control);
+  /* Type scale and layout rhythm of the older component rules. */
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-2xl: 40px;
+  --leading-tight: 1.2;
+  --leading-normal: 1.55;
+  --weight-regular: 450;
+  --weight-medium: 600;
+  --weight-bold: 750;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  /* Cards: dark themes rely on surface contrast; Paper (light) keeps a thin
+     border because its surfaces are close to the background. */
+  --card-outline: 0 solid transparent;
+  --card-radius: var(--radius-lg);
+}
+
+/* ---- Palettes ---------------------------------------------------------- */
+/* Obsidian (default): cool ink with the Katsodi lime accent, no decorative
+   glows. Contrast: foreground 17.6:1, muted 8.9:1 on the canvas. Every other
+   palette sets all surface and text colours, so nothing leaks between them.
+   [data-theme] also marks the previews in the theme picker. */
+:root,
+[data-theme="obsidian"] {
+  color-scheme: dark;
+  --background: #0c0e11;
+  --surface: #13161a;
+  --surface-elevated: #1b1f24;
+  --surface-hover: #232930;
+  --foreground: #ffffff;
+  --muted-foreground: #b4bcc6;
+  --border: #20252c;
+  --border-strong: #39414b;
+  --primary: #d4ef8b;
+  --primary-foreground: #1d2414;
+  --accent: #d4ef8b;
+  --success: #a4d8b5;
+  --warning: #edc084;
+  --danger: #ffb5a8;
+  --info: #a5cbea;
+  --focus-ring: #deefa9;
+  --selected: #1f2a1a;
+  --disabled-opacity: 0.5;
+  --hero-glow-a: transparent;
+  --hero-glow-b: transparent;
+  --on-image: #fffdf5;
+  --image-muted: #e0ddd5;
+  --image-shade: #090908;
+  --overlay: #070706b8;
+  --shadow: #00000040;
+  --brand-avatar: #c9bca7;
+  --brand-avatar-ink: #333026;
+  --aura-color-1: var(--hero-glow-a);
+  --aura-color-2: var(--hero-glow-b);
+}
+[data-theme="ember"] {
+  color-scheme: dark;
+  --background: #0b0807;
+  --surface: #17110f;
+  --surface-elevated: #241a16;
+  --surface-hover: #34221b;
+  --foreground: #fff5ec;
+  --muted-foreground: #bcaaa0;
+  --border: #3b2c26;
+  --border-strong: #785344;
+  --primary: #efb17f;
+  --primary-foreground: #30180c;
+  --accent: #efb17f;
+  --focus-ring: #ffc89b;
+  --selected: #3b2518;
+  --hero-glow-a: #83451d66;
+  --hero-glow-b: #671d263e;
+}
+[data-theme="aurora"] {
+  color-scheme: dark;
+  --background: #070b10;
+  --surface: #0d171f;
+  --surface-elevated: #13232d;
+  --surface-hover: #1e3540;
+  --foreground: #edf8fa;
+  --muted-foreground: #a1b6bf;
+  --border: #243943;
+  --border-strong: #4a717e;
+  --primary: #97ded9;
+  --primary-foreground: #102c30;
+  --accent: #97ded9;
+  --focus-ring: #b4f4ed;
+  --selected: #1a383f;
+  --hero-glow-a: #205e7952;
+  --hero-glow-b: #20575138;
+}
+[data-theme="violet"] {
+  color-scheme: dark;
+  --background: #0c0910;
+  --surface: #17121e;
+  --surface-elevated: #241c2f;
+  --surface-hover: #33263e;
+  --foreground: #f6effb;
+  --muted-foreground: #b5a8c4;
+  --border: #382c45;
+  --border-strong: #725985;
+  --primary: #d0b1ec;
+  --primary-foreground: #2a1739;
+  --accent: #d0b1ec;
+  --focus-ring: #e5cbfb;
+  --selected: #362343;
+  --hero-glow-a: #683c8654;
+  --hero-glow-b: #6d344b38;
+}
+[data-theme="paper"] {
+  color-scheme: light;
+  --background: #f5f2eb;
+  --surface: #fffcf6;
+  --surface-elevated: #e9e4d9;
+  --surface-hover: #e0dacd;
+  --foreground: #24251f;
+  --muted-foreground: #656458;
+  --border: #d7d1c4;
+  --border-strong: #98917e;
+  --primary: #3f5229;
+  --primary-foreground: #ffffff;
+  --accent: #3f5229;
+  --focus-ring: #596d36;
+  --selected: #e0e6cc;
+  --success: #23613c;
+  --warning: #875000;
+  --danger: #a02e26;
+  --info: #225d83;
+  --hero-glow-a: #c2a07028;
+  --hero-glow-b: #b8c6a628;
+  --shadow: #40352212;
+  --card-outline: 1px solid var(--border);
+}
+/* The logo follows the palette, preserving its geometry. */
+:root,
+[data-theme] {
+  --brand-accent: var(--primary);
+  --brand-ink: var(--primary-foreground);
+}
+
+/* ---- Canvas ------------------------------------------------------------ */
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings:
+    "ss01" 1,
+    "cv11" 1;
+  background-color: var(--background);
+  /* The signal field: a faint dot grid, the one texture of the brand. */
+  background-image: radial-gradient(var(--field-dot) 1px, transparent 1.4px);
+  background-size: 24px 24px;
+  background-attachment: fixed;
+}
+::selection {
+  background: color-mix(in srgb, var(--accent) 35%, transparent);
+  color: var(--foreground);
+}
+
+/* Numbers that change (counts, times, ranks) do not jitter. */
+time,
+.admin-count,
+.room-tab-count,
+.chart-rank,
+.chart-streams,
+.music-facts dd,
+.legal-meta dd,
+.carousel-count,
+kbd {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Labels ------------------------------------------------------------ */
+.eyebrow,
+.section-index,
+.nav-caption,
+.auth-eyebrow {
+  font-size: var(--type-label);
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+.section-index::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  margin: 0 8px 3px 0;
+  border-radius: 2px;
+  background: var(--signal);
+  vertical-align: middle;
+}
+
+/* ---- Focus: one visible ring everywhere -------------------------------- */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ---- Buttons ----------------------------------------------------------- */
+.button {
+  border-radius: var(--r-control);
+  min-height: 40px;
+  gap: 8px;
+  font-weight: 700;
+  letter-spacing: 0.005em;
+  transition:
+    background-color var(--t-quick) var(--ease-out),
+    border-color var(--t-quick) var(--ease-out),
+    color var(--t-quick) var(--ease-out),
+    box-shadow var(--t-quick) var(--ease-out),
+    transform var(--t-quick) var(--ease-out);
+}
+.button:hover:not(:disabled) {
+  transform: translateY(-1px);
+}
+.button:active:not(:disabled) {
+  transform: translateY(0);
+}
+.button-primary {
+  box-shadow:
+    var(--lift),
+    0 0 0 1px color-mix(in srgb, var(--primary) 60%, transparent);
+}
+.button-primary:hover:not(:disabled) {
+  background: color-mix(in srgb, var(--primary) 86%, #ffffff);
+  box-shadow:
+    var(--lift),
+    0 0 0 1px var(--primary),
+    0 6px 22px color-mix(in srgb, var(--primary) 22%, transparent);
+}
+.button-secondary {
+  background: var(--surface-elevated);
+  border-color: var(--border-strong);
+}
+.button-secondary:hover:not(:disabled) {
+  background: var(--surface-hover);
+  border-color: color-mix(in srgb, var(--foreground) 45%, transparent);
+}
+.button-small {
+  min-height: 32px;
+  border-radius: 8px;
+}
+.button:disabled,
+.button[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+.button[aria-busy="true"] {
+  cursor: progress;
+}
+
+/* ---- Inputs ------------------------------------------------------------ */
+:where(
+    .form-card,
+    .auth-form,
+    .settings-surface,
+    .room-source-form,
+    .fandom-request-form,
+    .brand-surface,
+    .chart-toolbar,
+    .admin-decide
+  )
+  :is(
+    input:not([type="checkbox"], [type="radio"], [type="range"], [type="file"]),
+    select,
+    textarea
+  ) {
+  border-radius: var(--r-control);
+  border: 1px solid var(--border-strong);
+  background: var(--background);
+  color: var(--foreground);
+  transition:
+    border-color var(--t-quick) var(--ease-out),
+    box-shadow var(--t-quick) var(--ease-out);
+}
+:where(input, select, textarea):focus-visible {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--signal-soft);
+}
+.search-box,
+.brand-app .search-box {
+  border-radius: var(--r-control);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+}
+.search-box:focus-within {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--signal-soft);
+}
+
+/* ---- Surfaces ---------------------------------------------------------- */
+.brand-surface,
+.form-card,
+.settings-surface,
+.room-card,
+.friend-list > li,
+.music-hero,
+.fandom-detail-hero,
+.legal-hero,
+.legal-toc,
+.chart-row,
+.watch-source {
+  border-color: var(--hairline);
+  box-shadow: var(--lift);
+}
+.brand-surface,
+.form-card,
+.settings-surface {
+  border-radius: var(--r-panel);
+}
+.room-card,
+.chart-row,
+.watch-source {
+  border-radius: var(--r-card);
+}
+/* Hero surfaces carry the signal line along their top edge. */
+.page-intro,
+.fandom-detail-hero,
+.music-hero,
+.legal-hero {
+  position: relative;
+  border-radius: var(--r-hero);
+  overflow: hidden;
+}
+.page-intro::after,
+.fandom-detail-hero::after,
+.music-hero::after,
+.legal-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: min(320px, 50%);
+  height: 2px;
+  background: var(--signal-line);
+  pointer-events: none;
+}
+.room-card,
+.chart-row,
+.watch-source,
+.fandom-room-link {
+  transition:
+    transform var(--t-base) var(--ease-out),
+    border-color var(--t-base) var(--ease-out),
+    background-color var(--t-base) var(--ease-out);
+}
+.room-card:hover,
+.chart-row:hover,
+.watch-source:hover,
+.fandom-room-link:hover {
+  border-color: color-mix(in srgb, var(--accent) 40%, var(--hairline));
+}
+
+/* ---- Chips and pills --------------------------------------------------- */
+.pill,
+.room-chip,
+.brand-status,
+.chip {
+  border-radius: 7px;
+  font-size: var(--type-meta);
+  font-weight: 600;
+}
+
+/* ---- Navigation: the signal edge marks where you are ------------------- */
+.sidebar nav a,
+.sidebar-bottom > a {
+  position: relative;
+  min-height: 44px;
+  padding: 11px 14px;
+  border-radius: var(--r-control);
+  transition:
+    background-color var(--t-quick) var(--ease-out),
+    color var(--t-quick) var(--ease-out);
+}
+.sidebar a[aria-current="page"] {
+  background: var(--surface-elevated);
+  color: var(--foreground);
+}
+.sidebar a[aria-current="page"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  bottom: 10px;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--signal);
+  box-shadow: 0 0 12px var(--signal);
+}
+.sidebar a[aria-current="page"] svg {
+  color: var(--accent);
+}
+.mobile-nav a[aria-current="page"] {
+  color: var(--accent);
+  box-shadow: inset 0 2px 0 var(--signal);
+}
+.room-tabs [role="tab"][data-state="active"],
+.admin-panel [role="tab"][data-state="active"] {
+  box-shadow: inset 0 -2px 0 var(--signal);
+}
+
+/* ---- Notices ----------------------------------------------------------- */
+.notice {
+  border-radius: var(--r-control);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--info);
+  background: var(--surface);
+}
+.notice.error,
+p.error {
+  border-left-color: var(--danger);
+}
+
+/* ---- Live indicator ---------------------------------------------------- */
+.status-dot {
+  box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 45%, transparent);
+  animation: signal-pulse 2.4s var(--ease-out) infinite;
+}
+@keyframes signal-pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 45%, transparent);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 6px color-mix(in srgb, currentColor 0%, transparent);
+  }
+}
+
+/* ---- Chat (Twitch-inspired density, Katsodi grouping) ------------------ */
+.chat-messages .chat-message {
+  position: relative;
+  gap: 10px;
+  margin: 0 -8px;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+.chat-messages .chat-message:hover {
+  background: color-mix(in srgb, var(--foreground) 4%, transparent);
+}
+.chat-messages .chat-message:not(.message-continued) {
+  margin-top: 10px;
+}
+.chat-messages .message-own {
+  flex-direction: row;
+}
+.message-own .message-content,
+.message-own .message-meta {
+  text-align: left;
+  justify-content: flex-start;
+}
+.message-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: color-mix(
+    in srgb,
+    var(--author, var(--accent)) 18%,
+    var(--surface)
+  );
+  color: var(--author, var(--accent));
+  font-size: 12px;
+}
+.message-continued .message-avatar {
+  visibility: hidden;
+  height: 0;
+}
+.message-continued .message-meta {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.message-meta {
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 3px;
+}
+.message-meta strong {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--author, var(--foreground));
+}
+.message-meta time {
+  font-size: var(--type-label);
+  opacity: 1;
+  color: var(--muted-foreground);
+}
+.message-role {
+  padding: 1px 6px;
+  border-radius: 5px;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  line-height: 1.6;
+  background: var(--signal-soft);
+  color: var(--accent);
+}
+.message-role.role-moderator {
+  background: color-mix(in srgb, var(--info) 16%, transparent);
+  color: var(--info);
+}
+.chat-messages li .message-bubble,
+.chat-messages .message-own .message-bubble {
+  display: block;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  font-size: var(--type-ui);
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+/* Your own lines: a quiet accent edge instead of a right-aligned bubble. */
+.chat-messages .message-own::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  border-radius: 2px;
+  background: color-mix(in srgb, var(--accent) 55%, transparent);
+}
+.message-content > form {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  margin: 0;
+  opacity: 0;
+  transition: opacity var(--t-quick) var(--ease-out);
+}
+.chat-message:hover .message-content > form,
+.chat-message:focus-within .message-content > form {
+  opacity: 1;
+}
+@media (hover: none) {
+  .message-content > form {
+    position: static;
+    opacity: 1;
+  }
+}
+
+/* ---- Voice (Discord-inspired presence, as a compact roster) ------------ */
+.voice-orbit {
+  display: none;
+}
+.voice-person {
+  display: grid;
+  justify-items: center;
+  gap: 4px;
+  padding: 14px 8px 12px;
+  border: 1px solid var(--hairline);
+  border-radius: var(--r-card);
+  background: var(--surface);
+  text-align: center;
+  transition: border-color var(--t-base) var(--ease-out);
+}
+.voice-person .voice-avatar {
+  position: relative;
+  background: color-mix(
+    in srgb,
+    var(--author, var(--accent)) 18%,
+    var(--surface-elevated)
+  );
+  color: var(--author, var(--accent));
+  box-shadow: 0 0 0 2px var(--surface);
+  transition: box-shadow var(--t-base) var(--ease-out);
+}
+.voice-person.is-speaking {
+  border-color: color-mix(in srgb, var(--success) 55%, transparent);
+}
+.voice-person.is-speaking .voice-avatar {
+  box-shadow:
+    0 0 0 2px var(--surface),
+    0 0 0 4px var(--success),
+    0 0 18px color-mix(in srgb, var(--success) 45%, transparent);
+}
+.voice-person.is-muted .voice-avatar i {
+  color: var(--danger);
+}
+.voice-person strong {
+  margin-top: 7px;
+  font-size: 13px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.voice-person small {
+  font-size: var(--type-label);
+  color: var(--muted-foreground);
+}
+.voice-controls button,
+.voice-control-group button {
+  border-radius: var(--r-control);
+}
+.voice-footer {
+  font-size: var(--type-label);
+}
+.voice-stage-caption {
+  font-size: var(--type-label);
+  font-weight: 700;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+/* ---- Light theme: author colours darkened to keep 4.5:1 --------------- */
+[data-theme="paper"] .message-meta strong,
+[data-theme="paper"] .message-avatar,
+[data-theme="paper"] .voice-person .voice-avatar {
+  color: color-mix(
+    in oklab,
+    var(--author, var(--accent)) 35%,
+    var(--foreground)
+  );
+}
+[data-theme="paper"] .sidebar a[aria-current="page"]::before {
+  box-shadow: none;
+}
+
+/* ---- Reduced motion ---------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .status-dot {
+    animation: none;
+  }
+  .button,
+  .room-card,
+  .chart-row,
+  .watch-source,
+  .fandom-room-link,
+  .voice-person,
+  .voice-avatar {
+    transition: none;
+  }
+  .button:hover:not(:disabled) {
+    transform: none;
+  }
+}
+
+/* ---- Shape language: soft squares instead of pills ---------------------- */
+/* Every former pill takes --radius-pill (= --r-control, see Tokens); counters
+   and badges take 6 px. */
+.admin-count,
+.admin-badge,
+.request-status,
+.profile-fandom-count,
+.room-tab-count,
+.demo-author,
+.demo-hint-label {
+  border-radius: 6px;
+}
+.admin-tabs button,
+.admin-filter button,
+.demo-tools button,
+.synced-player .sync-join,
+:is(.brand-app, body) .room-dock .dock-return {
+  border-radius: var(--r-control);
+}
+
+/* Filter chips: quiet by default; the active one is lit by the signal. */
+:is(.brand-app, body) .chip {
+  border: 1px solid var(--hairline);
+  background: var(--surface);
+  color: var(--muted-foreground);
+}
+:is(.brand-app, body) .chip:hover {
+  background: var(--surface-hover);
+  color: var(--foreground);
+  border-color: var(--border-strong);
+}
+:is(.brand-app, body) .chip.active,
+:is(.brand-app, body) .chip[aria-pressed="true"] {
+  background: var(--signal-soft);
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  color: var(--foreground);
+  box-shadow: inset 0 -2px 0 var(--signal);
+}
+
+/* Voice roster uses the panel width. */
+.voice-stage {
+  align-items: stretch;
+}
+.voice-people {
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  padding: 0 4px;
+}
+
+/* A label stays a label even when it is the section's heading element. */
+.brand-surface h2.section-index,
+h2.section-index,
+h3.section-index {
+  font-size: var(--type-label);
+  letter-spacing: var(--tracking-label);
+  line-height: 1.4;
+}
+
+/* Admin tabs and filters select like every other choice: lit by the signal. */
+.admin-tabs button[data-state="active"],
+.admin-filter button[aria-pressed="true"] {
+  background: var(--signal-soft);
+  border-color: color-mix(in srgb, var(--accent) 55%, transparent);
+  color: var(--foreground);
+  box-shadow: inset 0 -2px 0 var(--signal);
+}
+.admin-filter button {
+  border-radius: var(--r-control);
+}
+
+/* Room dock (Task 4): the icon-only return button on phones keeps its icon
+   centred inside the soft square. */
+:is(.brand-app, body) .room-dock .dock-return {
+  justify-content: center;
+  background: var(--surface-elevated);
+  border: 1px solid var(--hairline);
+  color: var(--foreground);
+}

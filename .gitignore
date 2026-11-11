@@ -1,0 +1,25 @@
+node_modules/
+.next/
+.next-audit*/
+out/
+dist/
+coverage/
+playwright-report/
+test-results/
+.env*
+!.env.example
+*.log
+*.tsbuildinfo
+.DS_Store
+.local/
+.obsidian/workspace*.json
+
+# Self-signed dev HTTPS certificate and key (npm run dev:https)
+/certificates
+
+# Local tools and scratch output; never part of the public repository
+.audit/
+.claude/
+.obsidian/
+brag-output/
+.vercel/

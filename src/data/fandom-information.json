@@ -1,0 +1,3302 @@
+{
+  "cinema-0": {
+    "title": "Star Wars (film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Звёздные войны» , впоследствии выпущенный под названием «Звёздные войны. Эпизо́д IV: Но́вая наде́жда» (англ.",
+      "en": "Star Wars is a 1977 American epic space opera film written and directed by George Lucas. Produced by Lucasfilm Ltd. and distributed by…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%97%D0%B2%D1%91%D0%B7%D0%B4%D0%BD%D1%8B%D0%B5_%D0%B2%D0%BE%D0%B9%D0%BD%D1%8B._%D0%AD%D0%BF%D0%B8%D0%B7%D0%BE%D0%B4_IV:_%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F_%D0%BD%D0%B0%D0%B4%D0%B5%D0%B6%D0%B4%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Star_Wars_(film)"
+    },
+    "revision": {
+      "ru": 155879922,
+      "en": 1383372128
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q17738",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-1": {
+    "title": "Star Trek (2009 film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Эта статья о фильме, который вышел в 2009 году. О фильме 1979 года см. Звёздный путь , об одноимённом телевизионном сериале см.",
+      "en": "Star Trek is a 2009 American science fiction action film directed by J. J. Abrams and written by Roberto Orci and Alex Kurtzman.…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%97%D0%B2%D1%91%D0%B7%D0%B4%D0%BD%D1%8B%D0%B9_%D0%BF%D1%83%D1%82%D1%8C_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2009)",
+      "en": "https://en.wikipedia.org/wiki/Star_Trek_(2009_film)"
+    },
+    "revision": {
+      "ru": 154587048,
+      "en": 1383322097
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q213081",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-2": {
+    "title": "Doctor Who",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Доктор Кто» — британский научно-фантастический телесериал компании «Би-би-си» об инопланетном путешественнике во времени, известном как Доктор, придуманном канадским продюсером Сидни Ньюманом. Вместе со…",
+      "en": "Doctor Who is a British science fiction television series first broadcast by the BBC in 1963. The series, created by Sydney Newman, C.…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BA%D1%82%D0%BE%D1%80_%D0%9A%D1%82%D0%BE",
+      "en": "https://en.wikipedia.org/wiki/Doctor_Who"
+    },
+    "revision": {
+      "ru": 155599159,
+      "en": 1382766663
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q34316",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-3": {
+    "title": "Stranger Things season 1",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Первый сезон американского научно-фантастического сериала ужасов «Очень странные дела», премьера которого состоялась по всему миру на Netflix 15 июля 2016 года. Сериал был…",
+      "en": "The first season of the American science fiction horror drama television series Stranger Things premiered worldwide on the streaming service Netflix on July…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D1%87%D0%B5%D0%BD%D1%8C_%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%BD%D1%8B%D0%B5_%D0%B4%D0%B5%D0%BB%D0%B0_(1-%D0%B9_%D1%81%D0%B5%D0%B7%D0%BE%D0%BD)",
+      "en": "https://en.wikipedia.org/wiki/Stranger_Things_season_1"
+    },
+    "revision": {
+      "ru": 155443692,
+      "en": 1383126082
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q28678769",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-4": {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Властели́н коле́ц: Бра́тство Кольца́» — приключенческий фильм в жанре эпического фэнтези 2001 года, седьмой полнометражный фильм, снятый режиссёром Питером Джексоном по сценарию Фрэнсис…",
+      "en": "The Lord of the Rings: The Fellowship of the Ring is a 2001 epic fantasy film directed by Peter Jackson from a screenplay…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%BB%D0%B0%D1%81%D1%82%D0%B5%D0%BB%D0%B8%D0%BD_%D0%BA%D0%BE%D0%BB%D0%B5%D1%86:_%D0%91%D1%80%D0%B0%D1%82%D1%81%D1%82%D0%B2%D0%BE_%D0%9A%D0%BE%D0%BB%D1%8C%D1%86%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Fellowship_of_the_Ring"
+    },
+    "revision": {
+      "ru": 155247188,
+      "en": 1383061585
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q127367",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-5": {
+    "title": "Harry Potter and the Philosopher's Stone (film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Га́рри По́ттер и филосо́фский ка́мень» — британско-американский фэнтезийный фильм 2001 года режиссёра Криса Коламбуса по сценарию Стива Кловиса. Первый фильм франшизы о мальчике-волшебнике…",
+      "en": "Harry Potter and the Philosopher's Stone is a 2001 fantasy film directed by Chris Columbus and written by Steve Kloves, based on the…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%93%D0%B0%D1%80%D1%80%D0%B8_%D0%9F%D0%BE%D1%82%D1%82%D0%B5%D1%80_%D0%B8_%D1%84%D0%B8%D0%BB%D0%BE%D1%81%D0%BE%D1%84%D1%81%D0%BA%D0%B8%D0%B9_%D0%BA%D0%B0%D0%BC%D0%B5%D0%BD%D1%8C_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)",
+      "en": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"
+    },
+    "revision": {
+      "ru": 155974288,
+      "en": 1383275221
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q102438",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-6": {
+    "title": "Dune (2021 film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Дю́на» , в титрах «Дюна: Часть первая» — американский эпический научно-фантастический фильм 2021 года режиссёра Дени Вильнёва, сценарий для которого написал он сам…",
+      "en": "Dune is a 2021 American epic space opera film co-produced and directed by Denis Villeneuve, who co-wrote the screenplay with Jon Spaihts and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%94%D1%8E%D0%BD%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2021)",
+      "en": "https://en.wikipedia.org/wiki/Dune_(2021_film)"
+    },
+    "revision": {
+      "ru": 154508980,
+      "en": 1383214171
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q60834962",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-7": {
+    "title": "The Avengers (2012 film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Мсти́тели» — американский супергеройский фильм 2012 года, основанный на одноимённой команде из комиксов издательства Marvel Comics. Шестая лента в медиафраншизе «Киновселенная Marvel» ,…",
+      "en": "Marvel's The Avengers is a 2012 American superhero film based on the Marvel Comics superhero team the Avengers. Produced by Marvel Studios and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D1%81%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D0%B8_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC%2C_2012)",
+      "en": "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)"
+    },
+    "revision": {
+      "ru": 154938971,
+      "en": 1382323094
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q182218",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-8": {
+    "title": "The Batman (film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Бэ́тмен» — американский художественный фильм 2022 года Мэтта Ривза с Робертом Паттинсоном в главной роли. Экранизация комиксов DC о приключениях супергероя Бэтмена.",
+      "en": "The Batman is a 2022 American superhero film directed by Matt Reeves from a screenplay he wrote with Peter Craig. Based on the…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D1%8D%D1%82%D0%BC%D0%B5%D0%BD_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2022)",
+      "en": "https://en.wikipedia.org/wiki/The_Batman_(film)"
+    },
+    "revision": {
+      "ru": 154694710,
+      "en": 1383338245
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q61117344",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-9": {
+    "title": "Avatar (2009 film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Авата́р» — американский эпический научно-фантастический фильм 2009 года сценариста и режиссёра Джеймса Кэмерона с Сэмом Уортингтоном и Зои Салданой в главных ролях. Действие…",
+      "en": "Avatar is a 2009 epic science fiction film written and directed by James Cameron. It features an ensemble cast including Sam Worthington, Zoe…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D0%B0%D1%82%D0%B0%D1%80_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC,_2009)",
+      "en": "https://en.wikipedia.org/wiki/Avatar_(2009_film)"
+    },
+    "revision": {
+      "ru": 155756952,
+      "en": 1383394132
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q24871",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-10": {
+    "title": "Sherlock (TV series)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Ше́рлок», также «Шерлок Холмс» — британский сериал в жанре детективной криминальной драмы, основанный на произведениях Артура Конан Дойля о детективе Шерлоке Холмсе. Создателями…",
+      "en": "Sherlock is a British mystery crime drama television series based on Sir Arthur Conan Doyle's Sherlock Holmes detective stories. Created by Steven Moffat…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A8%D0%B5%D1%80%D0%BB%D0%BE%D0%BA_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB)",
+      "en": "https://en.wikipedia.org/wiki/Sherlock_(TV_series)"
+    },
+    "revision": {
+      "ru": 154574624,
+      "en": 1383204689
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q192837",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-11": {
+    "title": "Supernatural (American TV series)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Сверхъесте́ственное» — американский телесериал в жанре тёмного фэнтези, созданный Эриком Крипке.",
+      "en": "Supernatural is an American dark fantasy television series created by Eric Kripke that ran for 15 seasons. It premiered on The WB on…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B5%D1%80%D1%85%D1%8A%D0%B5%D1%81%D1%82%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB)",
+      "en": "https://en.wikipedia.org/wiki/Supernatural_(American_TV_series)"
+    },
+    "revision": {
+      "ru": 155249267,
+      "en": 1383131833
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q130585",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-12": {
+    "title": "The Witcher (TV series)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Ведьмак» — американо-польский фэнтезийный телесериал, снятый по мотивам одноимённой серии романов Анджея Сапковского. В 2022 году на экраны вышел приквел шоу, сериал «Ведьмак:…",
+      "en": "The Witcher is a fantasy drama television series created by Lauren Schmidt Hissrich for Netflix. It is based on the book series by…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%B5%D0%B4%D1%8C%D0%BC%D0%B0%D0%BA_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB,_2019)",
+      "en": "https://en.wikipedia.org/wiki/The_Witcher_(TV_series)"
+    },
+    "revision": {
+      "ru": 155004869,
+      "en": 1382907513
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q47500433",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-13": {
+    "title": "Wednesday (TV series)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Уэ́нздей» — американский сериал о взрослении с жанровыми элементами готики, детектива, чёрной комедии и мистики, основанный на сюжете о Семейке Аддамс. Сериал создали…",
+      "en": "Wednesday is an American supernatural mystery comedy television series based on the character Wednesday Addams by Charles Addams. Created by Alfred Gough and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A3%D1%8D%D0%BD%D0%B7%D0%B4%D0%B5%D0%B9",
+      "en": "https://en.wikipedia.org/wiki/Wednesday_(TV_series)"
+    },
+    "revision": {
+      "ru": 155130722,
+      "en": 1382917457
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q105553568",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-14": {
+    "title": "The Last of Us (TV series)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Одни́ из нас» — американский постапокалиптический драматический телесериал канала HBO. Основан на компьютерной игре 2013 года The Last of Us, разработанной компанией Naughty…",
+      "en": "The Last of Us is an American post-apocalyptic drama television series created by Craig Mazin and Neil Druckmann for HBO. Based on the…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D0%B4%D0%BD%D0%B8_%D0%B8%D0%B7_%D0%BD%D0%B0%D1%81_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB)",
+      "en": "https://en.wikipedia.org/wiki/The_Last_of_Us_(TV_series)"
+    },
+    "revision": {
+      "ru": 155949566,
+      "en": 1377112443
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q87131973",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-15": {
+    "title": "House of the Dragon",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Дом Драко́на» — американский фэнтезийный драматический телесериал, созданный Джорджем Р. Р. Мартином и Райаном Кондалом для телеканала HBO. Приквел «Игры престолов» и второй…",
+      "en": "House of the Dragon is an American fantasy drama television series created by George R. R. Martin and Ryan Condal for HBO. A…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%94%D0%BE%D0%BC_%D0%94%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/House_of_the_Dragon"
+    },
+    "revision": {
+      "ru": 154805302,
+      "en": 1382063473
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q72930269",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-16": {
+    "title": "Game of Thrones",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Игра́ престо́лов» — американский фэнтезийный драматический телесериал, созданный Дэвидом Бениоффом и Д. Б. Уайссом для кабельного телеканала HBO. Основан на цикле романов «Песнь…",
+      "en": "Game of Thrones is an American fantasy drama television series created by David Benioff and D. B. Weiss for HBO. It is the…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%B3%D1%80%D0%B0_%D0%BF%D1%80%D0%B5%D1%81%D1%82%D0%BE%D0%BB%D0%BE%D0%B2_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB)",
+      "en": "https://en.wikipedia.org/wiki/Game_of_Thrones"
+    },
+    "revision": {
+      "ru": 155130570,
+      "en": 1383306502
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q23572",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-17": {
+    "title": "Breaking Bad",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Во все тяжкие» — американская телевизионная криминальная драма, премьерные серии которой транслировались с 20 января 2008 года по 29 сентября 2013 года по…",
+      "en": "Breaking Bad is an American neo-Western crime drama television series created by Vince Gilligan for AMC. Set and filmed in Albuquerque, New Mexico,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE_%D0%B2%D1%81%D0%B5_%D1%82%D1%8F%D0%B6%D0%BA%D0%B8%D0%B5",
+      "en": "https://en.wikipedia.org/wiki/Breaking_Bad"
+    },
+    "revision": {
+      "ru": 155657513,
+      "en": 1383091956
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1079",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-18": {
+    "title": "Better Call Saul",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Лучше звоните Солу» — американский криминально-драматический телесериал, премьера которого состоялась на канале AMC 8 февраля 2015 года. Сериал, созданный Винсом Гиллиганом и Питером…",
+      "en": "Better Call Saul is an American neo-noir legal crime drama television series created by Vince Gilligan and Peter Gould for AMC. Part of…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9B%D1%83%D1%87%D1%88%D0%B5_%D0%B7%D0%B2%D0%BE%D0%BD%D0%B8%D1%82%D0%B5_%D0%A1%D0%BE%D0%BB%D1%83",
+      "en": "https://en.wikipedia.org/wiki/Better_Call_Saul"
+    },
+    "revision": {
+      "ru": 155665653,
+      "en": 1383185422
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q14925221",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-19": {
+    "title": "Friends",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Друзья́» — американский ситком, повествующий о жизни шестерых друзей. Признан одним из лучших комедийных сериалов в истории американского телевидения и стал одним из…",
+      "en": "Friends is an American television sitcom created by David Crane and Marta Kauffman, which aired on NBC from September 22, 1994, to May…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%94%D1%80%D1%83%D0%B7%D1%8C%D1%8F_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB)",
+      "en": "https://en.wikipedia.org/wiki/Friends"
+    },
+    "revision": {
+      "ru": 155946596,
+      "en": 1383153629
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q79784",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-20": {
+    "title": "The Office (American TV series)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«О́фис» — американский ситком, созданный на основе одноименного популярного сериала канала BBC, обладатель многочисленных премий «Золотой глобус», «Эмми» и «Peabody Awards», снятый в…",
+      "en": "The Office is an American mockumentary sitcom television series. It is based on the BBC series The Office created by Ricky Gervais and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D1%84%D0%B8%D1%81_(%D1%82%D0%B5%D0%BB%D0%B5%D1%81%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%2C_%D0%A1%D0%A8%D0%90)",
+      "en": "https://en.wikipedia.org/wiki/The_Office_(American_TV_series)"
+    },
+    "revision": {
+      "ru": 122241265,
+      "en": 1383091804
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q23831",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-21": {
+    "title": "The X-Files",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Секре́тные материа́лы» — американский научно-фантастический телесериал, созданный Крисом Картером. Показ стартовал 10 сентября 1993 года и завершился 21 марта 2018 года. За это…",
+      "en": "The X-Files is an American science fiction drama television series created by Chris Carter. The original series aired from September 10, 1993, to…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BA%D1%80%D0%B5%D1%82%D0%BD%D1%8B%D0%B5_%D0%BC%D0%B0%D1%82%D0%B5%D1%80%D0%B8%D0%B0%D0%BB%D1%8B",
+      "en": "https://en.wikipedia.org/wiki/The_X-Files"
+    },
+    "revision": {
+      "ru": 155251947,
+      "en": 1383250264
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q2744",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-22": {
+    "title": "Twin Peaks",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Твин Пикс» — американский драматический телесериал, созданный режиссёром Дэвидом Линчем и сценаристом Марком Фростом. Премьера состоялась 8 апреля 1990 года. Действие сериала происходит…",
+      "en": "Twin Peaks is an American surrealist mystery-horror-drama television series created by David Lynch and Mark Frost. It premiered on ABC on April 8,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B2%D0%B8%D0%BD_%D0%9F%D0%B8%D0%BA%D1%81",
+      "en": "https://en.wikipedia.org/wiki/Twin_Peaks"
+    },
+    "revision": {
+      "ru": 155301658,
+      "en": 1382930959
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q2085",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-23": {
+    "title": "Interstellar (film)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Интерсте́ллар» — эпический научно-фантастический драматический фильм 2014 года, девятый полнометражный фильм режиссёра Кристофера Нолана, который написал сценарий в соавторстве со своим братом Джонатаном.…",
+      "en": "Interstellar is a 2014 epic science fiction drama film directed by Christopher Nolan, who co-wrote the screenplay with his brother, Jonathan Nolan. It…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80",
+      "en": "https://en.wikipedia.org/wiki/Interstellar_(film)"
+    },
+    "revision": {
+      "ru": 155528719,
+      "en": 1382482235
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q13417189",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "cinema-24": {
+    "title": "The Matrix",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Матрица» — культовый научно-фантастический боевик, поставленный братьями Вачовски по собственному сценарию и спродюсированный Джоэлом Сильвером. Главные роли исполнили Киану Ривз, Лоренс Фишберн, Керри-Энн…",
+      "en": "The Matrix is a 1999 science fiction–action film written and directed by the Wachowskis. The first installment in the Matrix film series, it…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D1%82%D1%80%D0%B8%D1%86%D0%B0_(%D1%84%D0%B8%D0%BB%D1%8C%D0%BC)",
+      "en": "https://en.wikipedia.org/wiki/The_Matrix"
+    },
+    "revision": {
+      "ru": 155845176,
+      "en": 1383367532
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q83495",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-0": {
+    "title": "One Piece",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«One Piece. Большой куш» — сёнэн-манга за авторством Эйитиро Оды, выходящая с 22 июля 1997 года по настоящее время в журнале Weekly Shonen…",
+      "en": "One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It follows the adventures of Monkey D. Luffy and his…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/One_Piece._%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%BA%D1%83%D1%88",
+      "en": "https://en.wikipedia.org/wiki/One_Piece"
+    },
+    "revision": {
+      "ru": 155827027,
+      "en": 1383040207
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q28667972",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-1": {
+    "title": "Naruto",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Наруто» — сёнэн-манга Масаси Кисимото, рассказывающая о жизни шумного и непоседливого ниндзя-подростка Наруто Удзумаки, мечтающего достичь всеобщего признания и стать Хокагэ — главой…",
+      "en": "Naruto is a Japanese manga series written and illustrated by Masashi Kishimoto. It tells the story of Naruto Uzumaki, a young, socially isolated…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%80%D1%83%D1%82%D0%BE",
+      "en": "https://en.wikipedia.org/wiki/Naruto"
+    },
+    "revision": {
+      "ru": 155190724,
+      "en": 1379758694
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q26971382",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-2": {
+    "title": "Bleach (manga)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Блич» — манга Тайто Кубо и её аниме-адаптации.",
+      "en": "Bleach is a Japanese manga series written and illustrated by Tite Kubo. It follows teenager Ichigo Kurosaki, who obtains the powers of a…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%B8%D1%87",
+      "en": "https://en.wikipedia.org/wiki/Bleach_(manga)"
+    },
+    "revision": {
+      "ru": 155964403,
+      "en": 1383162687
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q904",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-3": {
+    "title": "Dragon Ball",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Жемчуг дракона» — манга, созданная Акирой Ториямой, и её многочисленные экранизации. Она по главам выходила в японском журнале Shonen Jump с 1984 по…",
+      "en": "Dragon Ball is a Japanese media franchise created by Akira Toriyama. The series follows the adventures of protagonist Son Goku from his childhood…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%96%D0%B5%D0%BC%D1%87%D1%83%D0%B3_%D0%B4%D1%80%D0%B0%D0%BA%D0%BE%D0%BD%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Dragon_Ball"
+    },
+    "revision": {
+      "ru": 154608981,
+      "en": 1381000548
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q2020",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-4": {
+    "title": "Attack on Titan",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Атака на титанов», или «Атака титанов» — японская постапокалиптическая манга, написанная и иллюстрированная Хадзимэ Исаямой.",
+      "en": "Attack on Titan is a Japanese manga series written and illustrated by Hajime Isayama. Set in a world where humanity is forced to…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%82%D0%B0%D0%BA%D0%B0_%D0%BD%D0%B0_%D1%82%D0%B8%D1%82%D0%B0%D0%BD%D0%BE%D0%B2_(%D0%BC%D0%B0%D0%BD%D0%B3%D0%B0)",
+      "en": "https://en.wikipedia.org/wiki/Attack_on_Titan"
+    },
+    "revision": {
+      "ru": 155795810,
+      "en": 1383187380
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q586025",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-5": {
+    "title": "Demon Slayer: Kimetsu no Yaiba",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Истребитель демонов» — манга автора и иллюстратора Коёхару Готогэ, выпускавшаяся в журнале сёнэн-манги Weekly Shonen Jump издательства Shueisha с февраля 2016 года по…",
+      "en": "Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. It was serialized in Shueisha's shōnen manga…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%98%D1%81%D1%82%D1%80%D0%B5%D0%B1%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%B4%D0%B5%D0%BC%D0%BE%D0%BD%D0%BE%D0%B2",
+      "en": "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba"
+    },
+    "revision": {
+      "ru": 155220576,
+      "en": 1381383768
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q24862683",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-6": {
+    "title": "Jujutsu Kaisen",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Магическая битва» — манга, созданная Гэгэ Акутами и публикующаяся с марта 2018 года в журнале Weekly Shōnen Jump издательства Shueisha. Позже главы были…",
+      "en": "Jujutsu Kaisen is a Japanese manga series written and illustrated by Gege Akutami. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%B0%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B1%D0%B8%D1%82%D0%B2%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Jujutsu_Kaisen"
+    },
+    "revision": {
+      "ru": 149501706,
+      "en": 1382023380
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q55522899",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-7": {
+    "title": "My Hero Academia",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Моя геройская академия» — манга, написанная и иллюстрированная Кохэем Хорикоси. Сюжет рассказывает об Идзуку Мидории, мальчике, родившемся без сверхспособностей в мире, где они…",
+      "en": "My Hero Academia is a Japanese manga series written and illustrated by Kōhei Horikoshi. It was serialized in Shueisha's shōnen manga magazine Weekly…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9C%D0%BE%D1%8F_%D0%B3%D0%B5%D1%80%D0%BE%D0%B9%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F",
+      "en": "https://en.wikipedia.org/wiki/My_Hero_Academia"
+    },
+    "revision": {
+      "ru": 153240193,
+      "en": 1382270421
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q18047903",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-8": {
+    "title": "Death Note",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Тетрадь смерти» — манга автора Цугуми Обы, проиллюстрированная Такэси Обатой, выпускавшаяся в журнале Weekly Shonen Jump с 1 декабря 2003 года по 15…",
+      "en": "Death Note is a Japanese manga series written by Tsugumi Ohba and illustrated by Takeshi Obata. It was serialized in Shueisha's shōnen manga…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D1%82%D1%80%D0%B0%D0%B4%D1%8C_%D1%81%D0%BC%D0%B5%D1%80%D1%82%D0%B8",
+      "en": "https://en.wikipedia.org/wiki/Death_Note"
+    },
+    "revision": {
+      "ru": 155513335,
+      "en": 1381769893
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1834",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-9": {
+    "title": "Fullmetal Alchemist",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Стальной алхимик» — манга Хирому Аракавы. Манга ежемесячно издавалась с августа 2001 года по июнь 2010 года в журнале Shonen Gangan, принадлежащем компании…",
+      "en": "Fullmetal Alchemist is a Japanese manga series written and illustrated by Hiromu Arakawa. It was serialized in Square Enix's shōnen manga anthology magazine…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%BB%D1%8C%D0%BD%D0%BE%D0%B9_%D0%B0%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D0%BA",
+      "en": "https://en.wikipedia.org/wiki/Fullmetal_Alchemist"
+    },
+    "revision": {
+      "ru": 154546512,
+      "en": 1383145379
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q189562",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-10": {
+    "title": "Hunter × Hunter",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Hunter × Hunter — манга Ёсихиро Тогаси. Манга выходит с 8 марта 1998 года в журнале Weekly Shonen Jump, хотя с 2006 года…",
+      "en": "Hunter × Hunter is a Japanese manga series written and illustrated by Yoshihiro Togashi. It has been serialized in Shueisha's shōnen manga magazine…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Hunter_%C3%97_Hunter",
+      "en": "https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter"
+    },
+    "revision": {
+      "ru": 155216718,
+      "en": 1381097044
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q696071",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-11": {
+    "title": "Haikyu!!",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Haikyu!! — спортивная манга про волейбол, созданная Харуити Фурудатэ. Манга выпускалась с февраля 2012 года по июль 2020 года в журнале Weekly Shōnen…",
+      "en": "Haikyu!! is a Japanese manga series written and illustrated by Haruichi Furudate. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB!",
+      "en": "https://en.wikipedia.org/wiki/Haikyu!!"
+    },
+    "revision": {
+      "ru": 154016950,
+      "en": 1381740115
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q326642",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-12": {
+    "title": "Spy × Family",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Spy × Family: Семья шпиона» — манга, написанная и проиллюстрированная Тацуей Эндо. Сюжет манги рассказывает о шпионе, для выполнения миссии обзаведшемся семьёй и…",
+      "en": "Spy × Family is a Japanese web manga series written and illustrated by Tatsuya Endo. The story follows Agent Twilight, an enigmatic spy…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%BC%D1%8C%D1%8F_%D1%88%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Spy_%C3%97_Family"
+    },
+    "revision": {
+      "ru": 155550622,
+      "en": 1378380720
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q65231576",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-13": {
+    "title": "Chainsaw Man",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Человек-бензопила» — манга, написанная и проиллюстрированная Тацуки Фудзимото. Первая часть публиковалась в журнале Shueisha Weekly Shonen Jump с 3 декабря 2018 по 14…",
+      "en": "Chainsaw Man is a Japanese manga series written and illustrated by Tatsuki Fujimoto. Its first arc was serialized in Shueisha's shōnen manga magazine…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA-%D0%B1%D0%B5%D0%BD%D0%B7%D0%BE%D0%BF%D0%B8%D0%BB%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Chainsaw_Man"
+    },
+    "revision": {
+      "ru": 154235441,
+      "en": 1382617994
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q65240543",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-14": {
+    "title": "Frieren",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Sousou no Frieren — манга, написанная Канэхито Ямадой и проиллюстрированная Цукасой Абэ. Выпускается с апреля 2020 в японском журнале Weekly Shonen Sunday издательства…",
+      "en": "Frieren: Beyond Journey's End is a Japanese manga series written by Kanehito Yamada and illustrated by Tsukasa Abe. It has been serialized in…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Sousou_no_Frieren",
+      "en": "https://en.wikipedia.org/wiki/Frieren"
+    },
+    "revision": {
+      "ru": 155842777,
+      "en": 1381436923
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q98642652",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-15": {
+    "title": "Violet Evergarden",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Вайолет Эвергарден» — ранобэ Каны Акацуки и иллюстратора Акико Такасэ. Аниме-адаптация ранобэ от студии Kyoto Animation транслировалась с января по апрель 2018 года.…",
+      "en": "Violet Evergarden is a Japanese light novel series written by Kana Akatsuki and illustrated by Akiko Takase. It was published by Kyoto Animation…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%B0%D0%B9%D0%BE%D0%BB%D0%B5%D1%82_%D0%AD%D0%B2%D0%B5%D1%80%D0%B3%D0%B0%D1%80%D0%B4%D0%B5%D0%BD",
+      "en": "https://en.wikipedia.org/wiki/Violet_Evergarden"
+    },
+    "revision": {
+      "ru": 155896886,
+      "en": 1381043521
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q22101190",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-16": {
+    "title": "Cowboy Bebop",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Ковбой Бибоп, или Cowboy Bebop — сериал, созданный студией Sunrise. Съёмочную группу возглавил режиссёр Синъитиро Ватанабэ, сценаристом выступила Кэйко Нобумото. Композитор — Ёко…",
+      "en": "Cowboy Bebop is a Japanese neo-noir space Western anime television series that aired on TV Tokyo and Wowow from 1998 to 1999. Created…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%B2%D0%B1%D0%BE%D0%B9_%D0%91%D0%B8%D0%B1%D0%BE%D0%BF",
+      "en": "https://en.wikipedia.org/wiki/Cowboy_Bebop"
+    },
+    "revision": {
+      "ru": 153673604,
+      "en": 1382858966
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q101244908",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-17": {
+    "title": "Neon Genesis Evangelion",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Евангелион» , или сокращённо «Ева», — культовый аниме-сериал в жанре «меха», снятый режиссёром Хидэаки Анно на студии Gainax и выходивший с 4 октября…",
+      "en": "Neon Genesis Evangelion , also known as simply Evangelion or Eva, is a Japanese anime television series produced by Gainax and Tatsunoko Production,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%95%D0%B2%D0%B0%D0%BD%D0%B3%D0%B5%D0%BB%D0%B8%D0%BE%D0%BD",
+      "en": "https://en.wikipedia.org/wiki/Neon_Genesis_Evangelion"
+    },
+    "revision": {
+      "ru": 155510250,
+      "en": 1383300169
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q662",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-18": {
+    "title": "Sailor Moon",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Манга Наоко Такэути о школьницах-воительницах, защищающих Землю.",
+      "en": "Naoko Takeuchi’s manga about schoolgirls who become guardians of Earth."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Sailor Moon is a Japanese manga series written and illustrated by Naoko Takeuchi. It was originally serialized in Kodansha's shōjo manga magazine Nakayoshi…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B9%D0%BB%D0%BE%D1%80_%D0%9C%D1%83%D0%BD",
+      "en": "https://en.wikipedia.org/wiki/Sailor_Moon"
+    },
+    "revision": {
+      "ru": 155469302,
+      "en": 1383278869
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1643098",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-19": {
+    "title": "Pokémon (TV series)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Покемо́н» — аниме, снятое по мотивам одноимённой серии видеоигр и являющееся частью медиафраншизы «Покемон». Премьера первой серии «Покемон! Я выбираю тебя!» прошла 1…",
+      "en": "Pokémon, abbreviated from the Japanese title of Pocket Monsters, and branded in English as Pokémon the Series and Pokémon Horizons: The Series, is…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D0%BA%D0%B5%D0%BC%D0%BE%D0%BD_(%D0%B0%D0%BD%D0%B8%D0%BC%D0%B5)",
+      "en": "https://en.wikipedia.org/wiki/Pok%C3%A9mon_(TV_series)"
+    },
+    "revision": {
+      "ru": 155756034,
+      "en": 1383148119
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q239937",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-20": {
+    "title": "Digimon",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Digimon , сокращение от Digital Monsters — японская медиафраншиза, созданная Акиёси Хонго и распространяемая компанией Bandai Namco Holdings. Названа в честь одноимённых цифровых…",
+      "en": "Digimon , short for \"Digital Monsters\" , is a Japanese media franchise, which encompasses virtual pet toys, anime, manga, video games, films, and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Digimon",
+      "en": "https://en.wikipedia.org/wiki/Digimon"
+    },
+    "revision": {
+      "ru": 149854338,
+      "en": 1382214442
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q193884",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-21": {
+    "title": "JoJo's Bizarre Adventure",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "JoJo's Bizarre Adventure — серия выпусков манги, автором и иллюстратором которой является Хирохико Араки. С 1987 по 2004 год серия публиковалась в журнале…",
+      "en": "JoJo's Bizarre Adventure is a Japanese manga series written and illustrated by Hirohiko Araki. It was originally serialized in Shueisha's shōnen manga magazine…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/JoJo%E2%80%99s_Bizarre_Adventure",
+      "en": "https://en.wikipedia.org/wiki/JoJo%27s_Bizarre_Adventure"
+    },
+    "revision": {
+      "ru": 155717475,
+      "en": 1382026619
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q696918",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-22": {
+    "title": "Berserk (manga)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Тёмное фэнтези Кэнтаро Миуры о наёмнике Гатсе.",
+      "en": "Kentaro Miura’s dark fantasy manga following the mercenary Guts."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Berserk is a Japanese manga series created by Kentaro Miura. Set in a medieval Europe–inspired dark fantasy world, the story centers on the…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D1%80%D1%81%D0%B5%D1%80%D0%BA_(%D0%BC%D0%B0%D0%BD%D0%B3%D0%B0)",
+      "en": "https://en.wikipedia.org/wiki/Berserk_(manga)"
+    },
+    "revision": {
+      "ru": 155614863,
+      "en": 1380596892
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q18558978",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-23": {
+    "title": "Vinland Saga",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Историческая манга Макото Юкимуры о Торфинне и мире викингов.",
+      "en": "Makoto Yukimura’s historical manga following Thorfinn in the Viking age."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Vinland Saga may refer to:Norse settlement of North America Vinland sagas, two 13th-century Icelandic texts about the discovery, exploration, and settlement of Vinland…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Vinland_Saga",
+      "en": "https://en.wikipedia.org/wiki/Vinland_Saga_(manga)"
+    },
+    "revision": {
+      "ru": 144908707,
+      "en": 1361926846
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q6431374",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "anime-24": {
+    "title": "Spirited Away",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Анимационный фильм Хаяо Миядзаки о Тихиро, попавшей в мир духов.",
+      "en": "Hayao Miyazaki’s animated film about Chihiro entering a world of spirits."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Spirited Away is a 2001 Japanese animated fantasy film written and directed by Hayao Miyazaki. It was produced by Toshio Suzuki, animated by…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A3%D0%BD%D0%B5%D1%81%D1%91%D0%BD%D0%BD%D1%8B%D0%B5_%D0%BF%D1%80%D0%B8%D0%B7%D1%80%D0%B0%D0%BA%D0%B0%D0%BC%D0%B8",
+      "en": "https://en.wikipedia.org/wiki/Spirited_Away"
+    },
+    "revision": {
+      "ru": 155305368,
+      "en": 1383075877
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q155653",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-0": {
+    "title": "Minecraft",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Minecraft — компьютерная инди-игра в жанре песочницы, созданная шведским программистом Маркусом Перссоном и выпущенная его студией Mojang AB. В 2009 году Перссон опубликовал…",
+      "en": "Minecraft is a sandbox video game developed and published by the Swedish company Mojang Studios. Following its initial public alpha release as an…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Minecraft",
+      "en": "https://en.wikipedia.org/wiki/Minecraft"
+    },
+    "revision": {
+      "ru": 155536504,
+      "en": 1383309668
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q49740",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-1": {
+    "title": "Stardew Valley",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Stardew Valley — компьютерная игра в жанре симулятора жизни фермера с элементами ролевой игры, разработанная геймдизайнером Эриком Барони для Windows в 2016 году.…",
+      "en": "Stardew Valley is a 2016 farm life simulation video game developed by Eric \"ConcernedApe\" Barone. Players take the role of a character who…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Stardew_Valley",
+      "en": "https://en.wikipedia.org/wiki/Stardew_Valley"
+    },
+    "revision": {
+      "ru": 155347399,
+      "en": 1382935073
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q23013817",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-2": {
+    "title": "Terraria",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Terraria — компьютерная игра в жанре приключенческой песочницы, разработанная американской студией Re-Logic. Была выпущена в 2011 году для компьютеров Microsoft Windows с распространением…",
+      "en": "Terraria is a 2011 action-adventure video game developed and published by Re-Logic. As a sandbox game, Terraria has no set goals. After creating…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Terraria",
+      "en": "https://en.wikipedia.org/wiki/Terraria"
+    },
+    "revision": {
+      "ru": 155787740,
+      "en": 1383334427
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q332697",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-3": {
+    "title": "The Sims",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Серия симуляторов жизни, в которой игрок создаёт персонажей, строит дома и управляет повседневными историями.",
+      "en": "A life simulation series about creating characters, building homes and shaping everyday stories."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/The_Sims_(%D1%81%D0%B5%D1%80%D0%B8%D1%8F_%D0%B8%D0%B3%D1%80)",
+      "en": "https://en.wikipedia.org/wiki/The_Sims"
+    },
+    "revision": {
+      "ru": 155413037,
+      "en": 1382283742
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q4897444",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-4": {
+    "title": "Animal Crossing: New Horizons",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Animal Crossing: New Horizons — видеоигра в жанре симулятора жизни, разработанная Nintendo EPD и изданная Nintendo для игровых приставок Nintendo Switch и Nintendo…",
+      "en": "Animal Crossing: New Horizons is a 2020 social simulation game developed and published by Nintendo for the Nintendo Switch. It is the fifth…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Animal_Crossing:_New_Horizons",
+      "en": "https://en.wikipedia.org/wiki/Animal_Crossing:_New_Horizons"
+    },
+    "revision": {
+      "ru": 155662176,
+      "en": 1379153324
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q64566657",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-5": {
+    "title": "The Legend of Zelda: Breath of the Wild",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Приключение Nintendo в открытом мире Хайрула, где Линк противостоит Ганону.",
+      "en": "Nintendo’s open-world adventure following Link across Hyrule as he confronts Ganon."
+    },
+    "summary": {
+      "ru": "",
+      "en": "The Legend of Zelda: Breath of the Wild is a 2017 action-adventure game developed by Nintendo EPD for the Wii U and Nintendo…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild",
+      "en": "https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild"
+    },
+    "revision": {
+      "ru": 154997076,
+      "en": 1380811395
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q17185964",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-6": {
+    "title": "Super Mario Odyssey",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Super Mario Odyssey — видеоигра из серии игр «Марио», разработанная Nintendo EPD для приставки Nintendo Switch. Odyssey представляет собой трёхмерный платформер и её…",
+      "en": "Super Mario Odyssey is a 2017 platform game developed and published by Nintendo for the Nintendo Switch. An installment in the Super Mario…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Super_Mario_Odyssey",
+      "en": "https://en.wikipedia.org/wiki/Super_Mario_Odyssey"
+    },
+    "revision": {
+      "ru": 155914510,
+      "en": 1382901206
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q28234671",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-7": {
+    "title": "Sonic the Hedgehog (1991 video game)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Платформер Sega 1991 года, познакомивший игроков с ежом Соником.",
+      "en": "Sega’s 1991 platform game introducing Sonic the Hedgehog."
+    },
+    "summary": {
+      "ru": "Sonic the Hedgehog — компьютерная игра в жанре платформера, в которой впервые появился персонаж ёж Соник, и с которой началась карьера её разработчика…",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Sonic_the_Hedgehog_(%D0%B8%D0%B3%D1%80%D0%B0,_16_%D0%B1%D0%B8%D1%82)",
+      "en": "https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)"
+    },
+    "revision": {
+      "ru": 155710228,
+      "en": 1381638800
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q37123",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-8": {
+    "title": "Final Fantasy VII",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Final Fantasy VII — японская ролевая игра, разработанная Square Co Ltd. и выпущенная Sony Computer Entertainment для игровой приставки Sony PlayStation в 1997…",
+      "en": "Final Fantasy VII is a 1997 role-playing video game developed and published by Square for the PlayStation. The seventh main installment in the…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Final_Fantasy_VII",
+      "en": "https://en.wikipedia.org/wiki/Final_Fantasy_VII"
+    },
+    "revision": {
+      "ru": 154891340,
+      "en": 1382865248
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q214232",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-9": {
+    "title": "Kingdom Hearts (video game)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Kingdom Hearts — компьютерная игра в жанре ролевого экшена, разработанная совместными усилиями компаний Disney Interactive и Squaresoft . Игра вышла эксклюзивно для PlayStation…",
+      "en": "Kingdom Hearts is a 2002 action role-playing game developed and published by Square for the PlayStation 2. It is the first game in…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Kingdom_Hearts_(%D0%B8%D0%B3%D1%80%D0%B0)",
+      "en": "https://en.wikipedia.org/wiki/Kingdom_Hearts_(video_game)"
+    },
+    "revision": {
+      "ru": 153494505,
+      "en": 1382394173
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q225912",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-10": {
+    "title": "Persona 5",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Японская ролевая игра Atlus о школьниках, ведущих двойную жизнь Призрачных похитителей.",
+      "en": "Atlus’s role-playing game about students living double lives as the Phantom Thieves."
+    },
+    "summary": {
+      "ru": "Persona 5 — компьютерная ролевая игра, созданная студией P-Studio, входящей в состав японской компании Atlus. Японский релиз игры состоялся 15 сентября 2016 года…",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Persona_5",
+      "en": "https://en.wikipedia.org/wiki/Persona_5"
+    },
+    "revision": {
+      "ru": 155253815,
+      "en": 1383354852
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q15225985",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-11": {
+    "title": "Genshin Impact",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Genshin Impact — компьютерная игра в жанре action-adventure с открытым миром и элементами RPG, разработанная китайской компанией miHoYo Limited.",
+      "en": "Genshin Impact is a 2020 action role-playing video game developed and published by miHoYo. It is distributed outside China by miHoYo's international subsidiary…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Genshin_Impact",
+      "en": "https://en.wikipedia.org/wiki/Genshin_Impact"
+    },
+    "revision": {
+      "ru": 155677385,
+      "en": 1383334773
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q65059474",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-12": {
+    "title": "Honkai: Star Rail",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Honkai: Star Rail — компьютерная ролевая игра с элементами гача, разработанная компанией miHoYo.",
+      "en": "Honkai: Star Rail is a 2023 free-to-play turn-based role-playing gacha video game developed and published by miHoYo . It is the fourth installment…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Honkai:_Star_Rail",
+      "en": "https://en.wikipedia.org/wiki/Honkai:_Star_Rail"
+    },
+    "revision": {
+      "ru": 153054485,
+      "en": 1381234650
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q108896777",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-13": {
+    "title": "Elden Ring",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Elden Ring — компьютерная игра в жанре action/RPG с открытым миром, разработанная японской компанией FromSoftware и изданная компанией Bandai Namco Entertainment для платформ…",
+      "en": "Elden Ring is a 2022 action role-playing game directed by Hidetaka Miyazaki with worldbuilding provided by the American fantasy writer George R. R.…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Elden_Ring",
+      "en": "https://en.wikipedia.org/wiki/Elden_Ring"
+    },
+    "revision": {
+      "ru": 154870985,
+      "en": 1383130847
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q64826862",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-14": {
+    "title": "Dark Souls",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Dark Souls — серия компьютерных игр в жанре Action/RPG, разработанных японской компанией FromSoftware. Действие игр серии разворачивается в мрачном и зловещем мире, выполненном…",
+      "en": "Dark Souls is a dark fantasy action role-playing game series developed by FromSoftware and published by Bandai Namco Entertainment. Created by Hidetaka Miyazaki,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Dark_Souls",
+      "en": "https://en.wikipedia.org/wiki/Dark_Souls"
+    },
+    "revision": {
+      "ru": 154846032,
+      "en": 1383097140
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q99431276",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-15": {
+    "title": "Bloodborne",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Bloodborne — компьютерная игра в жанре Action/RPG, разработанная совместно японскими компаниями FromSoftware и SCE Japan Studio эксклюзивно для игровой приставки PlayStation 4 под…",
+      "en": "Bloodborne is a 2015 action role-playing game developed by FromSoftware and published by Sony Computer Entertainment for the PlayStation 4. The game follows…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Bloodborne",
+      "en": "https://en.wikipedia.org/wiki/Bloodborne"
+    },
+    "revision": {
+      "ru": 154742920,
+      "en": 1383113404
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q17154554",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-16": {
+    "title": "Baldur's Gate 3",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Baldur’s Gate 3 — компьютерная ролевая игра, разработанная и изданная бельгийской компанией Larian Studios. Baldur’s Gate 3 стала продолжением серии Baldur’s Gate, основанной…",
+      "en": "Baldur's Gate 3 is a role-playing video game by Larian Studios. It is the third installment in the Baldur's Gate series. The game's…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Baldur%E2%80%99s_Gate_3",
+      "en": "https://en.wikipedia.org/wiki/Baldur%27s_Gate_3"
+    },
+    "revision": {
+      "ru": 154774976,
+      "en": 1382950123
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q64441774",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-17": {
+    "title": "Mass Effect (video game)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Mass Effect — компьютерная игра в жанре ролевого боевика, разработанная студией BioWare и выпущенная Microsoft Game Studios в 2007 году, первая часть серии…",
+      "en": "Mass Effect is a 2007 action role-playing game developed by BioWare and published by Microsoft Game Studios for the Xbox 360. It is…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Mass_Effect_(%D0%B8%D0%B3%D1%80%D0%B0)",
+      "en": "https://en.wikipedia.org/wiki/Mass_Effect_(video_game)"
+    },
+    "revision": {
+      "ru": 155515996,
+      "en": 1382681300
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q275960",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-18": {
+    "title": "Dragon Age: Origins",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Dragon Age: Origins — компьютерная ролевая игра, разработанная канадской студией BioWare и выпущенная компанией Electronic Arts для Windows, Playstation 3, Xbox 360 и…",
+      "en": "Dragon Age: Origins is a 2009 role-playing video game developed by Canadian studio BioWare and published by Electronic Arts. It is the first…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Dragon_Age:_Origins",
+      "en": "https://en.wikipedia.org/wiki/Dragon_Age:_Origins"
+    },
+    "revision": {
+      "ru": 154861991,
+      "en": 1380959797
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q735926",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-19": {
+    "title": "The Elder Scrolls V: Skyrim",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Ролевая игра Bethesda в открытом мире Скайрима, где герой становится Драконорождённым.",
+      "en": "Bethesda’s open-world role-playing game set in Skyrim, following the Dragonborn."
+    },
+    "summary": {
+      "ru": "",
+      "en": "The Elder Scrolls V: Skyrim is a 2011 action role-playing game developed by Bethesda Game Studios and published by Bethesda Softworks. It is…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim",
+      "en": "https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim"
+    },
+    "revision": {
+      "ru": 153356312,
+      "en": 1383323449
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q323862",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-20": {
+    "title": "Fallout 4",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Fallout 4 — компьютерная игра в жанре action/RPG, разработанная Bethesda Game Studios и изданная Bethesda Softworks. Является частью серии Fallout. Игра была выпущена…",
+      "en": "Fallout 4 is a 2015 action role-playing game developed by Bethesda Game Studios and published by Bethesda Softworks. It is the fourth main…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Fallout_4",
+      "en": "https://en.wikipedia.org/wiki/Fallout_4"
+    },
+    "revision": {
+      "ru": 153903567,
+      "en": 1382525759
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q10493813",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-21": {
+    "title": "Cyberpunk 2077",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Cyberpunk 2077 — компьютерная игра в жанре Action/RPG в открытом мире, разработанная и изданная польской студией CD Projekt. Действие игры происходит в 2077…",
+      "en": "Cyberpunk 2077 is a 2020 action role-playing game developed by CD Projekt Red and published by CD Projekt. Based on and set in…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Cyberpunk_2077",
+      "en": "https://en.wikipedia.org/wiki/Cyberpunk_2077"
+    },
+    "revision": {
+      "ru": 155790760,
+      "en": 1382859502
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q3182559",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-22": {
+    "title": "Hades (video game)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Hades — компьютерная игра в жанрах roguelike и action/RPG, разработанная и выпущенная американской студией Supergiant Games. Игра была выпущена в ранний доступ в…",
+      "en": "Hades is a 2020 roguelike action role-playing game developed and published by Supergiant Games. It was released for macOS, Nintendo Switch, and Windows…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Hades",
+      "en": "https://en.wikipedia.org/wiki/Hades_(video_game)"
+    },
+    "revision": {
+      "ru": 154954885,
+      "en": 1383016270
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q59756366",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-23": {
+    "title": "Hollow Knight",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Hollow Knight — компьютерная игра в жанре метроидвания, разработанная и выпущенная австралийской инди-студией Team Cherry 24 февраля 2017 года для Windows. Месяцем позже…",
+      "en": "Hollow Knight is a 2017 Metroidvania video game developed and published by Australian independent development studio Team Cherry. The player controls a nameless…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Hollow_Knight",
+      "en": "https://en.wikipedia.org/wiki/Hollow_Knight"
+    },
+    "revision": {
+      "ru": 155002118,
+      "en": 1378702465
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q29300592",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "games-24": {
+    "title": "Undertale",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Независимая ролевая игра Тоби Фокса о ребёнке, оказавшемся в подземном мире монстров.",
+      "en": "Toby Fox’s independent role-playing game about a child exploring an underground world of monsters."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Undertale is a 2015 role-playing video game created by American indie developer Toby Fox. The player controls a child who has fallen into…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Undertale",
+      "en": "https://en.wikipedia.org/wiki/Undertale"
+    },
+    "revision": {
+      "ru": 155615456,
+      "en": 1382740314
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q21039924",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-0": {
+    "title": "BTS",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "BTS (Би-Ти-Эс; кор. 방탄소년단, Bangtan Sonyeondan, Пантхан сонёндан, дословно — «Пуленепробиваемые бойскауты»; кит. 防彈少年團, пиньинь Fángdàn shàonián tuán, палл.",
+      "en": "BTS , also known as the Bangtan Boys, is a South Korean boy band formed in 2010. The band consists of Jin, Suga,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/BTS",
+      "en": "https://en.wikipedia.org/wiki/BTS"
+    },
+    "revision": {
+      "ru": 155974673,
+      "en": 1380556655
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q13580495",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-1": {
+    "title": "Blackpink",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Blackpink — южнокорейская гёрл-группа, сформированная в 2016 году компанией YG Entertainment.",
+      "en": "Blackpink is a South Korean girl group formed by YG Entertainment. The group is composed of four members: Jisoo, Jennie, Rosé, and Lisa.…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Blackpink",
+      "en": "https://en.wikipedia.org/wiki/Blackpink"
+    },
+    "revision": {
+      "ru": 154995640,
+      "en": 1382338802
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q25056945",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-2": {
+    "title": "Stray Kids",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Stray Kids — южнокорейский бой-бэнд, сформированный в 2017 году лейблом JYP Entertainment. Коллектив состоит из восьми участников: Бан Чана , Ли Ноу, Чханбина,…",
+      "en": "Stray Kids is a South Korean boy band formed by JYP Entertainment in 2017. The band has eight members: Bang Chan, Lee Know,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Stray_Kids",
+      "en": "https://en.wikipedia.org/wiki/Stray_Kids"
+    },
+    "revision": {
+      "ru": 155351838,
+      "en": 1377239867
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q46134670",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-3": {
+    "title": "Twice",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Южнокорейская женская поп-группа из девяти участниц, созданная JYP Entertainment.",
+      "en": "A nine-member South Korean girl group formed by JYP Entertainment."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Twice is a South Korean girl group formed by JYP Entertainment. The group is composed of nine members: Nayeon, Jeongyeon, Momo, Sana, Jihyo,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Twice",
+      "en": "https://en.wikipedia.org/wiki/Twice"
+    },
+    "revision": {
+      "ru": 155478203,
+      "en": 1381661439
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q20645861",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-4": {
+    "title": "Seventeen (South Korean band)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Южнокорейская мужская группа из тринадцати участников, созданная Pledis Entertainment.",
+      "en": "A thirteen-member South Korean boy band formed by Pledis Entertainment."
+    },
+    "summary": {
+      "ru": "Seventeen — южнокорейский бойбенд, сформированный в 2015 году компанией Pledis Entertainment. В коллективе задействовано 13 участников: S.Coups, Джонхан, Джошуа, Джун, Хоши, Вону, Уджи,…",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Seventeen_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0,_%D0%A0%D0%B5%D1%81%D0%BF%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0_%D0%9A%D0%BE%D1%80%D0%B5%D1%8F)",
+      "en": "https://en.wikipedia.org/wiki/Seventeen_(South_Korean_band)"
+    },
+    "revision": {
+      "ru": 155318789,
+      "en": 1382007643
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q14524548",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-5": {
+    "title": "Ateez",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Ateez — южнокорейский бой-бэнд, сформированный в 2018 году компанией KQ Entertainment. Группа состоит из восьми участников: Хонджун, Сонхва, Юнхо, Ёсан, Сан, Минги, Уён…",
+      "en": "Ateez is a South Korean boy band formed by KQ Entertainment. The group consists of eight members: Hongjoong, Seonghwa, Yunho, Yeosang, San, Mingi,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Ateez",
+      "en": "https://en.wikipedia.org/wiki/Ateez"
+    },
+    "revision": {
+      "ru": 155440873,
+      "en": 1383335547
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q59793088",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-6": {
+    "title": "Taylor Swift",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Американская певица и автор песен, известная автобиографической лирикой и сменой музыкальных направлений.",
+      "en": "An American singer-songwriter known for autobiographical lyrics and musical reinvention."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Taylor Alison Swift is an American singer-songwriter. An influential figure in popular culture, Swift is known for her autobiographical songwriting and artistic reinventions.…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B2%D0%B8%D1%84%D1%82,_%D0%A2%D0%B5%D0%B9%D0%BB%D0%BE%D1%80",
+      "en": "https://en.wikipedia.org/wiki/Taylor_Swift"
+    },
+    "revision": {
+      "ru": 155736108,
+      "en": 1383206925
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q26876",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-7": {
+    "title": "Billie Eilish",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Американская певица и автор песен с узнаваемой сдержанной вокальной манерой.",
+      "en": "An American singer-songwriter known for her distinctive musical and vocal style."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Billie Eilish Pirate Baird O'Connell is an American singer-songwriter. Known for her distinctive musical sound and vocal style, she is a prominent figure…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%B9%D0%BB%D0%B8%D1%88,_%D0%91%D0%B8%D0%BB%D0%BB%D0%B8",
+      "en": "https://en.wikipedia.org/wiki/Billie_Eilish"
+    },
+    "revision": {
+      "ru": 155605892,
+      "en": 1382876231
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q29564107",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-8": {
+    "title": "Lana Del Rey",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Американская певица и автор песен, работающая в альтернативной поп-музыке.",
+      "en": "An American singer-songwriter associated with alternative pop music."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Elizabeth Woolridge Grant , known professionally as Lana Del Rey, is an American singer-songwriter. An influential figure in alternative pop music, Del Rey's…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B0%D0%BD%D0%B0_%D0%94%D0%B5%D0%BB%D1%8C_%D0%A0%D0%B5%D0%B9",
+      "en": "https://en.wikipedia.org/wiki/Lana_Del_Rey"
+    },
+    "revision": {
+      "ru": 155526892,
+      "en": 1383259758
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q37150",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-9": {
+    "title": "Ariana Grande",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Американская певица, автор песен и актриса с широким вокальным диапазоном.",
+      "en": "An American singer, songwriter and actress known for her wide vocal range."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Ariana Grande-Butera is an American singer, songwriter, and actress. Known for her four-octave vocal range, which extends into the whistle register, she is…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%93%D1%80%D0%B0%D0%BD%D0%B4%D0%B5,_%D0%90%D1%80%D0%B8%D0%B0%D0%BD%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Ariana_Grande"
+    },
+    "revision": {
+      "ru": 155501258,
+      "en": 1383084068
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q151892",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-10": {
+    "title": "The Weeknd",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Канадский певец, автор песен и актёр Эйбел Тесфайе, выступающий как The Weeknd.",
+      "en": "Canadian singer, songwriter and actor Abel Tesfaye, professionally known as The Weeknd."
+    },
+    "summary": {
+      "ru": "Э́йбел Макко́нен Те́сфайе , также известный как The Weeknd, — канадский певец, автор песен и актёр.",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/The_Weeknd",
+      "en": "https://en.wikipedia.org/wiki/The_Weeknd"
+    },
+    "revision": {
+      "ru": 155455446,
+      "en": 1383369974
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q2121062",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-11": {
+    "title": "Dua Lipa",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Британская певица и автор песен, исполняющая поп- и танцевальную музыку.",
+      "en": "A British singer-songwriter working in pop and dance music."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Dua Lipa is an English singer and songwriter. Her accolades include seven Brit Awards and three Grammy Awards. Lipa signed with Warner Bros."
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B8%D0%BF%D0%B0,_%D0%94%D1%83%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Dua_Lipa"
+    },
+    "revision": {
+      "ru": 155896758,
+      "en": 1381881295
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q21914464",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-12": {
+    "title": "Olivia Rodrigo",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Американская певица, автор песен и актриса, начавшая карьеру на телевидении.",
+      "en": "An American singer-songwriter and actress who began her career on television."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Olivia Isabel Rodrigo is an American singer-songwriter and actress. Rodrigo began her career as a child actress, appearing in commercials and the direct-to-video…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A0%D0%BE%D0%B4%D1%80%D0%B8%D0%B3%D0%BE,_%D0%9E%D0%BB%D0%B8%D0%B2%D0%B8%D1%8F",
+      "en": "https://en.wikipedia.org/wiki/Olivia_Rodrigo"
+    },
+    "revision": {
+      "ru": 155874996,
+      "en": 1383079547
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q63243883",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-13": {
+    "title": "Sabrina Carpenter",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Американская певица, автор песен и актриса.",
+      "en": "An American singer, songwriter and actress."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Sabrina Annlynn Carpenter is an American singer, songwriter, and actress. Her accolades include two Grammy Awards, an Emmy Award, three American Music Awards,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B0%D1%80%D0%BF%D0%B5%D0%BD%D1%82%D0%B5%D1%80,_%D0%A1%D0%B0%D0%B1%D1%80%D0%B8%D0%BD%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Sabrina_Carpenter"
+    },
+    "revision": {
+      "ru": 155874786,
+      "en": 1383325188
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q7396400",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-14": {
+    "title": "Harry Styles",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Британский певец, автор песен и актёр, участник группы One Direction.",
+      "en": "A British singer, songwriter and actor, formerly a member of One Direction."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Harry Edward Styles is an English singer, songwriter, and actor. An influential figure in popular culture, he is known for his showmanship, artistry,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D1%82%D0%B0%D0%B9%D0%BB%D0%B7,_%D0%93%D0%B0%D1%80%D1%80%D0%B8",
+      "en": "https://en.wikipedia.org/wiki/Harry_Styles"
+    },
+    "revision": {
+      "ru": 155810467,
+      "en": 1383333315
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q3626966",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-15": {
+    "title": "Twenty One Pilots",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Twenty One Pilots — американский дуэт из Колумбуса, штат Огайо. Группа образовалась в 2009 году и на данный момент состоит из Тайлера Джозефа…",
+      "en": "Twenty One Pilots is an American musical duo from Columbus, Ohio, consisting of frontman Tyler Joseph and drummer Josh Dun. The band is…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Twenty_One_Pilots",
+      "en": "https://en.wikipedia.org/wiki/Twenty_One_Pilots"
+    },
+    "revision": {
+      "ru": 155421765,
+      "en": 1383003869
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q7857806",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-16": {
+    "title": "Imagine Dragons",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Imagine Dragons — американская поп-рок-группа, образованная в 2008 году в городе Лас-Вегас, США. Стали известны после выпуска дебютного студийного альбома Night Visions в…",
+      "en": "Imagine Dragons are an American pop rock band formed in 2008, based in Las Vegas, Nevada. The band currently consists of lead singer…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Imagine_Dragons",
+      "en": "https://en.wikipedia.org/wiki/Imagine_Dragons"
+    },
+    "revision": {
+      "ru": 155934119,
+      "en": 1367469262
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q391348",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-17": {
+    "title": "Coldplay",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Coldplay — британская рок-группа, созданная в Лондоне в 1998 году. Её состав никогда не менялся и с момента основания в неё входят вокалист,…",
+      "en": "Coldplay are a British rock band formed in London in 1997. They consist of vocalist and pianist Chris Martin, lead guitarist Jonny Buckland,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Coldplay",
+      "en": "https://en.wikipedia.org/wiki/Coldplay"
+    },
+    "revision": {
+      "ru": 155718417,
+      "en": 1383267453
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q45188",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-18": {
+    "title": "Radiohead",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Radiohead — британская рок-группа, основанная в Абингдоне в 1985 году. На протяжении всего периода существования в Radiohead играют пять музыкантов: Том Йорк ,…",
+      "en": "Radiohead are an English rock band formed in Abingdon, Oxfordshire, in 1985. The members are Thom Yorke ; brothers Jonny Greenwood and Colin…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Radiohead",
+      "en": "https://en.wikipedia.org/wiki/Radiohead"
+    },
+    "revision": {
+      "ru": 155650801,
+      "en": 1382905824
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q44190",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-19": {
+    "title": "Arctic Monkeys",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Arctic Monkeys — британская рок-группа, сформированная в 2002 году в Хай Грин, пригороде Шеффилда. В настоящий момент состоит из вокалиста и гитариста Алекса…",
+      "en": "Arctic Monkeys are an English rock band formed in Sheffield in 2002. They comprise lead singer and guitarist Alex Turner, drummer Matt Helders,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Arctic_Monkeys",
+      "en": "https://en.wikipedia.org/wiki/Arctic_Monkeys"
+    },
+    "revision": {
+      "ru": 155651438,
+      "en": 1382849848
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q170599",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-20": {
+    "title": "Muse (band)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Muse — британская рок-группа, образованная в 1994 году в городе Тинмут . Группа состоит из трёх участников: Мэттью Беллами , Криса Уолстенхолма и…",
+      "en": "Muse are an English rock band from Teignmouth, Devon, formed in 1994. The band consists of Matt Bellamy , Chris Wolstenholme , and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Muse",
+      "en": "https://en.wikipedia.org/wiki/Muse_(band)"
+    },
+    "revision": {
+      "ru": 155191745,
+      "en": 1383348006
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q22151",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-21": {
+    "title": "Linkin Park",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Linkin Park — американская рок-группа, основанная в 1996 году. Нынешний состав группы включает в себя вокалиста/ритм-гитариста/клавишника Майка Шиноду, соло-гитариста Брэда Делсона, басиста Дэйва…",
+      "en": "Linkin Park is an American rock band formed in Agoura Hills, California, in 1996. The band's current lineup consists of vocalist/rhythm guitarist/keyboardist Mike…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Linkin_Park",
+      "en": "https://en.wikipedia.org/wiki/Linkin_Park"
+    },
+    "revision": {
+      "ru": 155645501,
+      "en": 1383112850
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q261",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-22": {
+    "title": "Paramore",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Paramore — американская рок-группа, образовавшаяся во Франклине, штат Теннесси, в 2004 году. В её состав входят Хейли Уильямс , Тейлор Йорк и Зак…",
+      "en": "Paramore is an American rock band formed in Franklin, Tennessee, in 2004. Since 2017, the band's lineup has included lead vocalist Hayley Williams,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Paramore",
+      "en": "https://en.wikipedia.org/wiki/Paramore"
+    },
+    "revision": {
+      "ru": 154919342,
+      "en": 1382891297
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q473466",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-23": {
+    "title": "Daft Punk",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Daft Punk — французский музыкальный электронный дуэт, образованный в 1993 году Тома Бангальтером и Ги-Манюэлем де Омем-Кристо. Достигли значительного успеха к концу девяностых…",
+      "en": "Daft Punk were a French electronic music duo formed in 1993 in Paris by Thomas Bangalter and Guy-Manuel de Homem-Christo. They achieved popularity…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Daft_Punk",
+      "en": "https://en.wikipedia.org/wiki/Daft_Punk"
+    },
+    "revision": {
+      "ru": 154845039,
+      "en": 1382459569
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q185828",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "music-24": {
+    "title": "Gorillaz",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Gorillaz — британская виртуальная группа, созданная в 1998 году Деймоном Албарном и Джейми Хьюлеттом. Проект включает в себя обширную вымышленную вселенную, окружающую саму…",
+      "en": "Gorillaz are an English virtual alternative rock band formed in 1998 by the musician Damon Albarn and the artist Jamie Hewlett. The band…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Gorillaz",
+      "en": "https://en.wikipedia.org/wiki/Gorillaz"
+    },
+    "revision": {
+      "ru": 155651252,
+      "en": 1383232351
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q189991",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-0": {
+    "title": "The Colour of Magic",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "«Цвет волшебства» Терри Пратчетта открывает цикл юмористического фэнтези о Плоском мире.",
+      "en": "Terry Pratchett’s The Colour of Magic begins the humorous Discworld fantasy series."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A6%D0%B2%D0%B5%D1%82_%D0%B2%D0%BE%D0%BB%D1%88%D0%B5%D0%B1%D1%81%D1%82%D0%B2%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/The_Colour_of_Magic"
+    },
+    "revision": {
+      "ru": 155442340,
+      "en": 1354738845
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q32136",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-1": {
+    "title": "The Eye of the World",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "«Око мира» Роберта Джордана — первая книга фэнтезийного цикла «Колесо Времени».",
+      "en": "Robert Jordan’s The Eye of the World begins The Wheel of Time fantasy series."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": null,
+      "en": "https://en.wikipedia.org/wiki/The_Eye_of_the_World"
+    },
+    "revision": {
+      "ru": null,
+      "en": 1376062724
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q477994",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-2": {
+    "title": "Mistborn: The Final Empire",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Фэнтезийный роман Брэндона Сандерсона о мире, где металлы становятся источником магических сил.",
+      "en": "Brandon Sanderson’s fantasy novel set in a world where metals grant magical abilities."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Mistborn: The Final Empire is a fantasy novel written by American author Brandon Sanderson. It was published on July 17, 2006, by Tor…"
+    },
+    "sources": {
+      "ru": null,
+      "en": "https://en.wikipedia.org/wiki/Mistborn:_The_Final_Empire"
+    },
+    "revision": {
+      "ru": null,
+      "en": 1373681127
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q2778373",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-3": {
+    "title": "The Way of Kings",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "«Путь королей» Брэндона Сандерсона открывает эпический цикл «Архив Буресвета».",
+      "en": "Brandon Sanderson’s The Way of Kings begins The Stormlight Archive epic fantasy series."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": null,
+      "en": "https://en.wikipedia.org/wiki/The_Way_of_Kings"
+    },
+    "revision": {
+      "ru": null,
+      "en": 1379842919
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q2136877",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-4": {
+    "title": "The Hunger Games (novel)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Антиутопия Сьюзен Коллинз о Китнисс Эвердин и телевизионном состязании на выживание.",
+      "en": "Suzanne Collins’s dystopian novel following Katniss Everdeen in a televised survival competition."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BB%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5_%D0%B8%D0%B3%D1%80%D1%8B_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)",
+      "en": "https://en.wikipedia.org/wiki/The_Hunger_Games_(novel)"
+    },
+    "revision": {
+      "ru": 149901123,
+      "en": 1378594954
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q11678",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-5": {
+    "title": "The Lightning Thief",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Фэнтезийный роман Рика Риордана о Перси Джексоне и мире греческих богов.",
+      "en": "Rick Riordan’s fantasy novel following Percy Jackson in a world of Greek gods."
+    },
+    "summary": {
+      "ru": "Перси Дже́ксон и Похити́тель мо́лний — роман Рика Риордана в жанре фэнтези. В России был переведён и выпущен в 2009 году.",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9F%D0%B5%D1%80%D1%81%D0%B8_%D0%94%D0%B6%D0%B5%D0%BA%D1%81%D0%BE%D0%BD_%D0%B8_%D0%9F%D0%BE%D1%85%D0%B8%D1%82%D0%B8%D1%82%D0%B5%D0%BB%D1%8C_%D0%BC%D0%BE%D0%BB%D0%BD%D0%B8%D0%B9",
+      "en": "https://en.wikipedia.org/wiki/The_Lightning_Thief"
+    },
+    "revision": {
+      "ru": 152801494,
+      "en": 1379732742
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q501514",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-6": {
+    "title": "The Lion, the Witch and the Wardrobe",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Роман Клайва Стейплза Льюиса о детях, открывающих путь в Нарнию через платяной шкаф.",
+      "en": "C. S. Lewis’s fantasy novel about children discovering Narnia through a wardrobe."
+    },
+    "summary": {
+      "ru": "«Лев, колду́нья и платяно́й шкаф» — первая книга серии «Хроники Нарнии» Клайва Стейплза Льюиса. Выпущена в 1950 году.",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9B%D0%B5%D0%B2,_%D0%BA%D0%BE%D0%BB%D0%B4%D1%83%D0%BD%D1%8C%D1%8F_%D0%B8_%D0%BF%D0%BB%D0%B0%D1%82%D1%8F%D0%BD%D0%BE%D0%B9_%D1%88%D0%BA%D0%B0%D1%84",
+      "en": "https://en.wikipedia.org/wiki/The_Lion,_the_Witch_and_the_Wardrobe"
+    },
+    "revision": {
+      "ru": 155206365,
+      "en": 1381090448
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q485093",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-7": {
+    "title": "Northern Lights (Pullman novel)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "«Северное сияние» Филипа Пулмана — фэнтезийный роман о Лире и путешествии по параллельному миру.",
+      "en": "Philip Pullman’s Northern Lights follows Lyra on a journey through a parallel world."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Northern Lights is a young-adult fantasy novel by Philip Pullman, published in 1995 by Scholastic UK. Set in a parallel universe, it follows…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%BE%D0%B5_%D1%81%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)",
+      "en": "https://en.wikipedia.org/wiki/Northern_Lights_(Pullman_novel)"
+    },
+    "revision": {
+      "ru": 146247784,
+      "en": 1377673306
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q169976",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-8": {
+    "title": "Good Omens",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Благи́е зна́мения» — роман английских писателей Терри Пратчетта и Нила Геймана в жанре юмористического городского фэнтези. Для Нила Геймана книга стала первым крупным…",
+      "en": "Good Omens: The Nice and Accurate Prophecies of Agnes Nutter, Witch is a 1990 novel written by the English authors Terry Pratchett and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%BB%D0%B0%D0%B3%D0%B8%D0%B5_%D0%B7%D0%BD%D0%B0%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F",
+      "en": "https://en.wikipedia.org/wiki/Good_Omens"
+    },
+    "revision": {
+      "ru": 149318685,
+      "en": 1382196212
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1052459",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-9": {
+    "title": "The Sandman (comic book)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Серия комиксов Нила Геймана о Сне и других Вечных.",
+      "en": "Neil Gaiman’s comic series following Dream and the other Endless."
+    },
+    "summary": {
+      "ru": "«Песочный человек» — серия комиксов, созданная по сценарию Нила Геймана. Выпуском комикса занималась компания Vertigo, принадлежащая издательству DC Comics.",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/The_Sandman",
+      "en": "https://en.wikipedia.org/wiki/The_Sandman_(comic_book)"
+    },
+    "revision": {
+      "ru": 152796313,
+      "en": 1383323852
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q827099",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-10": {
+    "title": "Watchmen",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Комикс Алана Мура и Дэйва Гиббонса о супергероях в альтернативной истории.",
+      "en": "Alan Moore and Dave Gibbons’s comic series about superheroes in an alternate history."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Watchmen is a comic book limited series created by the British creative team of writer Alan Moore, artist Dave Gibbons, and colorist John…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D1%80%D0%B0%D0%BD%D0%B8%D1%82%D0%B5%D0%BB%D0%B8_(%D0%BA%D0%BE%D0%BC%D0%B8%D0%BA%D1%81)",
+      "en": "https://en.wikipedia.org/wiki/Watchmen"
+    },
+    "revision": {
+      "ru": 155244598,
+      "en": 1383326415
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q128444",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-11": {
+    "title": "Scott Pilgrim",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Серия графических романов Брайана Ли О’Мэлли о музыканте Скотте Пилигриме.",
+      "en": "Bryan Lee O’Malley’s graphic novel series following musician Scott Pilgrim."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BA%D0%BE%D1%82%D1%82_%D0%9F%D0%B8%D0%BB%D0%B8%D0%B3%D1%80%D0%B8%D0%BC",
+      "en": "https://en.wikipedia.org/wiki/Scott_Pilgrim"
+    },
+    "revision": {
+      "ru": 148069576,
+      "en": 1379348796
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1199291",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-12": {
+    "title": "Heartstopper (graphic novel)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Heartstopper. С замира́нием се́рдца» — подростковая серия графических романов и веб-комиксов, написанная и проиллюстрированная британской писательницей Элис Осман.",
+      "en": "Heartstopper is a British coming-of-age webcomic and graphic novel series written and illustrated by Alice Oseman. It tells the story of Nick Nelson…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/Heartstopper._%D0%A1_%D0%B7%D0%B0%D0%BC%D0%B8%D1%80%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC_%D1%81%D0%B5%D1%80%D0%B4%D1%86%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Heartstopper_(graphic_novel)"
+    },
+    "revision": {
+      "ru": 155912489,
+      "en": 1380849502
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q81891535",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-13": {
+    "title": "The Umbrella Academy",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Серия комиксов Джерарда Уэя и Габриэля Ба о необычной семье супергероев.",
+      "en": "Gerard Way and Gabriel Bá’s comic series about an unusual family of superheroes."
+    },
+    "summary": {
+      "ru": "Академия Амбрелла — комикс-серия, созданная сценаристом Джерардом Уэем и художником Габриэлем Ба, с обложками от Джеймса Джина. Первая ограниченная серия на шесть выпусков…",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F_%D0%90%D0%BC%D0%B1%D1%80%D0%B5%D0%BB%D0%BB%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/The_Umbrella_Academy"
+    },
+    "revision": {
+      "ru": 152517428,
+      "en": 1380366780
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q45072",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-14": {
+    "title": "Saga (comics)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Космическая сага в комиксах Брайана Вона и Фионы Стейплз.",
+      "en": "A space opera comic series by Brian K. Vaughan and Fiona Staples."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Saga is an epic space opera fantasy comic book series written by Brian K. Vaughan and illustrated by Fiona Staples, published monthly by…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%B0%D0%B3%D0%B0_(%D0%BA%D0%BE%D0%BC%D0%B8%D0%BA%D1%81)",
+      "en": "https://en.wikipedia.org/wiki/Saga_(comics)"
+    },
+    "revision": {
+      "ru": 155180670,
+      "en": 1377616174
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q3790673",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-15": {
+    "title": "Hellboy",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Герой комиксов Майка Миньолы — исследователь паранормальных явлений с демоническим происхождением.",
+      "en": "Mike Mignola’s comic character, a paranormal investigator with demonic origins."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Hellboy is a superpowered paranormal investigator created by writer/artist Mike Mignola and appearing in comic books published by Dark Horse Comics. The character…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D0%BB%D0%BB%D0%B1%D0%BE%D0%B9",
+      "en": "https://en.wikipedia.org/wiki/Hellboy"
+    },
+    "revision": {
+      "ru": 155621813,
+      "en": 1381129159
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1150106",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-16": {
+    "title": "The Adventures of Tintin",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Приключения Тинти́на» — один из популярнейших европейских комиксов XX века. Его автор — бельгийский художник-самоучка Эрже.",
+      "en": "The Adventures of Tintin is a series of 24 comic albums written and illustrated by Belgian cartoonist Hergé. One of the most popular…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B8%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D1%8F_%D0%A2%D0%B8%D0%BD%D1%82%D0%B8%D0%BD%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/The_Adventures_of_Tintin"
+    },
+    "revision": {
+      "ru": 155623973,
+      "en": 1383170851
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q744536",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-17": {
+    "title": "Asterix",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Астерикс» или «Приключения Астерикса» — серия европейских комиксов Рене Госинни и Альбера Удерзо, главным героем которых является галл Астерикс. Комикс впервые появился во…",
+      "en": "Asterix is a French comic album series about a Gaulish village which, thanks to a magic potion that enhances strength, resists the forces…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D1%81%D1%82%D0%B5%D1%80%D0%B8%D0%BA%D1%81_(%D0%BA%D0%BE%D0%BC%D0%B8%D0%BA%D1%81)",
+      "en": "https://en.wikipedia.org/wiki/Asterix"
+    },
+    "revision": {
+      "ru": 148183686,
+      "en": 1381597166
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q42490",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-18": {
+    "title": "The Hitchhiker's Guide to the Galaxy (novel)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Юмористический научно-фантастический роман Дугласа Адамса о путешествии Артура Дента по космосу.",
+      "en": "Douglas Adams’s comic science-fiction novel following Arthur Dent across the galaxy."
+    },
+    "summary": {
+      "ru": "«Автосто́пом по гала́ктике» — юмористический научно-фантастический роман английского писателя Дугласа Адамса. Первая книга одноимённой серии.",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%B2%D1%82%D0%BE%D1%81%D1%82%D0%BE%D0%BF%D0%BE%D0%BC_%D0%BF%D0%BE_%D0%93%D0%B0%D0%BB%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B5_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)",
+      "en": "https://en.wikipedia.org/wiki/The_Hitchhiker%27s_Guide_to_the_Galaxy_(novel)"
+    },
+    "revision": {
+      "ru": 155760363,
+      "en": 1373401859
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q3107329",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-19": {
+    "title": "Foundation (Asimov novel)",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Основание» — первая книга фантастической трилогии «Основание» Айзека Азимова . Роман представляет собой сборник из пяти рассказов : четыре рассказа под разными названиями…",
+      "en": "Foundation is a science fiction novel by American writer Isaac Asimov. It is the first book in the Foundation Trilogy . Foundation is…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_(%D1%80%D0%BE%D0%BC%D0%B0%D0%BD)",
+      "en": "https://en.wikipedia.org/wiki/Foundation_(Asimov_novel)"
+    },
+    "revision": {
+      "ru": 153655182,
+      "en": 1379394136
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q753894",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-20": {
+    "title": "Leviathan Wakes",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "«Пробуждение Левиафана» Джеймса Кори открывает научно-фантастический цикл «Пространство».",
+      "en": "James S. A. Corey’s Leviathan Wakes begins The Expanse science-fiction series."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Leviathan Wakes is a science fiction novel by James S. A. Corey, the pen name of American writers Daniel Abraham and Ty Franck.…"
+    },
+    "sources": {
+      "ru": null,
+      "en": "https://en.wikipedia.org/wiki/Leviathan_Wakes"
+    },
+    "revision": {
+      "ru": null,
+      "en": 1383147172
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q6535598",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-21": {
+    "title": "Sherlock Holmes",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Детектив Артура Конан Дойла, раскрывающий преступления с помощью наблюдательности и дедукции.",
+      "en": "Arthur Conan Doyle’s fictional detective, solving crimes through observation and deduction."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A8%D0%B5%D1%80%D0%BB%D0%BE%D0%BA_%D0%A5%D0%BE%D0%BB%D0%BC%D1%81",
+      "en": "https://en.wikipedia.org/wiki/Sherlock_Holmes"
+    },
+    "revision": {
+      "ru": 155313597,
+      "en": 1370676109
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q4653",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-22": {
+    "title": "Agatha Christie",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Ага́та Мэ́ри Клари́сса, ле́ди Ма́ллоуэн , более известная по фамилии первого мужа как Ага́та Кри́сти — английская писательница и драматург.",
+      "en": "Dame Agatha Mary Clarissa Mallowan, Lady Mallowan , usually known by her first married name, Agatha Christie, was an English author known for…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D1%81%D1%82%D0%B8,_%D0%90%D0%B3%D0%B0%D1%82%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Agatha_Christie"
+    },
+    "revision": {
+      "ru": 155871249,
+      "en": 1382256832
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q35064",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-23": {
+    "title": "Jane Austen",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Джейн О́стин, распространён также вариант Джейн О́стен — английская писательница, предвестница реализма в британской литературе, сатирик, писала так называемые романы нравов. Её книги…",
+      "en": "Jane Austen was an English writer known primarily for her six novels, which implicitly interpret, critique, and comment on the English landed gentry…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9E%D1%81%D1%82%D0%B8%D0%BD,_%D0%94%D0%B6%D0%B5%D0%B9%D0%BD",
+      "en": "https://en.wikipedia.org/wiki/Jane_Austen"
+    },
+    "revision": {
+      "ru": 152744548,
+      "en": 1383277201
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q36322",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "books-24": {
+    "title": "Stephen King",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Американский писатель, известный романами в жанрах ужасов, фантастики и триллера.",
+      "en": "An American author known for horror, science fiction and thriller novels."
+    },
+    "summary": {
+      "ru": "Сти́вен Э́двин Кинг — американский писатель, работающий в разнообразных жанрах, включая ужасы, триллер, фантастику, фэнтези, мистику, драму, детектив, получил прозвище «Король ужасов» .",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D0%B8%D0%BD%D0%B3,_%D0%A1%D1%82%D0%B8%D0%B2%D0%B5%D0%BD",
+      "en": "https://en.wikipedia.org/wiki/Stephen_King"
+    },
+    "revision": {
+      "ru": 155832312,
+      "en": 1382748318
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q39829",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-0": {
+    "title": "Formula One",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Формула-1 — чемпионат мира по кольцевым автогонкам на автомобилях с открытыми колёсами, который проводится ежегодно и состоит из этапов, называемых Гран-при, в соответствии…",
+      "en": "Formula One is the highest class of worldwide racing for open-wheel, single-seater formula racing cars run by the Formula One Group and sanctioned…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D0%BC%D1%83%D0%BB%D0%B0-1",
+      "en": "https://en.wikipedia.org/wiki/Formula_One"
+    },
+    "revision": {
+      "ru": 155917118,
+      "en": 1383281415
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1968",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-1": {
+    "title": "Grand Prix motorcycle racing",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Международные шоссейно-кольцевые мотогонки, включающие класс MotoGP.",
+      "en": "International motorcycle road racing, including the MotoGP class."
+    },
+    "summary": {
+      "ru": "",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%88%D0%BE%D1%81%D1%81%D0%B5%D0%B9%D0%BD%D0%BE-%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%B5%D0%B2%D1%8B%D0%BC_%D0%BC%D0%BE%D1%82%D0%BE%D0%B3%D0%BE%D0%BD%D0%BA%D0%B0%D0%BC",
+      "en": "https://en.wikipedia.org/wiki/Grand_Prix_motorcycle_racing"
+    },
+    "revision": {
+      "ru": 154914741,
+      "en": 1382985997
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q850292",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-2": {
+    "title": "World Rally Championship",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Чемпионат мира по ралли под управлением Международной автомобильной федерации.",
+      "en": "The international rally championship governed by the FIA."
+    },
+    "summary": {
+      "ru": "",
+      "en": "The World Rally Championship is an international rallying series owned and governed by the FIA. Inaugurated in 1973, it is the third oldest…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A7%D0%B5%D0%BC%D0%BF%D0%B8%D0%BE%D0%BD%D0%B0%D1%82_%D0%BC%D0%B8%D1%80%D0%B0_%D0%BF%D0%BE_%D1%80%D0%B0%D0%BB%D0%BB%D0%B8",
+      "en": "https://en.wikipedia.org/wiki/World_Rally_Championship"
+    },
+    "revision": {
+      "ru": 155455989,
+      "en": 1380582690
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q7852",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-3": {
+    "title": "NASCAR",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Национальная ассоциация гонок серийных автомобилей , Inc — частное предприятие, занимающееся организацией автомобильных гонок и сопутствующей деятельностью. Учреждена Биллом Франсом-старшим в 1947—1948 годах…",
+      "en": "The National Association for Stock Car Auto Racing, LLC is an American auto racing sanctioning and operating company that is best known for…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/NASCAR",
+      "en": "https://en.wikipedia.org/wiki/NASCAR"
+    },
+    "revision": {
+      "ru": 155975262,
+      "en": 1376205118
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q233929",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-4": {
+    "title": "IndyCar Series",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "«Индикар», полное название «Серия Индикар» — главная серия гонок на машинах с открытыми колёсами в Северной Америке. Чемпионат был создан под именем Indy…",
+      "en": "The IndyCar Series, officially known as the NTT IndyCar Series for sponsorship reasons, is the highest class of American open-wheel car racing in…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D0%B4%D0%B8%D0%BA%D0%B0%D1%80",
+      "en": "https://en.wikipedia.org/wiki/IndyCar_Series"
+    },
+    "revision": {
+      "ru": 154482035,
+      "en": 1378293351
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q832052",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-5": {
+    "title": "24 Hours of Le Mans",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "24 часа Ле-Мана — автомобильная гонка на выносливость, проходящая ежегодно с 1923 года недалеко от города Ле-Ман во Франции. Гонку также часто называют…",
+      "en": "The 24 Hours of Le Mans is an endurance sports car race held annually near the city of Le Mans, France. First run…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/24_%D1%87%D0%B0%D1%81%D0%B0_%D0%9B%D0%B5-%D0%9C%D0%B0%D0%BD%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/24_Hours_of_Le_Mans"
+    },
+    "revision": {
+      "ru": 154666774,
+      "en": 1382779200
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q187579",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-6": {
+    "title": "Association football",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Командная игра, в которой две команды по одиннадцать игроков стремятся забить мяч в ворота соперника.",
+      "en": "A team sport in which two sides of eleven players aim to score in the opposing goal."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Association football, commonly known as football or soccer, is a team sport played between two teams of 11 players each who mostly use…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A4%D1%83%D1%82%D0%B1%D0%BE%D0%BB",
+      "en": "https://en.wikipedia.org/wiki/Association_football"
+    },
+    "revision": {
+      "ru": 155375115,
+      "en": 1381327185
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q2736",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-7": {
+    "title": "Basketball",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Баскетбо́л — спортивная командная игра с мячом, в которой мяч забрасывают руками в кольцо соперника. В баскетбол играют две команды, каждая из которых…",
+      "en": "Basketball is a team sport in which two teams of five players each oppose one another on a rectangular court. Players compete with…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D1%81%D0%BA%D0%B5%D1%82%D0%B1%D0%BE%D0%BB",
+      "en": "https://en.wikipedia.org/wiki/Basketball"
+    },
+    "revision": {
+      "ru": 154660206,
+      "en": 1379108314
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q5372",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-8": {
+    "title": "Volleyball",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Командный вид спорта с мячом на площадке, разделённой сеткой.",
+      "en": "A team ball sport played on a court divided by a net."
+    },
+    "summary": {
+      "ru": "Волейбо́л — вид спорта, командная спортивная игра, в процессе которой две команды соревнуются на специальной площадке, разделённой сеткой, стремясь направить мяч на сторону…",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%92%D0%BE%D0%BB%D0%B5%D0%B9%D0%B1%D0%BE%D0%BB",
+      "en": "https://en.wikipedia.org/wiki/Volleyball"
+    },
+    "revision": {
+      "ru": 155837134,
+      "en": 1382813054
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1734",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-9": {
+    "title": "Tennis",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Игра с ракетками и мячом для двух игроков или двух пар.",
+      "en": "A racket and ball sport played by two individuals or two pairs."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Tennis is a racket sport that is played either individually against a single opponent or between two teams of two players each .…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BD%D0%BD%D0%B8%D1%81",
+      "en": "https://en.wikipedia.org/wiki/Tennis"
+    },
+    "revision": {
+      "ru": 155902160,
+      "en": 1382615034
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q847",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-10": {
+    "title": "Badminton",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Бадминто́н — вид спорта, в котором игроки располагаются на противоположных сторонах разделённой сеткой площадки и перекидывают волан через сетку ударами ракеток, стремясь «приземлить»…",
+      "en": "Badminton is a racquet sport played using racquets to hit a shuttlecock across a net. Although it may be played with larger teams,…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D1%82%D0%BE%D0%BD",
+      "en": "https://en.wikipedia.org/wiki/Badminton"
+    },
+    "revision": {
+      "ru": 155831724,
+      "en": 1382907157
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q7291",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-11": {
+    "title": "Table tennis",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Игра с маленькими ракетками и мячом на столе, разделённом сеткой.",
+      "en": "A racket and ball sport played on a table divided by a net."
+    },
+    "summary": {
+      "ru": "Настольный теннис — олимпийский вид спорта, спортивная игра с мячом, в которой используют специальные ракетки и игровой стол, разграниченный сеткой пополам. Игра может…",
+      "en": ""
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%81%D1%82%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D0%BD%D0%BD%D0%B8%D1%81",
+      "en": "https://en.wikipedia.org/wiki/Table_tennis"
+    },
+    "revision": {
+      "ru": 154519101,
+      "en": 1376323746
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q3930",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-12": {
+    "title": "Ice hockey",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Командный вид спорта на льду, в котором игроки используют клюшки и шайбу.",
+      "en": "A team sport played on ice with sticks and a puck."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Ice hockey, known simply as hockey in North America and parts of Europe, is a team sport played on ice skates, usually on…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9_%D1%81_%D1%88%D0%B0%D0%B9%D0%B1%D0%BE%D0%B9",
+      "en": "https://en.wikipedia.org/wiki/Ice_hockey"
+    },
+    "revision": {
+      "ru": 155019298,
+      "en": 1371224974
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q41466",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-13": {
+    "title": "Field hockey",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Командная игра с клюшками и мячом на поле.",
+      "en": "A team sport played on a field using curved sticks and a ball."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Hockey, or field hockey in North America, is a fast-paced team sport in which two teams of eleven players use curved sticks to…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A5%D0%BE%D0%BA%D0%BA%D0%B5%D0%B9_%D0%BD%D0%B0_%D1%82%D1%80%D0%B0%D0%B2%D0%B5",
+      "en": "https://en.wikipedia.org/wiki/Field_hockey"
+    },
+    "revision": {
+      "ru": 154105628,
+      "en": 1382145559
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1455",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-14": {
+    "title": "Rugby union",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "Контактный командный вид спорта с овальным мячом, возникший в Англии.",
+      "en": "A contact team sport with an oval ball, originating in England."
+    },
+    "summary": {
+      "ru": "",
+      "en": "Rugby union football, commonly known simply as rugby union or often just rugby, is a close-contact team sport that originated at Rugby School…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A0%D0%B5%D0%B3%D0%B1%D0%B8",
+      "en": "https://en.wikipedia.org/wiki/Rugby_union"
+    },
+    "revision": {
+      "ru": 155602738,
+      "en": 1383331588
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q5849",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-15": {
+    "title": "Cricket",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Кри́кет — командный неконтактный вид спорта, входящий в семейство игр, в которых используются бита и мяч. Крикет зародился в XVI веке на юге…",
+      "en": "Cricket is a bat-and-ball game that is played between two teams of eleven players on a field, at the centre of which is…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D0%B8%D0%BA%D0%B5%D1%82",
+      "en": "https://en.wikipedia.org/wiki/Cricket"
+    },
+    "revision": {
+      "ru": 155278873,
+      "en": 1375657719
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q5375",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-16": {
+    "title": "Baseball",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Бейсбо́л — командная спортивная игра с бейсбольным мячом и битой. В состязаниях участвуют две команды по девять игроков каждая.",
+      "en": "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. Gameplay centers around the pitcher…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%91%D0%B5%D0%B9%D1%81%D0%B1%D0%BE%D0%BB",
+      "en": "https://en.wikipedia.org/wiki/Baseball"
+    },
+    "revision": {
+      "ru": 155266633,
+      "en": 1382952466
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q5369",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-17": {
+    "title": "American football",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Американский футбол известный в США как футбол (англ.",
+      "en": "American football, referred to simply as football in the United States and Canada and also known as gridiron football, is a sport played…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%90%D0%BC%D0%B5%D1%80%D0%B8%D0%BA%D0%B0%D0%BD%D1%81%D0%BA%D0%B8%D0%B9_%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB",
+      "en": "https://en.wikipedia.org/wiki/American_football"
+    },
+    "revision": {
+      "ru": 155542489,
+      "en": 1382849700
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q41323",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-18": {
+    "title": "Cycling",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Езда́ на велосипе́де — использование велосипеда в качестве транспорта, для отдыха, физических упражнений или спорта, а также перевозки людей или грузов. Езда на…",
+      "en": "Cycling, also known as bicycling or biking, is the activity of riding a bicycle or other types of pedal-driven human-powered vehicles such as…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%95%D0%B7%D0%B4%D0%B0_%D0%BD%D0%B0_%D0%B2%D0%B5%D0%BB%D0%BE%D1%81%D0%B8%D0%BF%D0%B5%D0%B4%D0%B5",
+      "en": "https://en.wikipedia.org/wiki/Cycling"
+    },
+    "revision": {
+      "ru": 155907098,
+      "en": 1381610534
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q53121",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-19": {
+    "title": "Swimming",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Пла́вание — перемещение человека в водной среде только за счёт собственной мускульной силы, с целью отдыха, оздоровления , достижения спортивных результатов и др.",
+      "en": "Swimming is the self-propulsion of a person through water, usually for recreation, sport, exercise, or survival. Swimmers achieve locomotion by coordinating limb and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9F%D0%BB%D0%B0%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D1%87%D0%B5%D0%BB%D0%BE%D0%B2%D0%B5%D0%BA%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Swimming"
+    },
+    "revision": {
+      "ru": 151629679,
+      "en": 1383253511
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q6388",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-20": {
+    "title": "Sport of athletics",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Лёгкая атле́тика — олимпийский вид спорта. Объединяет следующие дисциплины: беговые виды, спортивную ходьбу, технические виды , многоборья, пробеги и кроссы . Один из…",
+      "en": "Athletics is a group of sporting events involving competitive running, jumping and throwing. The most common types of athletics competitions are track and…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%9B%D1%91%D0%B3%D0%BA%D0%B0%D1%8F_%D0%B0%D1%82%D0%BB%D0%B5%D1%82%D0%B8%D0%BA%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Sport_of_athletics"
+    },
+    "revision": {
+      "ru": 154578173,
+      "en": 1379904330
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q542",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-21": {
+    "title": "Figure skating",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Фигу́рное ката́ние — конькобежный вид спорта, относится к сложно координационным видам спорта. Основная идея заключается в передвижении спортсмена или пары спортсменов на коньках…",
+      "en": "Figure skating is a sport in which individuals, pairs, or groups perform jumps, spins, and dance moves on ice. Their footwear are figure…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A4%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%BE%D0%B5_%D0%BA%D0%B0%D1%82%D0%B0%D0%BD%D0%B8%D0%B5",
+      "en": "https://en.wikipedia.org/wiki/Figure_skating"
+    },
+    "revision": {
+      "ru": 154541213,
+      "en": 1382063118
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q38108",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-22": {
+    "title": "Gymnastics",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Гимна́стика — система физических упражнений для укрепления здоровья и всестороннего физического развития человека. В ЭСБЕ гимнастика — приёмы и способы систематических движений тела…",
+      "en": "Gymnastics is a group of sports that includes physical exercises requiring balance, strength, flexibility, agility, coordination, artistry and endurance. The movements involved in…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%93%D0%B8%D0%BC%D0%BD%D0%B0%D1%81%D1%82%D0%B8%D0%BA%D0%B0",
+      "en": "https://en.wikipedia.org/wiki/Gymnastics"
+    },
+    "revision": {
+      "ru": 153186539,
+      "en": 1380421972
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q43450",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-23": {
+    "title": "Sport climbing",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Спортивное скалолазание — разновидность скалолазания, суть которого состоит в организации и проведении соревнований по определённым правилам. Современные международные правила проведения соревнований по спортивному…",
+      "en": "Sport climbing is a type of free climbing in the sport of rock climbing in which the lead climber clips their rope—via a…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A1%D0%BF%D0%BE%D1%80%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5_%D1%81%D0%BA%D0%B0%D0%BB%D0%BE%D0%BB%D0%B0%D0%B7%D0%B0%D0%BD%D0%B8%D0%B5",
+      "en": "https://en.wikipedia.org/wiki/Sport_climbing"
+    },
+    "revision": {
+      "ru": 155230479,
+      "en": 1350913856
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q1541373",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  },
+  "sport-24": {
+    "title": "Chess",
+    "checked": "2026-11-02",
+    "description": {
+      "ru": "",
+      "en": ""
+    },
+    "summary": {
+      "ru": "Ша́хматы — детерминированная игра с совершенной информацией, в которой два игрока поочерёдно перемещают фигуры на поле 8х8 клеток с целью поставить мат королю…",
+      "en": "Chess is a board game for two players, played on a square board consisting of 64 squares arranged in an 8×8 grid. The…"
+    },
+    "sources": {
+      "ru": "https://ru.wikipedia.org/wiki/%D0%A8%D0%B0%D1%85%D0%BC%D0%B0%D1%82%D1%8B",
+      "en": "https://en.wikipedia.org/wiki/Chess"
+    },
+    "revision": {
+      "ru": 155715670,
+      "en": 1383210429
+    },
+    "wikidata": "https://www.wikidata.org/wiki/Q718",
+    "license": "CC BY-SA 4.0 (Wikipedia excerpts); CC0 (Wikidata descriptions)"
+  }
+}

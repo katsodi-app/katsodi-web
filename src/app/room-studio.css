@@ -1,0 +1,1484 @@
+/* Room studio, artwork palettes and stable movable media panes. */
+.room-studio-heading {
+  padding: 32px 0 36px;
+  max-width: 760px;
+}
+.room-studio-heading h1 {
+  font-size: clamp(30px, 4vw, 52px);
+  line-height: 1.12;
+  letter-spacing: -0.05em;
+  margin: 12px 0 16px;
+}
+.room-studio-heading > p:last-child {
+  color: var(--muted-foreground);
+  max-width: 54ch;
+  font-size: 16px;
+}
+.room-studio-page .create-layout {
+  max-width: none;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr);
+  gap: 28px;
+  align-items: start;
+}
+.room-studio-page .form-card {
+  border-radius: 24px;
+  padding: clamp(18px, 3vw, 36px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.room-studio-page .form-card > label {
+  margin: 12px 0 0;
+  font-weight: 650;
+}
+.room-studio-page input:not([type="radio"]):not([type="hidden"]),
+.room-studio-page textarea,
+.room-studio-page select {
+  width: 100%;
+  min-width: 0;
+  border-radius: 12px;
+  min-height: 48px;
+}
+.studio-format-picker,
+.studio-visibility {
+  border: 0;
+  padding: 0;
+  margin: 0 0 16px;
+  min-width: 0;
+}
+.studio-format-picker legend,
+.studio-visibility legend {
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 750;
+}
+.studio-format-picker > div,
+.studio-visibility > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.studio-format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 16px;
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  cursor: pointer;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, #7762c5 22%, var(--surface)),
+    color-mix(in srgb, #347d8f 20%, var(--surface)),
+    var(--surface)
+  );
+  background-size: 200% 200%;
+  animation: room-prism 12s ease-in-out infinite alternate;
+}
+.studio-format-card:nth-child(2) {
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, #a75b85 25%, var(--surface)),
+    color-mix(in srgb, #58753d 25%, var(--surface)),
+    var(--surface)
+  );
+  background-size: 200% 200%;
+  animation-delay: -5s;
+}
+.studio-format-card.is-selected {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent) inset;
+}
+.room-studio-page .studio-format-picker .studio-format-card,
+.room-studio-page .studio-visibility label {
+  margin: 0;
+}
+.studio-format-card:has(:focus-visible),
+.studio-visibility label:has(:focus-visible) {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+.studio-format-card input,
+.studio-visibility input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.studio-art-stack {
+  height: 122px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4px 0 16px;
+  isolation: isolate;
+}
+.studio-art-stack img {
+  width: 36%;
+  max-width: 110px;
+  height: 112px;
+  object-fit: cover;
+  border: 2px solid color-mix(in srgb, white 30%, transparent);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px #0005;
+}
+.studio-art-stack img:first-child {
+  transform: rotate(-14deg) translateX(12px);
+  z-index: -1;
+}
+.studio-art-stack img:last-child {
+  transform: rotate(14deg) translateX(-12px);
+  z-index: -1;
+}
+.studio-format-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.studio-format-copy strong {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 20px;
+}
+.studio-format-copy > span {
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+}
+.studio-format-check {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  opacity: 0;
+  color: var(--accent);
+}
+.is-selected .studio-format-check {
+  opacity: 1;
+}
+.studio-visibility {
+  margin: 20px 0 8px;
+}
+.studio-visibility label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid var(--border-strong);
+  border-radius: 14px;
+  cursor: pointer;
+  margin: 0;
+}
+.studio-visibility label.is-selected {
+  background: var(--selected);
+  border-color: var(--accent);
+}
+.studio-visibility label > span {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+.studio-visibility small {
+  color: var(--muted-foreground);
+  line-height: 1.5;
+}
+.room-studio-page .fandom-picker {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  margin: 8px 0;
+}
+.room-studio-page .fandom-picker small {
+  color: var(--muted-foreground);
+  line-height: 1.6;
+}
+.studio-preview {
+  position: sticky;
+  top: 20px;
+  padding: 24px;
+  border-radius: 24px;
+  background: linear-gradient(
+    145deg,
+    color-mix(in srgb, var(--room-hue-a) 24%, var(--surface)),
+    color-mix(in srgb, var(--room-hue-b) 18%, var(--surface)),
+    var(--surface)
+  );
+}
+.studio-preview h2 {
+  overflow-wrap: anywhere;
+  font-size: 26px;
+  letter-spacing: -0.04em;
+  margin: 22px 0 10px;
+}
+.studio-preview .eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  line-height: 1.6;
+}
+.studio-preview > p {
+  color: var(--muted-foreground);
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+.studio-preview .cover {
+  aspect-ratio: 1.2;
+  border-radius: 16px;
+}
+.studio-preview-tags,
+.network-room-tags,
+.music-platform-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  min-width: 0;
+}
+.studio-preview-tags span,
+.network-room-tags span,
+.music-platform-chips :is(span, a) {
+  max-width: 100%;
+  min-width: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  padding: 6px 9px;
+  background: color-mix(in srgb, var(--surface) 75%, transparent);
+  border: 1px solid var(--border-strong);
+  border-radius: 9px;
+  font-size: 11px;
+  line-height: 1.5;
+}
+.studio-album-preview {
+  min-height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #51344c, #183d42);
+}
+.studio-album-preview img {
+  width: 36%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px #0006;
+}
+.studio-album-preview img:first-child {
+  transform: translateX(18px) rotate(-13deg);
+}
+.studio-album-preview img:last-of-type {
+  transform: translateX(-18px) rotate(13deg);
+}
+.studio-album-preview img:nth-child(2) {
+  z-index: 1;
+}
+.studio-album-preview > svg {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  z-index: 2;
+  color: white;
+}
+.room-card.palette-room-card {
+  background: linear-gradient(
+    125deg,
+    color-mix(in srgb, var(--room-hue-a) 22%, var(--surface)),
+    color-mix(in srgb, var(--room-hue-b) 18%, var(--surface)),
+    color-mix(in srgb, var(--room-hue-c) 18%, var(--surface))
+  );
+  background-size: 200% 200%;
+  animation: room-prism 16s ease-in-out infinite alternate;
+  min-width: 0;
+  overflow: hidden;
+}
+.network-room-card > p {
+  overflow-wrap: anywhere;
+}
+.network-room-tags {
+  margin-top: 16px;
+}
+.network-room-card .room-inactive {
+  display: block;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  margin-top: 8px;
+}
+.cover.cover-fandom-palette {
+  background: linear-gradient(
+    125deg,
+    var(--room-hue-a),
+    var(--room-hue-b),
+    var(--room-hue-c)
+  );
+}
+.cover.cover-fandom-palette > img {
+  opacity: 0.28;
+  filter: blur(18px) saturate(1.4);
+  transform: scale(1.12);
+}
+.music-room-guide {
+  display: flex;
+  flex: none;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(
+    125deg,
+    color-mix(in srgb, var(--accent) 8%, var(--surface)),
+    var(--surface)
+  );
+  min-width: 0;
+}
+.music-room-guide > svg {
+  flex: none;
+  color: var(--accent);
+}
+.music-room-guide h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+.music-room-guide p {
+  font-size: 12px;
+  line-height: 1.65;
+  margin: 8px 0;
+  color: var(--muted-foreground);
+}
+.music-platform-chips {
+  margin: 12px 0;
+}
+@keyframes room-prism {
+  from {
+    background-position: 0% 20%;
+  }
+  to {
+    background-position: 100% 80%;
+  }
+}
+
+.room-body.room-adjustable,
+.room-layout.room-adjustable {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 8px clamp(260px, var(--side-width), 60%);
+  grid-template-rows: 0 minmax(0, 1fr);
+  grid-template-areas: "tools tools tools" "player split side";
+  min-height: 640px;
+  gap: 0;
+  max-width: none;
+}
+.room-adjustable[data-left="true"] {
+  grid-template-columns: clamp(260px, var(--side-width), 60%) 8px minmax(0, 1fr);
+  grid-template-areas: "tools tools tools" "side split player";
+}
+.pane-handle button {
+  border: 0;
+  background: transparent;
+  color: var(--muted-foreground);
+  display: grid;
+  place-items: center;
+  padding: 6px;
+  border-radius: 7px;
+  min-width: 28px;
+  min-height: 28px;
+  cursor: pointer;
+}
+.pane-handle button:hover {
+  background: var(--surface-hover);
+  color: var(--foreground);
+}
+.adjustable-pane {
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  overflow: hidden;
+}
+.pane-player {
+  grid-area: player;
+}
+.pane-side {
+  grid-area: side;
+}
+.pane-handle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 8px;
+  min-height: 42px;
+  flex: none;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+.pane-handle > span {
+  flex: 1;
+  min-width: 0;
+  font-size: 10px;
+  color: var(--muted-foreground);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.pane-actions {
+  display: flex;
+  flex: none;
+  gap: 1px;
+}
+.pane-grip,
+.pane-resize {
+  touch-action: none;
+}
+.pane-grip {
+  cursor: grab !important;
+}
+.pane-grip:active {
+  cursor: grabbing !important;
+}
+.pane-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+}
+.pane-content > .room-main {
+  flex: 1;
+  min-height: 0;
+}
+.room-adjustable .cinema-stage {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  height: auto;
+  min-height: 490px;
+  max-height: none;
+}
+.room-adjustable .cinema-stage-top,
+.room-adjustable .cinema-stage-footer {
+  position: relative;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  padding: 20px 24px;
+  flex: none;
+}
+.room-adjustable .cinema-content {
+  flex: 1;
+  min-height: 0;
+  padding: 30px 24px;
+}
+.pane-side .pane-content {
+  overflow: hidden;
+}
+.pane-side .room-side {
+  contain: none;
+  flex: 1;
+  min-height: 0;
+  height: 100%;
+  border-left: 0;
+}
+.pane-side .room-panel {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+.room-splitter {
+  grid-area: split;
+  background: var(--border);
+  cursor: col-resize;
+  touch-action: none;
+  position: relative;
+  z-index: 2;
+}
+.room-splitter::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 38px;
+  background: var(--muted-foreground);
+  border-radius: 4px;
+  top: 50%;
+  left: 2px;
+  opacity: 0.5;
+}
+.room-splitter:hover,
+.room-splitter:focus-visible {
+  background: var(--selected);
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+.pane-resize {
+  display: none;
+}
+.adjustable-pane.is-floating {
+  position: absolute;
+  grid-area: auto;
+  z-index: 25;
+  left: var(--pane-x);
+  top: var(--pane-y);
+  width: min(var(--pane-width), 100%);
+  height: var(--pane-height);
+  border: 1px solid var(--border-strong);
+  border-radius: 16px;
+  box-shadow: 0 18px 60px #0008;
+}
+.is-floating .pane-resize {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 26px;
+  height: 26px;
+  border: 0;
+  color: var(--muted-foreground);
+  background: var(--surface-elevated);
+  border-radius: 8px 0 0;
+  cursor: nwse-resize;
+  z-index: 3;
+}
+.adjustable-pane.is-minimized > .pane-content {
+  display: none;
+}
+.pane-player.is-minimized > .pane-content {
+  display: flex;
+  flex: none;
+  width: 320px;
+  max-width: 100%;
+  height: 180px;
+  min-height: 180px;
+  overflow: hidden;
+}
+.pane-player.is-minimized .room-main {
+  padding: 0;
+  overflow: hidden !important;
+}
+.pane-player.is-minimized .stage-switch,
+.pane-player.is-minimized .room-source-form,
+.pane-player.is-minimized .music-room-guide,
+.pane-player.is-minimized .room-player > header,
+.pane-player.is-minimized .room-player > footer {
+  display: none;
+}
+.pane-player.is-minimized .stage-pane:not([hidden]),
+.pane-player.is-minimized .room-player,
+.pane-player.is-minimized .demo-canvas,
+.pane-player.is-minimized .demo-frame {
+  flex: 1;
+  min-height: 0 !important;
+  height: 100%;
+  aspect-ratio: auto;
+}
+.pane-player.is-minimized .room-player-frame {
+  min-height: 0;
+  height: 180px;
+  aspect-ratio: auto;
+}
+.adjustable-pane.is-minimized.is-floating {
+  height: auto;
+}
+.adjustable-pane.is-minimized .pane-resize {
+  display: none;
+}
+.room-adjustable[data-side-min="true"]:not([data-side-float="true"]) {
+  grid-template-columns: minmax(0, 1fr) 8px 64px;
+}
+.room-adjustable[data-left="true"][data-side-min="true"]:not(
+    [data-side-float="true"]
+  ) {
+  grid-template-columns: 64px 8px minmax(0, 1fr);
+}
+.room-adjustable[data-side-min="true"]
+  .pane-side:not(.is-floating)
+  .pane-handle {
+  flex-direction: column;
+  padding: 8px;
+  height: 100%;
+}
+.room-adjustable[data-side-min="true"]
+  .pane-side:not(.is-floating)
+  .pane-handle
+  > span {
+  display: none;
+}
+.room-adjustable[data-side-min="true"]
+  .pane-side:not(.is-floating)
+  .pane-actions {
+  flex-direction: column;
+  gap: 10px;
+}
+.room-adjustable[data-player-min="true"]:not([data-player-float="true"]) {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: 30px auto minmax(0, 1fr);
+  grid-template-areas: "tools" "player" "side";
+}
+.room-adjustable[data-player-min="true"] .room-splitter,
+.room-adjustable[data-player-float="true"] .room-splitter,
+.room-adjustable[data-side-float="true"] .room-splitter,
+.room-adjustable:not([data-focus=""]) .room-splitter {
+  display: none;
+}
+.room-adjustable[data-side-float="true"] {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "tools" "player";
+}
+.room-adjustable[data-player-float="true"] {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "tools" "side";
+}
+.room-adjustable[data-player-float="true"][data-side-float="true"] {
+  grid-template-areas: "tools" ".";
+}
+.room-adjustable[data-focus="player"] {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "tools" "player";
+}
+.room-adjustable[data-focus="side"] {
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-areas: "tools" "side";
+}
+.room-adjustable[data-focus="player"] > .pane-side,
+.room-adjustable[data-focus="side"] > .pane-player {
+  display: none;
+}
+.room-fullscreen:is(:fullscreen, .is-fullscreen) .room-adjustable {
+  display: grid;
+  flex: 1;
+  height: auto;
+  min-height: 0;
+}
+.room-fullscreen:is(:fullscreen, .is-fullscreen) .pane-content > .room-main {
+  min-height: 0;
+}
+.room-fullscreen:is(:fullscreen, .is-fullscreen) .pane-player .stage-pane {
+  min-height: min-content;
+}
+.demo-tool-toggle,
+.demo-tool-drawer-heading {
+  display: none;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer {
+  position: fixed;
+  left: 0;
+  right: auto;
+  top: 50%;
+  width: 264px;
+  max-height: calc(100dvh - 120px);
+  transform: translate(-244px, -50%);
+  z-index: 100;
+  border: 1px solid var(--border-strong);
+  border-radius: 0 16px 16px 0;
+  background: var(--surface-elevated);
+  box-shadow: 0 10px 40px #0007;
+  transition: transform 0.2s ease;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer[data-open="true"] {
+  transform: translate(0, -50%);
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: absolute;
+  left: auto;
+  right: -20px;
+  top: 18px;
+  width: 40px;
+  min-height: 72px;
+  background: var(--surface-elevated);
+  color: var(--accent);
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  cursor: pointer;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer-content {
+  max-height: calc(100dvh - 120px);
+  overflow: auto;
+  padding: 18px 26px 18px 16px;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer-heading {
+  display: block;
+  font-size: 12px;
+  font-weight: 750;
+  margin: 0 0 14px;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer
+  .demo-annotate {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer
+  .demo-tools
+  button {
+  min-width: 0;
+  width: 100%;
+  min-height: 40px;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer
+  .demo-annotate
+  > button:last-child {
+  grid-column: 1/-1;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen),
+    .pane-player.has-custom-size
+  )
+  .demo-tool-drawer
+  .demo-tools:not(.demo-annotate) {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  margin-top: 12px;
+}
+@media (max-width: 1000px) {
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-adjustable {
+    flex: 1 0 auto;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .room-adjustable > .pane-player > .pane-content {
+    display: block;
+    min-height: 0;
+    overflow: visible;
+    flex: none;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-adjustable .room-main {
+    overflow: visible;
+  }
+  .room-body.room-adjustable[data-left][data-side-min],
+  .room-layout.room-adjustable[data-left][data-side-min] {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 30px auto auto;
+    grid-template-areas: "tools" "player" "side";
+    min-height: 0;
+  }
+  .room-adjustable > .pane-player {
+    order: 1;
+    flex: none;
+  }
+  .room-adjustable > .pane-side {
+    order: 2;
+    flex: none;
+  }
+  .room-adjustable[data-left="true"] > .pane-player {
+    order: 2;
+  }
+  .room-adjustable[data-left="true"] > .pane-side {
+    order: 1;
+  }
+  .room-body.room-adjustable[data-left="true"][data-side-min],
+  .room-layout.room-adjustable[data-left="true"][data-side-min] {
+    grid-template-areas: "tools" "side" "player";
+  }
+  .room-adjustable .room-splitter,
+  .room-adjustable .pane-resize,
+  .room-adjustable .pane-grip {
+    display: none;
+  }
+  .room-adjustable .adjustable-pane.is-floating {
+    position: relative;
+    grid-area: unset;
+    left: auto;
+    top: auto;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .room-adjustable .pane-player.is-floating {
+    grid-area: player;
+  }
+  .room-adjustable .pane-side.is-floating {
+    grid-area: side;
+  }
+  /* A bounded height keeps the message list as the scroller, so a long chat
+     does not grow the page and push the composer far below the last message.
+     About one screen tall, never taller than 640px or shorter than 360px. */
+  .room-adjustable .pane-side .pane-content {
+    height: clamp(360px, calc(100vh - 120px), 640px);
+    height: clamp(360px, calc(100dvh - 120px), 640px);
+    min-height: 0;
+    /* The pane is an auto-height column: a flex basis would replace the height. */
+    flex: none;
+  }
+  .room-adjustable .pane-side.is-minimized .pane-content {
+    height: auto;
+    min-height: 0;
+  }
+  .room-adjustable[data-side-min="true"]
+    .pane-side:not(.is-floating)
+    .pane-handle {
+    flex-direction: row;
+  }
+  .room-adjustable[data-side-min="true"]
+    .pane-side:not(.is-floating)
+    .pane-actions {
+    flex-direction: row;
+    gap: 1px;
+  }
+  .room-adjustable[data-side-min="true"]
+    .pane-side:not(.is-floating)
+    .pane-handle
+    > span {
+    display: block;
+  }
+  .pane-handle button {
+    min-height: 36px;
+    min-width: 36px;
+  }
+}
+@media (max-width: 760px) {
+  .room-studio-page .create-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .studio-preview {
+    position: static;
+  }
+  .studio-format-card {
+    padding: 12px;
+  }
+  .studio-art-stack {
+    height: 104px;
+  }
+  .studio-art-stack img {
+    height: 90px;
+  }
+  .studio-format-copy strong {
+    font-size: 17px;
+  }
+  .studio-visibility > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .music-room-guide {
+    padding: 14px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .studio-format-card,
+  .room-card.palette-room-card {
+    animation: none;
+  }
+  .demo-tool-drawer {
+    transition: none !important;
+  }
+}
+
+/* The docked stage has the same two-axis sizing controls as a floating pane. */
+.adjustable-pane {
+  position: relative;
+}
+.pane-handle {
+  position: relative;
+}
+.pane-player.is-sized {
+  width: var(--pane-width);
+  max-width: 100%;
+  height: var(--pane-height);
+  max-height: 100%;
+  align-self: start;
+  justify-self: start;
+}
+.pane-player:not(.is-minimized) > .pane-resize {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 28px;
+  height: 28px;
+  border: 1px solid var(--border-strong);
+  border-radius: 9px 0 0;
+  background: var(--surface-elevated);
+  color: var(--accent);
+  cursor: nwse-resize;
+  z-index: 5;
+}
+.pane-size-controls {
+  position: absolute;
+  right: 8px;
+  top: calc(100% + 4px);
+  z-index: 50;
+  width: 264px;
+  max-width: calc(100% - 16px);
+  padding: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  background: var(--surface-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px #0006;
+}
+.pane-size-controls label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  color: var(--muted-foreground);
+  font-size: 11px;
+}
+.pane-size-controls input {
+  width: 100%;
+  min-width: 0;
+  min-height: 32px;
+  height: 32px;
+  padding: 5px 7px;
+  font-size: 12px;
+}
+.pane-size-controls > div {
+  display: flex;
+  grid-column: 1/-1;
+  gap: 6px;
+}
+.pane-size-controls button {
+  display: block;
+  padding: 6px 9px;
+  color: var(--foreground);
+  font-size: 11px;
+  background: var(--surface-hover);
+}
+
+/* Fit the room to short desktop viewports, including browser zoom. */
+@media (min-width: 1001px), (min-width: 700px) and (max-height: 700px) {
+  .room-workspace {
+    height: clamp(360px, calc(100dvh - 180px), 1000px);
+  }
+  .room-workspace > .room-body.room-adjustable {
+    flex: 1;
+    min-height: 0;
+    grid-template-rows: 0 minmax(0, 1fr);
+  }
+  .room-workspace .pane-handle {
+    min-height: 32px;
+    height: 32px;
+    padding: 2px 6px;
+  }
+  .room-workspace .pane-player:not(.is-minimized) > .pane-content {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .room-workspace .room-main {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    padding: 8px;
+    gap: 8px;
+    overflow: hidden;
+  }
+  .room-workspace .stage-switch {
+    flex: none;
+    padding: 3px;
+  }
+  .room-workspace .stage-switch button {
+    min-height: 28px;
+    padding: 3px 10px;
+    font-size: 12px;
+  }
+  .room-workspace .stage-pane:not([hidden]) {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+  }
+  .room-workspace .stage-pane:has(> .room-demo) {
+    overflow: hidden;
+  }
+  .room-workspace .stage-pane > .room-demo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .room-workspace .room-demo > header {
+    flex: none;
+    min-height: 40px;
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  .room-workspace .room-demo > header > span:first-child {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .room-workspace .room-demo > header .pill {
+    max-width: 50%;
+    padding: 4px 8px;
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .room-workspace .room-demo > .demo-canvas {
+    flex: 1 1 0;
+    min-height: 0;
+    container-type: size;
+    overflow: hidden;
+  }
+  .room-workspace .demo-frame {
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    aspect-ratio: auto;
+  }
+  .room-workspace .demo-screen {
+    width: min(100cqw, calc(100cqh * var(--demo-aspect, 1.777778)));
+    max-height: 100%;
+  }
+  .room-workspace .room-demo > footer {
+    flex: none;
+    padding: 6px 10px;
+  }
+  .room-workspace .room-demo > footer > small {
+    margin: 0;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .room-workspace .room-demo > footer > p {
+    font-size: 11px;
+    margin: 4px 0;
+    line-height: 1.4;
+  }
+  .room-workspace .room-demo > footer .button {
+    min-height: 32px;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+  .room-workspace .room-demo > footer > .text-link {
+    font-size: 11px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen):has(.room-workspace) {
+    padding: 8px;
+    overflow: hidden;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-workspace {
+    height: auto;
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen):has(.room-workspace)
+    > .room-view-controls {
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    z-index: 60;
+    margin: 0;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-view-controls .button {
+    min-height: 28px;
+    height: 28px;
+    padding: 4px 9px;
+    font-size: 11px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-bar {
+    flex: none;
+    min-height: 48px;
+    padding: 6px 190px 6px 12px;
+    gap: 10px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-bar .room-vinyl {
+    width: 32px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-bar-back {
+    width: 30px;
+    height: 30px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-bar h1 {
+    font-size: 16px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-bar-title p {
+    margin: 0;
+    font-size: 10px;
+    line-height: 14px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-chip {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-body.room-adjustable {
+    display: grid;
+    flex: 1;
+    min-height: 0;
+    grid-template-rows: 0 minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) 8px clamp(
+        260px,
+        var(--side-width),
+        60%
+      );
+    grid-template-areas: "tools tools tools" "player split side";
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-left="true"] {
+    grid-template-columns: clamp(260px, var(--side-width), 60%) 8px minmax(
+        0,
+        1fr
+      );
+    grid-template-areas: "tools tools tools" "side split player";
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-side-min="true"]:not([data-side-float="true"]) {
+    grid-template-columns: minmax(0, 1fr) 8px 56px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-left="true"][data-side-min="true"]:not(
+      [data-side-float="true"]
+    ) {
+    grid-template-columns: 56px 8px minmax(0, 1fr);
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-side-min="true"]
+    .pane-side:not(.is-floating)
+    .pane-handle {
+    height: 100%;
+    flex-direction: column;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-side-min="true"]
+    .pane-side:not(.is-floating)
+    .pane-handle
+    > span {
+    display: none;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-side-min="true"]
+    .pane-side:not(.is-floating)
+    .pane-actions {
+    flex-direction: column;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable
+    > .adjustable-pane {
+    order: initial;
+    min-height: 0;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .pane-side .pane-content {
+    min-height: 0;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .pane-player:not(.is-minimized)
+    > .pane-content {
+    display: flex;
+    min-height: 0;
+    overflow: hidden;
+    flex: 1;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-main {
+    min-height: 0;
+    overflow: hidden;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .stage-pane:not([hidden]),
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .stage-pane > .room-demo,
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-demo > .demo-canvas {
+    min-height: 0;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .pane-player:not(.is-minimized)
+    > .pane-resize {
+    display: grid;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-side-float="true"],
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-focus="player"] {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "tools" "player";
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-player-float="true"],
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-focus="side"] {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "tools" "side";
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen)
+    .room-adjustable[data-player-min="true"]:not([data-player-float="true"]) {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: 0 auto minmax(0, 1fr);
+    grid-template-areas: "tools" "player" "side";
+  }
+}
+.room-adjustable[data-left][data-focus]:not([data-focus=""]),
+.room-fullscreen:is(:fullscreen, .is-fullscreen)
+  .room-adjustable[data-left][data-focus]:not([data-focus=""]) {
+  grid-template-columns: minmax(0, 1fr);
+}
+@media (min-width: 1001px), (min-width: 700px) and (max-height: 700px) {
+  .room-workspace .room-demo > .player-state {
+    flex: 1;
+    min-height: 0;
+    overflow: auto;
+    padding: 12px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .pane-grip {
+    display: grid;
+  }
+}
+.pane-player.has-custom-size > .pane-content {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+}
+.pane-player.has-custom-size .room-main {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  padding: 8px;
+  gap: 8px;
+}
+.pane-player.has-custom-size .stage-pane:not([hidden]) {
+  flex: 1;
+  min-height: 0;
+  overflow: auto;
+}
+.pane-player.has-custom-size .stage-pane:has(> .room-demo) {
+  overflow: hidden;
+}
+.pane-player.has-custom-size .room-demo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+.pane-player.has-custom-size .room-demo > header {
+  flex: none;
+  min-height: 40px;
+  padding: 6px 10px;
+}
+.pane-player.has-custom-size .room-demo > .demo-canvas {
+  flex: 1 1 0;
+  min-height: 0;
+  container-type: size;
+  overflow: hidden;
+}
+.pane-player.has-custom-size .demo-frame {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  aspect-ratio: auto;
+}
+.pane-player.has-custom-size .demo-screen {
+  width: min(100cqw, calc(100cqh * var(--demo-aspect, 1.777778)));
+  max-height: 100%;
+}
+.pane-player.has-custom-size .room-demo > footer {
+  flex: none;
+  padding: 6px 10px;
+}
+.pane-player.has-custom-size .room-demo > footer > small {
+  margin: 0;
+  line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.pane-player.has-custom-size
+  .demo-tool-drawer:not([data-open="true"])
+  .demo-tool-drawer-content {
+  visibility: hidden;
+}
+
+/* Demo fullscreen belongs to the room, so its conversation stays alongside. */
+.demo-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  min-width: 0;
+  max-width: 75%;
+}
+.demo-expand-chat {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: none;
+  padding: 5px 8px;
+  min-height: 28px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--foreground);
+  font-size: 11px;
+  cursor: pointer;
+}
+.demo-expand-chat:hover {
+  background: var(--surface-hover);
+}
+.demo-expand-chat:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+@media (max-width: 600px) {
+  .demo-expand-chat > span {
+    display: none;
+  }
+}
+
+/* If conversation is docked left, mirror tools back to the free edge. */
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen):has(
+        .room-adjustable[data-left="true"]
+      ),
+    .room-adjustable[data-left="true"] .pane-player.has-custom-size
+  )
+  .demo-tool-drawer {
+  left: auto;
+  right: 0;
+  border-radius: 16px 0 0 16px;
+  transform: translate(244px, -50%);
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen):has(
+        .room-adjustable[data-left="true"]
+      ),
+    .room-adjustable[data-left="true"] .pane-player.has-custom-size
+  )
+  .demo-tool-drawer[data-open="true"] {
+  transform: translate(0, -50%);
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen):has(
+        .room-adjustable[data-left="true"]
+      ),
+    .room-adjustable[data-left="true"] .pane-player.has-custom-size
+  )
+  .demo-tool-toggle {
+  left: -20px;
+  right: auto;
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen):has(
+        .room-adjustable[data-left="true"]
+      ),
+    .room-adjustable[data-left="true"] .pane-player.has-custom-size
+  )
+  .demo-tool-toggle
+  > svg:last-child {
+  transform: rotate(180deg);
+}
+:is(
+    .room-fullscreen:is(:fullscreen, .is-fullscreen):has(
+        .room-adjustable[data-left="true"]
+      ),
+    .room-adjustable[data-left="true"] .pane-player.has-custom-size
+  )
+  .demo-tool-drawer-content {
+  padding: 18px 16px 18px 26px;
+}
+
+/* Theater mode only fills the stage's existing pane; the chat keeps its column. */
+.pane-player:has(.room-demo.is-expanded) > .pane-handle,
+.room-main:has(.room-demo.is-expanded) > .stage-switch {
+  display: none;
+}
+.room-demo.is-expanded > header {
+  min-height: 32px;
+  padding: 4px 8px;
+}
+
+.room-demo footer .demo-rights-warning {
+  display: block;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+/* In the compact docked stage the rights warning shares one line with the
+   capture note, so it does not push the shared screen below a usable height.
+   Only these two notes become half-width inline blocks; the footer stays a
+   block, so buttons, problems and the tools drawer keep their own rows.
+   Both keep their whole text in the accessibility tree and in the title; the
+   warning also expands in place on hover or keyboard focus. */
+@media (min-width: 1001px), (min-width: 700px) and (max-height: 700px) {
+  .room-workspace .room-demo > footer {
+    /* Clear the corner control that overlaps the last line of the footer. */
+    padding-right: 40px;
+  }
+  .room-workspace .room-demo > footer > small,
+  .room-workspace .room-demo > footer > .demo-rights-warning {
+    display: inline-block;
+    box-sizing: border-box;
+    max-width: 50%;
+    vertical-align: top;
+    margin: 0;
+    font-size: 11px;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: normal;
+  }
+  .room-workspace .room-demo > footer > .demo-rights-warning {
+    padding-left: 10px;
+  }
+  .room-workspace
+    .room-demo
+    > footer
+    > .demo-rights-warning:is(:hover, :focus-visible) {
+    display: block;
+    max-width: none;
+    padding-left: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
+}

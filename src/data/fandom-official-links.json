@@ -1,0 +1,1062 @@
+{
+  "cinema-0": [
+    {
+      "provider": "Disney+",
+      "url": "https://www.disneyplus.com/brand/star-wars",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-2": [
+    {
+      "provider": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/iplayer/episodes/b006q2x0/doctor-who",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    },
+    {
+      "provider": "Doctor Who (official)",
+      "url": "https://www.doctorwho.tv/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-3": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/80057281",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-4": [
+    {
+      "provider": "Prime Video",
+      "url": "https://www.primevideo.com/detail/0TUVXIO58IUNEPNBF8363Z7YGL",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-5": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbomax.com/channel/harry-potter",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-6": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbo.com/dune-prophecy",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-7": [
+    {
+      "provider": "Disney+",
+      "url": "https://www.disneyplus.com/brand/marvel",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-8": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbomax.com/channel/dc",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-10": [
+    {
+      "provider": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/iplayer/episodes/b018ttws/sherlock",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-12": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/80189685",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-13": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/81231974",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-14": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbo.com/the-last-of-us",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-15": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbo.com/house-of-the-dragon",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-16": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbo.com/game-of-thrones",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-17": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/70143836",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-18": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/80021955",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-19": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbomax.com/shows/friends/52dae4c7-2ab1-4bb9-ab1c-8100fd54e2f9",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-0": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=One%20Piece",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-1": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Naruto",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-2": [
+    {
+      "provider": "Disney+",
+      "url": "https://www.disneyplus.com/browse/entity-02a3c8c0-4f1d-4610-bbb4-5b8e9468d7b1",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-3": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Dragon%20Ball",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-4": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Attack%20on%20Titan",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-5": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Demon%20Slayer",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-6": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Jujutsu%20Kaisen",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-7": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=My%20Hero%20Academia",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-8": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/70204970",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-9": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Fullmetal%20Alchemist%20Brotherhood",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-10": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Hunter%20x%20Hunter",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-11": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Haikyu",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-12": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Spy%20x%20Family",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-13": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Chainsaw%20Man",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-14": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Frieren",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-15": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/80182123",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-16": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Cowboy%20Bebop",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-17": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/81033445",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-18": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Sailor%20Moon",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-19": [
+    {
+      "provider": "Pokémon (official)",
+      "url": "https://www.pokemon.com/us/animation",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-20": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Digimon%20Adventure",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-21": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=JoJo's%20Bizarre%20Adventure",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-22": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Berserk",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-23": [
+    {
+      "provider": "Crunchyroll",
+      "url": "https://www.crunchyroll.com/search?q=Vinland%20Saga",
+      "kind": "search",
+      "checked": "2026-11-06"
+    }
+  ],
+  "anime-24": [
+    {
+      "provider": "Studio Ghibli (official)",
+      "url": "https://www.ghibli.jp/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-0": [
+    {
+      "provider": "Minecraft (official)",
+      "url": "https://www.youtube.com/@minecraft",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-1": [
+    {
+      "provider": "Stardew Valley (official)",
+      "url": "https://www.stardewvalley.net/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-2": [
+    {
+      "provider": "Terraria (official)",
+      "url": "https://terraria.org/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-3": [
+    {
+      "provider": "The Sims (official)",
+      "url": "https://www.youtube.com/@TheSims",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-7": [
+    {
+      "provider": "Sonic (official)",
+      "url": "https://www.youtube.com/@SonicHedgehog",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-8": [
+    {
+      "provider": "Final Fantasy (official)",
+      "url": "https://www.youtube.com/@FinalFantasy",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-9": [
+    {
+      "provider": "Kingdom Hearts (official)",
+      "url": "https://www.kingdomhearts.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-11": [
+    {
+      "provider": "Genshin Impact (official)",
+      "url": "https://www.youtube.com/@GenshinImpact",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-12": [
+    {
+      "provider": "Honkai: Star Rail (official)",
+      "url": "https://www.youtube.com/@HonkaiStarRail",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-13": [
+    {
+      "provider": "Elden Ring (official)",
+      "url": "https://en.bandainamcoent.eu/elden-ring/elden-ring",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-14": [
+    {
+      "provider": "Dark Souls (official)",
+      "url": "https://www.bandainamcoent.com/games/dark-souls-iii",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-15": [
+    {
+      "provider": "Bloodborne (official)",
+      "url": "https://www.playstation.com/en-us/games/bloodborne/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-16": [
+    {
+      "provider": "Baldur’s Gate 3 (official)",
+      "url": "https://baldursgate3.game/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-17": [
+    {
+      "provider": "Mass Effect (official)",
+      "url": "https://www.ea.com/games/mass-effect",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-18": [
+    {
+      "provider": "Dragon Age (official)",
+      "url": "https://www.ea.com/games/dragon-age",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-19": [
+    {
+      "provider": "The Elder Scrolls (official)",
+      "url": "https://elderscrolls.bethesda.net/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-20": [
+    {
+      "provider": "Fallout (official)",
+      "url": "https://fallout.bethesda.net/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-21": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/81054853",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    },
+    {
+      "provider": "Cyberpunk 2077 (official)",
+      "url": "https://www.cyberpunk.net/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-22": [
+    {
+      "provider": "Hades (official)",
+      "url": "https://www.supergiantgames.com/games/hades/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-23": [
+    {
+      "provider": "Hollow Knight (official)",
+      "url": "https://www.hollowknight.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "games-24": [
+    {
+      "provider": "Undertale (official)",
+      "url": "https://undertale.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-0": [
+    {
+      "provider": "BTS (official YouTube)",
+      "url": "https://www.youtube.com/@BTS",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-1": [
+    {
+      "provider": "BLACKPINK (official YouTube)",
+      "url": "https://www.youtube.com/@BLACKPINK",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-2": [
+    {
+      "provider": "Stray Kids (official YouTube)",
+      "url": "https://www.youtube.com/@StrayKids",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-3": [
+    {
+      "provider": "TWICE (official YouTube)",
+      "url": "https://www.youtube.com/@TWICE",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-4": [
+    {
+      "provider": "SEVENTEEN (official YouTube)",
+      "url": "https://www.youtube.com/@pledis17",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-5": [
+    {
+      "provider": "ATEEZ (official YouTube)",
+      "url": "https://www.youtube.com/@ATEEZofficial",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-6": [
+    {
+      "provider": "Taylor Swift (official YouTube)",
+      "url": "https://www.youtube.com/@TaylorSwift",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-7": [
+    {
+      "provider": "Billie Eilish (official YouTube)",
+      "url": "https://www.youtube.com/@BillieEilish",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-8": [
+    {
+      "provider": "Lana Del Rey (official YouTube)",
+      "url": "https://www.youtube.com/@LanaDelRey",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-9": [
+    {
+      "provider": "Ariana Grande (official YouTube)",
+      "url": "https://www.youtube.com/@ArianaGrande",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-10": [
+    {
+      "provider": "The Weeknd (official YouTube)",
+      "url": "https://www.youtube.com/@TheWeeknd",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-11": [
+    {
+      "provider": "Dua Lipa (official YouTube)",
+      "url": "https://www.youtube.com/@dualipa",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-12": [
+    {
+      "provider": "Olivia Rodrigo (official YouTube)",
+      "url": "https://www.youtube.com/@OliviaRodrigo",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-13": [
+    {
+      "provider": "Sabrina Carpenter (official YouTube)",
+      "url": "https://www.youtube.com/@SabrinaCarpenter",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-14": [
+    {
+      "provider": "Harry Styles (official YouTube)",
+      "url": "https://www.youtube.com/@HarryStyles",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-15": [
+    {
+      "provider": "Twenty One Pilots (official YouTube)",
+      "url": "https://www.youtube.com/@twentyonepilots",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-16": [
+    {
+      "provider": "Imagine Dragons (official YouTube)",
+      "url": "https://www.youtube.com/@ImagineDragons",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-17": [
+    {
+      "provider": "Coldplay (official YouTube)",
+      "url": "https://www.youtube.com/@coldplay",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-18": [
+    {
+      "provider": "Radiohead (official YouTube)",
+      "url": "https://www.youtube.com/@radiohead",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-19": [
+    {
+      "provider": "Arctic Monkeys (official YouTube)",
+      "url": "https://www.youtube.com/@ArcticMonkeys",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-20": [
+    {
+      "provider": "Muse (official YouTube)",
+      "url": "https://www.youtube.com/@muse",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-21": [
+    {
+      "provider": "Linkin Park (official YouTube)",
+      "url": "https://www.youtube.com/@linkinpark",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-22": [
+    {
+      "provider": "Paramore (official YouTube)",
+      "url": "https://www.youtube.com/@paramore",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-23": [
+    {
+      "provider": "Daft Punk (official YouTube)",
+      "url": "https://www.youtube.com/@daftpunk",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "music-24": [
+    {
+      "provider": "Gorillaz (official YouTube)",
+      "url": "https://www.youtube.com/@gorillaz",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-0": [
+    {
+      "provider": "Terry Pratchett (official)",
+      "url": "https://www.terrypratchettbooks.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-1": [
+    {
+      "provider": "Prime Video",
+      "url": "https://www.amazon.com/gp/video/detail/B09F59CZ7R",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-2": [
+    {
+      "provider": "Brandon Sanderson (official)",
+      "url": "https://www.brandonsanderson.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-3": [
+    {
+      "provider": "Brandon Sanderson (official)",
+      "url": "https://www.brandonsanderson.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-4": [
+    {
+      "provider": "The Hunger Games (official)",
+      "url": "https://www.thehungergames.movie/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-5": [
+    {
+      "provider": "Disney+",
+      "url": "https://www.disneyplus.com/browse/entity-f1c31566-ec05-4d30-b23f-3177442233f4",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-6": [
+    {
+      "provider": "Narnia (official)",
+      "url": "https://www.narnia.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-7": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbo.com/his-dark-materials",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-9": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/81150303",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-10": [
+    {
+      "provider": "Max",
+      "url": "https://www.hbo.com/watchmen",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-11": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/81153115",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-12": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/81059939",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-13": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/80186863",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-14": [
+    {
+      "provider": "Image Comics (official)",
+      "url": "https://imagecomics.com/comics/series/saga",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-16": [
+    {
+      "provider": "Tintin (official)",
+      "url": "https://tintin.com/en",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-17": [
+    {
+      "provider": "Netflix",
+      "url": "https://www.netflix.com/title/81316606",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-19": [
+    {
+      "provider": "Apple TV+",
+      "url": "https://tv.apple.com/us/show/foundation/umc.cmc.5983fipzqbicvrve6jdfep4x3",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-20": [
+    {
+      "provider": "Prime Video",
+      "url": "https://www.primevideo.com/detail/0MW6F85MD8486AE43GONNOR5F1",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-21": [
+    {
+      "provider": "BBC iPlayer",
+      "url": "https://www.bbc.co.uk/iplayer/episodes/b018ttws/sherlock",
+      "kind": "stream",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-22": [
+    {
+      "provider": "Agatha Christie (official)",
+      "url": "https://www.agathachristie.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "books-24": [
+    {
+      "provider": "Stephen King (official)",
+      "url": "https://stephenking.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-0": [
+    {
+      "provider": "F1 TV",
+      "url": "https://f1tv.formula1.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-1": [
+    {
+      "provider": "MotoGP VideoPass",
+      "url": "https://www.motogp.com/en/videopass",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-2": [
+    {
+      "provider": "WRC+",
+      "url": "https://www.wrc.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-4": [
+    {
+      "provider": "IndyCar (official)",
+      "url": "https://www.indycar.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-5": [
+    {
+      "provider": "FIA WEC TV",
+      "url": "https://www.fiawec.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-7": [
+    {
+      "provider": "NBA League Pass",
+      "url": "https://www.nba.com/watch/league-pass-stream",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-8": [
+    {
+      "provider": "Volleyball World TV",
+      "url": "https://tv.volleyballworld.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-9": [
+    {
+      "provider": "Tennis TV",
+      "url": "https://www.tennistv.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-11": [
+    {
+      "provider": "WTT (official)",
+      "url": "https://www.youtube.com/@WTTGlobal",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-12": [
+    {
+      "provider": "NHL (official)",
+      "url": "https://www.nhl.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-13": [
+    {
+      "provider": "Watch.Hockey (FIH)",
+      "url": "https://watch.hockey/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-14": [
+    {
+      "provider": "RugbyPass TV",
+      "url": "https://rugbypass.tv/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-15": [
+    {
+      "provider": "ICC.tv",
+      "url": "https://www.icc-cricket.com/",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-16": [
+    {
+      "provider": "MLB.TV",
+      "url": "https://www.mlb.com/tv",
+      "kind": "league",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-18": [
+    {
+      "provider": "UCI (official)",
+      "url": "https://www.youtube.com/channel/UCMqs7WkN-DlewXxYPBbqexg",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-19": [
+    {
+      "provider": "World Aquatics (official)",
+      "url": "https://www.youtube.com/@WorldAquatics",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-20": [
+    {
+      "provider": "World Athletics (official)",
+      "url": "https://www.youtube.com/@WorldAthletics",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-22": [
+    {
+      "provider": "World Gymnastics (official)",
+      "url": "https://www.youtube.com/channel/UCAM9Pvp3HzKvIAbAXHxidow",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-23": [
+    {
+      "provider": "World Climbing (official)",
+      "url": "https://www.youtube.com/c/sportclimbing",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "sport-24": [
+    {
+      "provider": "FIDE (official)",
+      "url": "https://www.youtube.com/@FIDE_chess",
+      "kind": "channel",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-1": [
+    {
+      "provider": "Star Trek (official)",
+      "url": "https://www.startrek.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ],
+  "cinema-9": [
+    {
+      "provider": "Avatar (official)",
+      "url": "https://www.avatar.com/",
+      "kind": "site",
+      "checked": "2026-11-06"
+    }
+  ]
+}
