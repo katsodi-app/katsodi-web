@@ -21,6 +21,10 @@ Open the repository root as an Obsidian vault.
 
 The complete screen map and actual capabilities are in [[docs/en/Page Catalogue]]. Friends and global moderation designs are prepared, but those services are not connected yet.
 
+## License
+
+The code is released under the MIT License (see `LICENSE`). Posters, covers, photographs and other images in `public/images`, music and fandom data in `src/data`, and the fonts in `public/fonts` are **not** covered by it: they belong to their rights holders, and sources are listed on the `/credits` page.
+
 - [[docs/en/Home]]
 - [[docs/en/Development Setup]]
 - [[docs/en/Architecture]]
