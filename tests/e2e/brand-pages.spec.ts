@@ -45,6 +45,7 @@ for (const [name, route] of pages)
   });
 test("fandom detail selection persists and planned friends remain honest", async ({
   page,
+  request,
 }) => {
   await page.goto("/fandoms/cinema-6");
   await expect(
@@ -57,14 +58,19 @@ test("fandom detail selection persists and planned friends remain honest", async
     page.getByRole("button", { name: "Выбрано", exact: true }),
   ).toHaveAttribute("aria-pressed", "true");
   // With a backend configured, signed-out visitors are asked to sign in and
-  // come back to /friends afterwards.
+  // come back to /friends afterwards. CI runs without Supabase, where the
+  // page shows the design-only version instead.
+  const configured = !(await (await request.get("/signup")).text()).includes(
+    'class="notice backend-notice"',
+  );
   await page.goto("/friends");
-  // Scoped to the page section: the shared footer has its own sign-in link.
-  await expect(
-    page
-      .locator("main section")
-      .getByRole("link", { name: "Войти", exact: true }),
-  ).toHaveAttribute("href", "/login?next=/friends");
+  if (configured)
+    // Scoped to the page section: the shared footer has its own sign-in link.
+    await expect(
+      page
+        .locator("main section")
+        .getByRole("link", { name: "Войти", exact: true }),
+    ).toHaveAttribute("href", "/login?next=/friends");
   await page.getByRole("button", { name: "EN", exact: true }).click();
   await expect(
     page.getByRole("heading", { name: "Your people", exact: false, level: 1 }),

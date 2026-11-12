@@ -48,9 +48,11 @@ test("the dock fits small screens without hiding its actions", async ({
 }) => {
   await page.setViewportSize({ width: 360, height: 740 });
   await seedLocalRooms(page);
-  await page.goto(`/room/${localVideoRoom.id}`);
-  await page.goto("/home");
   const dock = page.getByRole("complementary", { name: "Твоя комната" });
+  await page.goto(`/room/${localVideoRoom.id}`);
+  // The room records the dock after hydration; leave only once it has.
+  await expect(dock).toBeVisible();
+  await page.goto("/home");
   const back = dock.getByRole("link", { name: /Вернуться в комнату/ });
   await expect(back).toBeVisible();
   const box = (await back.boundingBox())!;
