@@ -3,7 +3,7 @@ title: "Project overview and restored avatars"
 type: feature
 status: implemented-verified
 created: 2026-11-11
-updated: 2026-11-11
+updated: 2026-11-12
 tags: [katsodi/feature, katsodi/design, katsodi/privacy]
 ---
 # Project overview and restored avatars
@@ -48,6 +48,18 @@ Full RU/EN switching, correct links in both footers, loaded images and no mobile
 Standalone redesign verification on 2026-11-11: production build, lint, typecheck, docs:check and all 377 unit tests passed. Legal scenarios passed 14/14 on desktop/mobile; after the last CSS change the separate final overview run passed 6/6. Coverage includes keyboard tabs, mobile navigation, GET search, restoring the standard shell on navigation, RU/EN, saved themes and axe in dark/paper themes. No horizontal overflow at 320/390/768/1440/1920. Inherited footer flex layout and opacity applied to decorative captions were corrected. Hero, room preview, map, footer and mobile paper-theme screenshots were visually reviewed. Stable-geometry checks use the reduced-motion setting supported by the UI itself. Logs: `.local/ux-audit/overview-redesign-*`, `overview-contrast-check-final.log`, `overview-visual-review-final.log`.
 
 Previous verification before the standalone redesign: production build, lint, types and docs:check passed; final 20 desktop/mobile e2e cases passed. Decorative orbit overflow was confined to the illustration; contrast checks wait for finite theme transitions, and the desktop screenshot was visually reviewed. The full unit suite is not reported green: first run 375/376 (music queue ordering), isolated file rerun 6/6; full rerun 368 executed, eight not executed because PGlite setup timed out in chat-media-access, isolated rerun 8/8. New artwork and legal checks passed in both complete runs. Database routines, authorisation, queue order and test timeouts were not changed. Logs: `.local/ux-audit/overview-restore-*`.
+
+## Redesign 2026-11-12
+
+/overview was rebuilt in an atmospheric dark style, keeping Katsodi's colours:
+
+- **First screen.** A full-screen night sky, an "Open source" badge, a headline with one handwritten word ("Watch it *together*.") and a glass room preview with a player, chat and voice.
+- **Fonts.** The poster line "Watch · Listen · Be there" is set in condensed Oswald; handwritten words use Caveat. Both are OFL with Cyrillic, loaded through `next/font` for this page only and served from Katsodi's own origin.
+- **Sections.** Six features, three moods (video, music, fandoms), the film, three steps, a "Built in the open" section with GitHub links and the MIT license note, the honest status and a closing poster.
+- **Buttons.** Only two kinds: haze (#f5f5f5) and ghost. Cards are flat with hairline borders.
+- **Motion.** Reveal on scroll, parallax skies, a poster line that follows the scroll, a glass preview that tilts towards the pointer, and a top bar that turns solid after the first screen. All of it uses the Web Animations API without changing attributes, so hydration stays clean. Reduced motion turns it off.
+- **Footer.** The shared site footer (`src/components/site-footer.tsx`, `src/app/site-footer.css`) was rewritten: flat, aligned to the content edges, with a GitHub link and an "Open source · MIT" badge, and compact on phones. /overview shows it too.
+- **Tests.** `tests/e2e/overview.spec.ts` covers hydration, the film, reduced motion, keyboard tabs, both languages, the mobile menu, 320 px width, axe in both themes and the footer across pages.
 
 ## Limits and next steps
 Publication rights for the 98 previously flagged entries remain unestablished. Actual hosting, retention, sufficient controller identity and operational procedures, including child users, remain unresolved. No deployment or community messages performed.

@@ -1858,47 +1858,6 @@
 }
 
 /* Legal pages, footer and consent (Legal Tasks 4, 9, 10) */
-.brand-app .site-footer,
-.site-footer {
-  display: grid;
-  gap: 12px;
-  margin-top: 64px;
-  padding: 24px 0 8px;
-  border-top: 1px solid var(--border);
-  font-size: 13px;
-  color: var(--muted-foreground);
-}
-.site-footer ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 20px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.site-footer a {
-  color: var(--foreground);
-  text-decoration: none;
-}
-.site-footer a:hover {
-  text-decoration: underline;
-}
-.site-footer p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 16px;
-  margin: 0;
-  font-size: 12px;
-  line-height: 1.6;
-}
-.site-footer-compact {
-  margin: 0;
-  padding: 18px 24px 24px;
-}
-.site-footer-compact ul {
-  justify-content: center;
-}
-
 .consent-banner {
   position: fixed;
   z-index: 90;

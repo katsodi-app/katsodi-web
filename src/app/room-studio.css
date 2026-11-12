@@ -1482,3 +1482,11 @@
     overflow-wrap: anywhere;
   }
 }
+
+/* The stage pane scrolls, so its player, website and source form keep their
+   natural height instead of being squeezed: room-player hides overflow, which
+   lets flex shrink it to a thin strip once notices or hints add height.
+   The link demo manages its own height. */
+.room-workspace .pane-player:not(.is-minimized) .stage-pane > :not(.room-demo) {
+  flex-shrink: 0;
+}

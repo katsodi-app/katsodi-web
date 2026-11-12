@@ -1,12 +1,12 @@
 import { expect, test } from "@playwright/test";
 
-// Decorative tiles drift continuously; reduced motion lets keyboard and image
-// assertions use stable geometry, and exercises the supported motion setting.
+// The glass preview floats and the progress bar loops; reduced motion keeps
+// keyboard and layout assertions stable and exercises the supported setting.
 test.use({ reducedMotion: "reduce" });
 
-test("overview hydration and parallax leave React-owned attributes intact", async ({
-  page,
-}) => {
+const github = "https://github.com/katsodi-app/katsodi-web";
+
+test("overview motion leaves hydration clean", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "no-preference" });
   const errors: string[] = [];
   page.on("console", (message) => {
@@ -18,15 +18,10 @@ test("overview hydration and parallax leave React-owned attributes intact", asyn
   });
   for (let visit = 0; visit < 2; visit++) {
     await page.goto("/overview");
-    await expect(page.locator(".overview-constellation")).not.toHaveAttribute(
-      "style",
-    );
-    await page.mouse.move(100, 220);
+    await page.mouse.move(200, 300);
+    await page.mouse.wheel(0, 600);
     await page.getByRole("button", { name: "EN", exact: true }).click();
     await page.getByRole("button", { name: "RU", exact: true }).click();
-    await expect(page.locator(".overview-constellation")).not.toHaveAttribute(
-      "style",
-    );
     await page.goto("/home");
   }
   expect(errors).toEqual([]);
@@ -37,20 +32,30 @@ test("launch film plays locally and motion respects user preferences", async ({
 }) => {
   await page.emulateMedia({ reducedMotion: "no-preference" });
   await page.goto("/overview");
+  // With motion allowed, the glass preview floats.
   await expect
     .poll(() =>
-      page
-        .locator(".overview-floating-tile.tile-1")
-        .evaluate((element) =>
-          Math.abs(new DOMMatrix(getComputedStyle(element).transform).b),
-        ),
+      page.evaluate(
+        () =>
+          document
+            .getAnimations()
+            .filter(
+              (animation) =>
+                animation.playState === "running" &&
+                animation.effect?.getComputedTiming().iterations === Infinity,
+            ).length,
+      ),
     )
-    .toBeGreaterThan(0.001);
+    .toBeGreaterThan(0);
+  // The top bar turns solid once the page leaves the hero.
+  const bar = page.locator(".ov-topbar");
+  await expect(bar).toHaveAttribute("data-scrolled", "false");
   const video = page.locator(".overview-video-frame video");
   await expect(video).toHaveAttribute("preload", "none");
   await expect(video).toHaveAttribute("controls", "");
   await expect(video).not.toHaveAttribute("autoplay", "");
   await video.scrollIntoViewIfNeeded();
+  await expect(bar).toHaveAttribute("data-scrolled", "true");
   const result = await video.evaluate(async (element: HTMLVideoElement) => {
     element.muted = true;
     await element.play();
@@ -70,15 +75,16 @@ test("launch film plays locally and motion respects user preferences", async ({
   await page
     .getByRole("button", { name: "Смотреть ролик", exact: true })
     .click();
-  await expect(
-    page.getByRole("button", { name: "Пауза ролика", exact: true }),
-  ).toBeVisible();
+  // While playing, the toggle shows on hover (and on keyboard focus).
+  await page.locator(".overview-video-frame").hover();
   await page.getByRole("button", { name: "Пауза ролика", exact: true }).click();
   expect(
     await video.evaluate((element: HTMLVideoElement) => element.paused),
   ).toBe(true);
+  // With reduced motion nothing loops.
   await page.emulateMedia({ reducedMotion: "reduce" });
-  await page.locator("#possibilities").scrollIntoViewIfNeeded();
+  await page.reload();
+  await page.locator("#how").scrollIntoViewIfNeeded();
   expect(
     await page.evaluate(
       () =>
@@ -93,33 +99,28 @@ test("launch film plays locally and motion respects user preferences", async ({
   ).toBe(0);
 });
 
-test("standalone overview presents both languages, working previews and community links", async ({
+test("standalone overview presents both languages, open source and working sections", async ({
   page,
 }, info) => {
   const errors: string[] = [];
   page.on("pageerror", (error) => errors.push(error.message));
   await page.goto("/overview");
-  await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Разные города.",
-  );
+  const title = page.getByRole("heading", { level: 1 });
+  await expect(title).toContainText("Смотрим");
+  await expect(title.locator(".ov-cursive")).toHaveText("вместе");
   await expect(page.locator(".overview-standalone")).toBeVisible();
-  await expect(
-    page.locator(".sidebar, .topbar, .mobile-nav, footer.site-footer"),
-  ).toHaveCount(0);
-  await expect(page.locator(".overview-floating-tile")).toHaveCount(8);
-  await expect(page.locator(".overview-status")).toContainText(
-    "в активной разработке",
-  );
-  const photos = page.locator(".overview-tile-photo img");
-  await expect(photos).toHaveCount(4);
-  for (const photo of await photos.all()) {
+  // No app chrome, but the shared site footer.
+  await expect(page.locator(".sidebar, .topbar, .mobile-nav")).toHaveCount(0);
+  await expect(page.locator("footer.site-footer")).toHaveCount(1);
+  await expect(page.locator(".ov-badge")).toContainText("Open source");
+  // Photographs load (hero sky, preview, open-source backdrop).
+  for (const photo of await page.locator(".ov-sky img, .ov-glass-player img").all()) {
     await photo.scrollIntoViewIfNeeded();
     await expect
-      .poll(() =>
-        photo.evaluate((image: HTMLImageElement) => image.naturalWidth),
-      )
+      .poll(() => photo.evaluate((image: HTMLImageElement) => image.naturalWidth))
       .toBeGreaterThan(0);
   }
+  await expect(page.locator(".ov-features > li")).toHaveCount(6);
   const tabs = page.getByRole("tablist");
   await tabs.getByRole("tab", { name: "Музыка", exact: true }).click();
   await expect(page.getByRole("tabpanel")).toContainText("На одной волне");
@@ -127,39 +128,46 @@ test("standalone overview presents both languages, working previews and communit
     "href",
     "/music",
   );
-  await tabs
-    .getByRole("tab", { name: "Музыка", exact: true })
-    .press("ArrowRight");
-  await expect(
-    tabs.getByRole("tab", { name: "Фандомы", exact: true }),
-  ).toBeFocused();
+  await tabs.getByRole("tab", { name: "Музыка", exact: true }).press("ArrowRight");
+  await expect(tabs.getByRole("tab", { name: "Фандомы", exact: true })).toBeFocused();
   await expect(page.getByRole("tabpanel")).toContainText("Найдите своих людей");
   await tabs.getByRole("tab", { name: "Фандомы", exact: true }).press("Home");
-  await expect(
-    tabs.getByRole("tab", { name: "Видео", exact: true }),
-  ).toHaveAttribute("aria-selected", "true");
-  await expect(page.locator(".overview-map-branch h3 a")).toHaveCount(6);
-  await expect(page.locator(".overview-steps > li")).toHaveCount(3);
-  const footer = page.locator(".overview-footer");
-  await expect(
-    footer.getByRole("link", { name: "Discord", exact: true }),
-  ).toHaveAttribute("href", "https://discord.gg/hDpZq49wCU");
-  await expect(
-    footer.getByRole("link", { name: "Telegram", exact: true }),
-  ).toHaveAttribute("href", "https://t.me/katsodi");
-  await page.getByRole("button", { name: "EN", exact: true }).click();
-  await expect(page.getByRole("heading", { level: 1 })).toContainText(
-    "Different cities.",
+  await expect(tabs.getByRole("tab", { name: "Видео", exact: true })).toHaveAttribute(
+    "aria-selected",
+    "true",
   );
-  await expect(page.locator(".overview-honest")).toContainText(
+  await expect(page.locator(".ov-steps > li")).toHaveCount(3);
+  const open = page.locator("#open-source");
+  await expect(open.getByRole("link", { name: "Открыть на GitHub" })).toHaveAttribute(
+    "href",
+    github,
+  );
+  await expect(open).toContainText("MIT");
+  const footer = page.locator("footer.site-footer");
+  await expect(footer.getByRole("link", { name: "GitHub", exact: true })).toHaveAttribute(
+    "href",
+    github,
+  );
+  await expect(footer.getByRole("link", { name: "Discord", exact: true })).toHaveAttribute(
+    "href",
+    "https://discord.gg/hDpZq49wCU",
+  );
+  await expect(footer.getByRole("link", { name: "Telegram", exact: true })).toHaveAttribute(
+    "href",
+    "https://t.me/katsodi",
+  );
+  await page.getByRole("button", { name: "EN", exact: true }).click();
+  await expect(title).toContainText("Watch it");
+  await expect(page.locator(".ov-honest")).toContainText(
     "Local drafts stay only in your browser",
   );
+  await expect(footer).toContainText("Katsodi is an open-source project.");
   await page.getByRole("button", { name: "RU", exact: true }).click();
   if (info.project.name === "mobile") {
-    const menu = page.locator(".overview-mobile-menu");
+    const menu = page.locator(".ov-menu");
     await menu.locator("summary").click();
     await menu.getByRole("link", { name: "Возможности", exact: true }).click();
-    await expect(page).toHaveURL(/#possibilities$/);
+    await expect(page).toHaveURL(/#features$/);
     await expect(menu).not.toHaveAttribute("open", "");
   }
   expect(
@@ -171,9 +179,7 @@ test("standalone overview presents both languages, working previews and communit
     fullPage: true,
   });
   await footer.getByRole("searchbox").fill("Dune");
-  await footer
-    .getByRole("button", { name: "Найти фандом", exact: true })
-    .click();
+  await footer.getByRole("button", { name: "Найти фандом", exact: true }).click();
   await expect(page).toHaveURL(/\/fandoms\?q=Dune$/);
   await expect(page.locator(".app-shell")).toHaveCount(1);
   await page.goBack();
@@ -187,7 +193,8 @@ test("overview preserves theme choices, stays within narrow screens and passes a
   const { default: AxeBuilder } = await import("@axe-core/playwright");
   await page.goto("/overview");
   for (const theme of ["obsidian", "paper"] as const) {
-    if (theme === "paper") await page.locator(".overview-theme-toggle").click();
+    if (theme === "paper")
+      await page.getByRole("button", { name: "Оформление", exact: true }).click();
     await expect(page.locator("html")).toHaveAttribute("data-theme", theme);
     await page.evaluate(async () => {
       await Promise.all(
@@ -220,7 +227,7 @@ test("overview preserves theme choices, stays within narrow screens and passes a
   });
 });
 
-test("full footer adapts across public and authentication pages", async ({
+test("the shared footer adapts across public and authentication pages", async ({
   page,
 }, info) => {
   if (info.project.name === "desktop")
@@ -228,24 +235,32 @@ test("full footer adapts across public and authentication pages", async ({
   for (const route of ["/home", "/music", "/network", "/signup"]) {
     await page.goto(route);
     const footer = page.locator("footer.site-footer");
-    await expect(footer.locator(".overview-footer-search")).toBeVisible();
-    await expect(
-      footer.getByRole("link", { name: "Telegram", exact: true }),
-    ).toHaveAttribute("href", "https://t.me/katsodi");
-    await expect(
-      footer.getByRole("link", { name: "Discord", exact: true }),
-    ).toHaveAttribute("href", "https://discord.gg/hDpZq49wCU");
-    const dimensions = await footer.evaluate((element) => ({
-      width: element.getBoundingClientRect().width,
-      columns: getComputedStyle(
-        element.querySelector(".overview-footer-inner")!,
-      ).gridTemplateColumns.split(" ").length,
-    }));
-    expect(dimensions.columns).toBe(
-      dimensions.width <= 620 ? 2 : dimensions.width <= 900 ? 3 : 4,
+    await expect(footer.locator(".kf-search")).toBeVisible();
+    await expect(footer.getByRole("link", { name: "GitHub", exact: true })).toHaveAttribute(
+      "href",
+      github,
     );
+    await expect(footer.getByRole("link", { name: "Telegram", exact: true })).toHaveAttribute(
+      "href",
+      "https://t.me/katsodi",
+    );
+    await expect(footer.getByRole("link", { name: "Discord", exact: true })).toHaveAttribute(
+      "href",
+      "https://discord.gg/hDpZq49wCU",
+    );
+    // A plain block with a hairline, not a card: no background of its own.
+    const layout = await footer.evaluate((element) => ({
+      display: getComputedStyle(element).display,
+      background: getComputedStyle(element).backgroundColor,
+      columns: getComputedStyle(element.querySelector(".kf-main")!)
+        .gridTemplateColumns.split(" ").length,
+    }));
+    expect(layout.display).toBe("block");
+    expect(layout.background).toBe("rgba(0, 0, 0, 0)");
+    const width = page.viewportSize()!.width;
+    expect(layout.columns).toBe(width <= 640 ? 2 : width <= 1100 ? 3 : 4);
     expect(
       await page.evaluate(() => document.documentElement.scrollWidth),
-    ).toBeLessThanOrEqual(page.viewportSize()!.width);
+    ).toBeLessThanOrEqual(width);
   }
 });

@@ -1,103 +1,167 @@
 "use client";
 import { useEffect } from "react";
-import { useLocale } from "./workspace-provider";
 
-/** Progressive enhancement: content stays visible without JS or motion. */
+/**
+ * Motion for /overview, as progressive enhancement: without JavaScript or
+ * with reduced motion everything is simply visible and still.
+ *
+ * - [data-reveal] elements rise and fade in once they enter the viewport.
+ * - The night-sky photographs drift slower than the page (parallax), and the
+ *   hero copy fades as it scrolls away.
+ * - The poster line slides sideways with the scroll.
+ * - The glass room preview tilts towards the pointer.
+ * - The top bar turns solid once the page leaves the hero.
+ *
+ * Everything moves through the Web Animations API: scroll-linked effects are
+ * paused animations whose currentTime follows the scroll. No element
+ * attribute changes, so this runs safely while the page is still hydrating.
+ * (Only the top bar, rendered together with this component, gets
+ * data-scrolled.)
+ */
 export function OverviewMotion() {
-  const { locale } = useLocale();
   useEffect(() => {
     const root = document.querySelector<HTMLElement>(".overview-standalone");
-    if (!root || !window.IntersectionObserver) return;
-    const preference = matchMedia("(prefers-reduced-motion: reduce)");
-    const animations = new Set<Animation>();
-    const seen = new WeakSet<Element>();
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (preference.matches) return;
-        for (const [index, entry] of entries.entries())
-          if (entry.isIntersecting) {
+    if (!root) return;
+    const bar = root.querySelector<HTMLElement>(".ov-topbar");
+    const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+    const cleanups: (() => void)[] = [];
+
+    // Top bar state: also wanted with reduced motion.
+    const updateBar = () => {
+      if (bar) bar.dataset.scrolled = String(scrollY > 24);
+    };
+    updateBar();
+    addEventListener("scroll", updateBar, { passive: true });
+    cleanups.push(() => removeEventListener("scroll", updateBar));
+    if (reduce.matches) return () => cleanups.forEach((cleanup) => cleanup());
+
+    // Reveal on enter, staggered within each batch.
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          let order = 0;
+          for (const entry of entries) {
+            if (!entry.isIntersecting) continue;
             observer.unobserve(entry.target);
-            const animation = entry.target.animate(
+            entry.target.animate(
               [
-                { opacity: 0, translate: "0 22px" },
-                { opacity: 1, translate: "0 0" },
+                { opacity: 0, transform: "translateY(28px)", filter: "blur(6px)" },
+                { opacity: 1, transform: "none", filter: "blur(0)" },
               ],
               {
-                duration: 700,
-                delay: Math.min(index, 5) * 65,
-                easing: "cubic-bezier(.2,.7,.2,1)",
+                duration: 900,
+                delay: Math.min(order++, 6) * 80,
+                easing: "cubic-bezier(.16,1,.3,1)",
+                fill: "backwards",
               },
             );
-            animations.add(animation);
-            animation.finished
-              .then(() => animations.delete(animation))
-              .catch(() => {});
           }
-      },
-      { threshold: 0.08, rootMargin: "0px 0px -24px 0px" },
-    );
-    const collect = () =>
-      root
-        .querySelectorAll(
-          "h1,h2,h3,p,.overview-actions,.overview-mode-tabs,.overview-room-preview,.overview-video-frame,.overview-map-branch,.overview-map-lines,.overview-map-center,.overview-steps > li,.overview-footer nav li,.overview-footer-search,.overview-desktop-links a,.overview-access-art > span,.overview-brand,.overview-topbar-actions,.overview-annotation-art",
-        )
-        .forEach((element) => {
-          if (!seen.has(element)) {
-            seen.add(element);
-            observer.observe(element);
-          }
-        });
-    collect();
-    const mutations = new MutationObserver(collect);
-    mutations.observe(root, { childList: true, subtree: true });
-    const hero = root.querySelector<HTMLElement>(".overview-hero");
-    const tiles = root.querySelector<HTMLElement>(".overview-constellation");
-    let parallax: Animation | null = null;
-    const move = (event: PointerEvent) => {
-      if (
-        !tiles ||
-        !hero ||
-        preference.matches ||
-        event.pointerType !== "mouse"
-      )
-        return;
-      const box = hero.getBoundingClientRect();
-      // Keep React-owned attributes untouched, even if this shell hydrates
-      // before the streamed page. WAAPI never inserts a style attribute.
-      const from = getComputedStyle(tiles).translate;
-      parallax?.cancel();
-      parallax = tiles.animate(
-        [
-          { translate: from },
-          {
-            translate: `${(event.clientX - box.left - box.width / 2) * 0.012}px ${(event.clientY - box.top - box.height / 2) * 0.012}px`,
-          },
-        ],
-        { duration: 800, easing: "cubic-bezier(.2,.7,.2,1)", fill: "forwards" },
+        },
+        { threshold: 0.12, rootMargin: "0px 0px -40px 0px" },
       );
+      root.querySelectorAll("[data-reveal]").forEach((el) => observer.observe(el));
+      cleanups.push(() => observer.disconnect());
+    }
+
+    // Scroll-linked effects: paused animations scrubbed by the scroll.
+    type Scrub = { animation: Animation; progress: () => number };
+    const scrubs: Scrub[] = [];
+    const scrub = (
+      element: Element | null,
+      keyframes: Keyframe[],
+      progress: (box: DOMRect) => number,
+      measure: Element | null = element,
+    ) => {
+      if (!element || !measure) return;
+      const animation = element.animate(keyframes, { duration: 1000, fill: "both" });
+      animation.pause();
+      scrubs.push({
+        animation,
+        progress: () => progress(measure.getBoundingClientRect()),
+      });
     };
-    const reset = () => {
-      parallax?.cancel();
-      parallax = null;
+    const clamp = (value: number) => Math.min(Math.max(value, 0), 1);
+    const viewport = () => innerHeight;
+    // Skies: from entering at the bottom to leaving at the top, drift 30%.
+    for (const sky of root.querySelectorAll(".ov-sky"))
+      scrub(
+        sky,
+        [{ transform: "translateY(-12%)" }, { transform: "translateY(12%)" }],
+        (box) => clamp((viewport() - box.top) / (viewport() + box.height)),
+        sky.parentElement,
+      );
+    // Hero copy and glass preview fade and lift over the first screen.
+    const hero = root.querySelector(".ov-hero");
+    const firstScreen = () => clamp(scrollY / viewport());
+    scrub(
+      root.querySelector(".ov-hero-copy"),
+      [
+        { opacity: 1, transform: "none" },
+        { opacity: 0, transform: "translateY(-70px)" },
+      ],
+      firstScreen,
+      hero,
+    );
+    scrub(
+      root.querySelector(".ov-glass-stage"),
+      [{ transform: "none" }, { transform: "translateY(-90px)" }],
+      firstScreen,
+      hero,
+    );
+    // Poster line slides a third of its width while it crosses the screen.
+    scrub(
+      root.querySelector("[data-marquee]"),
+      [{ transform: "translateX(0)" }, { transform: "translateX(-33%)" }],
+      (box) => clamp((viewport() - box.top) / (viewport() + box.height)),
+    );
+    let frame = 0;
+    const render = () => {
+      frame = 0;
+      for (const { animation, progress } of scrubs)
+        animation.currentTime = progress() * 1000;
     };
-    const reduce = () => {
-      if (preference.matches) {
-        animations.forEach((animation) => animation.cancel());
-        reset();
-      }
+    const onScroll = () => {
+      if (!frame) frame = requestAnimationFrame(render);
     };
-    hero?.addEventListener("pointermove", move);
-    hero?.addEventListener("pointerleave", reset);
-    preference.addEventListener("change", reduce);
-    return () => {
-      observer.disconnect();
-      mutations.disconnect();
-      animations.forEach((animation) => animation.cancel());
-      hero?.removeEventListener("pointermove", move);
-      hero?.removeEventListener("pointerleave", reset);
-      preference.removeEventListener("change", reduce);
-      reset();
-    };
-  }, [locale]);
+    render();
+    addEventListener("scroll", onScroll, { passive: true });
+    addEventListener("resize", onScroll);
+    cleanups.push(() => {
+      cancelAnimationFrame(frame);
+      removeEventListener("scroll", onScroll);
+      removeEventListener("resize", onScroll);
+      scrubs.forEach(({ animation }) => animation.cancel());
+    });
+
+    // Glass preview tilts towards the pointer (mouse and pen only).
+    const glass = root.querySelector<HTMLElement>(".ov-glass");
+    if (glass && hero) {
+      let tilt: Animation | null = null;
+      const turn = (transform: string) => {
+        const from = getComputedStyle(glass).transform;
+        tilt?.cancel();
+        tilt = glass.animate(
+          [{ transform: from === "none" ? "rotateX(10deg)" : from }, { transform }],
+          { duration: 600, easing: "cubic-bezier(.16,1,.3,1)", fill: "forwards" },
+        );
+      };
+      const move = (event: Event) => {
+        const pointer = event as PointerEvent;
+        if (pointer.pointerType === "touch") return;
+        const x = pointer.clientX / innerWidth - 0.5;
+        const y = pointer.clientY / innerHeight - 0.5;
+        turn(`rotateX(${(10 - y * 8).toFixed(2)}deg) rotateY(${(x * 10).toFixed(2)}deg)`);
+      };
+      const leave = () => turn("rotateX(10deg)");
+      hero.addEventListener("pointermove", move);
+      hero.addEventListener("pointerleave", leave);
+      cleanups.push(() => {
+        hero.removeEventListener("pointermove", move);
+        hero.removeEventListener("pointerleave", leave);
+        tilt?.cancel();
+      });
+    }
+    return () => cleanups.forEach((cleanup) => cleanup());
+  }, []);
   return null;
 }

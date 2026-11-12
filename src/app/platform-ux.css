@@ -522,3 +522,47 @@
 .demo-frame {
   isolation: isolate;
 }
+
+/* Phones held sideways in fullscreen (short and at most phone-wide, so short
+   desktop windows keep their toolbars): the video gets the whole height. The
+   room title, panel toolbars and player captions step aside; the exit button
+   floats in the corner, and the chat stays beside the stage. */
+@media (orientation: landscape) and (max-height: 520px) and (max-width: 950px) {
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) {
+    padding: 4px 8px;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-bar,
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .pane-handle,
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-player > header,
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-player > footer {
+    display: none;
+  }
+  /* Icon-only exit, at the right end of the stage switcher row (the stage
+     takes roughly the left half), so it never covers the chat tabs. */
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-view-controls {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(calc(-100% - 16px));
+    z-index: 5;
+    margin: 0;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-view-controls .button {
+    gap: 0;
+    padding: 8px;
+  }
+  /* Visually hidden; the button keeps its accessible name. */
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-view-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+  .room-fullscreen:is(:fullscreen, .is-fullscreen) .room-player-frame {
+    aspect-ratio: auto;
+    min-height: 0;
+    height: calc(100dvh - 64px);
+  }
+}

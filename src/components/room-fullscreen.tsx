@@ -60,11 +60,13 @@ export function RoomFullscreen({ children }: { children: ReactNode }) {
         if (document.fullscreenElement === root.current)
           await document.exitFullscreen();
       } else if (tabCapture) setInPage(true);
-      else if (root.current?.requestFullscreen)
+      else if (root.current?.requestFullscreen && document.fullscreenEnabled)
         await root.current.requestFullscreen();
-      else setError(true);
+      // iPhone Safari (and embedded browsers) have no element fullscreen:
+      // cover the viewport with the same room instead of refusing.
+      else setInPage(true);
     } catch {
-      setError(true);
+      setInPage(true);
     }
   }, [expanded, tabCapture]);
   const captureContext = useMemo(
@@ -151,7 +153,9 @@ export function RoomFullscreen({ children }: { children: ReactNode }) {
             onClick={() => void toggleExpanded()}
           >
             {expanded ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
-            {expanded ? t.platformUX.exitFullscreen : t.platformUX.fullscreen}
+            <span className="room-view-label">
+              {expanded ? t.platformUX.exitFullscreen : t.platformUX.fullscreen}
+            </span>
           </button>
           {error && (
             <span role="status">{t.platformUX.fullscreenUnavailable}</span>

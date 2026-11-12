@@ -3562,3 +3562,52 @@ test("in-app sharing stops rather than publish an uncropped tab", async ({
     ),
   ).toBe("ended");
 });
+
+test("the player keeps its height when the stage has a switcher and a source form", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 1468, height: 828 });
+  const snapshot = seed();
+  snapshot.room.url = "https://youtu.be/U6yqCZ0PQBE";
+  snapshot.members[0].role = "moderator";
+  // Site and demo enabled: the stage gets its Demo / Player / Site switcher.
+  snapshot.site = null;
+  snapshot.demo = null;
+  await openFixture(page, true, snapshot);
+  await expect(page.locator(".stage-switch")).toBeVisible();
+  const frame = page.locator(".room-player-frame");
+  await expect(frame).toBeVisible();
+  // The pane scrolls instead of squeezing the player into a strip.
+  const player = await page.locator(".stage-pane:not([hidden]) > .room-player").boundingBox();
+  const inner = await frame.boundingBox();
+  expect(player!.height).toBeGreaterThanOrEqual(inner!.height);
+  expect(inner!.height).toBeGreaterThan(200);
+});
+
+test("fullscreen covers the screen on phones without the Fullscreen API", async ({
+  page,
+}, info) => {
+  test.skip(info.project.name !== "mobile", "iPhone-only behaviour.");
+  await page.addInitScript(() => {
+    // iPhone Safari offers no element fullscreen.
+    Object.defineProperty(Element.prototype, "requestFullscreen", {
+      value: undefined,
+      configurable: true,
+    });
+  });
+  const snapshot = seed();
+  snapshot.room.url = "https://youtu.be/U6yqCZ0PQBE";
+  await openFixture(page, true, snapshot);
+  await page.getByRole("button", { name: "На весь экран", exact: true }).click();
+  const root = page.locator(".room-fullscreen");
+  await expect(root).toHaveAttribute("data-fullscreen-mode", "page");
+  await expect(page.getByText("Полноэкранный режим недоступен")).toHaveCount(0);
+  // Turned sideways, the video takes almost the whole height.
+  await page.setViewportSize({ width: 844, height: 390 });
+  await expect(page.locator(".room-bar")).toBeHidden();
+  const frame = await page.locator(".room-player-frame").boundingBox();
+  expect(frame!.height).toBeGreaterThan(300);
+  const exit = page.getByRole("button", { name: "Выйти из полного экрана", exact: true });
+  await exit.click();
+  await expect(root).not.toHaveAttribute("data-fullscreen-mode", "page");
+});

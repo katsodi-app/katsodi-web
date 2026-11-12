@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { OwnerFact } from "./owner-fact";
+import { publicLinks } from "@/lib/public-links";
 import type { LegalDoc } from "./types";
 
 export const about: LegalDoc = {
@@ -8,7 +9,7 @@ export const about: LegalDoc = {
   summary:
     "Katsodi is a place to watch, listen and talk together with people who love the same stories.",
   version: "0.1",
-  updated: "2026-11-10",
+  updated: "2026-11-12",
   informational: true,
   sections: [
     {
@@ -71,6 +72,22 @@ export const about: LegalDoc = {
             <strong>People:</strong> profiles, friends, levels and achievements.
           </li>
         </ul>
+      ),
+    },
+    {
+      id: "open-source",
+      title: "Open source",
+      body: (
+        <p>
+          Katsodi is open source. All of its code is on{" "}
+          <a href={publicLinks.github} target="_blank" rel="noopener noreferrer">
+            GitHub
+          </a>{" "}
+          under the MIT license: you can see how it works, suggest ideas and
+          improvements, or run your own copy. Images, music and fandom data
+          from other sources are not covered by that license; their sources are
+          listed on the <Link href="/credits">image credits</Link> page.
+        </p>
       ),
     },
     {

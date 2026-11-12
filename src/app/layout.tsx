@@ -18,6 +18,7 @@ import "./music-library.css";
 import "./platform-ux.css";
 import "./room-studio.css";
 import "./overview.css";
+import "./site-footer.css";
 export const metadata: Metadata = {
   title: "Katsodi — Better together",
   description:

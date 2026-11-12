@@ -1,0 +1,229 @@
+/* Site footer (shared by the overview, sign-in pages and app pages).
+   Flat: no card or shadow, a hairline on top, columns aligned to the page
+   content. Theme colours come from signal.css, so every palette works. */
+.site-footer.kf {
+  /* A global footer rule makes footers a flex row; this one stacks. */
+  display: block;
+  margin-top: 96px;
+  padding: 56px 0 28px;
+  border-top: 1px solid var(--border);
+  background: none;
+  color: var(--muted-foreground);
+  font-size: 14px;
+  line-height: 1.5;
+}
+.kf-main {
+  display: grid;
+  grid-template-columns: minmax(260px, 1.4fr) repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+.kf-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--foreground);
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+.kf-brand-icon {
+  display: inline-grid;
+  color: var(--accent);
+}
+.kf-brand-dot {
+  color: var(--accent);
+}
+.kf-about > p {
+  max-width: 34ch;
+  margin: 16px 0 20px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+.kf-open {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  color: var(--foreground);
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease;
+}
+.kf-open:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.kf-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  max-width: 340px;
+  height: 46px;
+  margin-top: 20px;
+  padding: 4px 4px 4px 14px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+.kf-search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--foreground);
+  font: inherit;
+}
+.kf-search input::placeholder {
+  color: var(--muted-foreground);
+}
+.kf-search:focus-within {
+  border-color: var(--focus-ring);
+}
+.kf-search button {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 6px;
+  background: var(--accent);
+  color: var(--primary-foreground);
+  cursor: pointer;
+}
+.kf-column h2 {
+  margin: 0 0 16px;
+  color: var(--muted-foreground);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.kf-column ul {
+  display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.kf-column a {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--foreground);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+  transition: color 160ms ease;
+}
+.kf-column a:hover {
+  color: var(--accent);
+}
+.kf-column a svg {
+  color: var(--muted-foreground);
+}
+.kf-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 24px;
+  margin-top: 48px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 12.5px;
+}
+.kf-bottom a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+.kf-bottom a:hover {
+  color: var(--accent);
+}
+.kf-top {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+/* Sign-in pages have no sidebar: give the footer the page gutter. */
+.auth-shell > .site-footer.kf {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+@media (max-width: 1100px) {
+  .kf-main {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .kf-about {
+    grid-column: 1 / -1;
+  }
+}
+@media (max-width: 640px) {
+  .site-footer.kf {
+    margin-top: 64px;
+    padding-top: 40px;
+  }
+  .kf-main {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 20px;
+  }
+  .kf-about > p {
+    font-size: 14px;
+  }
+  .kf-search {
+    max-width: none;
+  }
+  /* Documents: the longest list, in two columns across the full width. */
+  .kf-column:last-child {
+    grid-column: 1 / -1;
+  }
+  .kf-column:last-child ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 20px;
+  }
+  .kf-column a {
+    font-size: 14px;
+  }
+  .kf-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 36px;
+  }
+  .kf-top {
+    margin-left: 0;
+  }
+  .auth-shell > .site-footer.kf {
+    width: calc(100% - 32px);
+  }
+}
+
+/* A global "footer span" rule sizes captions; the brand keeps its own size. */
+.kf-brand > span:not(.kf-brand-icon),
+.kf-brand-dot {
+  font-size: 1em;
+  color: inherit;
+}
+.kf-brand-dot {
+  color: var(--accent);
+}
+.kf .kf-brand .kf-brand-dot {
+  color: var(--accent);
+  font-size: 1em;
+}
+
+/* Phones with the room dock above the bottom navigation: keep the last row
+   of the footer clear of both. */
+@media (max-width: 900px) {
+  .app-shell:has(.companion-dock) .site-footer.kf {
+    padding-bottom: 72px;
+  }
+}
