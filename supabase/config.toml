@@ -35,11 +35,11 @@ max_frequency = "1m0s"
 otp_expiry = 3600
 
 [auth.email.template.confirmation]
-subject = "Katsodi — подтвердите email / confirm your email"
+subject = "Confirm your Katsodi account"
 content_path = "./supabase/templates/confirmation.html"
 
 [auth.email.template.recovery]
-subject = "Katsodi — новый пароль / reset password"
+subject = "Reset your Katsodi password"
 content_path = "./supabase/templates/recovery.html"
 
 [storage]

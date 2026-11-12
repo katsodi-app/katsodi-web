@@ -1,5 +1,54 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><title>Katsodi</title></head><body>
-<h1>Katsodi</h1><p>Подтверди email, чтобы войти в свой аккаунт.</p><p>Confirm your email to access your account.</p>
-<p><a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&amp;type=email">Подтвердить email / Confirm email</a></p>
-<p>Если ты не создавал аккаунт, просто проигнорируй письмо. / If you did not sign up, ignore this email.</p>
-</body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>Confirm your Katsodi account</title>
+</head>
+<body style="margin:0;padding:0;background-color:#0c0e11;">
+<!-- Preview line shown next to the subject in most inboxes. -->
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:#0c0e11;">One click and your seat is saved. Rooms, voice and shared players are waiting.</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#0c0e11" style="background-color:#0c0e11;">
+<tr><td align="center" style="padding:40px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:520px;">
+  <!-- Wordmark -->
+  <tr><td style="padding:0 4px 20px 4px;font-family:Manrope,'Segoe UI',Arial,sans-serif;">
+    <span style="font-size:24px;font-weight:800;letter-spacing:-0.5px;color:#ffffff;">katsodi</span><span style="font-size:24px;font-weight:800;color:#d4ef8b;">.</span>
+    <span style="padding-left:10px;font-size:13px;color:#b4bcc6;">Better together.</span>
+  </td></tr>
+  <!-- Card -->
+  <tr><td bgcolor="#13161a" style="background-color:#13161a;border:1px solid #20252c;border-radius:16px;overflow:hidden;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <!-- Signal line -->
+      <tr><td height="4" bgcolor="#d4ef8b" style="height:4px;line-height:4px;font-size:0;background-color:#d4ef8b;background-image:linear-gradient(90deg,#d4ef8b,#a5cbea);">&nbsp;</td></tr>
+      <tr><td style="padding:36px 32px 8px 32px;font-family:Manrope,'Segoe UI',Arial,sans-serif;">
+        <p style="margin:0 0 12px 0;font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#d4ef8b;">Welcome aboard</p>
+        <h1 style="margin:0 0 16px 0;font-size:28px;line-height:34px;font-weight:800;color:#ffffff;">Confirm your email</h1>
+        <p style="margin:0 0 28px 0;font-size:16px;line-height:24px;color:#b4bcc6;">You're one click away from watching, listening and talking together. Confirm this address to finish creating your Katsodi account.</p>
+      </td></tr>
+      <!-- Button -->
+      <tr><td style="padding:0 32px 32px 32px;">
+        <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>
+          <td bgcolor="#d4ef8b" style="background-color:#d4ef8b;border-radius:10px;">
+            <a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&amp;type=email" target="_blank" style="display:inline-block;padding:14px 28px;font-family:Manrope,'Segoe UI',Arial,sans-serif;font-size:16px;font-weight:800;color:#1d2414;text-decoration:none;border-radius:10px;">Confirm email</a>
+          </td>
+        </tr></table>
+      </td></tr>
+      <!-- Fallback link -->
+      <tr><td style="padding:0 32px 32px 32px;font-family:Manrope,'Segoe UI',Arial,sans-serif;border-top:1px solid #20252c;">
+        <p style="margin:24px 0 8px 0;font-size:13px;line-height:20px;color:#b4bcc6;">Button not working? Paste this link into your browser:</p>
+        <p style="margin:0;font-size:12px;line-height:18px;word-break:break-all;"><a href="{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&amp;type=email" target="_blank" style="color:#a5cbea;text-decoration:underline;">{{ .SiteURL }}/auth/confirm?token_hash={{ .TokenHash }}&amp;type=email</a></p>
+      </td></tr>
+    </table>
+  </td></tr>
+  <!-- Footer -->
+  <tr><td style="padding:20px 4px 0 4px;font-family:Manrope,'Segoe UI',Arial,sans-serif;font-size:12px;line-height:18px;color:#7d8794;">
+    The link works only once and expires soon. If you didn't sign up for Katsodi, you can safely ignore this email.
+  </td></tr>
+</table>
+</td></tr>
+</table>
+</body>
+</html>
