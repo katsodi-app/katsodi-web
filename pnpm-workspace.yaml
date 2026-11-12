@@ -2,6 +2,9 @@ allowBuilds:
   sharp: true
   esbuild: true
   unrs-resolver: true
+  # Native Node speed-up for cbor-x (used only by the Hyperbeam browser SDK);
+  # not needed, so its build script is declined.
+  cbor-extract: false
 overrides:
   rollup: npm:@rollup/wasm-node@4.67.2
   vite: ^6.4.0
