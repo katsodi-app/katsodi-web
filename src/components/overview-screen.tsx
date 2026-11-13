@@ -16,8 +16,21 @@ import {
   Sparkles,
 } from "lucide-react";
 import { IntentLink as Link } from "./intent-link";
-import { EditorialImage } from "./editorial-image";
-import { assets, type AssetId } from "@/data/editorial";
+import { PosterWall, postersById, sharpPosters } from "./poster-wall";
+
+// Real fandom artwork, the sharpest of each kind, chosen once.
+const mix = <T,>(a: T[], b: T[]) =>
+  a.flatMap((item, index) => (b[index] ? [item, b[index]] : [item]));
+const animeTall = sharpPosters("anime", "tall", 16);
+const cinemaTall = sharpPosters("cinema", "tall", 14);
+const walls = {
+  hero: mix(animeTall.slice(0, 8), cinemaTall.slice(0, 8)),
+  open: mix(cinemaTall.slice(6), animeTall.slice(8)),
+  player: postersById(["cinema-6"]),
+  cinema: cinemaTall.slice(0, 3),
+  music: sharpPosters("music", "wide", 4),
+  anime: animeTall.slice(0, 3),
+};
 import { useLocale } from "./workspace-provider";
 import { publicLinks } from "@/lib/public-links";
 import { OverviewFilm } from "./overview-film";
@@ -54,7 +67,7 @@ export function OverviewScreen() {
       body: o.videoBody,
       cta: o.videoCta,
       href: "/network",
-      asset: "cinema" as AssetId,
+      wall: <PosterWall posters={walls.cinema} variant="row" sizes="(max-width: 820px) 33vw, 240px" className="ov-mode-photo" />,
       icon: Film,
     },
     {
@@ -63,7 +76,7 @@ export function OverviewScreen() {
       body: o.musicBody,
       cta: o.musicCta,
       href: "/music",
-      asset: "vinyl" as AssetId,
+      wall: <PosterWall posters={walls.music} variant="grid" sizes="(max-width: 820px) 50vw, 340px" className="ov-mode-photo" />,
       icon: Headphones,
     },
     {
@@ -72,7 +85,7 @@ export function OverviewScreen() {
       body: o.communityBody,
       cta: o.communityCta,
       href: "/fandoms",
-      asset: "tokyo" as AssetId,
+      wall: <PosterWall posters={walls.anime} variant="row" sizes="(max-width: 820px) 33vw, 240px" className="ov-mode-photo" />,
       icon: Sparkles,
     },
   ];
@@ -110,7 +123,7 @@ export function OverviewScreen() {
       {/* 1. Hero: night sky, one handwritten word, a glass room preview. */}
       <section className="ov-hero" aria-labelledby="overview-title">
         <div className="ov-sky" aria-hidden="true">
-          <EditorialImage asset={assets.space} priority sizes="100vw" className="ov-sky-photo" />
+          <PosterWall posters={walls.hero} variant="sky" eager sizes="(max-width: 700px) 25vw, 12.5vw" />
           <div className="ov-veil" />
         </div>
         <div className="ov-hero-copy ov-container">
@@ -147,7 +160,7 @@ export function OverviewScreen() {
             </div>
             <div className="ov-glass-body">
               <div className="ov-glass-player">
-                <EditorialImage asset={assets.dunes} sizes="(max-width: 900px) 90vw, 40vw" />
+                <PosterWall posters={walls.player} variant="player" sizes="(max-width: 900px) 50vw, 20vw" />
                 <span className="ov-glass-now">
                   <AudioLines size={14} />
                   {l.previewNow}
@@ -249,7 +262,7 @@ export function OverviewScreen() {
           aria-labelledby={`ov-mode-${selected}`}
           key={selected}
         >
-          <EditorialImage asset={assets[mode.asset]} sizes="(max-width: 900px) 92vw, 55vw" className="ov-mode-photo" />
+          {mode.wall}
           <div className="ov-mode-copy">
             <h3>{mode.titleLong}</h3>
             <p>{mode.body}</p>
@@ -311,7 +324,7 @@ export function OverviewScreen() {
       {/* 7. Open source: a second full-bleed photograph. */}
       <section id="open-source" className="ov-open" aria-labelledby="open-title">
         <div className="ov-sky" aria-hidden="true">
-          <EditorialImage asset={assets.forest} sizes="100vw" className="ov-sky-photo" />
+          <PosterWall posters={walls.open} variant="sky" sizes="(max-width: 700px) 25vw, 12.5vw" />
           <div className="ov-veil ov-veil-strong" />
         </div>
         <div className="ov-container ov-open-grid">

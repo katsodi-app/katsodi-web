@@ -113,8 +113,12 @@ test("standalone overview presents both languages, open source and working secti
   await expect(page.locator(".sidebar, .topbar, .mobile-nav")).toHaveCount(0);
   await expect(page.locator("footer.site-footer")).toHaveCount(1);
   await expect(page.locator(".ov-badge")).toContainText("Open source");
-  // Photographs load (hero sky, preview, open-source backdrop).
-  for (const photo of await page.locator(".ov-sky img, .ov-glass-player img").all()) {
+  // Real fandom artwork loads (hero wall, preview, open-source wall). The
+  // walls repeat their posters, so the first few cells cover every file.
+  await expect(page.locator(".ov-glass-player img")).toHaveAttribute("src", /^\/images\/fandoms\//);
+  for (const photo of await page
+    .locator(".ov-sky img:nth-child(-n+4), .ov-glass-player img")
+    .all()) {
     await photo.scrollIntoViewIfNeeded();
     await expect
       .poll(() => photo.evaluate((image: HTMLImageElement) => image.naturalWidth))
