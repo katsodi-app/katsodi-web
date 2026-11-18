@@ -8,6 +8,7 @@ import {
   discoveryChartSchema,
   musicRoomSource,
   safeMusicCover,
+  sharpMusicCover,
   type ChartProvider,
   type DiscoveryChart,
   type DiscoveryTrack,
@@ -117,6 +118,103 @@ export function parseKworbChart(
   };
 }
 
+/**
+ * kworb's all-time most viewed music videos: rows in rank order without a
+ * rank column, "Artist - Title" labels and a total Views column.
+ */
+export function parseKworbTopVideos(html: string): DiscoveryTrack[] {
+  const doc = parse(html) as HtmlNode;
+  const tracks: DiscoveryTrack[] = [];
+  const seen = new Set<string>();
+  for (const row of find(doc, (node) => node.nodeName === "tr")) {
+    const cells = (row.childNodes || []).filter(
+      (node) => node.nodeName === "td",
+    );
+    if (cells.length < 2) continue;
+    const link = find(row, (node) => node.nodeName === "a").find((node) =>
+      /video\/[\w-]{11}\.html/.test(attr(node, "href")),
+    );
+    const id =
+      link && attr(link, "href").match(/video\/([\w-]{11})\.html/)?.[1];
+    if (!link || !id || seen.has(id)) continue;
+    const label = text(link);
+    const cut = label.indexOf(" - ");
+    const artists = cut > 0 ? [label.slice(0, cut)] : [];
+    const title = cut > 0 ? label.slice(cut + 3) : label;
+    if (!title) continue;
+    seen.add(id);
+    tracks.push({
+      id: `youtube:${id}`,
+      rank: tracks.length + 1,
+      title,
+      artists,
+      url: `https://www.youtube.com/watch?v=${id}`,
+      cover: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+      plays: number(text(cells[1])),
+    });
+    if (tracks.length === 150) break;
+  }
+  return tracks;
+}
+
+/** Fetches with a timeout; null on any failure. */
+async function probe(url: string, method: "GET" | "HEAD") {
+  try {
+    const response = await fetch(url, {
+      method,
+      headers: { "User-Agent": "KatsodiChartRefresh/1.0" },
+      signal: AbortSignal.timeout(10000),
+      redirect: "error",
+      cache: "no-store",
+    });
+    return response.ok ? response : null;
+  } catch {
+    return null;
+  }
+}
+/** A few requests at a time, in order. */
+async function inBatches<T, R>(
+  items: T[],
+  size: number,
+  work: (item: T) => Promise<R>,
+) {
+  const out: R[] = [];
+  for (let i = 0; i < items.length; i += size)
+    out.push(...(await Promise.all(items.slice(i, i + size).map(work))));
+  return out;
+}
+/**
+ * Large covers: YouTube's 1280 px frame where the video has one (otherwise
+ * the 480 px one), and Spotify album art through Spotify's public oEmbed
+ * endpoint (no key), upgraded from 300 to 640 px.
+ */
+export async function enrichCovers(
+  provider: ChartProvider,
+  tracks: DiscoveryTrack[],
+): Promise<DiscoveryTrack[]> {
+  if (provider === "youtube")
+    return inBatches(tracks, 8, async (track) => {
+      const id = track.url.match(/v=([\w-]{11})/)?.[1];
+      if (!id) return track;
+      const large = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+      return (await probe(large, "HEAD")) ? { ...track, cover: large } : track;
+    });
+  if (provider === "spotify")
+    return inBatches(tracks, 6, async (track) => {
+      if (track.cover) return track;
+      const answer = await probe(
+        `https://open.spotify.com/oembed?url=${encodeURIComponent(track.url)}`,
+        "GET",
+      );
+      const body = answer ? await answer.json().catch(() => null) : null;
+      const cover = sharpMusicCover(
+        typeof body?.thumbnail_url === "string" ? body.thumbnail_url : null,
+      );
+      return cover ? { ...track, cover } : track;
+    });
+  return tracks;
+}
+
 /** Reads only data the public HTML exposes. No client IDs, hidden APIs or challenge bypasses. */
 export function parseSoundcloudChart(html: string): DiscoveryTrack[] {
   const match = html.match(/window\.__sc_hydration\s*=\s*(\[[\s\S]*?\]);/);
@@ -207,13 +305,17 @@ export async function refreshMusicCharts(
             throw error;
           });
           const parsed =
-            provider === "spotify" || provider === "youtube"
-              ? parseKworbChart(html, provider)
-              : {
-                  tracks:
-                    provider === "soundcloud" ? parseSoundcloudChart(html) : [],
-                  period: null,
-                };
+            provider === "youtube"
+              ? { tracks: parseKworbTopVideos(html), period: null }
+              : provider === "spotify"
+                ? parseKworbChart(html, provider)
+                : {
+                    tracks:
+                      provider === "soundcloud"
+                        ? parseSoundcloudChart(html)
+                        : [],
+                    period: null,
+                  };
           if (provider === "soundcloud") {
             const playlist = await soundcloudPlaylist(base.source).catch(
               () => null,
@@ -240,6 +342,7 @@ export async function refreshMusicCharts(
           // TikTok currently serves an application shell without a public song list.
           // Do not invent entries or call protected endpoints when that happens.
           if (!parsed.tracks.length) throw Error("no_public_tracks");
+          parsed.tracks = await enrichCovers(provider, parsed.tracks);
           if (
             (provider === "spotify" || provider === "youtube") &&
             parsed.tracks.length !== 150

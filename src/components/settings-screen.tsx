@@ -3,6 +3,8 @@ import Link from "next/link";
 import {
   ArrowUpRight,
   Database,
+  Download,
+  Gauge,
   Languages,
   Palette,
   UserRound,
@@ -10,6 +12,7 @@ import {
 import { useWorkspace } from "./workspace-provider";
 import { ThemePicker } from "./theme-picker";
 import { PageIntro } from "./page-design";
+import { InstallSettings, PerformanceSettings } from "./platform-settings";
 
 export function SettingsScreen() {
   const { t, locale, setLocale, clear, ready } = useWorkspace();
@@ -30,6 +33,14 @@ export function SettingsScreen() {
           <a href="#preferences">
             <Languages size={17} />
             {t.design.preferences}
+          </a>
+          <a href="#performance">
+            <Gauge size={17} />
+            {t.platform.performanceTitle}
+          </a>
+          <a href="#app">
+            <Download size={17} />
+            {t.platform.installTitle}
           </a>
           <a href="#local-storage">
             <Database size={17} />
@@ -59,6 +70,8 @@ export function SettingsScreen() {
                 <option value="en">English</option>
               </select>
             </section>
+            <PerformanceSettings />
+            <InstallSettings />
             <section id="local-storage" className="settings-danger">
               <div>
                 <h2>{t.storage}</h2>

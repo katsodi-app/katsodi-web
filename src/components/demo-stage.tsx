@@ -44,6 +44,8 @@ import {
 import { initialResult } from "@/lib/server/contracts";
 import { siteEmbeddingSchema } from "@/lib/server/site-embed-schema";
 import { canPresentDemo, type RoomDemo } from "@/lib/demo";
+import { COBROWSE_TOPIC, grantsControl } from "@/lib/cobrowse";
+import { CobrowseLayer } from "@/components/cobrowse-layer";
 import {
   applyAnnotation,
   demoSignal,
@@ -58,6 +60,10 @@ import { ExternalMedia, hostLabel } from "./external-media";
 import { useRoomTabCapture, useRoomFullscreen } from "./room-fullscreen";
 import { useStageWithChat } from "./room-layout";
 import type { ActionResult } from "@/lib/server/contracts";
+import {
+  demoCaptureConstraints,
+  effectiveResources,
+} from "@/lib/platform/performance-policy";
 
 type CropCapable = MediaStreamTrack & {
   cropTo?: (target: unknown) => Promise<void>;
@@ -166,6 +172,14 @@ export function DemoStage({
   marksRef.current = marks;
   const timers = useRef(new Map<string, number>());
   const presenterRef = useRef(false);
+  // A desktop presenter's shared browser: whether it lets this viewer control it.
+  const [cobrowse, setCobrowse] = useState(false);
+  // The presenter runs the app's shared browser (it announces who controls).
+  const [sharedBrowser, setSharedBrowser] = useState(false);
+  const sharerRef = useRef("");
+  useEffect(() => {
+    sharerRef.current = demo?.user_id ?? "";
+  }, [demo?.user_id]);
   presenterRef.current = presenter;
   const canAnnotate = canHost || presenter || !!demo?.annotations_open;
   // Apply one annotation message from `author` (a LiveKit identity).
@@ -227,8 +241,25 @@ export function DemoStage({
     const access = await demoAccess(roomId);
     const { Room, RoomEvent, Track } = await import("livekit-client");
     const lk = new Room();
-    lk.on(RoomEvent.DataReceived, (payload, participant) => {
+    lk.on(RoomEvent.DataReceived, (payload, participant, _kind, topic) => {
       if (!participant) return;
+      if (topic === COBROWSE_TOPIC) {
+        try {
+          const granted = grantsControl(
+            JSON.parse(new TextDecoder().decode(payload)),
+            participant.identity,
+            sharerRef.current,
+            userId,
+          );
+          if (granted !== null) {
+            setCobrowse(granted);
+            setSharedBrowser(true);
+          }
+        } catch {
+          /* Ignore malformed data. */
+        }
+        return;
+      }
       try {
         const parsed = demoSignal.safeParse(
           JSON.parse(new TextDecoder().decode(payload)),
@@ -279,7 +310,7 @@ export function DemoStage({
     await lk.connect(access.url, access.token);
     room.current = lk;
     return lk;
-  }, [roomId, receive, followVideoSize]);
+  }, [roomId, receive, followVideoSize, userId]);
 
   const disconnect = useCallback(() => {
     stream.current?.getTracks().forEach((track) => track.stop());
@@ -291,6 +322,8 @@ export function DemoStage({
     setBroadcasting(false);
     setWatching(false);
     setMuted(false);
+    setCobrowse(false);
+    setSharedBrowser(false);
   }, []);
 
   // Viewers connect while the stage is open; the presenter stays connected
@@ -369,6 +402,8 @@ export function DemoStage({
       capture = await navigator.mediaDevices.getDisplayMedia({
         video: {
           displaySurface: captureMode === "in-app" ? "browser" : "window",
+          // Low-resource mode asks for fewer, smaller frames before encoding.
+          ...demoCaptureConstraints(effectiveResources()),
         },
         // In-app capture would also carry this tab's voice call: no audio.
         audio: captureMode === "window",
@@ -536,13 +571,15 @@ export function DemoStage({
       <header>
         <span>
           <MonitorPlay size={17} />
-          {n.demoTitle}
+          {sharedBrowser ? n.cobrowseTitle : n.demoTitle}
         </span>
         <div className="demo-header-actions">
           <span className="pill" title={demo.url}>
             {presenter
               ? `${n.demoYouShare} · ${new URL(demo.url).hostname}`
-              : `${sharer} · ${running ? n.demoViewOnly : n.demoWaitingLabel}`}
+              : sharedBrowser
+                ? `${sharer} · ${cobrowse ? n.cobrowseControlling : n.cobrowseAskAccess}`
+                : `${sharer} · ${running ? n.demoViewOnly : n.demoWaitingLabel}`}
           </span>
           {running && fullscreen && (
             <button
@@ -643,6 +680,13 @@ export function DemoStage({
               hidden={!(watching || (presenter && broadcasting))}
             >
               <div className="demo-video" ref={screen} />
+              {cobrowse && watching && !presenter && !tool && demo && (
+                <CobrowseLayer
+                  room={room.current}
+                  presenter={demo.user_id}
+                  label={n.cobrowseYouControl}
+                />
+              )}
               {overlay}
             </div>
           )}

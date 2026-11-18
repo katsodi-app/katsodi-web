@@ -10,7 +10,11 @@ const env = {
 };
 const now = Date.parse("2026-11-09T00:00:00Z");
 const stored = () => [
-  ...charts.map((payload) => ({ provider: payload.provider, payload })),
+  // Dated a day before `now`, independent of when the bundle was refreshed.
+  ...charts.map((payload) => ({
+    provider: payload.provider,
+    payload: { ...payload, checked: "2026-11-08T00:00:00.000Z" },
+  })),
   {
     provider: "spotify-all-time",
     payload: { provider: "spotify-all-time", ...musicChart },

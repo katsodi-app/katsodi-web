@@ -566,3 +566,28 @@
     height: calc(100dvh - 64px);
   }
 }
+
+/* Low-resource mode (Settings → Performance, data-resources on <html>).
+   Same colours, spacing, artwork and hierarchy; only decorative motion and
+   the costliest effects are switched off. It mirrors the reduced-motion rule
+   in globals.css, and neither setting re-enables what the other disabled. */
+:root[data-resources="low"] *,
+:root[data-resources="low"] *::before,
+:root[data-resources="low"] *::after {
+  animation: none !important;
+  transition: none !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  scroll-behavior: auto !important;
+}
+/* Settings: performance and app sections. */
+.settings-card section h2 > svg {
+  display: inline-block;
+  margin-right: 6px;
+  vertical-align: -3px;
+  color: var(--muted-foreground);
+}
+.settings-card .settings-note {
+  margin-top: 8px;
+  font-size: 12px;
+}

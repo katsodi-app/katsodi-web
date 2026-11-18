@@ -13,6 +13,10 @@ test-results/
 .DS_Store
 .local/
 .obsidian/workspace*.json
+desktop/dist-test-results/
+desktop/benchmarks/
+native-desktop/build/
+native-desktop/staging/
 
 # Self-signed dev HTTPS certificate and key (npm run dev:https)
 /certificates

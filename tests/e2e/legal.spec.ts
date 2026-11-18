@@ -41,9 +41,13 @@ test("the footer links to every legal page, which renders without errors", async
     expect(await noOverflow(page), slug).toBe(true);
   }
   await page.goto("/privacy");
+  // Hiding the caret writes an inline style; done before hydration ends, React
+  // reports it as a mismatch. Keep the caret and wait for the page to settle.
+  await page.waitForLoadState("networkidle");
   await page.screenshot({
     path: `.local/legal-privacy-${info.project.name}.png`,
     fullPage: true,
+    caret: "initial",
   });
   expect(errors).toEqual([]);
 });

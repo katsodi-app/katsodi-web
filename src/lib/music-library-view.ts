@@ -1,10 +1,21 @@
-import type { DiscoveryChart, DiscoveryTrack } from "./music-discovery";
+import {
+  sharpMusicCover,
+  type DiscoveryChart,
+  type DiscoveryTrack,
+} from "./music-discovery";
 import type { MusicCollections } from "./music-collections";
 import type { MusicTrack } from "./music-format";
 
 type ChartTrack = Pick<
   MusicTrack,
-  "rank" | "slug" | "title" | "artists" | "streams" | "thumb" | "spotifyId"
+  | "rank"
+  | "slug"
+  | "title"
+  | "artists"
+  | "streams"
+  | "thumb"
+  | "cover"
+  | "spotifyId"
 >;
 type Collection = {
   checked: string;
@@ -40,7 +51,7 @@ export function musicLibraryView(data: {
     title,
     artists,
     url,
-    cover,
+    cover: sharpMusicCover(cover),
     plays,
   });
   const collection = (value: MusicCollections["popular"]): Collection => ({
@@ -52,13 +63,14 @@ export function musicLibraryView(data: {
       source: data.chart.source,
       checked: data.chart.checked,
       tracks: data.chart.tracks.map(
-        ({ rank, slug, title, artists, streams, thumb, spotifyId }) => ({
+        ({ rank, slug, title, artists, streams, thumb, cover, spotifyId }) => ({
           rank,
           slug,
           title,
           artists,
           streams,
           thumb,
+          cover,
           spotifyId,
         }),
       ),

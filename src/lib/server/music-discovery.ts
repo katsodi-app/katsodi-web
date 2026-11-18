@@ -53,9 +53,14 @@ export const musicLibraryData = cache(async () => {
             result.data?.find((row) => row.payload?.provider === provider)
               ?.payload,
           );
-          const chart = parsed.success
-            ? parsed.data
-            : fallback.find((entry) => entry.provider === provider);
+          const bundled = fallback.find((entry) => entry.provider === provider);
+          // A refreshed bundle is used until the database gets a newer one.
+          const chart =
+            parsed.success &&
+            (!bundled?.checked ||
+              (parsed.data.checked || "") >= bundled.checked)
+              ? parsed.data
+              : bundled;
           return chart ? [chart] : [];
         }),
       ),

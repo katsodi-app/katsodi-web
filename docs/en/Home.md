@@ -93,5 +93,12 @@ Version 0.4, 2026-11-02: branded design for all known screens — [[docs/en/Page
 - [[docs/en/Voice Setup]]
 - [[docs/en/Features/Generic Player Discovery]]
 - [[docs/en/Features/Player Discovery]]
+- [[docs/en/Features/Native Desktop Client]] — Katsodi's own C++/Qt Quick desktop application: its own interface in the Katsodi design, the shared server through `/api/native/v1`; in progress.
+- [[docs/en/Features/Native Shared Browser]] — the app's shared browser: it runs on the room host's computer; the people they give access may control it.
+- [[docs/en/Features/Native API Server]] — a separate process serving `/api/native/v1`, so the app runs without the website.
+- [[docs/en/Features/Native Music Player]] — the app's music player: collections as playlists, its own queue, a bar and a full view.
+- [[docs/en/Features/Desktop Application]] — the earlier Electron shell (website in a window); being replaced by the native client, kept as history.
+- [[docs/en/Features/Installable Web App]] — installing the site as an app (PWA) and the offline page.
+- [[docs/en/Features/Low Resource Mode]] — the shared low-resource setting.
 - [[README.en]]
 - [[docs/en/Roadmap]]

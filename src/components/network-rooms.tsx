@@ -28,6 +28,7 @@ import {
   inviteTokenSchema,
   type ActionResult,
 } from "@/lib/server/contracts";
+import { REVALIDATE_EVENT } from "@/lib/platform/desktop";
 import type {
   NetworkRoom,
   RoomSnapshot,
@@ -672,6 +673,8 @@ export function SharedRoom({
       else void load();
     };
     document.addEventListener("visibilitychange", visibility);
+    // The desktop shell asks for a fresh snapshot after the computer wakes.
+    window.addEventListener(REVALIDATE_EVENT, visibility);
     refreshNow.current = () => {
       if (!stopped && !document.hidden) void load();
     };
@@ -679,6 +682,7 @@ export function SharedRoom({
     return () => {
       stopped = true;
       document.removeEventListener("visibilitychange", visibility);
+      window.removeEventListener(REVALIDATE_EVENT, visibility);
       controller.abort();
       clearTimeout(timer);
     };

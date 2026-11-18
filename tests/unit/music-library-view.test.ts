@@ -1,4 +1,5 @@
 import { expect, it } from "vitest";
+import { sharpMusicCover } from "../../src/lib/music-discovery";
 import { musicLibraryView } from "../../src/lib/music-library-view";
 import { musicChart } from "../../src/lib/music";
 import charts from "../../src/data/music-discovery.json";
@@ -33,7 +34,7 @@ it("keeps all browsing and queue data while excluding unused provenance at the c
         t.id,
         t.url,
         t.duration,
-        t.cover,
+        sharpMusicCover(t.cover),
         t.plays,
         t.artists,
       ]),

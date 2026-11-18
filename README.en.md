@@ -21,6 +21,10 @@ Open the repository root as an Obsidian vault.
 
 The complete screen map and actual capabilities are in [[docs/en/Page Catalogue]]. Friends and global moderation designs are prepared, but those services are not connected yet.
 
+## Desktop app and installable site
+
+The Windows desktop client lives in `desktop/` (Electron, a separate package): `npm run desktop:install`, then `npm run desktop:dev` while `npm run dev` is running, or `npm run desktop:make` for an unsigned installer. Details, checks and limits: [[docs/en/Features/Desktop Application]]. The site can also be installed as an app from the browser: [[docs/en/Features/Installable Web App]]; the low-resource setting: [[docs/en/Features/Low Resource Mode]].
+
 ## License
 
 The code is released under the MIT License (see `LICENSE`). Posters, covers, photographs and other images in `public/images`, music and fandom data in `src/data`, and the fonts in `public/fonts` are **not** covered by it: they belong to their rights holders, and sources are listed on the `/credits` page.

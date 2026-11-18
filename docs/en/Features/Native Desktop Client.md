@@ -1,0 +1,154 @@
+---
+title: "Native Desktop Client"
+type: feature
+status: in-progress
+created: 2026-11-13
+updated: 2026-11-13
+tags: [katsodi/feature, katsodi/desktop, katsodi/native]
+---
+
+# Native Desktop Client
+
+> English · [[docs/Features/Native Desktop Client|Russian original]]
+
+## Purpose
+Katsodi's own Windows application, written in C++ with Qt Quick. Its screens are drawn by the application, not loaded from the website; it talks to the same server and database through a versioned JSON API, so accounts and rooms are shared with the website. It replaces the earlier website-in-a-window shell, which stays documented as history in [[docs/en/Features/Desktop Application]]. Assignment: the internal desktop brief; working plan: https://github.com/katsodi-app/katsodi-desktop.
+
+## Users and roles
+Guests can browse shared rooms (public only, as on the website) and the bundled fandom catalogue. Signed-in, e-mail-confirmed accounts can join public rooms and chat. Roles (member, moderator, owner, administrator) come from the server exactly as on the website; the client grants nothing itself.
+
+## User scenarios
+- Open the app: home with the greeting, fandom posters and rooms open now; it starts from local resources without any network response.
+- Browse shared rooms: format chips (All / Video / Music), search with the website's rules (any order of words, ё = е, accents ignored).
+- Open a room: name, format, visibility, fandom or "Other", the source host with an "Open source" button, chat, members.
+- Sign in with the website account; join a public room; send messages (Enter sends, Shift+Enter adds a line).
+- Browse 150 fandoms by category and search.
+- Settings: five palettes plus System, Russian/English, Auto/Standard/Low resource, sign out.
+- Quick search (Ctrl+K or the rail button): rooms and fandoms in one list, All / Rooms / Fandoms filters, arrow keys and Enter, Esc closes.
+- Create a room (Ctrl+N): name, format, visibility and an optional link; "Create" sends it to the server, "Save draft" keeps it on this computer only.
+- Library: local drafts, saved rooms (the room's "Save" button) and followed fandoms.
+- In a room: what is playing now (from the server snapshot), the link queue and adding a link to it (the website's address check).
+- Floating bar of the open room: from any screen you see which room you are in and whether you are in voice, and can mute, return or leave.
+- Voice in a joined room: "Join voice" connects listen-only; turn the microphone on and off, deafen (sound and microphone off, microphone restored afterwards), choose microphone and speakers, see who is speaking, leave.
+
+- Watch and listen to the room's source inside the app (YouTube, Vimeo, a SoundCloud track): the provider's player on the stage, Play/Pause, a timeline and volume. The room's hosts (owner, moderators) steer the shared timeline and everyone else follows it; when a host's link ends, the next queued link plays.
+- Queue: "Play now" (hosts) and "Remove from queue" (the link's author or hosts).
+- Friends and profiles: the friends list, incoming and outgoing requests, a request by username, accept, decline, remove; a profile opens from the members and friends lists.
+- Music: the website's library (all-time top, the providers' weekly charts, popular, trending), a filter, https-only cover art; "Listen in a room" puts the track into the open music room you are a member of, or creates a private music room.
+- Invitations: the owner creates one (the website's `/join#…` link, or a code when the server has no public origin configured), copies and revokes it; a link or code can be pasted on the Rooms screen.
+- Moderation as on the website: the owner promotes and demotes moderators; the owner and moderators remove members (moderators only regular ones); leave a room or close it (owner). Each action asks for confirmation; the database decides.
+- Link demo (screen sharing), as on the website: a member asks to show a link (it is posted to the chat too); a host's own request starts at once, a member's waits for a host's Allow/Decline. The presenter picks a screen or a window and presses Start sharing; everyone in the room sees that screen on the stage. Hosts pause and end the demo; the author may withdraw a request.
+
+## Behaviour rules
+- No website page, no Electron, no WebView renders a Katsodi screen. A web engine exists only in the provider player, in its own process, showing only the official YouTube, Vimeo or SoundCloud player. Other sources open in the system browser, and the room says so.
+- Demo: the presenter confirms the demo every 20 s; a refusal (a host ended it or it timed out) stops the capture. A host's pause stops sending frames while the track stays. A request waits 10 minutes and a running demo lasts while it was confirmed within the last minute (the website's `demoCurrent`, on the server's clock). Demo sound (since 2026-11-13, the "Share sound" switch in the source picker, on by default): for a window, only its application's sound and its child processes'; for the shared browser, only the browser's sound; for a whole screen, all of the computer's sound except Katsodi itself (the room's voice and video do not come back to the others). Capture is Windows process loopback (Windows 10 2004 or newer); where it is unavailable the demo goes on without sound and the app says so. Viewers hear the demo's sound separately from the voice call; the video has a "Turn the demo's sound off" button, and deafening in voice mutes it too. A host's pause mutes the sound as well.
+- Shared timeline as on the website: members follow the server (re-seeking past 1.5 s of drift, at most every 3 s); a host's action in the player is published, while applying server state is never sent back (2.5 s echo suppression). Without a timeline everyone watches on their own.
+- A message is never resent automatically: after an ambiguous failure the text stays in the composer and the user decides.
+- Missing, hidden and forbidden rooms look the same ("not found or no access"), as on the website.
+- Opening another room, leaving, signing out or quitting cancels the previous room's polling and occupancy pings; late answers are dropped by generation number.
+- Guests see no chat content and no "no messages" claim; they are asked to sign in.
+- Room data is polled every 3 s like the website (6 s in Low resource mode); members ping occupancy every 30 s.
+- Voice follows the website's voice lounge: a fresh token for every attempt, microphone off after joining and after any reconnect, an unexplained drop retried after 2, 5 and 10 s, a removal or a refused token never retried. Leaving the room, losing membership, switching account or quitting ends the call.
+
+## Interface and states
+Own design of 2026-11-13, drawn from two references: the website's overview page (night sky, a large Oswald headline with one word in the accent colour (the website's handwritten face is not used in the app), frosted glass, pill buttons) and the Liner player (a narrow icon rail, a soft glow in the room's colours, shelves of square art, search over the app, a floating bar for what is open). Palettes still come from the website. Since 2026-11-13 the backdrop is no photograph but flowing patches of colour in the palette's and the open room's colours (shader `shaders/backdrop.frag`).
+- A 64 px glass icon rail: logo, Home, Rooms, Fandoms, Library, search; settings and the account with a server-state dot at the bottom. The current-section marker glides to it.
+- Home: greeting, "Open now" and fandom shelves with horizontal scrolling, create and search buttons.
+- A window without the system frame: our own strip at the top (drag with Windows edge snapping, double-click to maximize), Minimize, Maximize/Restore and Close; resizing from every edge and corner (the system's own resize, minimum 360 × 480); a thin outline while not maximized.
+- Room: a Player / Demo stage switch as on the website, one pane at a time. A demo that starts switches the stage to Demo and back when it ends; Demo carries a dot while a demo runs or waits. Player: the source, "Now playing", the player, the queue. Demo: an explanation and the link field, a waiting request, the shared screen filling the pane. Voice and the Chat / Members switch on the side; a narrow window scrolls it as one column.
+- Choosing what to share, Discord-style: Applications and Entire screen tabs, a grid of live previews with the window's icon and title, Quality 720p/1080p, Smoothness 15/30 fps, Share (or double-click a preview). The presenter sees their own picture labelled "This is what others see".
+- A fandom page opens from the catalogue, home, the Library and search: poster, category, Follow, Create a room, the Wikipedia description with its source and licence, and the fandom's open rooms.
+- Motion: 140/240/460 ms with ease-out, staggered card reveal, eased wheel scrolling. In Low resource mode or with Windows animation effects off every duration is zero. The backdrop flows: it steps 10 times a second, only while the window is active and not minimized; in the background, in Low resource mode and with Windows animation effects off it stands still.
+- Below 720 px width the rail becomes a bottom navigation. States: loading, empty, no match, server offline (click to retry), not configured, room not found, room closed, send failed, rate limited, signed out, unconfirmed e-mail.
+
+## Technical implementation
+- `native-desktop/`: CMake project (presets `windows-dev`, `windows-release`), C++20, Qt 6.11.3 (MSVC 2022 x64): Core, Gui, Network, Qml, Quick, QuickControls2 (Basic style, fully restyled), Quick Shapes.
+- Layers: `src/domain` (validated records, search text, ids), `src/infrastructure` (HTTPS client, Windows credential store), `src/application` (session), `src/presentation` (list models and controllers for QML), `qml/` (shell, controls, screens).
+- `ApiClient`: one fixed origin, `/api/native/v1/` paths only, no redirects followed (the bearer token cannot leave the origin), 15 s timeout, 4 MiB response limit, callbacks bound to their screen object.
+- Screen sharing: `ScreenController` (rules and lifecycle) and `LiveKitScreenEngine` (a separate connection to the LiveKit demo room `katsodi-<room>-screen` with a 60-second token, as on the website). Capture is Qt Multimedia (`QScreenCapture`/`QWindowCapture`; on Windows, Windows Graphics Capture). Frames are reduced to 1920×1080 at 15 fps and 2.5 Mbit/s (Low mode: 1280×720, 8 fps, 1.2 Mbit/s), sizes aligned to multiples of 4 (WebRTC crops the rest: 822 arrived as 820), no simulcast. The track is published with the SCREENSHARE source. A viewer reads the `VideoStream` (BGRA) on its own thread into a QML `VideoOutput`, one frame in flight at most. Voice and screen share one SDK init counter (`LiveKitSdk`). The QML singleton is `Demo` (`Screen` belongs to QtQuick).
+- Server side: `demoAccess`/`demoGrant` moved from the website's `/api/rooms/{id}/demo` route into `src/lib/server/demo-access.ts`, so the website and the app grant the same rights: only the presenter of a running demo may publish a screen.
+- Demo sound: `src/platform/ProcessAudio` (activating `VAD\\Process_Loopback` with a process tree, included for a window or the browser, excluded for Katsodi on a screen; 48 kHz stereo 16-bit in 20 ms chunks, silence as zeros so time is kept), a `SOURCE_SCREENSHARE_AUDIO` track from an `AudioSource` (200 ms queue, no DTX); viewers read an `AudioStream` on its own thread into `ShareAudioPlayer` (Qt Multimedia `QAudioSink`, a ring of at most 0.5 s, silence when it runs dry).
+- Frames: a capture sends a frame only on change, so the engine repeats the last picture every 0.5 s while nothing new comes, and sends a frame that arrived before the track was ready right after it is. Without that a still page never reached viewers (found by a test: example.com gave only 2 frames).
+- Provider player: a separate `katsodi-player.exe` process (`src/provider-helper`) on Microsoft Edge WebView2, a child window exactly over the stage. It starts only when the open room has a synchronizable source and the stage is visible; it stops 20 s after it is no longer needed and with the app (stdin closes; it exits in 0.5–0.7 s). It talks over its own anonymous stdin/stdout pipes: line-delimited JSON, at most 16 KiB, allow-listed commands only (load, play, pause, seek, volume, unload, geometry, visible). An InPrivate profile in a temporary folder deleted on exit (folders of killed helpers are swept by the next start); only the player page may be the top document; new windows are handed to the app and opened in the browser for https only; every permission is denied; downloads are cancelled; http requests other than the development player page are blocked. The process has no tokens, secrets or file access.
+- Player page `/api/native/v1/player` (website and standalone server, see [[docs/en/Features/Native API Server]]): one official player (YouTube IFrame API, Vimeo Player SDK, SoundCloud Widget API) and a small control surface; a per-response nonce CSP, `default-src 'none'`, frames from the three providers only. It is served from the API's own origin, not a spoofed one.
+- Why WebView2 rather than Qt WebEngine: a Qt WebEngine 6.11.3 helper was built first, but Qt's prebuilt binaries lack H.264 and AAC (measured in the page itself: `h264: false, aac: false`), so Vimeo and SoundCloud could not play. WebView2 ships with Windows 11, has the codecs, is updated by Windows and adds no browser to the installer. The SDK is pinned by `native-desktop/tools/install-webview2.py` (SHA-256; matched the SHA-512 nuget.org publishes); the loader is linked statically.
+- `PlayerController` holds the sync rules; `PlayerStage.qml` reserves the space and reports geometry on every rendered frame (no frames at idle). While the search or create-room popup is open the player window hides, since nothing can be drawn over it.
+- Installer: `native-desktop/installer/katsodi.iss` (Inno Setup 6, per user, no admin rights, into `%LOCALAPPDATA%\Programs\Katsodi`, Start menu, uninstaller, a notice without WebView2); `npm run native:installer`. Inno Setup is installed by `tools/install-innosetup.py` (pinned by SHA-256).
+- `LocalLibrary`: SQLite through Qt SQL, `PRAGMA user_version` migrations, `quick_check` on open; a corrupt file is renamed to a backup and a fresh one created (the app says so). Limits: 100 drafts, 500 saved rooms, 200 fandoms.
+- `SearchModel`: rooms and fandoms under the same search rules, up to 8 per group.
+- `PosterImageProvider` (`image://poster`): decodes a poster asynchronously straight at display size (sizes rounded to 24 px) with the rounded corners baked in, and reads only the `fandoms` and `editorial` folders next to the executable.
+- Fonts: Manrope (text), Oswald (headings), both OFL, licences in `licenses/`. The backdrop is a shader (`shaders/backdrop.frag`, compiled to `.qsb` at build time): three soft lights in the palette's colours over the background colour; no photographs ship any more. The frameless window: `qml/shell/TitleBar.qml` (`startSystemMove`) and `qml/shell/ResizeFrame.qml` (`startSystemResize`).
+- Share picker: `src/platform/ShareSources` lists Win32 windows (visible, titled, not tool windows, not cloaked by DWM, not our own), previews via `PrintWindow(PW_RENDERFULLCONTENT)` up to 480×270 and the application icon, on a worker thread; screens via `QScreen::grabWindow`. A window is captured by its handle (`QWindow::fromWinId` → `QCapturableWindow`). Bitrate: 720p 1.5/2.5 Mbit/s, 1080p 2.5/4 Mbit/s at 15/30 fps; Low resource mode defaults to 720p.
+- Fandom page: `npm run native:export` carries the Wikipedia excerpts (ru/en) from `src/data/fandom-information.json` with the article URL and check date into `fandoms.json`; `FandomModel::info()` returns them by language (falling back to English) and accepts only https links to `*.wikipedia.org`. `RoomListModel::roomsOfFandom()` lists the fandom's open rooms.
+- `ChatModel` applies the server's message deltas as exact row insertions and removals (no model reset), so scrolling and delegates are kept.
+- Resources: `npm run native:export` writes `strings.json` (the `native` section of `src/lib/i18n.ts`), `palettes.json` (the five palettes of `src/app/signal.css`) and `fandoms.json`; a unit test fails when they are stale. Manrope is converted to TTF by `native-desktop/tools/convert-fonts.py`. Fandom posters are copied next to the executable and decoded at display size.
+- Voice: the official LiveKit C++ SDK 1.13.1, prebuilt standard Windows x64 build (`native-desktop/tools/install-livekit.py` pins it by SHA-256; it needs only Windows system DLLs). `src/media/livekit/LiveKitVoiceEngine` uses the SDK's platform audio device module: WebRTC echo cancellation, noise suppression and automatic gain control on the microphone, playout of subscribed audio to the chosen speakers, DTX. All SDK calls run on one worker thread; SDK callbacks are reduced to plain data and delivered to the UI as queued signals, and SDK exceptions are caught there. `VoiceController` holds the call rules; builds without the SDK compile a `NullVoiceEngine` and show voice as unavailable. Deafen disables the remote audio publications (nothing is received). The SDK ships only a Release DLL with C++ types in its API, so the development preset builds RelWithDebInfo.
+- Server: `/api/native/v1/meta`, `me`, `rooms` (list, create), `rooms/{id}` (snapshot, `?after=` delta), `rooms/{id}/join`, `messages`, `occupancy`, `voice-token`, `queue` (adds a link through the shared `addToQueue`; a full queue is `409 queue_full`), `queue/{item}` (DELETE, `removeFromQueue`), `queue/{item}/play` (`playFromQueue`), `playback` (`updatePlayback`), `player` (the player page), `demo` (POST asks, DELETE ends or withdraws), `demo/decision`, `demo/pause` (`{ accept | paused: boolean }`), `demo/beat`, `demo/token`. Bearer requests run inside a request-scoped actor (`src/lib/supabase/actor.ts`), so the website's own shared functions (`createRoom`, `joinNetworkRoom`, `sendMessage`, `voiceAccess`, `roomSnapshot`) run as the caller and RLS applies. Error envelope: `{ error: { code, messageKey, retryable, requestId } }`.
+
+Build (Windows):
+
+| Step | Command |
+| --- | --- |
+| Toolchain once | Visual Studio 2022 Build Tools (C++); Python venv in `../KatsodiToolchain` with `cmake ninja`; `python native-desktop/tools/install-qt.py ../KatsodiToolchain`; `python native-desktop/tools/install-livekit.py ../KatsodiToolchain` |
+| Live voice check | `node native-desktop/tools/voice-live-check.mjs` (uses the LiveKit project in `.env.local`, a throwaway room) |
+| Build | `npm run native:build` |
+| Tests | `npm run native:test` |
+| Run | `npm run native:api`, then `npm run native:run` (no website needed, see [[docs/en/Features/Native API Server]]; or set `KATSODI_API_ORIGIN` to another loopback origin) |
+| Release | `npm run native:release`, then `powershell -File native-desktop/tools/native.ps1 install windows-release <folder>` |
+
+## Data and access
+- Settings (`HKCU\Software\Katsodi\Katsodi` or `…\Katsodi Dev`): theme, language, resource mode, window geometry.
+- Session: refresh token in Windows Credential Manager (`Katsodi/session`); access token only in memory; sign-out deletes the credential and asks Supabase to end the session.
+- `%LOCALAPPDATA%\Katsodi\Katsodi\library.sqlite` (or the development profile): drafts, saved rooms, followed fandoms. This computer only; never sent to the server.
+- No chat, profile or room data from the server is written to disk.
+
+## Security and privacy
+The installer carries only public identifiers: the API origin and, from `/meta`, the Supabase URL and publishable key. No service-role key, LiveKit secret or scheduler secret. The native routes accept only a well-formed bearer token (a malformed one is refused rather than treated as a guest), never read cookies, and send no CORS headers; the website's cookie routes keep their Origin checks (unit-tested). Chat text is shown as plain text. External links open only for `http(s)` addresses.
+
+## Acceptance criteria
+Verified on 2026-11-13, Windows 11 x64, against the local development server connected to the real Supabase project:
+- `npm run native:test`: 12 Qt tests pass (search, ids, strict records incl. microsecond timestamps, chat deltas without model reset, grouping, room filtering, bundled palettes/strings/catalogue, preferences, auth URL rules, API path refusal).
+- `tests/unit/native-api.test.ts`: 12 tests (bearer parsing, concurrent token isolation, no cookie access for bearer requests, guest vs malformed token, error mapping, public-only bootstrap, chat and room creation through shared operations).
+- `curl` against the dev server: `/meta` and `/rooms` answer with real data, a malformed token gets 401, `/me` without token 401, the website's voice route still refuses a request without Origin.
+- Screenshots of the running app (home, rooms, a real room, fandoms, settings, sign-in) were inspected.
+- Release build (`windows-release`, staged with Qt's deploy tool): 237 files, 105 MiB, no QML debugger plugins. Started from its own folder with only Windows on PATH. One idle sample on the home screen (20 s warm-up, 30 s window; the production API is not deployed yet, so the app showed "server unavailable"): 1 process, 113.5 MiB private working set (204.6 MiB working set), 0.16 % of one logical core; nothing left running after closing. Same machine as the Electron shell's 208.6 MiB and 6.22 %. Initial targets: about 120 MiB and below 0.5 %. One run only; rooms, chat and longer soaks are not measured.
+
+- Voice, 2026-11-13: `voiceFollowsTheWebsiteRules` drives the real controller through a local token server (listen-first join, mute, deafen and restore, no microphone while deafened, network drop retried with a fresh token, stale attempts ignored, removal not retried, refused token stops before the engine, leaving the room ends the call). `voice-live-check.mjs` ran two native engines in a throwaway room of the LiveKit Cloud project: both connected (598 ms and 466 ms), the second saw the first one's microphone 471 ms after it was turned on and its mute after 102 ms, 1 microphone and 1 speaker were listed, and the departure was seen after 1.8 s.
+- Release with voice: 240 files, 132 MiB (the two LiveKit DLLs are 27 MiB) plus the SDK's Apache-2.0 licence in `licenses/`. Started with only Windows on PATH; one idle sample on home: 95.4 MiB private working set, 0.21 % of one logical core.
+
+- Redesign, 2026-11-13: `npm run native:test` — 17 Qt tests (added: the SQLite library with migration and recovery, room and fandom search, poster path confinement, the website's link check); `tests/unit/native-api.test.ts` — 13 tests (added: queue). Screenshots of every screen in a dark and a light palette, Russian and English, and a 420 × 820 window were inspected. A development build used 5.6 % of a core at idle because of endless backdrop animations; after removing them, 0–0.6 % per 10 s.
+- Release after the redesign: 252 files, 136 MiB. Started with only Windows on PATH (no production API yet, "server unavailable"); 25 s warm-up, 60 s window on home: 141 MiB private working set, 0.31 % of one logical core; nothing left running after closing. Without the sky photo (a light palette or Low resource mode) 118 MiB, so the photo is now decoded at most 1280 px wide: two 30 s runs gave 120 and 132 MiB, 0.05–0.42 %. Before the redesign it was 95 MiB; the rest of the growth (fonts, posters, graphics caches) is not broken down.
+
+- Player, 2026-11-13: `tst_player_live` (a Qt Quick window like the app's, the helper as its child window, muted) passed 6 of 6: YouTube ready in 1.6–1.8 s, playing after 2.0–2.5 s, pause, seek to 30 s in 1.0 s; Vimeo ready in 1.5–2.0 s, playing after 2.0 s, seek in 0.5 s; a SoundCloud track ready in 1.5–1.9 s, playing after 2.0 s, seek in 0.5 s; a link of the wrong provider is refused; the helper exits 0.55–0.69 s after stdin closes, with no temporary profile left. Captures of the test's own window showed YouTube and Vimeo video at the right size at 150 % scaling. The first Vimeo test video never started and was replaced; why is not known. `playerSourcesMatchTheWebsite` and `playerStaysOffWithoutHelperOrSource` run in `npm run native:test`.
+- Release with the player: 254 files, 136.6 MiB (the helper is 134 KiB; WebView2 comes from Windows); the helper starts with only Windows on PATH. Idle on home was not re-measured: the helper does not start there.
+
+- Screen sharing, 2026-11-13: `tools/screen-live-check.mjs` mints two tokens with `demoToken`'s rights (the presenter publishes a screen only, the viewer only watches) in a throwaway LiveKit Cloud room and runs `tst_screen_live`: 4 of 4. Both connected in 0.53–0.76 s; capturing the test's own window (not the screen) gave a first frame after 0.39–0.54 s; the viewer got its first frame 1.1–2.0 s after capture started, at exactly the published size (1444×820); the pattern's colour arrived intact (30,160,89 for 30,160,90); 0 frames while paused, frames again after resuming; the viewer saw the demo end. Unit: `demoFollowsTheWebsitesTimeRules`, 4 tests in `tests/unit/native-demo-api.test.ts`, the website's 6 `demo-api` tests after the shared functions moved.
+- Release with screen sharing: 265 files, 157.2 MiB, 21 MiB more because of the FFmpeg that Qt Multimedia brings (avcodec 13.4 MiB); it starts with only Windows on PATH. `licenses/` gains `THIRD-PARTY-NOTICES.txt` and the LGPL-2.1 text for FFmpeg. Qt's own LGPL-3.0 text is not in the folder yet (nor in the installed Qt); it has to be added before publishing.
+- Round of 2026-11-13 (window, stage, demo, backdrop, fandoms): `tst_screen_live` 5 of 5. The picker's list: 12 windows with previews in 0.29 s, the test window found, the pattern's green visible in its preview, our own windows excluded; a window captured by its handle delivers frames; presenter to viewer as before (first frame after 1.0 s, 1444×820, colour 30,160,89, 0 frames while paused). Backdrop cost: stepping 30 times a second used 21.5 % of one core (every step redraws the whole window), hence 10 steps a second and only in the active window: 5.3 % of one core while the window is active; in the background and minimized it stands still. Screenshots: the fandom page, a room with the Player / Demo switch, home with the new window strip.
+- Demo sound, 2026-11-13: `tst_screen_live shareAudioOverLiveKit`: the test process plays a quiet 440 Hz tone, process capture picked it up (52 chunks of 20 ms in 1.1 s, peak 401), the presenter published it and the viewer received it 1.1 s after capture started. The whole `tst_screen_live`: 7 of 7, twice in a row. Fixed on the way: a crash on a synchronous helper stop (the finished handler cleared the pointer mid-wait; the player had the same on quitting the app) and a still page without frames.
+
+Not verified (window and demo round): dragging, snapping and resizing by hand (the system functions are called, but not exercised with clicks), a window on a second monitor with other scaling, choosing a source and the presenter's self-preview by clicking in the app, apps whose window `PrintWindow` returns black (some games), the backdrop's cost on a weak PC.
+
+Not verified (demo): a demo in a real Katsodi room with two people (needs signed-in members and the running voice worker: the server grants demo tokens only when `voice_worker_ready`), app-to-website demos either way, capturing a whole screen or other applications' windows (the test captures its own window on purpose), several monitors with different scaling, drawing over a demo (the website has it; the app neither shows nor sends it), the CPU cost of sharing.
+
+Not verified: the player inside a real room in the app (needs a signed-in member of a room with YouTube, Vimeo or a SoundCloud track; the public rooms currently hold only a SoundCloud playlist), sync between two clients or a client and the website, Spotify and VK (not embedded: they open in the browser), building the installer (Inno Setup is not installed: running its installer needs the owner's permission), installing on a clean machine, a machine without WebView2.
+
+Not verified (earlier): whether a person hears the other side (needs two people), a call between the app and the website in a real Katsodi room (needs signed-in members and the running voice worker), device hot-plug, sleep and wake during a call, signing in with a real account inside the app (needs the owner's credentials), joining and chatting live, the release folder on a clean machine, screen readers, high-DPI other than 150 %.
+
+- Friends, music, invitations, 2026-11-13: `npm run native:test` passes (added `musicLibraryKeepsOnlySafeTracks` and `invitationTokensComeOnlyFromInvitations`); web tests `native-friends-api`, `native-music-api`, `native-invites-api`. Captures of the app's own window: the Rooms screen with the invitation field, the owner's Members tab (invitations, Close room), the confirmation dialog. `KATSODI_CAPTURE_STILL=1` turns animations off when the window is not presented (for example, a locked session).
+
+Not verified (friends, music, invitations): creating, revoking and accepting an invitation and moderation actions with real accounts (needs a second member), "Listen in a room" on a real account.
+
+## Limitations and next steps
+Drafts and the Library stay on this computer and do not sync with the website. Following a fandom is local too.
+
+Voice limits: no per-participant volume (the SDK exposes no playback volume; the device popup says so); the chosen devices are not remembered between calls; a muted microphone keeps the audio device open, as in browsers, so the Windows microphone indicator stays on until the call ends; the audio device module starts with the call and stops when it ends.
+
+Not implemented yet: drawing and click hints over a demo, the website's "inside Katsodi" demo mode (the website can crop its tab; the app shares a window or screen), Spotify and VK inside the app, publishing a draft in one click, invitations, moderation, images and stickers in the composer, music, profiles, friends, legal pages, overview, Room Studio panes, deep links, installer signing, updates, a full-screen player. The player is a rectangular window over the stage: rounded corners and Katsodi controls over the video are not possible. The production API exists only after the website with `/api/native/v1` is deployed; a release build shows "server unavailable" until then.
+
+## Related notes
+- [[docs/en/Home]]
+- [[docs/en/Architecture]]
+- [[docs/en/Features/Desktop Application]]
+- [[docs/en/Features/Server Authorization]]
+- [[docs/en/Features/Room Chat]]

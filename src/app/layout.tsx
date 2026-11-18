@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { preload } from "react-dom";
 import { WorkspaceProvider } from "@/components/workspace-provider";
 import { MusicPlayerProvider } from "@/components/music-player-provider";
@@ -7,6 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { themeBootstrap } from "@/lib/themes";
 import { supabaseConfig } from "@/lib/supabase/config";
 import { consentBootstrap } from "@/lib/consent-bootstrap";
+import { resourceBootstrap } from "@/lib/platform/performance-policy";
+import { PlatformRuntime } from "@/components/platform-runtime";
 import "./fonts.css";
 import "./globals.css";
 import "./brand.css";
@@ -23,7 +25,11 @@ export const metadata: Metadata = {
   title: "Katsodi — Better together",
   description:
     "Собирайтесь с друзьями, чтобы вместе смотреть и слушать. Watch, listen, and spend time together.",
+  // Installable web app (src/app/manifest.ts); iOS reads these instead.
+  appleWebApp: { capable: true, title: "Katsodi", statusBarStyle: "default" },
+  icons: { apple: "/icons/apple-touch-icon.png" },
 };
+export const viewport: Viewport = { themeColor: "#0c0e11" };
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
@@ -40,8 +46,10 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeBootstrap }} />
         <script dangerouslySetInnerHTML={{ __html: consentBootstrap }} />
+        <script dangerouslySetInnerHTML={{ __html: resourceBootstrap }} />
       </head>
       <body>
+        <PlatformRuntime />
         <ThemeProvider>
           <WorkspaceProvider>
             <MusicPlayerProvider>

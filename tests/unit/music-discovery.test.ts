@@ -8,9 +8,12 @@ import {
   mostPlayedChartSchema,
   musicRoomSource,
   safeMusicCover,
+  sharpMusicCover,
 } from "../../src/lib/music-discovery";
 import {
+  enrichCovers,
   parseKworbChart,
+  parseKworbTopVideos,
   parseSoundcloudChart,
   refreshMusicCharts,
 } from "../../src/lib/server/music-chart-sources";
@@ -108,4 +111,92 @@ it("restricts room sources and artwork to known public providers", () => {
     "https://user:secret@i.scdn.co/x",
   ])
     expect(safeMusicCover(value)).toBeNull();
+});
+
+it("reads kworb's all-time most viewed videos in page order", () => {
+  const html = `<table><tr><th class="text">Video</th><th>Views</th><th>Yesterday</th></tr>
+<tr><td class="text"><div><a href="video/kJQP7kiw5Fk.html">Luis Fonsi - Despacito ft. Daddy Yankee</a></div></td><td>9,175,162,172</td><td>1,250,899</td></tr>
+<tr><td class="text"><div><a href="video/XqZsoesa55w.html">Baby Shark Dance</a></div></td><td>16,000,000,000</td><td>2</td></tr>
+<tr><td class="text"><div><a href="video/kJQP7kiw5Fk.html">Duplicate - Row</a></div></td><td>1</td><td>1</td></tr></table>`;
+  const tracks = parseKworbTopVideos(html);
+  expect(tracks).toHaveLength(2);
+  expect(tracks[0]).toMatchObject({
+    id: "youtube:kJQP7kiw5Fk",
+    rank: 1,
+    title: "Despacito ft. Daddy Yankee",
+    artists: ["Luis Fonsi"],
+    url: "https://www.youtube.com/watch?v=kJQP7kiw5Fk",
+    plays: 9175162172,
+  });
+  // No "Artist - Title": the title stays whole, no invented artist.
+  expect(tracks[1]).toMatchObject({
+    rank: 2,
+    title: "Baby Shark Dance",
+    artists: [],
+  });
+  expect(chartSources.youtube.source).toBe(
+    "https://kworb.net/youtube/topvideos.html",
+  );
+});
+
+it("upgrades provider artwork to its large size and keeps unknown hosts out", () => {
+  expect(sharpMusicCover("https://i.scdn.co/image/ab67616d00001e02abc")).toBe(
+    "https://i.scdn.co/image/ab67616d0000b273abc",
+  );
+  expect(sharpMusicCover("https://i1.sndcdn.com/artworks-x-0-large.jpg")).toBe(
+    "https://i1.sndcdn.com/artworks-x-0-t500x500.jpg",
+  );
+  expect(sharpMusicCover("https://i.ytimg.com/vi/a/hqdefault.jpg")).toBe(
+    "https://i.ytimg.com/vi/a/hqdefault.jpg",
+  );
+  expect(sharpMusicCover("https://evil.example/a.jpg")).toBeNull();
+  expect(sharpMusicCover(null)).toBeNull();
+});
+
+it("adds large covers at refresh: YouTube maxres when present, Spotify via oEmbed", async () => {
+  const fetchMock = vi.fn(async (url: string) => {
+    if (url.includes("maxresdefault") && url.includes("/vi/aaaaaaaaaaa/"))
+      return new Response("", { status: 200 });
+    if (url.includes("maxresdefault")) return new Response("", { status: 404 });
+    if (url.startsWith("https://open.spotify.com/oembed"))
+      return Response.json({
+        thumbnail_url:
+          "https://image-cdn-fa.spotifycdn.com/image/ab67616d00001e02cafe",
+      });
+    return new Response("", { status: 404 });
+  });
+  vi.stubGlobal("fetch", fetchMock);
+  const yt = (id: string) => ({
+    id: `youtube:${id}`,
+    rank: 1,
+    title: "T",
+    artists: [],
+    url: `https://www.youtube.com/watch?v=${id}`,
+    cover: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+    plays: 1,
+  });
+  const [withMaxres, without] = await enrichCovers("youtube", [
+    yt("aaaaaaaaaaa"),
+    yt("bbbbbbbbbbb"),
+  ]);
+  expect(withMaxres.cover).toBe(
+    "https://i.ytimg.com/vi/aaaaaaaaaaa/maxresdefault.jpg",
+  );
+  expect(without.cover).toBe(
+    "https://i.ytimg.com/vi/bbbbbbbbbbb/hqdefault.jpg",
+  );
+  const [spotify] = await enrichCovers("spotify", [
+    {
+      id: "spotify:x",
+      rank: 1,
+      title: "S",
+      artists: ["A"],
+      url: "https://open.spotify.com/track/2sFepQNyl1WjpROruP8bJ0",
+      cover: null,
+      plays: 1,
+    },
+  ]);
+  expect(spotify.cover).toBe(
+    "https://image-cdn-fa.spotifycdn.com/image/ab67616d0000b273cafe",
+  );
 });

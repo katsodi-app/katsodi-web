@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { prefersLessMotion } from "@/lib/platform/performance-policy";
 
 /**
  * Motion for /overview, as progressive enhancement: without JavaScript or
@@ -23,7 +24,8 @@ export function OverviewMotion() {
     const root = document.querySelector<HTMLElement>(".overview-standalone");
     if (!root) return;
     const bar = root.querySelector<HTMLElement>(".ov-topbar");
-    const reduce = matchMedia("(prefers-reduced-motion: reduce)");
+    // Reduced motion or the low-resource mode: either one skips the effects.
+    const reduce = { matches: prefersLessMotion() };
     const cleanups: (() => void)[] = [];
 
     // Top bar state: also wanted with reduced motion.

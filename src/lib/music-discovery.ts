@@ -54,6 +54,21 @@ export function safeMusicCover(input: unknown): string | null {
     return null;
   }
 }
+/**
+ * The largest size of a provider's artwork from the same image: Spotify
+ * 640 px instead of 300/64, SoundCloud 500 px instead of 100. YouTube
+ * covers are chosen at refresh time (maxres exists only for some videos).
+ */
+export function sharpMusicCover(input: string | null): string | null {
+  const safe = safeMusicCover(input);
+  if (!safe) return null;
+  return safe
+    .replace(/\/image\/ab67616d0000(?:1e02|4851)/, "/image/ab67616d0000b273")
+    .replace(
+      /-(?:large|t300x300|t67x67|small|badge|tiny)\.(jpg|png)$/,
+      "-t500x500.$1",
+    );
+}
 export const discoveryTrackSchema = z.object({
   id: z.string().min(1).max(100),
   rank: z.number().int().min(1).max(150),
@@ -140,7 +155,11 @@ export const chartSources: Record<
     source: "https://kworb.net/spotify/country/global_weekly.html",
     scope: "global",
   },
-  youtube: { source: "https://kworb.net/youtube/weekly/", scope: "global" },
+  // All-time most viewed music videos (150, by total views).
+  youtube: {
+    source: "https://kworb.net/youtube/topvideos.html",
+    scope: "global",
+  },
   soundcloud: {
     source: "https://soundcloud.com/music-charts-us/sets/all-music-genres",
     scope: "US",
