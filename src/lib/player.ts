@@ -47,6 +47,24 @@ export function knownPlayer(input: string): PlayerResolution {
   if (!source) return { kind: "external", reason: "unsupported", sync: false };
   const url = new URL(source.url),
     id = youtubeVideoId(url);
+  // A YouTube playlist page: YouTube's own playlist player (each listener
+  // plays it; a watch link with a list stays one synchronized video).
+  const list = url.searchParams.get("list");
+  if (
+    !id &&
+    ["youtube.com", "www.youtube.com", "m.youtube.com"].includes(
+      url.hostname,
+    ) &&
+    url.pathname === "/playlist" &&
+    list &&
+    /^[A-Za-z0-9_-]{10,64}$/.test(list)
+  )
+    return {
+      kind: "iframe",
+      src: `https://www.youtube.com/embed/videoseries?list=${list}&playsinline=1&rel=0`,
+      provider: "YouTube",
+      sync: false,
+    };
   if (id)
     return {
       kind: "iframe",

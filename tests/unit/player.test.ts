@@ -12,7 +12,7 @@ afterEach(() => vi.unstubAllGlobals());
 describe("player URL boundaries", () => {
   it("embeds VK only through its official export code", () => {
     const src =
-      "https://vkvideo.ru/video_ext.php?oid=-238162296&id=456239108&hash=0123abcd4567ef89&hd=2";
+      "https://vkvideo.ru/video_ext.php?oid=-238162296&id=456239108&hash=0123abcd4567ef89&hd=2&js_api=1";
     for (const url of [
       "https://vk.com/video_ext.php?oid=-238162296&id=456239108&hash=0123abcd4567ef89",
       "https://vkvideo.ru/video_ext.php?hash=0123abcd4567ef89&id=456239108&oid=-238162296&autoplay=1",
@@ -202,5 +202,31 @@ describe("bounded public player discovery", () => {
     expect(
       await resolvePlayer("https://kinogo.is/904-player.html"),
     ).toMatchObject({ kind: "external", reason: "unavailable" });
+  });
+});
+
+describe("playlist links", () => {
+  it("embeds a YouTube playlist page as YouTube's playlist player", () => {
+    expect(
+      knownPlayer(
+        "https://www.youtube.com/playlist?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSU",
+      ),
+    ).toEqual({
+      kind: "iframe",
+      src: "https://www.youtube.com/embed/videoseries?list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSU&playsinline=1&rel=0",
+      provider: "YouTube",
+      sync: false,
+    });
+    // A watch link with a list stays the (synchronizable) video itself.
+    expect(
+      knownPlayer(
+        "https://www.youtube.com/watch?v=aqz-KE-bpKQ&list=PLFgquLnL59alCl_2TQvOiD5Vgm1hCaGSU",
+      ),
+    ).toMatchObject({
+      src: "https://www.youtube.com/embed/aqz-KE-bpKQ?playsinline=1&rel=0",
+    });
+    expect(
+      knownPlayer("https://www.youtube.com/playlist?list=bad list"),
+    ).toMatchObject({ kind: "external" });
   });
 });

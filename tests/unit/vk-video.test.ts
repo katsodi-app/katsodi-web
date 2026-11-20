@@ -37,7 +37,7 @@ describe("VK official API player lookup", () => {
     vi.stubGlobal("fetch", fetcher);
     expect(await vkApiPlayer(link)).toEqual({
       kind: "iframe",
-      src: "https://vkvideo.ru/video_ext.php?oid=-238162296&id=456239039&hash=0123abcd4567ef89&hd=2",
+      src: "https://vkvideo.ru/video_ext.php?oid=-238162296&id=456239039&hash=0123abcd4567ef89&hd=2&js_api=1",
       provider: "VK Видео",
       presentation: "discovered",
       sync: false,

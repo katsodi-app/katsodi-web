@@ -162,3 +162,24 @@ describe("updatePlayback", () => {
     });
   });
 });
+
+describe("VK Video on the shared timeline", () => {
+  it("syncs VK video links and VK's own players with the player API", () => {
+    expect(syncSource("https://vkvideo.ru/video-218668913_456242265")).toBe(
+      "vk",
+    );
+    expect(syncSource("https://vk.com/video-1_2")).toBe("vk");
+    expect(
+      adapterKind(
+        "https://vkvideo.ru/video_ext.php?oid=-1&id=2&hash=0123abcd&hd=2&js_api=1",
+      ),
+    ).toBe("vk");
+    // Without the API flag (an old export code) the player cannot be driven.
+    expect(
+      adapterKind("https://vkvideo.ru/video_ext.php?oid=-1&id=2&hash=0123abcd"),
+    ).toBeNull();
+    expect(
+      adapterKind("https://evil.example/video_ext.php?js_api=1"),
+    ).toBeNull();
+  });
+});

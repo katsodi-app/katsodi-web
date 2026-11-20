@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { inspectSource, youtubeVideoId } from "./providers";
+import { inspectSource, vkEmbed, vkVideoId, youtubeVideoId } from "./providers";
 
 /** Server-authoritative shared timeline, as returned by get_room_playback. */
 export const playbackSchema = z.object({
@@ -24,16 +24,18 @@ export function syncableVideoId(url: string): string | null {
 
 /**
  * The synced-player adapter for a room source, by the exact host of the page
- * the room links to. YouTube, Vimeo and SoundCloud expose official player
- * APIs with play/pause/seek; other providers keep independent playback.
+ * the room links to. YouTube, Vimeo, SoundCloud and VK Video expose official
+ * player APIs with play/pause/seek; other providers keep independent playback.
  */
 export function syncSource(
   url: string,
-): "youtube" | "vimeo" | "soundcloud" | null {
+): "youtube" | "vimeo" | "soundcloud" | "vk" | null {
   if (syncableVideoId(url)) return "youtube";
   const source = inspectSource(url);
   if (!source) return null;
-  const host = new URL(source.url).hostname;
+  const parsed = new URL(source.url);
+  if (vkVideoId(parsed) || vkEmbed(parsed)) return "vk";
+  const host = parsed.hostname;
   if (["vimeo.com", "www.vimeo.com"].includes(host)) return "vimeo";
   if (
     ["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"].includes(

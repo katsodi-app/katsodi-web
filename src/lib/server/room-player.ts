@@ -10,6 +10,14 @@ import type { PlayerResolution } from "@/lib/player";
 export async function roomPlayer(
   roomId: string,
 ): Promise<PlayerResolution | "auth" | null> {
+  const url = await roomSource(roomId);
+  return url === "auth" || url === null ? url : resolvePlayer(url);
+}
+
+/** The source link of a room the caller is an active member of (open room). */
+export async function roomSource(
+  roomId: string,
+): Promise<string | "auth" | null> {
   const { client, user } = await currentAccount();
   if (!client || !user) return "auth";
   const [room, member] = await Promise.all([
@@ -30,5 +38,5 @@ export async function roomPlayer(
     !member.data
   )
     return null;
-  return resolvePlayer(room.data.url);
+  return room.data.url as string;
 }

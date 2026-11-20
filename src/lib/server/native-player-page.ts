@@ -199,7 +199,10 @@ const SCRIPT = String.raw`
     const spotifyEmbed = url.hostname === "open.spotify.com" &&
       /^\/embed\/(?:track|album|playlist|episode|show|artist)\/[A-Za-z0-9]{22}\/?$/.test(url.pathname);
     const vkEmbed = ["vk.com", "vk.ru", "vkvideo.ru"].includes(url.hostname) && url.pathname === "/video_ext.php";
-    if (!spotifyEmbed && !vkEmbed) return fail("unsupported", mine);
+    // Playlists: SoundCloud's widget (sets) and YouTube's playlist player.
+    const playlist = (url.hostname === "w.soundcloud.com" && url.pathname === "/player/") ||
+      (url.hostname === "www.youtube.com" && url.pathname === "/embed/videoseries");
+    if (!spotifyEmbed && !vkEmbed && !playlist) return fail("unsupported", mine);
     const el = frame(url.href);
     return {
       play: () => {}, pause: () => {}, seek: () => {}, volume: () => {},
@@ -207,7 +210,47 @@ const SCRIPT = String.raw`
       destroy: () => el.remove(),
     };
   }
-  const kinds = { youtube, vimeo, soundcloud, spotify, embed };
+  // VK Video: VK's own player answers postMessage commands (init, play,
+  // pause, seek) and reports its state, time and duration, as VK's
+  // videoplayer.js does; the frame carries js_api=1.
+  async function vk(url, controls, mine) {
+    if (!["vk.com", "vk.ru", "vkvideo.ru"].includes(url.hostname) || url.pathname !== "/video_ext.php")
+      return fail("unsupported", mine);
+    url.searchParams.set("js_api", "1");
+    const el = frame(url.href);
+    const target = url.origin;
+    let state = "uninited", time = 0, length = 0;
+    const send = (m) => { if (el.contentWindow) el.contentWindow.postMessage(m, target); };
+    const listener = (event) => {
+      if (event.source !== el.contentWindow || event.origin !== target) return;
+      const data = event.data || {};
+      if (typeof data.time === "number") time = data.time;
+      if (typeof data.duration === "number") length = data.duration;
+      if (typeof data.state === "string") state = data.state;
+      if (mine !== generation) return;
+      if (data.event === "started" || data.event === "resumed") { state = "playing"; playing = true; emit("play"); }
+      else if (data.event === "paused") { state = "paused"; playing = false; emit("pause"); }
+      else if (data.event === "ended") { state = "ended"; playing = false; emit("ended"); }
+      else if (data.event === "seeked") emit("seek");
+    };
+    window.addEventListener("message", listener);
+    await new Promise((resolve, reject) => {
+      const poke = setInterval(() => send({ method: "init" }), 500);
+      const timer = setTimeout(() => { clearInterval(poke); reject(new Error("sdk")); }, 20000);
+      const ready = (event) => {
+        if (event.source !== el.contentWindow || !event.data || event.data.event !== "inited") return;
+        clearInterval(poke); clearTimeout(timer); window.removeEventListener("message", ready); resolve();
+      };
+      window.addEventListener("message", ready);
+    });
+    return {
+      play: () => send({ method: "play" }), pause: () => send({ method: "pause" }),
+      seek: (s) => send({ method: "seek", time: s }), volume: (v) => send({ method: "set_volume", volume: v / 100 }),
+      time: async () => time, length: async () => length,
+      destroy: () => { window.removeEventListener("message", listener); el.remove(); },
+    };
+  }
+  const kinds = { youtube, vimeo, soundcloud, spotify, embed, vk };
   // What this engine can decode: providers differ (YouTube uses VP9/Opus;
   // others may need H.264, AAC or MP3, which some builds lack).
   const codecs = (() => {

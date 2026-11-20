@@ -82,6 +82,9 @@ export function vkEmbed(url: URL): string | null {
   embed.searchParams.set("id", id);
   embed.searchParams.set("hash", hash);
   embed.searchParams.set("hd", "2");
+  // VK's player API (postMessage: play, pause, seek, state and time), for
+  // the shared timeline; https://vk.com/js/api/videoplayer.js.
+  embed.searchParams.set("js_api", "1");
   return embed.href;
 }
 /** "<owner>_<video>" for a plain VK video, live or clip page link, or null. */

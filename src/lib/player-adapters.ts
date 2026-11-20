@@ -4,12 +4,13 @@
  * - YouTube IFrame Player API  https://developers.google.com/youtube/iframe_api_reference
  * - Vimeo Player SDK           https://developer.vimeo.com/player/sdk
  * - SoundCloud Widget API      https://developers.soundcloud.com/docs/api/html5-widget
+ * - VK Video player API        https://vk.com/js/api/videoplayer.js (its postMessage protocol)
  * Each SDK script is loaded once, only in rooms whose source can be synced.
  * Playing state is tracked from the providers' own events.
  */
 import { loadYouTubeApi, YT_STATE } from "./youtube-api";
 
-export type SyncKind = "youtube" | "vimeo" | "soundcloud";
+export type SyncKind = "youtube" | "vimeo" | "soundcloud" | "vk";
 export type AdapterEvent = "play" | "pause" | "ended" | "seek" | "error";
 export type PlayerAdapter = {
   /** Resolves false when the browser refused playback (autoplay policy). */
@@ -213,6 +214,77 @@ async function soundcloud(frame: HTMLIFrameElement, emit: Emit) {
   } satisfies PlayerAdapter;
 }
 
+/**
+ * VK Video: its player answers postMessage commands (init, play, pause,
+ * seek) and reports events with its state, time and duration, as VK's own
+ * videoplayer.js does; the frame needs js_api=1 (vkEmbed adds it).
+ */
+async function vk(frame: HTMLIFrameElement, emit: Emit) {
+  const target = new URL(frame.src).origin;
+  let state = "uninited",
+    time = 0,
+    length = 0,
+    listener: (event: MessageEvent) => void = () => {};
+  const send = (message: Record<string, unknown>) =>
+    frame.contentWindow?.postMessage(message, target);
+  await new Promise<void>((resolve, reject) => {
+    // The player answers "init" once it has loaded: ask until it does.
+    const poke = setInterval(() => send({ method: "init" }), 500);
+    const timer = setTimeout(() => {
+      clearInterval(poke);
+      reject(new Error("sdk"));
+    }, 20000);
+    listener = (event: MessageEvent) => {
+      if (event.source !== frame.contentWindow || event.origin !== target)
+        return;
+      const data = (event.data ?? {}) as Record<string, unknown>;
+      if (typeof data.time === "number") time = data.time;
+      if (typeof data.duration === "number") length = data.duration;
+      if (typeof data.state === "string") state = data.state;
+      switch (data.event) {
+        case "inited":
+          clearInterval(poke);
+          clearTimeout(timer);
+          resolve();
+          break;
+        case "started":
+        case "resumed":
+          state = "playing";
+          emit("play");
+          break;
+        case "paused":
+          state = "paused";
+          emit("pause");
+          break;
+        case "ended":
+          state = "ended";
+          emit("ended");
+          break;
+        case "seeked":
+          emit("seek");
+          break;
+        case "error":
+          emit("error");
+          break;
+      }
+    };
+    window.addEventListener("message", listener);
+  });
+  return {
+    async play() {
+      send({ method: "play" });
+      return true;
+    },
+    pause: () => send({ method: "pause" }),
+    seek: (s) => send({ method: "seek", time: s }),
+    time: async () => time,
+    duration: async () => length,
+    playing: () => state === "playing",
+    volume: (value) => send({ method: "set_volume", volume: value / 100 }),
+    destroy: () => window.removeEventListener("message", listener),
+  } satisfies PlayerAdapter;
+}
+
 export function createAdapter(
   kind: SyncKind,
   frame: HTMLIFrameElement,
@@ -222,7 +294,9 @@ export function createAdapter(
     ? youtube(frame, emit)
     : kind === "vimeo"
       ? vimeo(frame, emit)
-      : soundcloud(frame, emit);
+      : kind === "vk"
+        ? vk(frame, emit)
+        : soundcloud(frame, emit);
 }
 
 /** The adapter for an embed URL, by its exact official player host. */
@@ -234,6 +308,12 @@ export function adapterKind(src: string): SyncKind | null {
       return "youtube";
     if (hostname === "player.vimeo.com") return "vimeo";
     if (hostname === "w.soundcloud.com") return "soundcloud";
+    if (
+      ["vk.com", "vk.ru", "vkvideo.ru"].includes(hostname) &&
+      new URL(src).pathname === "/video_ext.php" &&
+      new URL(src).searchParams.get("js_api") === "1"
+    )
+      return "vk";
   } catch {
     /* Not a URL. */
   }
