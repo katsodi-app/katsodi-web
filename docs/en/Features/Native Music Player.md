@@ -44,6 +44,7 @@ Compared with the reference (a Liner playlist and its player), element by elemen
 | Rows | 72 px art, regular title, plain ⋮ | 52, bold, ⋮ in a circle | 64 (192 px source), Medium 18 px, flat ⋮ |
 | Duration | on every track | SoundCloud only | unchanged: the Spotify and YouTube charts carry no durations |
 | Bar | white play disc, plain previous/next, a group on the right | green button, ringed buttons | white disc, flat buttons, a framed group |
+| Progress | the bar's background fills from the left | a thin line on top | a background fill with a clean edge; pressing or dragging on the bar seeks, hovering shows where and when (2026-11-20) |
 | Full view | cover, lyrics on the right | — | cover and Up next on the right: Katsodi has no lyrics |
 
 Cover quality: Spotify 640 px instead of 300, SoundCloud 500 px instead of 100, YouTube 1280 px where the video has that frame (140 of 150), otherwise 480 px (those show black bars).

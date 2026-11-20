@@ -17,7 +17,14 @@ async function walk(dir) {
               ".local",
               "test-results",
               "playwright-report",
-            ].includes(e.name) && !e.name.startsWith(".next-audit"),
+            ].includes(e.name) &&
+            !e.name.startsWith(".next-audit") &&
+            // Build output (the native client copies third-party files there).
+            !(
+              e.isDirectory() &&
+              e.name === "build" &&
+              path.basename(dir) === "native-desktop"
+            ),
         )
         .map(async (e) =>
           e.isDirectory()

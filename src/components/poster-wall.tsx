@@ -105,7 +105,8 @@ export function PosterWall({
       </div>
     );
   }
-  // The sky wall repeats its posters until the grid is covered.
+  // The sky wall has 40 cells (five rows of eight); with fewer posters it
+  // repeats them until the grid is covered, with 40 or more each shows once.
   const cells =
     variant === "sky"
       ? Array.from(

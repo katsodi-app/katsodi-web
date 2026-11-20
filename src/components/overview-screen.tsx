@@ -21,10 +21,33 @@ import { PosterWall, postersById, sharpPosters } from "./poster-wall";
 // Real fandom artwork, the sharpest of each kind, chosen once.
 const mix = <T,>(a: T[], b: T[]) =>
   a.flatMap((item, index) => (b[index] ? [item, b[index]] : [item]));
-const animeTall = sharpPosters("anime", "tall", 16);
-const cinemaTall = sharpPosters("cinema", "tall", 14);
+const animeTall = sharpPosters("anime", "tall", 24);
+const cinemaTall = sharpPosters("cinema", "tall", 16);
+const musicTall = sharpPosters("music", "tall", 8);
+// Spreads several lists evenly: each next pick comes from the list that is
+// furthest behind its share, so no kind clusters at the end.
+function blend<T>(...lists: T[][]): T[] {
+  const taken = lists.map(() => 0);
+  const total = lists.reduce((sum, list) => sum + list.length, 0);
+  const out: T[] = [];
+  while (out.length < total) {
+    let pick = -1;
+    let lag = -Infinity;
+    lists.forEach((list, index) => {
+      if (taken[index] >= list.length) return;
+      const behind = (out.length + 1) * (list.length / total) - taken[index];
+      if (behind > lag) {
+        lag = behind;
+        pick = index;
+      }
+    });
+    out.push(lists[pick][taken[pick]++]);
+  }
+  return out;
+}
 const walls = {
-  hero: mix(animeTall.slice(0, 8), cinemaTall.slice(0, 8)),
+  // The first screen: every poster once (the sky wall has 40 cells).
+  hero: blend(animeTall, cinemaTall, musicTall).slice(0, 40),
   open: mix(cinemaTall.slice(6), animeTall.slice(8)),
   player: postersById(["cinema-6"]),
   cinema: cinemaTall.slice(0, 3),
