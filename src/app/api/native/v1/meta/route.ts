@@ -5,6 +5,7 @@ import {
   nativeOk,
   nativeRoute,
 } from "@/lib/server/native-api";
+import { updateInfo } from "@/lib/server/native-update";
 export const runtime = "nodejs";
 
 /**
@@ -24,6 +25,7 @@ export async function GET(request: Request) {
           ? { url: supabase.url, publishableKey: supabase.key }
           : null,
         features: { voice: voiceConfig() !== null },
+        update: updateInfo(),
       },
       requestId,
     );

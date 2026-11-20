@@ -1,14 +1,16 @@
 import { sameOrigin } from "@/lib/server/same-origin";
-import { randomUUID } from "node:crypto";
 import { currentAccount } from "@/lib/supabase/server";
 import {
   PROFILE_IMAGE_TYPES,
-  PROFILE_MEDIA_BUCKET,
   PROFILE_MEDIA_INPUT,
   cropSchema,
   isMediaKind,
 } from "@/lib/profile-media";
-import { prepareProfileImage } from "@/lib/server/profile-media";
+import {
+  clearProfileMedia,
+  storeProfileMedia,
+  type ProfileCode,
+} from "@/lib/server/profile-store";
 
 export const runtime = "nodejs";
 const reply = (code: string, status: number) =>
@@ -58,54 +60,21 @@ export async function POST(request: Request) {
     if (file.size > PROFILE_MEDIA_INPUT) return reply("imageTooLarge", 413);
     if (!PROFILE_IMAGE_TYPES.includes(file.type))
       return reply("invalidImage", 400);
-    let image;
-    try {
-      image = await prepareProfileImage(
-        new Uint8Array(await file.arrayBuffer()),
-        kind,
-        crop,
-      );
-    } catch (error) {
-      console.error(
-        "[profile-media] image rejected:",
-        (error as Error).message,
-      );
-      return reply("invalidImage", 400);
-    }
-    const path = `${user.id}/${kind}-${randomUUID()}.webp`;
-    const storage = client.storage.from(PROFILE_MEDIA_BUCKET);
-    let attached = false;
-    try {
-      const upload = await storage.upload(path, image.data, {
-        contentType: "image/webp",
-        upsert: false,
-        cacheControl: "0",
-      });
-      if (upload.error) {
-        console.error("[profile-media] upload failed:", upload.error.message);
-        return reply("mediaUnavailable", 503);
-      }
-      const saved = await client.rpc("set_profile_media", {
-        p_kind: kind,
-        p_path: path,
-      });
-      if (saved.error)
-        console.error(
-          "[profile-media] set_profile_media failed:",
-          saved.error.message,
-        );
-      if (saved.error)
-        return reply(
-          saved.error.message.includes("slow_down") ? "rateLimit" : "failed",
-          400,
-        );
-      attached = true;
-      if (typeof saved.data === "string")
-        await storage.remove([saved.data]).catch(() => {});
-      return reply("saved", 200);
-    } finally {
-      if (!attached) await storage.remove([path]).catch(() => {});
-    }
+    const code = await storeProfileMedia(
+      kind,
+      new Uint8Array(await file.arrayBuffer()),
+      crop,
+    );
+    const status: Record<ProfileCode, number> = {
+      saved: 200,
+      auth: 401,
+      invalid: 400,
+      invalidImage: 400,
+      mediaUnavailable: 503,
+      rateLimit: 400,
+      failed: 400,
+    };
+    return reply(code, status[code]);
   } catch (error) {
     console.error("[profile-media] upload error:", (error as Error).message);
     return reply("failed", 400);
@@ -117,18 +86,8 @@ export async function DELETE(request: Request) {
   if (!sameOrigin(request)) return reply("auth", 403);
   const kind = new URL(request.url).searchParams.get("kind");
   if (!isMediaKind(kind)) return reply("invalid", 400);
-  try {
-    const { client, user } = await currentAccount();
-    if (!client || !user) return reply("auth", 401);
-    const cleared = await client.rpc("clear_profile_media", { p_kind: kind });
-    if (cleared.error) return reply("failed", 400);
-    if (typeof cleared.data === "string")
-      await client.storage
-        .from(PROFILE_MEDIA_BUCKET)
-        .remove([cleared.data])
-        .catch(() => {});
-    return reply("saved", 200);
-  } catch {
-    return reply("failed", 400);
-  }
+  const { user } = await currentAccount();
+  if (!user) return reply("auth", 401);
+  const code = await clearProfileMedia(kind);
+  return reply(code, code === "saved" ? 200 : code === "auth" ? 401 : 400);
 }

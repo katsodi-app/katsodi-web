@@ -193,7 +193,21 @@ const SCRIPT = String.raw`
       destroy: () => controller.destroy(),
     };
   }
-  const kinds = { youtube, vimeo, soundcloud, spotify };
+  // Spotify and VK players that only embed (no shared timeline, as on the
+  // website): their own iframe, which each person plays themselves.
+  async function embed(url, controls, mine) {
+    const spotifyEmbed = url.hostname === "open.spotify.com" &&
+      /^\/embed\/(?:track|album|playlist|episode|show|artist)\/[A-Za-z0-9]{22}\/?$/.test(url.pathname);
+    const vkEmbed = ["vk.com", "vk.ru", "vkvideo.ru"].includes(url.hostname) && url.pathname === "/video_ext.php";
+    if (!spotifyEmbed && !vkEmbed) return fail("unsupported", mine);
+    const el = frame(url.href);
+    return {
+      play: () => {}, pause: () => {}, seek: () => {}, volume: () => {},
+      time: async () => 0, length: async () => 0,
+      destroy: () => el.remove(),
+    };
+  }
+  const kinds = { youtube, vimeo, soundcloud, spotify, embed };
   // What this engine can decode: providers differ (YouTube uses VP9/Opus;
   // others may need H.264, AAC or MP3, which some builds lack).
   const codecs = (() => {
@@ -284,7 +298,8 @@ export function nativePlayerHeaders(nonce: string): Record<string, string> {
       // one of the provider hosts.
       `script-src 'nonce-${nonce}' 'unsafe-eval' ${sdks} https://s.ytimg.com https://embed-cdn.spotifycdn.com`,
       `style-src 'nonce-${nonce}'`,
-      `frame-src ${sdks}`,
+      // VK's own player (video_ext.php) for embed-only rooms.
+      `frame-src ${sdks} https://vk.com https://vk.ru https://vkvideo.ru`,
       "img-src data:",
       "base-uri 'none'",
       "form-action 'none'",

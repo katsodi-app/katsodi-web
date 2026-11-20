@@ -15,6 +15,8 @@ vi.mock("@/lib/supabase/server", () => ({
 import { POST } from "../../src/app/api/rooms/[roomId]/images/route";
 import { GET } from "../../src/app/api/chat-images/[messageId]/route";
 import { MAX_IMAGE_INPUT } from "../../src/lib/chat-media";
+import { POST as nativePOST } from "../../src/app/api/native/v1/rooms/[roomId]/images/route";
+import { GET as nativeGET } from "../../src/app/api/native/v1/chat-images/[messageId]/route";
 const roomId = "20000000-0000-4000-8000-000000000001",
   userId = "10000000-0000-4000-8000-000000000001",
   messageId = "30000000-0000-4000-8000-000000000001";
@@ -177,5 +179,82 @@ describe("private image endpoints", () => {
     expect(response.headers.get("cache-control")).toContain("no-store");
     expect(response.headers.get("content-type")).toBe("image/webp");
     expect(response.headers.get("x-content-type-options")).toBe("nosniff");
+  });
+});
+describe("desktop app image endpoints", () => {
+  const bearer = `Bearer ${"a".repeat(20)}.${"b".repeat(40)}.${"c".repeat(30)}`;
+  const nativeUpload = (body: BodyInit, type: string, auth = bearer) =>
+    new Request(`http://localhost/api/native/v1/rooms/${roomId}/images`, {
+      method: "POST",
+      headers: { authorization: auth, "content-type": type },
+      body,
+    });
+  const png = () =>
+    sharp({
+      create: { width: 20, height: 10, channels: 3, background: "pink" },
+    })
+      .png()
+      .toBuffer();
+  it("needs a token and an image type, and bounds the bytes", async () => {
+    const anonymous = new Request(
+      `http://localhost/api/native/v1/rooms/${roomId}/images`,
+      {
+        method: "POST",
+        headers: { "content-type": "image/png" },
+        body: new Uint8Array(await png()),
+      },
+    );
+    expect((await nativePOST(anonymous, params)).status).toBe(401);
+    expect(
+      (await nativePOST(nativeUpload("<svg/>", "image/svg+xml"), params))
+        .status,
+    ).toBe(400);
+    expect(
+      (
+        await nativePOST(
+          nativeUpload(new Uint8Array(MAX_IMAGE_INPUT + 1), "image/png"),
+          params,
+        )
+      ).status,
+    ).toBe(400);
+    expect(mocks.upload).not.toHaveBeenCalled();
+  });
+  it("stores a sanitized WebP for a member, like the website", async () => {
+    const response = await nativePOST(
+      nativeUpload(new Uint8Array(await png()), "image/png"),
+      params,
+    );
+    expect(response.status).toBe(201);
+    const [, bytes] = mocks.upload.mock.calls[0];
+    expect((await sharp(bytes).metadata()).format).toBe("webp");
+    mocks.member = false;
+    const denied = await nativePOST(
+      nativeUpload(new Uint8Array(await png()), "image/png"),
+      params,
+    );
+    expect(denied.status).toBe(403);
+  });
+  it("serves an image to a member with the token only", async () => {
+    mocks.download.mockResolvedValue({
+      data: new Blob([new Uint8Array(await png())]),
+      error: null,
+    });
+    const anonymous = await nativeGET(
+      new Request("http://localhost"),
+      imageParams,
+    );
+    expect(anonymous.status).toBe(401);
+    const response = await nativeGET(
+      new Request("http://localhost", { headers: { authorization: bearer } }),
+      imageParams,
+    );
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toBe("image/webp");
+    mocks.message = false;
+    const missing = await nativeGET(
+      new Request("http://localhost", { headers: { authorization: bearer } }),
+      imageParams,
+    );
+    expect(missing.status).toBe(404);
   });
 });

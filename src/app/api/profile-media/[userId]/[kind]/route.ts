@@ -1,7 +1,6 @@
-import { currentAccount } from "@/lib/supabase/server";
 import { uuid } from "@/lib/server/contracts";
-import { PROFILE_MEDIA_BUCKET, isMediaKind } from "@/lib/profile-media";
-import { sanitizeStoredImage } from "@/lib/server/profile-media";
+import { isMediaKind } from "@/lib/profile-media";
+import { readProfileMedia } from "@/lib/server/profile-store";
 
 export const runtime = "nodejs";
 const missing = () =>
@@ -21,22 +20,8 @@ export async function GET(
   const { userId, kind } = await params;
   if (!uuid.safeParse(userId).success || !isMediaKind(kind)) return missing();
   try {
-    const { client, user } = await currentAccount();
-    if (!client || !user) return missing();
-    const profile = await client
-      .from("profiles")
-      .select("avatar_path,banner_path")
-      .eq("id", userId)
-      .maybeSingle();
-    const path =
-      kind === "avatar" ? profile.data?.avatar_path : profile.data?.banner_path;
-    if (profile.error || typeof path !== "string") return missing();
-    const file = await client.storage.from(PROFILE_MEDIA_BUCKET).download(path);
-    if (file.error || !file.data) return missing();
-    const image = await sanitizeStoredImage(
-      new Uint8Array(await file.data.arrayBuffer()),
-      kind,
-    );
+    const image = await readProfileMedia(userId, kind);
+    if (!image) return missing();
     return new Response(new Uint8Array(image), {
       headers: {
         "Content-Type": "image/webp",

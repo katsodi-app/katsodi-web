@@ -58,7 +58,7 @@ Verified on 2026-11-13, Windows 11, Node 26, with Next.js not running:
 Not verified: the new routes with a real account (needs the owner's sign-in), running behind a reverse proxy.
 
 ## Limitations and next steps
-Local use only. In production the app expects `https://katsodi.watch/api/native/v1` (the website once deployed) or a separately deployed copy of this server; that is the owner's call.
+This separate server is for local development. In production the website serves the same routes: `https://katsodi.watch/api/native/v1` has worked since 2026-11-20 (Vercel, from katsodi-web); `/meta`, `/rooms`, `/music` and `/player` answer, and `/me` without sign-in returns 401.
 
 ## Related notes
 - [[docs/en/Home]]

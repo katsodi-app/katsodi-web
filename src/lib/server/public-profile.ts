@@ -16,6 +16,10 @@ export type ProfileCore = {
   /** Community fandoms (not in the static catalogue) keep their names. */
   communityFandoms: { id: string; name: string; category: Category }[];
   progress: Progress | null;
+  /** Whether an avatar / banner exists, and a key that changes with them (no storage paths). */
+  hasAvatar?: boolean;
+  hasBanner?: boolean;
+  mediaVersion?: string | null;
 };
 
 export const usernamePattern = /^[a-z][a-z0-9_]{2,23}$/;
@@ -32,7 +36,9 @@ export async function loadProfile(
   if (!usernamePattern.test(username)) return null;
   const { data, error } = await client
     .from("profiles")
-    .select("id,username,display_name,bio,created_at")
+    .select(
+      "id,username,display_name,bio,created_at,avatar_path,banner_path,media_updated_at",
+    )
     .eq("username", username)
     .maybeSingle();
   if (error || !data) return null;
@@ -50,6 +56,10 @@ export async function loadProfile(
     bio: data.bio,
     created_at: data.created_at,
     progress,
+    hasAvatar: typeof data.avatar_path === "string",
+    hasBanner: typeof data.banner_path === "string",
+    mediaVersion:
+      typeof data.media_updated_at === "string" ? data.media_updated_at : null,
     fandoms: fandoms.error
       ? []
       : (fandoms.data || []).map((row) => String(row.fandom_id)),

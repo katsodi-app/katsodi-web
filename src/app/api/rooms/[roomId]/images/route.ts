@@ -1,13 +1,11 @@
 import { sameOrigin } from "@/lib/server/same-origin";
-import { randomUUID } from "node:crypto";
 import { currentAccount } from "@/lib/supabase/server";
 import { uuid } from "@/lib/server/contracts";
-import { prepareChatImage } from "@/lib/server/chat-images";
 import {
-  CHAT_IMAGE_BUCKET,
-  MAX_IMAGE_INPUT,
-  validImageInput,
-} from "@/lib/chat-media";
+  storeChatImage,
+  type ImageUploadCode,
+} from "@/lib/server/chat-image-store";
+import { MAX_IMAGE_INPUT, validImageInput } from "@/lib/chat-media";
 
 export const runtime = "nodejs";
 const reply = (code: string, status: number) =>
@@ -23,28 +21,9 @@ export async function POST(
   if (!uuid.safeParse(roomId).success) return reply("invalid", 400);
   if (!sameOrigin(request)) return reply("auth", 403);
   try {
-    const { client, user } = await currentAccount();
-    if (!client || !user) return reply("auth", 401);
-    const [membership, room] = await Promise.all([
-      client
-        .from("room_members")
-        .select("user_id")
-        .eq("room_id", roomId)
-        .eq("user_id", user.id)
-        .eq("status", "active")
-        .maybeSingle(),
-      client.from("rooms").select("closed_at").eq("id", roomId).maybeSingle(),
-    ]);
-    if (
-      membership.error ||
-      !membership.data ||
-      room.error ||
-      !room.data ||
-      room.data.closed_at
-    )
-      return reply("auth", 403);
-    const caps = await client.rpc("chat_media_capabilities");
-    if (caps.error || caps.data !== true) return reply("mediaUnavailable", 503);
+    // Anonymous requests stop before anything is read.
+    const { user } = await currentAccount();
+    if (!user) return reply("auth", 401);
     // Bound the actual request stream, including a chunked upload or a false Content-Length.
     const reader = request.body?.getReader();
     if (
@@ -71,46 +50,19 @@ export async function POST(
     if (!(file instanceof Blob)) return reply("invalidImage", 400);
     if (file.size > MAX_IMAGE_INPUT) return reply("imageTooLarge", 413);
     if (!validImageInput(file)) return reply("invalidImage", 400);
-    let image;
-    try {
-      image = await prepareChatImage(new Uint8Array(await file.arrayBuffer()));
-    } catch {
-      return reply("invalidImage", 400);
-    }
-    const path = `${roomId}/${user.id}/${randomUUID()}.webp`;
-    const storage = client.storage.from(CHAT_IMAGE_BUCKET);
-    let attached = false;
-    try {
-      const upload = await storage.upload(path, image.data, {
-        contentType: "image/webp",
-        upsert: false,
-        cacheControl: "0",
-      });
-      if (upload.error) return reply("mediaUnavailable", 503);
-      const sent = await client.rpc("send_room_image", {
-        p_room: roomId,
-        p_path: path,
-        p_width: image.info.width,
-        p_height: image.info.height,
-        p_bytes: image.data.byteLength,
-      });
-      if (sent.error) {
-        return reply(
-          sent.error.message.includes("slow_down") ? "rateLimit" : "failed",
-          400,
-        );
-      }
-      attached = true;
-      return reply("saved", 200);
-    } finally {
-      if (!attached) {
-        try {
-          await storage.remove([path]);
-        } catch {
-          /* Bounded orphan; clean up through Storage API maintenance. */
-        }
-      }
-    }
+    const code = await storeChatImage(
+      roomId,
+      new Uint8Array(await file.arrayBuffer()),
+    );
+    const status: Record<ImageUploadCode, number> = {
+      saved: 200,
+      auth: 403,
+      invalidImage: 400,
+      mediaUnavailable: 503,
+      rateLimit: 400,
+      failed: 400,
+    };
+    return reply(code, status[code]);
   } catch {
     return reply("failed", 400);
   }
