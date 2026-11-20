@@ -202,7 +202,10 @@ const SCRIPT = String.raw`
     // Playlists: SoundCloud's widget (sets) and YouTube's playlist player.
     const playlist = (url.hostname === "w.soundcloud.com" && url.pathname === "/player/") ||
       (url.hostname === "www.youtube.com" && url.pathname === "/embed/videoseries");
-    if (!spotifyEmbed && !vkEmbed && !playlist) return fail("unsupported", mine);
+    // Twitch: channels, past broadcasts and clips in Twitch's own player.
+    const twitch = (url.hostname === "player.twitch.tv" && url.pathname === "/") ||
+      (url.hostname === "clips.twitch.tv" && url.pathname === "/embed");
+    if (!spotifyEmbed && !vkEmbed && !playlist && !twitch) return fail("unsupported", mine);
     const el = frame(url.href);
     return {
       play: () => {}, pause: () => {}, seek: () => {}, volume: () => {},
@@ -341,8 +344,8 @@ export function nativePlayerHeaders(nonce: string): Record<string, string> {
       // one of the provider hosts.
       `script-src 'nonce-${nonce}' 'unsafe-eval' ${sdks} https://s.ytimg.com https://embed-cdn.spotifycdn.com`,
       `style-src 'nonce-${nonce}'`,
-      // VK's own player (video_ext.php) for embed-only rooms.
-      `frame-src ${sdks} https://vk.com https://vk.ru https://vkvideo.ru`,
+      // VK's own player (video_ext.php) and Twitch's for embed-only rooms.
+      `frame-src ${sdks} https://vk.com https://vk.ru https://vkvideo.ru https://player.twitch.tv https://clips.twitch.tv`,
       "img-src data:",
       "base-uri 'none'",
       "form-action 'none'",

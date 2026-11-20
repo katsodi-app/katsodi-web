@@ -31,7 +31,12 @@ export const providers: Provider[] = [
   ]),
   provider("vk", "VK Видео", vkHosts),
   provider("rutube", "Rutube", ["rutube.ru", "www.rutube.ru"]),
-  provider("twitch", "Twitch", ["twitch.tv", "www.twitch.tv"]),
+  provider("twitch", "Twitch", [
+    "twitch.tv",
+    "www.twitch.tv",
+    "m.twitch.tv",
+    "clips.twitch.tv",
+  ]),
   provider("soundcloud", "SoundCloud", [
     "soundcloud.com",
     "www.soundcloud.com",
@@ -46,6 +51,102 @@ export const providers: Provider[] = [
   provider("netflix", "Netflix", ["netflix.com", "www.netflix.com"]),
   provider("spotify", "Spotify", ["open.spotify.com"]),
 ];
+/**
+ * Subscription services watched together "Rave-style": each person signs in
+ * to their own account in the desktop app's service view, and the room keeps
+ * play, pause and position in step. Nothing is restreamed.
+ */
+export const streamingServices = [
+  {
+    id: "netflix",
+    hosts: ["netflix.com", "www.netflix.com"],
+    start: "https://www.netflix.com/browse",
+  },
+  {
+    id: "hbomax",
+    hosts: [
+      "hbomax.com",
+      "www.hbomax.com",
+      "play.hbomax.com",
+      "max.com",
+      "www.max.com",
+      "play.max.com",
+    ],
+    start: "https://play.hbomax.com/",
+  },
+  {
+    id: "primevideo",
+    hosts: ["primevideo.com", "www.primevideo.com"],
+    start: "https://www.primevideo.com/",
+  },
+  {
+    id: "disneyplus",
+    hosts: ["disneyplus.com", "www.disneyplus.com"],
+    start: "https://www.disneyplus.com/",
+  },
+  {
+    id: "crunchyroll",
+    hosts: ["crunchyroll.com", "www.crunchyroll.com"],
+    start: "https://www.crunchyroll.com/",
+  },
+] as const;
+/** The streaming service an https link belongs to, by exact host. */
+export function streamingService(url: URL) {
+  if (url.protocol !== "https:") return null;
+  return (
+    streamingServices.find((service) =>
+      (service.hosts as readonly string[]).includes(url.hostname),
+    ) ?? null
+  );
+}
+/** Where Katsodi embeds players: Twitch only plays inside these pages. */
+export const twitchParents = [
+  "katsodi.watch",
+  "www.katsodi.watch",
+  "localhost",
+  "127.0.0.1",
+];
+const twitchReserved = new Set([
+  "directory",
+  "downloads",
+  "jobs",
+  "p",
+  "payments",
+  "search",
+  "settings",
+  "subscriptions",
+  "turbo",
+  "videos",
+  "wallet",
+  "inventory",
+  "drops",
+]);
+/**
+ * Twitch's official embed (player.twitch.tv / clips.twitch.tv) for a
+ * channel, a past broadcast (twitch.tv/videos/<id>) or a clip. The player
+ * names every page allowed to show it in `parent`.
+ */
+export function twitchEmbed(url: URL): string | null {
+  const parents = twitchParents.map((p) => `parent=${p}`).join("&");
+  const clipEmbed = (clip: string) =>
+    `https://clips.twitch.tv/embed?clip=${clip}&${parents}`;
+  if (url.hostname === "clips.twitch.tv") {
+    const clip = url.pathname.match(/^\/([A-Za-z0-9_-]{4,100})\/?$/)?.[1];
+    return clip ? clipEmbed(clip) : null;
+  }
+  if (!["twitch.tv", "www.twitch.tv", "m.twitch.tv"].includes(url.hostname))
+    return null;
+  const video = url.pathname.match(/^\/videos\/(\d{1,12})\/?$/)?.[1];
+  if (video) return `https://player.twitch.tv/?video=v${video}&${parents}`;
+  const clip = url.pathname.match(
+    /^\/[A-Za-z0-9_]{3,25}\/clip\/([A-Za-z0-9_-]{4,100})\/?$/,
+  )?.[1];
+  if (clip) return clipEmbed(clip);
+  const channel = url.pathname.match(/^\/([A-Za-z0-9_]{3,25})\/?$/)?.[1];
+  if (channel && !twitchReserved.has(channel.toLowerCase()))
+    return `https://player.twitch.tv/?channel=${channel.toLowerCase()}&${parents}`;
+  return null;
+}
 /**
  * Spotify's official embed for a track, album, playlist or episode link
  * (open.spotify.com/<type>/<22-char id>, with or without a locale prefix).

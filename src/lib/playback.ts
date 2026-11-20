@@ -1,5 +1,11 @@
 import { z } from "zod";
-import { inspectSource, vkEmbed, vkVideoId, youtubeVideoId } from "./providers";
+import {
+  inspectSource,
+  streamingService,
+  vkEmbed,
+  vkVideoId,
+  youtubeVideoId,
+} from "./providers";
 
 /** Server-authoritative shared timeline, as returned by get_room_playback. */
 export const playbackSchema = z.object({
@@ -25,17 +31,27 @@ export function syncableVideoId(url: string): string | null {
 /**
  * The synced-player adapter for a room source, by the exact host of the page
  * the room links to. YouTube, Vimeo, SoundCloud and VK Video expose official
- * player APIs with play/pause/seek; other providers keep independent playback.
+ * player APIs with play/pause/seek; so does a Spotify track (its iFrame API;
+ * the app follows it, the website plays it per person). Other providers keep
+ * independent playback.
  */
 export function syncSource(
   url: string,
-): "youtube" | "vimeo" | "soundcloud" | "vk" | null {
+): "youtube" | "vimeo" | "soundcloud" | "vk" | "spotify" | "service" | null {
   if (syncableVideoId(url)) return "youtube";
   const source = inspectSource(url);
   if (!source) return null;
   const parsed = new URL(source.url);
   if (vkVideoId(parsed) || vkEmbed(parsed)) return "vk";
+  // A subscription service: each person plays it signed in to their own
+  // account in the desktop app; the room keeps the timeline.
+  if (streamingService(parsed)) return "service";
   const host = parsed.hostname;
+  if (
+    host === "open.spotify.com" &&
+    /^(?:\/intl-[a-z-]+)?\/track\/[A-Za-z0-9]{22}\/?$/.test(parsed.pathname)
+  )
+    return "spotify";
   if (["vimeo.com", "www.vimeo.com"].includes(host)) return "vimeo";
   if (
     ["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"].includes(

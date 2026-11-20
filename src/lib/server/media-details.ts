@@ -1,4 +1,6 @@
 import { readOembedDetails, type MediaDetails } from "../media";
+import { inspectSource } from "../providers";
+import { spotifyTrackDetails } from "./spotify-embed";
 import { knownOembed } from "./oembed-providers";
 import { publicPlayerPage } from "./public-player-request";
 
@@ -14,6 +16,18 @@ const pending = new Map<string, Promise<MediaDetails | null>>();
  * fetcher as player discovery. Cached 10 minutes (1 minute for misses).
  */
 export async function mediaDetails(url: string): Promise<MediaDetails | null> {
+  // A Spotify track: its widget names the artists (Spotify's oEmbed does not).
+  // Playlists and albums likewise get their cover and owner from the widget.
+  const spotify = inspectSource(url)?.url.match(
+    /^https:\/\/open\.spotify\.com\/(?:intl-[a-z-]+\/)?(track|playlist|album)\/([A-Za-z0-9]{22})\/?$/,
+  );
+  if (spotify) {
+    const details = await spotifyTrackDetails(
+      spotify[2],
+      spotify[1] as "track" | "playlist" | "album",
+    );
+    if (details) return details;
+  }
   const official = knownOembed(url);
   if (!official) return null;
   const key = official.request;

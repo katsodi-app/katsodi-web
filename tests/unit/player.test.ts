@@ -230,3 +230,39 @@ describe("playlist links", () => {
     ).toMatchObject({ kind: "external" });
   });
 });
+
+describe("Twitch", () => {
+  const parents =
+    "parent=katsodi.watch&parent=www.katsodi.watch&parent=localhost&parent=127.0.0.1";
+  it("embeds channels, past broadcasts and clips in Twitch's own player", () => {
+    expect(knownPlayer("https://www.twitch.tv/SkyWhyWalker")).toEqual({
+      kind: "iframe",
+      src: `https://player.twitch.tv/?channel=skywhywalker&${parents}`,
+      provider: "Twitch",
+      sync: false,
+    });
+    expect(
+      knownPlayer("https://www.twitch.tv/videos/2290112233"),
+    ).toMatchObject({
+      src: `https://player.twitch.tv/?video=v2290112233&${parents}`,
+    });
+    expect(
+      knownPlayer(
+        "https://www.twitch.tv/somechannel/clip/FunnyClipSlug-abc123",
+      ),
+    ).toMatchObject({
+      src: `https://clips.twitch.tv/embed?clip=FunnyClipSlug-abc123&${parents}`,
+    });
+    expect(knownPlayer("https://clips.twitch.tv/FunnyClipSlug")).toMatchObject({
+      src: `https://clips.twitch.tv/embed?clip=FunnyClipSlug&${parents}`,
+    });
+  });
+  it("leaves Twitch's own pages alone", () => {
+    expect(knownPlayer("https://www.twitch.tv/directory")).not.toMatchObject({
+      provider: "Twitch",
+    });
+    expect(knownPlayer("https://www.twitch.tv/settings")).not.toMatchObject({
+      provider: "Twitch",
+    });
+  });
+});

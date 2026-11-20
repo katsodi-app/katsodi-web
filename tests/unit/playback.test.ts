@@ -58,7 +58,25 @@ describe("timeline math", () => {
     expect(syncSource("https://soundcloud.com/forss/flickermood")).toBe(
       "soundcloud",
     );
+    expect(
+      syncSource("https://open.spotify.com/track/4HCOHRCSQelz2GPX8iTamO"),
+    ).toBe("spotify");
+    expect(
+      syncSource(
+        "https://open.spotify.com/intl-de/track/4HCOHRCSQelz2GPX8iTamO",
+      ),
+    ).toBe("spotify");
     for (const url of [
+      "https://www.netflix.com/watch/81234567",
+      "https://play.hbomax.com/video/watch/a/b",
+      "https://www.primevideo.com/detail/0ABC",
+      "https://www.disneyplus.com/play/abc",
+      "https://www.crunchyroll.com/watch/GY1XX/abc",
+    ])
+      expect(syncSource(url), url).toBe("service");
+    for (const url of [
+      "https://netflix.com.evil.org/watch/1",
+      "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M",
       "https://www.dailymotion.com/video/x7tgad0",
       "https://rutube.ru/video/abc/",
       "https://player.vimeo.com/video/1",

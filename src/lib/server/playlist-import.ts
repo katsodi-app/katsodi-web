@@ -2,13 +2,15 @@
 // API keys from the environment, which never reach the browser bundle.
 import { classifyLink } from "@/lib/music-links";
 import { soundcloudPlaylist } from "./soundcloud-api";
+import { spotifyEmbedEntity } from "./spotify-embed";
 
 /**
  * Turns a pasted link into the track links to queue in a music room.
  * Public playlists only, through each service's official API:
  *  - YouTube playlist (`list=`): YouTube Data API v3, key in YOUTUBE_API_KEY;
  *  - Spotify playlist or album: Spotify Web API with the client-credentials
- *    flow (SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET);
+ *    flow (SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET); without those keys,
+ *    the track list Spotify's public embed widget shows (spotify-embed.ts);
  *  - public SoundCloud sets use its official client-credentials API;
  *  - single YouTube, Spotify and SoundCloud tracks queue without API keys.
  */
@@ -95,7 +97,7 @@ async function spotifyList(
   id: string,
 ): Promise<ImportResult> {
   const token = await spotifyAccess();
-  if (token === null) return fail("unconfigured", "Spotify");
+  if (token === null) return spotifyWidgetList(kind, id);
   if (!token) return fail("failed", "Spotify");
   const urls: string[] = [];
   let next: string | null =
@@ -126,6 +128,26 @@ async function spotifyList(
         urls: urls.slice(0, IMPORT_LIMIT),
         source: "Spotify",
         capped: urls.length > IMPORT_LIMIT || !!next,
+      }
+    : fail("empty", "Spotify");
+}
+
+/** Without API keys: the tracks the public embed widget lists. */
+async function spotifyWidgetList(
+  kind: "playlist" | "album",
+  id: string,
+): Promise<ImportResult> {
+  const entity = await spotifyEmbedEntity(kind, id);
+  if (!entity) return fail("notFound", "Spotify");
+  const urls = entity.tracks.map(
+    (track) => `https://open.spotify.com/track/${track.id}`,
+  );
+  return urls.length
+    ? {
+        status: "ok",
+        urls: urls.slice(0, IMPORT_LIMIT),
+        source: "Spotify",
+        capped: urls.length > IMPORT_LIMIT,
       }
     : fail("empty", "Spotify");
 }

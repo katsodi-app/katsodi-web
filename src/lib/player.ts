@@ -1,6 +1,7 @@
 import {
   inspectSource,
   spotifyEmbed,
+  twitchEmbed,
   vkEmbed,
   vkHosts,
   vkVideoId,
@@ -75,6 +76,9 @@ export function knownPlayer(input: string): PlayerResolution {
   const spotify = spotifyEmbed(url);
   if (spotify)
     return { kind: "iframe", src: spotify, provider: "Spotify", sync: false };
+  const twitch = twitchEmbed(url);
+  if (twitch)
+    return { kind: "iframe", src: twitch, provider: "Twitch", sync: false };
   const vk = vkEmbed(url);
   if (vk) return { kind: "iframe", src: vk, provider: "VK Видео", sync: false };
   // A plain VK video link asks the server, which uses VK's official API.

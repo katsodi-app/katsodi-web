@@ -92,6 +92,7 @@
 - [[docs/Features/Player Discovery]]
 - [[docs/Features/Native Desktop Client]] — собственное приложение для ПК на C++/Qt Quick: свой интерфейс в дизайне Katsodi, общий сервер через API `/api/native/v1`; в работе.
 - [[docs/Features/Native Shared Browser]] — общий браузер в приложении: работает у хозяина комнаты, управлять могут те, кому он дал доступ.
+- [[docs/Features/Streaming Services]] — Netflix, HBO Max, Prime Video, Disney+ и Crunchyroll в видеокомнате приложения: каждый через свою подписку, таймлайн общий.
 - [[docs/Features/Native Discord Activity]] — статус в Discord: какая музыка играет и в какой комнате смотрят (у приватной — только «Приватная комната»); выключается в настройках.
 - [[docs/Features/Native API Server]] — отдельный процесс с маршрутами `/api/native/v1`, чтобы приложение работало без запуска сайта.
 - [[docs/Features/Native Music Player]] — музыкальный плеер приложения: подборки как плейлисты, своя очередь, полоска и полный вид.
