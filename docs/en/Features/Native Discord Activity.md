@@ -18,7 +18,7 @@ Anyone using the Windows app with Discord running on the same computer. No Katso
 
 ## User scenarios
 - Music plays in the app's player → "Listening": track title, artists, the cover (when https) and time.
-- In a room with no music playing → "Watching": a public room shows its name and fandom (or the source's site); a private one shows only "Private room".
+- In a room with no music playing → "Watching": a public room shows its name, then on the second line "Hanging out with n friends" (the room's other members) and the room's description (without one, the fandom or the source's site). A private one shows "Private room" and only the number of friends.
 - Neither → the status is cleared.
 
 ## Behaviour rules
@@ -33,7 +33,7 @@ A "Discord" card in settings: the switch and a line with the actual state: this 
 - `src/presentation/DiscordPresence.{h,cpp}`: Discord's local IPC (named pipe `discord-ipc-0…9` through `QLocalSocket`), handshake (`op 0`, `v: 1`, `client_id`), `SET_ACTIVITY` (`op 1`) with the app's `pid`; pings are answered. It retries every 20 s in case Discord starts later.
 - Activity type 2 (Listening) for music, 3 (Watching) for a room.
 - Pictures (2026-11-20) are https addresses Discord loads itself: the large one is the track's cover, the room fandom's art from the website (`https://katsodi.watch/images/fandoms/…`), or, without a fandom and for a private room, `public/images/discord/room-cover.png` (drawn by `node scripts/render-room-cover.mjs`); without a cover, the site icon `icons/icon-512.png`. The small circle is the person's own Discord avatar (from the READY reply, Discord's CDN): Katsodi avatars are private (only roommates see them), so Discord cannot load them.
-- Buttons (two at most): "Open the room" (the room's page on the website; none for a private room) or "Listen on Spotify/YouTube/SoundCloud" for a track, then "Open Katsodi". Discord does not show the buttons to the person whose status it is; others see them.
+- Buttons (two at most): "Open the room" (the room's page on the website; none for a private room) or "Listen on Spotify/YouTube/SoundCloud" for a track, then "Open Katsodi". Discord does not show the buttons to the person whose status it is; others see them. Checked 2026-11-20: Discord's reply to SET_ACTIVITY carries both buttons.
 - Discord application id: `1573116517133058139` (the Katsodi application; an id is public, every client sends it), the default in `CMakeLists.txt`. The environment variable `KATSODI_DISCORD_CLIENT_ID` replaces it at build time and, in development, at start-up; a value that is not digits turns the feature off, and settings say so.
 - The pure `DiscordPresence::activity()` and the `frame()` encoding are covered by `tst_core discordActivity`.
 
