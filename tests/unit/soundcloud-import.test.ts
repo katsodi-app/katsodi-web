@@ -18,6 +18,8 @@ it("without SoundCloud credentials reads the set's public page; single tracks st
   vi.stubEnv("SOUNDCLOUD_CLIENT_ID", "");
   vi.mocked(soundcloudSetFromPage).mockResolvedValueOnce({
     title: "Album",
+    cover: null,
+    owner: null,
     urls: [
       "https://soundcloud.com/artist/one",
       "https://api.soundcloud.com/tracks/2",

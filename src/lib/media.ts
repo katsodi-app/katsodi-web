@@ -33,7 +33,17 @@ export function readOembedDetails(
     typeof input === "string" && input.trim()
       ? input.trim().replace(/\s+/g, " ").slice(0, max)
       : null;
-  const title = text(data.title, 200);
+  const author = text(data.author_name, 120);
+  // SoundCloud's oEmbed titles always end with " by <uploader>"; the
+  // uploader is shown apart as the author.
+  let title = text(data.title, 200);
+  if (
+    provider === "SoundCloud" &&
+    title &&
+    author &&
+    title.endsWith(` by ${author}`)
+  )
+    title = title.slice(0, -(author.length + 4)).trim() || title;
   if (!title) return null;
   const thumbnail =
     typeof data.thumbnail_url === "string"
@@ -42,7 +52,7 @@ export function readOembedDetails(
   const duration = Number(data.duration);
   const parsed = mediaDetailsSchema.safeParse({
     title,
-    author: text(data.author_name, 120),
+    author,
     thumbnail,
     provider,
     duration:

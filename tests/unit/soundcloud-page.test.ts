@@ -14,6 +14,8 @@ describe("a SoundCloud set's public page", () => {
           hydratable: "playlist",
           data: {
             title: "Grand Theft Auto VI: The Album",
+            artwork_url: "https://i1.sndcdn.com/artworks-abc-large.jpg",
+            user: { username: "Atlantic Records" },
             tracks: [
               {
                 id: 1,
@@ -34,6 +36,8 @@ describe("a SoundCloud set's public page", () => {
         "https://soundcloud.com/atlanticrecords/overtown",
         "https://api.soundcloud.com/tracks/2441326638",
       ],
+      cover: "https://i1.sndcdn.com/artworks-abc-t500x500.jpg",
+      owner: "Atlantic Records",
     });
   });
   it("gives nothing for pages without the set", () => {

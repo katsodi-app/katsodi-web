@@ -26,6 +26,12 @@ const SCRIPT = String.raw`
   const message = document.getElementById("message");
   let generation = 0, adapter = null, ready = false, playing = false, error = "";
   let duration = 0, position = 0, events = [];
+  // What plays, as the provider describes it (SoundCloud: the performer,
+  // cover and length of the current sound), or null.
+  let meta = null;
+  // The previous player when the next source is of the same kind: it loads
+  // the next track in place instead of a new frame (much faster switches).
+  let reuse = null;
   const emit = (type) => { events.push(type); if (events.length > 20) events.shift(); };
   const loaded = {};
   function script(src, test) {
@@ -69,9 +75,21 @@ const SCRIPT = String.raw`
     message.textContent = "";
     emit("error");
   }
-  async function youtube(url, controls, mine) {
+  async function youtube(url, controls, mine, previous) {
     const id = youtubeId(url);
     if (!id) return fail("unsupported", mine);
+    if (previous && previous.player && previous.controls === controls) {
+      const holder = previous.holder;
+      holder.gen = mine;
+      await new Promise((resolve) => {
+        holder.cued = resolve;
+        previous.player.cueVideoById(id);
+        setTimeout(resolve, 2500);
+      });
+      holder.cued = null;
+      return Object.assign({}, previous);
+    }
+    const holder = { gen: mine, cued: null };
     const el = frame("https://www.youtube.com/embed/" + id + "?enablejsapi=1&playsinline=1&rel=0" +
       "&controls=" + (controls ? 1 : 0) + "&disablekb=" + (controls ? 0 : 1) +
       "&origin=" + encodeURIComponent(location.origin));
@@ -87,9 +105,10 @@ const SCRIPT = String.raw`
     const player = await new Promise((resolve) => {
       const instance = new YT.Player(el, { events: {
         onReady: () => resolve(instance),
-        onError: (e) => fail(e && (e.data === 101 || e.data === 150) ? "embed_blocked" : "provider", mine),
+        onError: (e) => fail(e && (e.data === 101 || e.data === 150) ? "embed_blocked" : "provider", holder.gen),
         onStateChange: ({ data }) => {
-          if (mine !== generation) return;
+          if (holder.gen !== generation) return;
+          if (data === 5 && holder.cued) holder.cued();
           if (data === 1) { playing = true; emit("play"); }
           else if (data === 2) { playing = false; emit("pause"); }
           else if (data === 0) { playing = false; emit("ended"); }
@@ -101,6 +120,7 @@ const SCRIPT = String.raw`
       seek: (s) => player.seekTo(s, true), volume: (v) => player.setVolume(v),
       time: async () => player.getCurrentTime() || 0, length: async () => player.getDuration() || 0,
       destroy: () => player.destroy(),
+      kind: "youtube", reusable: true, player, holder, controls,
     };
   }
   async function vimeo(url, controls, mine) {
@@ -124,12 +144,36 @@ const SCRIPT = String.raw`
       destroy: () => player.destroy().catch(() => {}),
     };
   }
-  async function soundcloud(url, controls, mine) {
+  async function soundcloud(url, controls, mine, previous) {
     // A track page, or a track known by id (api.soundcloud.com/tracks/<id>).
     const byId = url.hostname === "api.soundcloud.com" && /^\/tracks\/\d{1,15}$/.test(url.pathname);
     if (!byId && (!["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"].includes(url.hostname) ||
         !/^\/[^/]+\/[^/]+\/?$/.test(url.pathname))) return fail("unsupported", mine);
     const canonical = (byId ? "https://api.soundcloud.com" : "https://soundcloud.com") + url.pathname;
+    const describe = (widget) => widget.getCurrentSound((sound) => {
+      if (mine !== generation || !sound) return;
+      const art = String(sound.artwork_url || (sound.user && sound.user.avatar_url) || "");
+      const artist = (sound.publisher_metadata && sound.publisher_metadata.artist) || (sound.user && sound.user.username) || "";
+      meta = {
+        title: String(sound.title || "").slice(0, 200),
+        artist: String(artist).slice(0, 120),
+        cover: /^https:\/\/i\d?\.sndcdn\.com\//.test(art) ? art.replace(/-large\.(jpg|png)$/, "-t500x500.$1") : "",
+        duration: Number(sound.duration) > 0 ? Number(sound.duration) / 1000 : 0,
+      };
+    });
+    if (previous && previous.widget) {
+      const widget = previous.widget;
+      previous.holder.gen = mine;
+      await Promise.race([
+        new Promise((resolve) => widget.load(canonical, { auto_play: false, visual: true, show_comments: false,
+          show_reposts: false, hide_related: true, show_teaser: false, callback: resolve })),
+        new Promise((resolve) => setTimeout(resolve, 5000)),
+      ]);
+      if (mine !== generation) return;
+      describe(widget);
+      return Object.assign({}, previous);
+    }
+    const holder = { gen: mine };
     const el = frame("https://w.soundcloud.com/player/?url=" + encodeURIComponent(canonical) +
       "&auto_play=false&visual=true&show_comments=false&show_reposts=false&hide_related=true&show_teaser=false");
     await script("https://w.soundcloud.com/player/api.js", () => !!window.SC);
@@ -139,17 +183,21 @@ const SCRIPT = String.raw`
       new Promise((resolve) => widget.bind(SC.Widget.Events.READY, resolve)),
       new Promise((resolve) => setTimeout(resolve, 5000)),
     ]);
-    widget.bind(SC.Widget.Events.PLAY, () => { playing = true; emit("play"); });
-    widget.bind(SC.Widget.Events.PAUSE, () => { playing = false; emit("pause"); });
-    widget.bind(SC.Widget.Events.FINISH, () => { playing = false; emit("ended"); });
-    widget.bind(SC.Widget.Events.SEEK, () => emit("seek"));
-    widget.bind(SC.Widget.Events.ERROR, () => fail("provider", mine));
+    // Bound once; a reused widget reports for the generation it now plays.
+    const current = () => holder.gen === generation;
+    widget.bind(SC.Widget.Events.PLAY, () => { if (current()) { playing = true; emit("play"); } });
+    widget.bind(SC.Widget.Events.PAUSE, () => { if (current()) { playing = false; emit("pause"); } });
+    widget.bind(SC.Widget.Events.FINISH, () => { if (current()) { playing = false; emit("ended"); } });
+    widget.bind(SC.Widget.Events.SEEK, () => { if (current()) emit("seek"); });
+    widget.bind(SC.Widget.Events.ERROR, () => fail("provider", holder.gen));
+    describe(widget);
     const ask = (method) => new Promise((resolve) => widget[method]((ms) => resolve((ms || 0) / 1000)));
     return {
       play: () => widget.play(), pause: () => widget.pause(),
       seek: (s) => widget.seekTo(Math.round(s * 1000)), volume: (v) => widget.setVolume(v),
       time: () => ask("getPosition"), length: () => ask("getDuration"),
       destroy: () => {},
+      kind: "soundcloud", reusable: true, widget, holder,
     };
   }
   // Spotify: the official embed; without a Spotify login in this private
@@ -274,20 +322,24 @@ const SCRIPT = String.raw`
     try { const t = await current.time(); if (mine === generation) position = t; } catch {}
     if (!duration) { try { const d = await current.length(); if (mine === generation) duration = d; } catch {} }
   }, 500);
-  function unload() {
+  // keep: the next source is of the same kind and reuses this player.
+  function unload(keep) {
     generation += 1;
-    if (adapter) { try { adapter.destroy(); } catch {} }
-    adapter = null; ready = false; playing = false; error = ""; duration = 0; position = 0; events = [];
-    stage.replaceChildren();
+    reuse = keep && adapter && adapter.reusable ? adapter : null;
+    if (adapter && !reuse) { try { adapter.destroy(); } catch {} }
+    if (!reuse) stage.replaceChildren();
+    adapter = null; ready = false; playing = false; error = ""; duration = 0; position = 0; events = []; meta = null;
   }
   window.katsodi = Object.freeze({
     load(next, kind, source, controls) {
-      unload();
+      unload(!!(adapter && adapter.kind === kind && adapter.reusable));
       generation = Number(next) || 0;
       const mine = generation;
       const url = parse(String(source));
       if (!url || !kinds[kind]) return fail("unsupported", mine);
-      kinds[kind](url, !!controls, mine).then((made) => {
+      const previous = reuse;
+      reuse = null;
+      kinds[kind](url, !!controls, mine, previous).then((made) => {
         if (mine !== generation || !made) return;
         adapter = made; ready = true; emit("ready");
       }, () => fail("sdk", mine));
@@ -296,11 +348,11 @@ const SCRIPT = String.raw`
     pause() { if (adapter) adapter.pause(); },
     seek(s) { s = Number(s); if (adapter && isFinite(s) && s >= 0 && s <= 172800) adapter.seek(s); },
     volume(v) { v = Number(v); if (adapter && isFinite(v)) adapter.volume(Math.max(0, Math.min(100, v))); },
-    unload,
+    unload: () => unload(false),
     // Synchronous: the helper's runJavaScript does not await promises, so
     // the position is sampled by the timer below and read here.
     poll() {
-      const out = { generation, ready, playing, position, duration, error, events, codecs };
+      const out = { generation, ready, playing, position, duration, error, events, codecs, meta };
       events = [];
       return JSON.stringify(out);
     },

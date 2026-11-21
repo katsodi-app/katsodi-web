@@ -304,6 +304,7 @@ export async function importToQueue(
         added: Number(data) || 0,
         found: found.urls.length,
         capped: found.capped,
+        ...(found.playlist ? { playlist: found.playlist } : {}),
       },
     };
   } catch {

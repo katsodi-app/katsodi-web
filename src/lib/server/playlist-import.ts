@@ -4,6 +4,7 @@ import { classifyLink } from "@/lib/music-links";
 import { soundcloudPlaylist } from "./soundcloud-api";
 import { spotifyEmbedEntity } from "./spotify-embed";
 import { soundcloudSetFromPage } from "./soundcloud-page";
+import type { PlaylistInfo } from "./contracts";
 
 /**
  * Turns a pasted link into the track links to queue in a music room.
@@ -18,7 +19,13 @@ import { soundcloudSetFromPage } from "./soundcloud-page";
  */
 export const IMPORT_LIMIT = 300;
 export type ImportResult =
-  | { status: "ok"; urls: string[]; source: string; capped: boolean }
+  | {
+      status: "ok";
+      urls: string[];
+      source: string;
+      capped: boolean;
+      playlist?: PlaylistInfo;
+    }
   | {
       status: "error";
       code: "unsupported" | "unconfigured" | "notFound" | "empty" | "failed";
@@ -150,6 +157,11 @@ async function spotifyWidgetList(
         urls: urls.slice(0, IMPORT_LIMIT),
         source: "Spotify",
         capped: urls.length > IMPORT_LIMIT,
+        playlist: {
+          title: entity.title,
+          cover: entity.cover,
+          owner: entity.subtitle,
+        },
       }
     : fail("empty", "Spotify");
 }
@@ -174,6 +186,11 @@ export async function resolveImport(input: string): Promise<ImportResult> {
               urls: page.urls.slice(0, IMPORT_LIMIT),
               source: "SoundCloud",
               capped: false,
+              playlist: {
+                title: page.title,
+                cover: page.cover,
+                owner: page.owner,
+              },
             }
           : fail("empty", "SoundCloud");
       }

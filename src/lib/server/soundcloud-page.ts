@@ -7,7 +7,13 @@
 // field is checked and bounded, and a change only means "nothing found".
 import { publicPlayerPage } from "./public-player-request";
 
-export type SoundcloudSet = { title: string; urls: string[] };
+export type SoundcloudSet = {
+  title: string;
+  urls: string[];
+  /** The set's artwork (500 x 500) on SoundCloud's image host, or null. */
+  cover: string | null;
+  owner: string | null;
+};
 
 /** The set's track links from its page HTML (exported for tests). */
 export function readSoundcloudSet(html: string): SoundcloudSet | null {
@@ -25,7 +31,16 @@ export function readSoundcloudSet(html: string): SoundcloudSet | null {
   const entry = data.find(
     (item) =>
       item && typeof item === "object" && item.hydratable === "playlist",
-  ) as { data?: { title?: unknown; tracks?: unknown } } | undefined;
+  ) as
+    | {
+        data?: {
+          title?: unknown;
+          tracks?: unknown;
+          artwork_url?: unknown;
+          user?: { username?: unknown };
+        };
+      }
+    | undefined;
   const set = entry?.data;
   if (!set || typeof set.title !== "string" || !Array.isArray(set.tracks))
     return null;
@@ -39,7 +54,16 @@ export function readSoundcloudSet(html: string): SoundcloudSet | null {
       urls.push(`https://api.soundcloud.com/tracks/${raw.id}`);
     if (urls.length >= 300) break;
   }
-  return { title: set.title.trim().slice(0, 200), urls };
+  const art = typeof set.artwork_url === "string" ? set.artwork_url : "";
+  const owner = set.user?.username;
+  return {
+    title: set.title.trim().slice(0, 200),
+    urls,
+    cover: /^https:\/\/i\d?\.sndcdn\.com\/[^\s?#]+$/.test(art)
+      ? art.replace(/-large\.(jpg|png)$/, "-t500x500.$1")
+      : null,
+    owner: typeof owner === "string" ? owner.trim().slice(0, 120) : null,
+  };
 }
 
 /** A public set's tracks, from its page; null when it cannot be read. */

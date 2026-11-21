@@ -130,3 +130,31 @@ describe("GET /api/rooms/[id]/media", () => {
     expect(mocks.details).not.toHaveBeenCalled();
   });
 });
+
+describe("SoundCloud oEmbed titles", () => {
+  it("drop the trailing uploader, shown as the author instead", () => {
+    expect(
+      readOembedDetails(
+        {
+          title: "X (from GTAVI: The Album) by Atlantic Records",
+          author_name: "Atlantic Records",
+        },
+        "SoundCloud",
+      ),
+    ).toMatchObject({
+      title: "X (from GTAVI: The Album)",
+      author: "Atlantic Records",
+    });
+    // SoundCloud always appends " by <uploader>": only that suffix goes.
+    expect(
+      readOembedDetails(
+        { title: "Stand by Me by Me", author_name: "Me" },
+        "SoundCloud",
+      ),
+    ).toMatchObject({ title: "Stand by Me" });
+    // Other providers' titles are left as they are.
+    expect(
+      readOembedDetails({ title: "Stand by Me", author_name: "Me" }, "YouTube"),
+    ).toMatchObject({ title: "Stand by Me" });
+  });
+});

@@ -65,7 +65,13 @@ export type ActionResult = {
     | "imported";
   invite?: { id: string; token: string };
   /** Playlist import into a music room's queue. */
-  imported?: { added: number; found: number; capped: boolean };
+  imported?: {
+    added: number;
+    found: number;
+    capped: boolean;
+    /** The playlist itself, when its source tells (title, cover, owner). */
+    playlist?: PlaylistInfo;
+  };
   /** Which service an import message refers to ("YouTube", "Spotify"). */
   service?: string;
   /** Outcome of a friend request. */
@@ -74,3 +80,10 @@ export type ActionResult = {
   playback?: PlaybackState | null;
 };
 export const initialResult: ActionResult = { status: "idle" };
+
+/** A loaded playlist's own details (for the music room's header). */
+export type PlaylistInfo = {
+  title: string;
+  cover: string | null;
+  owner: string | null;
+};
