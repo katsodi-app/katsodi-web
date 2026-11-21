@@ -125,9 +125,11 @@ const SCRIPT = String.raw`
     };
   }
   async function soundcloud(url, controls, mine) {
-    if (!["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"].includes(url.hostname) ||
-        !/^\/[^/]+\/[^/]+\/?$/.test(url.pathname)) return fail("unsupported", mine);
-    const canonical = "https://soundcloud.com" + url.pathname;
+    // A track page, or a track known by id (api.soundcloud.com/tracks/<id>).
+    const byId = url.hostname === "api.soundcloud.com" && /^\/tracks\/\d{1,15}$/.test(url.pathname);
+    if (!byId && (!["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"].includes(url.hostname) ||
+        !/^\/[^/]+\/[^/]+\/?$/.test(url.pathname))) return fail("unsupported", mine);
+    const canonical = (byId ? "https://api.soundcloud.com" : "https://soundcloud.com") + url.pathname;
     const el = frame("https://w.soundcloud.com/player/?url=" + encodeURIComponent(canonical) +
       "&auto_play=false&visual=true&show_comments=false&show_reposts=false&hide_related=true&show_teaser=false");
     await script("https://w.soundcloud.com/player/api.js", () => !!window.SC);

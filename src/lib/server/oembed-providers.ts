@@ -42,7 +42,13 @@ const providers: OembedProvider[] = [
   },
   {
     name: "SoundCloud",
-    hosts: ["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"],
+    // api.soundcloud.com/tracks/<id>: tracks of a set known only by id.
+    hosts: [
+      "soundcloud.com",
+      "www.soundcloud.com",
+      "m.soundcloud.com",
+      "api.soundcloud.com",
+    ],
     endpoint: "https://soundcloud.com/oembed",
     players: ["w.soundcloud.com"],
   },

@@ -3,6 +3,7 @@
 import { classifyLink } from "@/lib/music-links";
 import { soundcloudPlaylist } from "./soundcloud-api";
 import { spotifyEmbedEntity } from "./spotify-embed";
+import { soundcloudSetFromPage } from "./soundcloud-page";
 
 /**
  * Turns a pasted link into the track links to queue in a music room.
@@ -11,7 +12,8 @@ import { spotifyEmbedEntity } from "./spotify-embed";
  *  - Spotify playlist or album: Spotify Web API with the client-credentials
  *    flow (SPOTIFY_CLIENT_ID / SPOTIFY_CLIENT_SECRET); without those keys,
  *    the track list Spotify's public embed widget shows (spotify-embed.ts);
- *  - public SoundCloud sets use its official client-credentials API;
+ *  - public SoundCloud sets use its official client-credentials API; without
+ *    those keys, the set's public page (soundcloud-page.ts);
  *  - single YouTube, Spotify and SoundCloud tracks queue without API keys.
  */
 export const IMPORT_LIMIT = 300;
@@ -163,7 +165,18 @@ export async function resolveImport(input: string): Promise<ImportResult> {
       return await spotifyList("album", link.id);
     if (link.kind === "soundcloud-playlist") {
       const playlist = await soundcloudPlaylist(link.url.href);
-      if (!playlist) return fail("unconfigured", "SoundCloud");
+      if (!playlist) {
+        const page = await soundcloudSetFromPage(link.url.href);
+        if (!page) return fail("notFound", "SoundCloud");
+        return page.urls.length
+          ? {
+              status: "ok",
+              urls: page.urls.slice(0, IMPORT_LIMIT),
+              source: "SoundCloud",
+              capped: false,
+            }
+          : fail("empty", "SoundCloud");
+      }
       const urls = playlist.tracks.map((track) => track.permalink_url!);
       return urls.length
         ? { status: "ok", urls, source: "SoundCloud", capped: playlist.capped }

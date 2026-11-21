@@ -32,6 +32,10 @@ export type NativeErrorCode =
   | "demo_busy"
   | "unavailable"
   | "not_configured"
+  | "import_not_found"
+  | "import_empty"
+  | "import_unsupported"
+  | "music_only"
   | "server_error";
 
 const STATUS: Record<NativeErrorCode, number> = {
@@ -46,6 +50,10 @@ const STATUS: Record<NativeErrorCode, number> = {
   demo_busy: 409,
   unavailable: 503,
   not_configured: 503,
+  import_not_found: 422,
+  import_empty: 422,
+  import_unsupported: 422,
+  music_only: 409,
   server_error: 500,
 };
 const RETRYABLE = new Set<NativeErrorCode>([
@@ -66,6 +74,10 @@ const MESSAGE_KEY: Record<NativeErrorCode, string> = {
   demo_busy: "native.errorDemoBusy",
   unavailable: "native.errorUnavailable",
   not_configured: "native.errorNotConfigured",
+  import_not_found: "native.errorImportNotFound",
+  import_empty: "native.errorImportEmpty",
+  import_unsupported: "native.errorImportUnsupported",
+  music_only: "native.errorMusicOnly",
   server_error: "native.errorServer",
 };
 
@@ -110,6 +122,16 @@ export function actionErrorCode(result: ActionResult): NativeErrorCode {
     case "mediaUnavailable":
     case "demoUnavailable":
       return "unavailable";
+    case "importNotFound":
+      return "import_not_found";
+    case "importEmpty":
+      return "import_empty";
+    case "importUnsupported":
+      return "import_unsupported";
+    case "importUnconfigured":
+      return "not_configured";
+    case "musicOnly":
+      return "music_only";
     default:
       // "failed" covers denied, closed and missing rooms alike: the shared
       // functions deliberately do not tell them apart.

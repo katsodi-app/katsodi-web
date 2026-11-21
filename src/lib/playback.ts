@@ -53,6 +53,12 @@ export function syncSource(
   )
     return "spotify";
   if (["vimeo.com", "www.vimeo.com"].includes(host)) return "vimeo";
+  // A SoundCloud track known by id (from a set read without API keys).
+  if (
+    host === "api.soundcloud.com" &&
+    /^\/tracks\/\d{1,15}$/.test(parsed.pathname)
+  )
+    return "soundcloud";
   if (
     ["soundcloud.com", "www.soundcloud.com", "m.soundcloud.com"].includes(
       host,

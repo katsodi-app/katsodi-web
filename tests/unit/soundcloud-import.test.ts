@@ -1,6 +1,10 @@
 import { afterEach, beforeEach, expect, it, vi } from "vitest";
 import { resolveImport } from "../../src/lib/server/playlist-import";
 import { soundcloudPlaylist } from "../../src/lib/server/soundcloud-api";
+import { soundcloudSetFromPage } from "../../src/lib/server/soundcloud-page";
+vi.mock("../../src/lib/server/soundcloud-page", () => ({
+  soundcloudSetFromPage: vi.fn(),
+}));
 const url = "https://soundcloud.com/artist/sets/album";
 beforeEach(() => {
   vi.stubEnv("SOUNDCLOUD_CLIENT_ID", "client");
@@ -10,11 +14,27 @@ afterEach(() => {
   vi.unstubAllGlobals();
   vi.unstubAllEnvs();
 });
-it("reports missing SoundCloud credentials while single tracks still import", async () => {
+it("without SoundCloud credentials reads the set's public page; single tracks still import", async () => {
   vi.stubEnv("SOUNDCLOUD_CLIENT_ID", "");
+  vi.mocked(soundcloudSetFromPage).mockResolvedValueOnce({
+    title: "Album",
+    urls: [
+      "https://soundcloud.com/artist/one",
+      "https://api.soundcloud.com/tracks/2",
+    ],
+  });
+  expect(await resolveImport(url)).toMatchObject({
+    status: "ok",
+    source: "SoundCloud",
+    urls: [
+      "https://soundcloud.com/artist/one",
+      "https://api.soundcloud.com/tracks/2",
+    ],
+  });
+  vi.mocked(soundcloudSetFromPage).mockResolvedValueOnce(null);
   expect(await resolveImport(url)).toMatchObject({
     status: "error",
-    code: "unconfigured",
+    code: "notFound",
     service: "SoundCloud",
   });
   expect(
