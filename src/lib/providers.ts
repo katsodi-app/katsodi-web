@@ -111,16 +111,6 @@ export function okEmbed(url: URL): string | null {
   const id = url.pathname.match(/^\/(?:video|videoembed|live)\/(\d{3,20})\/?$/)?.[1];
   return id ? `https://ok.ru/videoembed/${id}` : null;
 }
-/** Dailymotion's own player (geo.dailymotion.com) for a video (dailymotion.com/video/<id>, dai.ly/<id>). */
-export function dailymotionEmbed(url: URL): string | null {
-  const id =
-    url.hostname === "dai.ly"
-      ? url.pathname.match(/^\/([A-Za-z0-9]{5,12})\/?$/)?.[1]
-      : ["dailymotion.com", "www.dailymotion.com"].includes(url.hostname)
-        ? url.pathname.match(/^\/(?:embed\/)?video\/([A-Za-z0-9]{5,12})(?:_[^/]*)?\/?$/)?.[1]
-        : null;
-  return id ? `https://geo.dailymotion.com/player.html?video=${id}` : null;
-}
 /**
  * Players without a public control API that the desktop app still keeps on
  * the shared timeline: its player helper finds the <video> inside their
@@ -128,13 +118,7 @@ export function dailymotionEmbed(url: URL): string | null {
  * play and pause only.
  */
 export function frameEmbed(url: URL): string | null {
-  return (
-    kickEmbed(url) ??
-    driveEmbed(url) ??
-    rutubeEmbed(url) ??
-    okEmbed(url) ??
-    dailymotionEmbed(url)
-  );
+  return kickEmbed(url) ?? driveEmbed(url) ?? rutubeEmbed(url) ?? okEmbed(url);
 }
 /**
  * Subscription services watched together "Rave-style": each person signs in

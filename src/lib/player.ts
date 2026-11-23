@@ -47,7 +47,6 @@ const frameProviders: Record<string, string> = {
   "drive.google.com": "Google Drive",
   "rutube.ru": "Rutube",
   "ok.ru": "OK Видео",
-  "geo.dailymotion.com": "Dailymotion",
 };
 function frameProvider(host: string) {
   return frameProviders[host] ?? host;

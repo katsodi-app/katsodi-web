@@ -78,7 +78,7 @@ describe("timeline math", () => {
     for (const url of [
       "https://netflix.com.evil.org/watch/1",
       "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M",
-      "https://www.dailymotion.com/user/x7tgad0",
+      "https://www.dailymotion.com/video/x7tgad0",
       "https://rutube.ru/video/abc/",
       "https://player.vimeo.com/video/1",
       "https://vimeo.com.evil.org/1",

@@ -35,8 +35,8 @@ export function syncableVideoId(url: string): string | null {
  * the room links to. YouTube, Vimeo, SoundCloud and VK Video expose official
  * player APIs with play/pause/seek; so does a Spotify track (its iFrame API;
  * the app follows it, the website plays it per person). Twitch keeps the
- * timeline through its embed API, and Kick, Google Drive, Rutube, OK and
- * Dailymotion through the <video> in their player (desktop app only; the
+ * timeline through its embed API, and Kick, Google Drive, Rutube and OK
+ * through the <video> in their player (desktop app only; the
  * website plays those per person). Other providers keep independent playback.
  */
 export function syncSource(

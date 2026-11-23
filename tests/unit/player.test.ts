@@ -232,7 +232,7 @@ describe("playlist links", () => {
 });
 
 describe("players kept in step through their <video>", () => {
-  it("embeds Kick, Google Drive, Rutube, OK and Dailymotion in their own players", () => {
+  it("embeds Kick, Google Drive, Rutube and OK in their own players", () => {
     expect(knownPlayer("https://kick.com/XQC")).toMatchObject({
       kind: "iframe",
       src: "https://player.kick.com/xqc",
@@ -262,12 +262,9 @@ describe("players kept in step through their <video>", () => {
     expect(knownPlayer("https://ok.ru/video/8540390816")).toMatchObject({
       src: "https://ok.ru/videoembed/8540390816",
     });
-    expect(knownPlayer("https://www.dailymotion.com/video/x2kdx9f")).toMatchObject({
-      src: "https://geo.dailymotion.com/player.html?video=x2kdx9f",
-      provider: "Dailymotion",
-    });
-    expect(knownPlayer("https://dai.ly/x2kdx9f")).toMatchObject({
-      src: "https://geo.dailymotion.com/player.html?video=x2kdx9f",
+    // Dailymotion's player embeds only with a partner player ID: not offered.
+    expect(knownPlayer("https://www.dailymotion.com/video/x2kdx9f")).not.toMatchObject({
+      kind: "iframe",
     });
   });
   it("leaves their other pages alone", () => {

@@ -2,7 +2,7 @@
  * The provider-only page the desktop client's player helper opens. It holds
  * one official embed (YouTube IFrame API, Vimeo Player SDK, SoundCloud
  * Widget API, Spotify iFrame API or Twitch Embed API, or a player without an
- * API: Kick, Google Drive, Rutube, OK, Dailymotion, whose <video> the helper's
+ * API: Kick, Google Drive, Rutube, OK, whose <video> the helper's
  * frame script reports and drives) and a tiny control surface the helper drives with
  * runJavaScript: no Katsodi navigation, account, chat or data. It is served
  * from the API origin itself, so providers see a real origin instead of a
@@ -28,7 +28,6 @@ export const FRAME_ORIGINS = [
   "https://drive.google.com",
   "https://rutube.ru",
   "https://ok.ru",
-  "https://geo.dailymotion.com",
 ];
 
 const SCRIPT = String.raw`
@@ -360,7 +359,6 @@ const SCRIPT = String.raw`
       (url.hostname === "drive.google.com" && /^\/file\/d\/[A-Za-z0-9_-]{20,80}\/preview$/.test(path)) ||
       (url.hostname === "rutube.ru" && /^\/play\/embed\/[0-9a-f]{32}\/?$/.test(path)) ||
       (url.hostname === "ok.ru" && /^\/videoembed\/\d{3,20}\/?$/.test(path)) ||
-      (url.hostname === "geo.dailymotion.com" && path === "/player.html" && /^[A-Za-z0-9]{5,12}$/.test(url.searchParams.get("video") || "")) ||
       (url.hostname === "clips.twitch.tv" && path === "/embed");
   }
   async function framed(url, controls, mine) {
@@ -369,6 +367,9 @@ const SCRIPT = String.raw`
     // Every frame that reports, by window; the one with the video leads.
     const frames = new Map();
     let lead = null, wanted = "", wantedSeek = -1, wantedVolume = -1;
+    // Some players undo a command (they resume after a pause): for a few
+    // seconds after one, it is repeated while the video does otherwise.
+    let holdUntil = 0, repeatedAt = 0;
     const fresh = (entry) => entry && Date.now() - entry.at < 3000;
     const post = (target, op, value) => { try { target.postMessage({ katsodiCommand: { op, value } }, "*"); } catch {} };
     function send(op, value) {
@@ -395,20 +396,24 @@ const SCRIPT = String.raw`
       position = entry.position;
       duration = entry.duration;
       playing = entry.playing;
+      if (wanted && Date.now() < holdUntil && entry.playing !== (wanted === "play") && Date.now() - repeatedAt > 800) {
+        repeatedAt = Date.now();
+        send(wanted, 0);
+      }
       if (Array.isArray(s.events))
         for (const ev of s.events.slice(0, 8)) if (["play", "pause", "ended", "seek"].includes(ev)) emit(ev);
     };
     window.addEventListener("message", listener);
     // No video yet while play is wanted: a cover waits for its click. The
-    // helper presses the player's middle, at most twice per source, 4 s apart.
+    // helper presses the player's middle, at most twice per source, 8 s apart.
     let presses = 0, pressedAt = 0;
     const nudge = setInterval(() => {
       if (mine !== generation || fresh(lead) || wanted !== "play") return;
-      if (presses < 2 && Date.now() - pressedAt > 4000) { presses += 1; pressedAt = Date.now(); press = true; }
+      if (presses < 2 && Date.now() - pressedAt > 8000) { presses += 1; pressedAt = Date.now(); press = true; }
     }, 1000);
     return {
-      play: () => { wanted = "play"; send("play", 0); },
-      pause: () => { wanted = "pause"; send("pause", 0); },
+      play: () => { wanted = "play"; holdUntil = Date.now() + 4000; send("play", 0); },
+      pause: () => { wanted = "pause"; holdUntil = Date.now() + 4000; send("pause", 0); },
       // A live stream (no length) is never seeked.
       seek: (s) => { if (fresh(lead)) { if (lead.duration > 0) send("seek", s); } else wantedSeek = s; },
       volume: (v) => { wantedVolume = v; send("volume", v); },
