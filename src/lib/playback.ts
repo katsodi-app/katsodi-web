@@ -1,7 +1,9 @@
 import { z } from "zod";
 import {
+  frameEmbed,
   inspectSource,
   streamingService,
+  twitchEmbed,
   vkEmbed,
   vkVideoId,
   youtubeVideoId,
@@ -32,12 +34,23 @@ export function syncableVideoId(url: string): string | null {
  * The synced-player adapter for a room source, by the exact host of the page
  * the room links to. YouTube, Vimeo, SoundCloud and VK Video expose official
  * player APIs with play/pause/seek; so does a Spotify track (its iFrame API;
- * the app follows it, the website plays it per person). Other providers keep
- * independent playback.
+ * the app follows it, the website plays it per person). Twitch keeps the
+ * timeline through its embed API, and Kick, Google Drive, Rutube, OK and
+ * Dailymotion through the <video> in their player (desktop app only; the
+ * website plays those per person). Other providers keep independent playback.
  */
 export function syncSource(
   url: string,
-): "youtube" | "vimeo" | "soundcloud" | "vk" | "spotify" | "service" | null {
+):
+  | "youtube"
+  | "vimeo"
+  | "soundcloud"
+  | "vk"
+  | "spotify"
+  | "service"
+  | "twitch"
+  | "frame"
+  | null {
   if (syncableVideoId(url)) return "youtube";
   const source = inspectSource(url);
   if (!source) return null;
@@ -46,6 +59,8 @@ export function syncSource(
   // A subscription service: each person plays it signed in to their own
   // account in the desktop app; the room keeps the timeline.
   if (streamingService(parsed)) return "service";
+  if (twitchEmbed(parsed)) return "twitch";
+  if (frameEmbed(parsed)) return "frame";
   const host = parsed.hostname;
   if (
     host === "open.spotify.com" &&

@@ -1,3 +1,4 @@
+import { syncSource as syncKind } from "../../src/lib/playback";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 const mocks = vi.hoisted(() => ({ currentAccount: vi.fn(), rpc: vi.fn() }));
 vi.mock("@/lib/supabase/server", () => ({
@@ -77,7 +78,7 @@ describe("timeline math", () => {
     for (const url of [
       "https://netflix.com.evil.org/watch/1",
       "https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M",
-      "https://www.dailymotion.com/video/x7tgad0",
+      "https://www.dailymotion.com/user/x7tgad0",
       "https://rutube.ru/video/abc/",
       "https://player.vimeo.com/video/1",
       "https://vimeo.com.evil.org/1",
@@ -199,5 +200,15 @@ describe("VK Video on the shared timeline", () => {
     expect(
       adapterKind("https://evil.example/video_ext.php?js_api=1"),
     ).toBeNull();
+  });
+});
+describe("sync kinds of the new players", () => {
+  it("keeps Twitch on its Embed API and the <video> players on their frame", () => {
+    expect(syncKind("https://www.twitch.tv/videos/2290112233")).toBe("twitch");
+    expect(syncKind("https://www.twitch.tv/somechannel")).toBe("twitch");
+    expect(syncKind("https://kick.com/xqc")).toBe("frame");
+    expect(syncKind("https://drive.google.com/file/d/1AbCdEfGhIjKlMnOpQrStUvWxYz012345/view")).toBe("frame");
+    expect(syncKind("https://ok.ru/video/8540390816")).toBe("frame");
+    expect(syncKind("https://www.twitch.tv/directory")).toBeNull();
   });
 });

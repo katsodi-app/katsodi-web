@@ -231,6 +231,53 @@ describe("playlist links", () => {
   });
 });
 
+describe("players kept in step through their <video>", () => {
+  it("embeds Kick, Google Drive, Rutube, OK and Dailymotion in their own players", () => {
+    expect(knownPlayer("https://kick.com/XQC")).toMatchObject({
+      kind: "iframe",
+      src: "https://player.kick.com/xqc",
+      provider: "Kick",
+    });
+    expect(
+      knownPlayer(
+        "https://kick.com/xqc/videos/0b6f1b1e-2c3d-4e5f-8a9b-0c1d2e3f4a5b",
+      ),
+    ).toMatchObject({
+      src: "https://player.kick.com/video/0b6f1b1e-2c3d-4e5f-8a9b-0c1d2e3f4a5b",
+    });
+    expect(
+      knownPlayer(
+        "https://drive.google.com/file/d/1AbCdEfGhIjKlMnOpQrStUvWxYz012345/view?usp=sharing",
+      ),
+    ).toMatchObject({
+      src: "https://drive.google.com/file/d/1AbCdEfGhIjKlMnOpQrStUvWxYz012345/preview",
+      provider: "Google Drive",
+    });
+    expect(
+      knownPlayer("https://rutube.ru/video/0123456789abcdef0123456789abcdef/"),
+    ).toMatchObject({
+      src: "https://rutube.ru/play/embed/0123456789abcdef0123456789abcdef",
+      provider: "Rutube",
+    });
+    expect(knownPlayer("https://ok.ru/video/8540390816")).toMatchObject({
+      src: "https://ok.ru/videoembed/8540390816",
+    });
+    expect(knownPlayer("https://www.dailymotion.com/video/x2kdx9f")).toMatchObject({
+      src: "https://geo.dailymotion.com/player.html?video=x2kdx9f",
+      provider: "Dailymotion",
+    });
+    expect(knownPlayer("https://dai.ly/x2kdx9f")).toMatchObject({
+      src: "https://geo.dailymotion.com/player.html?video=x2kdx9f",
+    });
+  });
+  it("leaves their other pages alone", () => {
+    expect(knownPlayer("https://kick.com/categories")).not.toMatchObject({ provider: "Kick" });
+    expect(
+      knownPlayer("https://drive.google.com/drive/folders/1AbCdEfGhIjKlMnOpQrStUvWxYz012345"),
+    ).not.toMatchObject({ provider: "Google Drive" });
+    expect(knownPlayer("https://kick.com.evil.org/xqc")).not.toMatchObject({ provider: "Kick" });
+  });
+});
 describe("Twitch", () => {
   const parents =
     "parent=katsodi.watch&parent=www.katsodi.watch&parent=localhost&parent=127.0.0.1";

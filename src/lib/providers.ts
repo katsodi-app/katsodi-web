@@ -50,7 +50,92 @@ export const providers: Provider[] = [
   ]),
   provider("netflix", "Netflix", ["netflix.com", "www.netflix.com"]),
   provider("spotify", "Spotify", ["open.spotify.com"]),
+  provider("kick", "Kick", ["kick.com", "www.kick.com"]),
+  provider("googledrive", "Google Drive", ["drive.google.com"]),
+  provider("ok", "OK Видео", ["ok.ru", "www.ok.ru", "m.ok.ru"]),
 ];
+const kickReserved = new Set([
+  "browse",
+  "categories",
+  "category",
+  "following",
+  "search",
+  "settings",
+  "dashboard",
+  "terms-of-service",
+  "privacy-policy",
+  "community-guidelines",
+  "video",
+  "clips",
+]);
+/**
+ * Kick's own player (player.kick.com) for a channel (live) or a past
+ * broadcast (kick.com/<channel>/videos/<uuid>).
+ */
+export function kickEmbed(url: URL): string | null {
+  if (!["kick.com", "www.kick.com"].includes(url.hostname)) return null;
+  const video = url.pathname.match(
+    /^\/[A-Za-z0-9_-]{2,40}\/videos\/([0-9a-f-]{36})\/?$/i,
+  )?.[1];
+  if (video) return `https://player.kick.com/video/${video.toLowerCase()}`;
+  const channel = url.pathname.match(/^\/([A-Za-z0-9_-]{2,40})\/?$/)?.[1];
+  return channel && !kickReserved.has(channel.toLowerCase())
+    ? `https://player.kick.com/${channel.toLowerCase()}`
+    : null;
+}
+/** Google Drive's preview player for a shared video file. */
+export function driveEmbed(url: URL): string | null {
+  if (url.hostname !== "drive.google.com") return null;
+  const id =
+    url.pathname.match(
+      /^\/file\/d\/([A-Za-z0-9_-]{20,80})(?:\/(?:view|preview|edit))?\/?$/,
+    )?.[1] ??
+    (url.pathname === "/open" || url.pathname === "/uc"
+      ? url.searchParams.get("id")
+      : null);
+  return id && /^[A-Za-z0-9_-]{20,80}$/.test(id)
+    ? `https://drive.google.com/file/d/${id}/preview`
+    : null;
+}
+/** Rutube's own player for a video page (rutube.ru/video/<32 hex>/). */
+export function rutubeEmbed(url: URL): string | null {
+  if (!["rutube.ru", "www.rutube.ru"].includes(url.hostname)) return null;
+  const id = url.pathname.match(
+    /^\/(?:video|play\/embed)\/([0-9a-f]{32})\/?$/i,
+  )?.[1];
+  return id ? `https://rutube.ru/play/embed/${id.toLowerCase()}` : null;
+}
+/** OK's own player for a video page (ok.ru/video/<id>). */
+export function okEmbed(url: URL): string | null {
+  if (!["ok.ru", "www.ok.ru", "m.ok.ru"].includes(url.hostname)) return null;
+  const id = url.pathname.match(/^\/(?:video|videoembed|live)\/(\d{3,20})\/?$/)?.[1];
+  return id ? `https://ok.ru/videoembed/${id}` : null;
+}
+/** Dailymotion's own player (geo.dailymotion.com) for a video (dailymotion.com/video/<id>, dai.ly/<id>). */
+export function dailymotionEmbed(url: URL): string | null {
+  const id =
+    url.hostname === "dai.ly"
+      ? url.pathname.match(/^\/([A-Za-z0-9]{5,12})\/?$/)?.[1]
+      : ["dailymotion.com", "www.dailymotion.com"].includes(url.hostname)
+        ? url.pathname.match(/^\/(?:embed\/)?video\/([A-Za-z0-9]{5,12})(?:_[^/]*)?\/?$/)?.[1]
+        : null;
+  return id ? `https://geo.dailymotion.com/player.html?video=${id}` : null;
+}
+/**
+ * Players without a public control API that the desktop app still keeps on
+ * the shared timeline: its player helper finds the <video> inside their
+ * frame (play, pause and, for recordings, seeking). Live channels follow
+ * play and pause only.
+ */
+export function frameEmbed(url: URL): string | null {
+  return (
+    kickEmbed(url) ??
+    driveEmbed(url) ??
+    rutubeEmbed(url) ??
+    okEmbed(url) ??
+    dailymotionEmbed(url)
+  );
+}
 /**
  * Subscription services watched together "Rave-style": each person signs in
  * to their own account in the desktop app's service view, and the room keeps

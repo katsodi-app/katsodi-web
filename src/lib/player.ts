@@ -1,4 +1,5 @@
 import {
+  frameEmbed,
   inspectSource,
   spotifyEmbed,
   twitchEmbed,
@@ -41,6 +42,16 @@ export function kinogoPage(input: string): string | null {
   if (!/^\/\d{1,9}-[a-z0-9-]+\.html$/.test(url.pathname)) return null;
   return `https://kinogo.is${url.pathname}`;
 }
+const frameProviders: Record<string, string> = {
+  "player.kick.com": "Kick",
+  "drive.google.com": "Google Drive",
+  "rutube.ru": "Rutube",
+  "ok.ru": "OK Видео",
+  "geo.dailymotion.com": "Dailymotion",
+};
+function frameProvider(host: string) {
+  return frameProviders[host] ?? host;
+}
 export function knownPlayer(input: string): PlayerResolution {
   if (retiredParserSource(input))
     return { kind: "external", reason: "unsupported", sync: false };
@@ -79,6 +90,14 @@ export function knownPlayer(input: string): PlayerResolution {
   const twitch = twitchEmbed(url);
   if (twitch)
     return { kind: "iframe", src: twitch, provider: "Twitch", sync: false };
+  const frame = frameEmbed(url);
+  if (frame)
+    return {
+      kind: "iframe",
+      src: frame,
+      provider: frameProvider(new URL(frame).hostname),
+      sync: false,
+    };
   const vk = vkEmbed(url);
   if (vk) return { kind: "iframe", src: vk, provider: "VK Видео", sync: false };
   // A plain VK video link asks the server, which uses VK's official API.

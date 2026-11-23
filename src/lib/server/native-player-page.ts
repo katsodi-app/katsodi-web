@@ -1,7 +1,9 @@
 /**
  * The provider-only page the desktop client's player helper opens. It holds
  * one official embed (YouTube IFrame API, Vimeo Player SDK, SoundCloud
- * Widget API or Spotify iFrame API) and a tiny control surface the helper drives with
+ * Widget API, Spotify iFrame API or Twitch Embed API, or a player without an
+ * API: Kick, Google Drive, Rutube, OK, Dailymotion, whose <video> the helper's
+ * frame script reports and drives) and a tiny control surface the helper drives with
  * runJavaScript: no Katsodi navigation, account, chat or data. It is served
  * from the API origin itself, so providers see a real origin instead of a
  * spoofed one.
@@ -17,6 +19,16 @@ export const PLAYER_ORIGINS = [
   "https://player.vimeo.com",
   "https://w.soundcloud.com",
   "https://open.spotify.com",
+  "https://player.twitch.tv",
+];
+/** Players without an API, kept in step through the helper's frame script. */
+export const FRAME_ORIGINS = [
+  "https://clips.twitch.tv",
+  "https://player.kick.com",
+  "https://drive.google.com",
+  "https://rutube.ru",
+  "https://ok.ru",
+  "https://geo.dailymotion.com",
 ];
 
 const SCRIPT = String.raw`
@@ -29,6 +41,9 @@ const SCRIPT = String.raw`
   // What plays, as the provider describes it (SoundCloud: the performer,
   // cover and length of the current sound), or null.
   let meta = null;
+  // A frame player's "click to play" cover: the helper presses the middle
+  // of the player with a real click (pages ignore scripted ones).
+  let press = false;
   // The previous player when the next source is of the same kind: it loads
   // the next track in place instead of a new frame (much faster switches).
   let reuse = null;
@@ -255,7 +270,7 @@ const SCRIPT = String.raw`
     // Twitch: channels, past broadcasts and clips in Twitch's own player.
     const twitch = (url.hostname === "player.twitch.tv" && url.pathname === "/") ||
       (url.hostname === "clips.twitch.tv" && url.pathname === "/embed");
-    if (!spotifyEmbed && !vkEmbed && !playlist && !twitch) return fail("unsupported", mine);
+    if (!spotifyEmbed && !vkEmbed && !playlist && !twitch && !framePlayer(url)) return fail("unsupported", mine);
     const el = frame(url.href);
     return {
       play: () => {}, pause: () => {}, seek: () => {}, volume: () => {},
@@ -303,7 +318,105 @@ const SCRIPT = String.raw`
       destroy: () => { window.removeEventListener("message", listener); el.remove(); },
     };
   }
-  const kinds = { youtube, vimeo, soundcloud, spotify, embed, vk };
+  // Twitch: the official Embed API (play, pause, seek, time) for a channel
+  // or a past broadcast; a live channel follows play and pause only. Clips
+  // have no API: their player is driven like the frame players below.
+  async function twitch(url, controls, mine) {
+    if (url.hostname === "clips.twitch.tv") return framed(url, controls, mine);
+    if (url.hostname !== "player.twitch.tv" || url.pathname !== "/") return fail("unsupported", mine);
+    const channel = url.searchParams.get("channel"), video = url.searchParams.get("video");
+    const live = !!channel && /^[A-Za-z0-9_]{3,25}$/.test(channel);
+    if (!live && !(video && /^v?\d{1,12}$/.test(video))) return fail("unsupported", mine);
+    await script("https://player.twitch.tv/js/embed/v1.js", () => !!(window.Twitch && window.Twitch.Player));
+    if (mine !== generation) return;
+    const mount = document.createElement("div");
+    mount.id = "twitch-" + mine;
+    stage.replaceChildren(mount);
+    const options = { width: "100%", height: "100%", parent: [location.hostname], autoplay: false, controls: !!controls };
+    if (live) options.channel = channel.toLowerCase(); else options.video = video.startsWith("v") ? video : "v" + video;
+    const player = new Twitch.Player(mount.id, options);
+    await new Promise((resolve) => { player.addEventListener(Twitch.Player.READY, resolve); setTimeout(resolve, 15000); });
+    if (mine !== generation) return;
+    const on = (name, handler) => player.addEventListener(name, () => { if (mine === generation) handler(); });
+    on(Twitch.Player.PLAY, () => { playing = true; emit("play"); });
+    on(Twitch.Player.PAUSE, () => { playing = false; emit("pause"); });
+    on(Twitch.Player.ENDED, () => { playing = false; emit("ended"); });
+    on(Twitch.Player.SEEK, () => emit("seek"));
+    return {
+      play: () => player.play(), pause: () => player.pause(),
+      seek: (s) => { if (!live) player.seek(s); },
+      volume: (v) => { player.setMuted(v === 0); player.setVolume(v / 100); },
+      time: async () => (live ? 0 : player.getCurrentTime() || 0), length: async () => (live ? 0 : player.getDuration() || 0),
+      destroy: () => stage.replaceChildren(),
+    };
+  }
+  // Players without a public API, as their own embed: the helper's frame
+  // script finds the <video> inside and reports it here (katsodiFrame); the
+  // commands go back the same way (katsodiCommand). Until a video exists
+  // (a "click to play" cover), the helper presses the player's middle.
+  function framePlayer(url) {
+    const path = url.pathname;
+    return (url.hostname === "player.kick.com" && /^\/(?:video\/[0-9a-f-]{36}|[A-Za-z0-9_-]{2,40})\/?$/i.test(path)) ||
+      (url.hostname === "drive.google.com" && /^\/file\/d\/[A-Za-z0-9_-]{20,80}\/preview$/.test(path)) ||
+      (url.hostname === "rutube.ru" && /^\/play\/embed\/[0-9a-f]{32}\/?$/.test(path)) ||
+      (url.hostname === "ok.ru" && /^\/videoembed\/\d{3,20}\/?$/.test(path)) ||
+      (url.hostname === "geo.dailymotion.com" && path === "/player.html" && /^[A-Za-z0-9]{5,12}$/.test(url.searchParams.get("video") || "")) ||
+      (url.hostname === "clips.twitch.tv" && path === "/embed");
+  }
+  async function framed(url, controls, mine) {
+    if (!framePlayer(url)) return fail("unsupported", mine);
+    frame(url.href);
+    // Every frame that reports, by window; the one with the video leads.
+    const frames = new Map();
+    let lead = null, wanted = "", wantedSeek = -1, wantedVolume = -1;
+    const fresh = (entry) => entry && Date.now() - entry.at < 3000;
+    const post = (target, op, value) => { try { target.postMessage({ katsodiCommand: { op, value } }, "*"); } catch {} };
+    function send(op, value) {
+      if (fresh(lead)) return post(lead.source, op, value);
+      // No video yet: a play reaches every frame (one of them has the cover).
+      if (op === "play") for (const entry of frames.values()) if (fresh(entry)) post(entry.source, op, value);
+    }
+    function apply() {
+      if (wanted) send(wanted, 0);
+      if (wantedSeek >= 0 && lead && lead.duration > 0) { send("seek", wantedSeek); wantedSeek = -1; }
+      if (wantedVolume >= 0) send("volume", wantedVolume);
+    }
+    const listener = (event) => {
+      const s = event.data && event.data.katsodiFrame;
+      if (!s || typeof s !== "object" || !event.source || mine !== generation) return;
+      const entry = { source: event.source, at: Date.now(), video: !!s.video, playing: !!s.playing,
+                      position: Math.max(0, Number(s.position) || 0), duration: Math.max(0, Number(s.duration) || 0) };
+      if (frames.size < 16 || frames.has(event.source)) frames.set(event.source, entry);
+      if (!entry.video) return;
+      const changed = !lead || lead.source !== event.source;
+      if (changed && fresh(lead) && lead.duration >= entry.duration) return;
+      lead = entry;
+      if (changed) apply();
+      position = entry.position;
+      duration = entry.duration;
+      playing = entry.playing;
+      if (Array.isArray(s.events))
+        for (const ev of s.events.slice(0, 8)) if (["play", "pause", "ended", "seek"].includes(ev)) emit(ev);
+    };
+    window.addEventListener("message", listener);
+    // No video yet while play is wanted: a cover waits for its click. The
+    // helper presses the player's middle, at most twice per source, 4 s apart.
+    let presses = 0, pressedAt = 0;
+    const nudge = setInterval(() => {
+      if (mine !== generation || fresh(lead) || wanted !== "play") return;
+      if (presses < 2 && Date.now() - pressedAt > 4000) { presses += 1; pressedAt = Date.now(); press = true; }
+    }, 1000);
+    return {
+      play: () => { wanted = "play"; send("play", 0); },
+      pause: () => { wanted = "pause"; send("pause", 0); },
+      // A live stream (no length) is never seeked.
+      seek: (s) => { if (fresh(lead)) { if (lead.duration > 0) send("seek", s); } else wantedSeek = s; },
+      volume: (v) => { wantedVolume = v; send("volume", v); },
+      time: async () => position, length: async () => duration,
+      destroy: () => { clearInterval(nudge); window.removeEventListener("message", listener); stage.replaceChildren(); },
+    };
+  }
+  const kinds = { youtube, vimeo, soundcloud, spotify, embed, vk, twitch, frame: framed };
   // What this engine can decode: providers differ (YouTube uses VP9/Opus;
   // others may need H.264, AAC or MP3, which some builds lack).
   const codecs = (() => {
@@ -328,7 +441,7 @@ const SCRIPT = String.raw`
     reuse = keep && adapter && adapter.reusable ? adapter : null;
     if (adapter && !reuse) { try { adapter.destroy(); } catch {} }
     if (!reuse) stage.replaceChildren();
-    adapter = null; ready = false; playing = false; error = ""; duration = 0; position = 0; events = []; meta = null;
+    adapter = null; ready = false; playing = false; error = ""; duration = 0; position = 0; events = []; meta = null; press = false;
   }
   window.katsodi = Object.freeze({
     load(next, kind, source, controls) {
@@ -353,6 +466,7 @@ const SCRIPT = String.raw`
     // the position is sampled by the timer below and read here.
     poll() {
       const out = { generation, ready, playing, position, duration, error, events, codecs, meta };
+      if (press) { out.press = { x: Math.round(innerWidth / 2), y: Math.round(innerHeight / 2) }; press = false; }
       events = [];
       return JSON.stringify(out);
     },
@@ -398,8 +512,8 @@ export function nativePlayerHeaders(nonce: string): Record<string, string> {
       // one of the provider hosts.
       `script-src 'nonce-${nonce}' 'unsafe-eval' ${sdks} https://s.ytimg.com https://embed-cdn.spotifycdn.com`,
       `style-src 'nonce-${nonce}'`,
-      // VK's own player (video_ext.php) and Twitch's for embed-only rooms.
-      `frame-src ${sdks} https://vk.com https://vk.ru https://vkvideo.ru https://player.twitch.tv https://clips.twitch.tv`,
+      // VK's own player (video_ext.php), Twitch clips and the players without an API.
+      `frame-src ${sdks} https://vk.com https://vk.ru https://vkvideo.ru ${FRAME_ORIGINS.join(" ")}`,
       "img-src data:",
       "base-uri 'none'",
       "form-action 'none'",
