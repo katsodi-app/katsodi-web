@@ -367,9 +367,10 @@ const SCRIPT = String.raw`
     // Every frame that reports, by window; the one with the video leads.
     const frames = new Map();
     let lead = null, wanted = "", wantedSeek = -1, wantedVolume = -1;
-    // Some players undo a command (they resume after a pause): for a few
-    // seconds after one, it is repeated while the video does otherwise.
-    let holdUntil = 0, repeatedAt = 0;
+    // Some players undo a command (they resume after a pause, or a cover
+    // swallows the first play): while the video does otherwise than the
+    // room wants, the wish is repeated (every 1.5 s; never after the end).
+    let repeatedAt = 0;
     const fresh = (entry) => entry && Date.now() - entry.at < 3000;
     const post = (target, op, value) => { try { target.postMessage({ katsodiCommand: { op, value } }, "*"); } catch {} };
     function send(op, value) {
@@ -396,24 +397,27 @@ const SCRIPT = String.raw`
       position = entry.position;
       duration = entry.duration;
       playing = entry.playing;
-      if (wanted && Date.now() < holdUntil && entry.playing !== (wanted === "play") && Date.now() - repeatedAt > 800) {
+      if (Array.isArray(s.events))
+        for (const ev of s.events.slice(0, 8)) if (["play", "pause", "ended", "seek"].includes(ev)) {
+          emit(ev);
+          if (ev === "ended") wanted = "";
+        }
+      if (wanted && entry.playing !== (wanted === "play") && Date.now() - repeatedAt > 1500) {
         repeatedAt = Date.now();
         send(wanted, 0);
       }
-      if (Array.isArray(s.events))
-        for (const ev of s.events.slice(0, 8)) if (["play", "pause", "ended", "seek"].includes(ev)) emit(ev);
     };
     window.addEventListener("message", listener);
     // No video yet while play is wanted: a cover waits for its click. The
-    // helper presses the player's middle, at most twice per source, 8 s apart.
+    // helper presses the player's middle, at most four times per source, 6 s apart.
     let presses = 0, pressedAt = 0;
     const nudge = setInterval(() => {
       if (mine !== generation || fresh(lead) || wanted !== "play") return;
-      if (presses < 2 && Date.now() - pressedAt > 8000) { presses += 1; pressedAt = Date.now(); press = true; }
+      if (presses < 4 && Date.now() - pressedAt > 6000) { presses += 1; pressedAt = Date.now(); press = true; }
     }, 1000);
     return {
-      play: () => { wanted = "play"; holdUntil = Date.now() + 4000; send("play", 0); },
-      pause: () => { wanted = "pause"; holdUntil = Date.now() + 4000; send("pause", 0); },
+      play: () => { wanted = "play"; send("play", 0); },
+      pause: () => { wanted = "pause"; send("pause", 0); },
       // A live stream (no length) is never seeked.
       seek: (s) => { if (fresh(lead)) { if (lead.duration > 0) send("seek", s); } else wantedSeek = s; },
       volume: (v) => { wantedVolume = v; send("volume", v); },
