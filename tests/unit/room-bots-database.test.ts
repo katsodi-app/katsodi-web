@@ -3,7 +3,7 @@ import { PGlite } from "@electric-sql/pglite";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { sql as seedSql } from "../../supabase/seed/bots/index.mjs";
 
-// Migration 2500 (fandom rooms with bots) and its seed, on PGlite.
+// Migrations 2500 (fandom rooms with bots) and 2600 (languages) and the seed, on PGlite.
 let db: PGlite;
 const alice = "20000000-0000-4000-8000-000000000001",
   bob = "20000000-0000-4000-8000-000000000002";
@@ -73,6 +73,8 @@ beforeAll(async () => {
   // Chat kinds (migration 300 needs Storage): the column the bots check.
   await db.exec("alter table public.room_messages add column kind text not null default 'text'");
   await db.exec(readFileSync("supabase/migrations/20261125002500_room_bots.sql", "utf8"));
+  // Languages came as a second migration (2500 was already applied).
+  await db.exec(readFileSync("supabase/migrations/20261125002600_room_bots_languages.sql", "utf8"));
   await db.exec("grant usage on schema public to service_role");
   for (const id of [alice, bob])
     await db.query("insert into auth.users(id, email_confirmed_at) values($1,now())", [id]);
