@@ -572,6 +572,26 @@ p.error {
   background: var(--signal-soft);
   color: var(--accent);
 }
+.message-role.role-bot {
+  background: color-mix(in srgb, var(--muted, #888) 18%, transparent);
+  color: inherit;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.spoiler {
+  display: inline;
+  padding: 0 6px;
+  border: 0;
+  border-radius: 5px;
+  background: color-mix(in srgb, currentColor 22%, transparent);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+.spoiler-shown {
+  cursor: text;
+  font-style: italic;
+}
 .message-role.role-moderator {
   background: color-mix(in srgb, var(--info) 16%, transparent);
   color: var(--info);

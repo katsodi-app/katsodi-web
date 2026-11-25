@@ -44,7 +44,27 @@ const profileRecord = z.object({
   username: z.string(),
   avatar_path: z.string().nullable().optional(),
   media_updated_at: z.string().nullable().optional(),
+  /** A Katsodi bot (migration 2500): clients mark it and count it apart. */
+  is_bot: z.boolean().optional(),
 });
+/** A bot in the room now: its fandom bot or a visiting guest (migration 2500). */
+const roomBotRecord = z.object({
+  id: z.string(),
+  username: z.string(),
+  display_name: z.string(),
+  role: z.enum(["fandom", "guest"]),
+});
+export type RoomBot = z.infer<typeof roomBotRecord>;
+/** The room's bots, or [] when the bot migration is not applied. */
+async function roomBots(
+  client: NonNullable<Awaited<ReturnType<typeof currentViewer>>["client"]>,
+  id: string,
+): Promise<RoomBot[]> {
+  const result = await client.rpc("room_bots", { p_room: id });
+  if (result.error) return [];
+  const parsed = z.array(roomBotRecord).safeParse(result.data);
+  return parsed.success ? parsed.data.slice(0, 20) : [];
+}
 export const inviteRecord = z.object({
   id: z.string(),
   expires_at: z.string(),
@@ -73,6 +93,8 @@ export type RoomSnapshot = {
   /** Present only in a delta response: the ordered ids of the current window. */
   messageIds?: string[];
   profiles: z.infer<typeof profileRecord>[];
+  /** Bots in the room now (fandom rooms); absent before migration 2500. */
+  bots?: RoomBot[];
   invites: InviteMeta[];
   /**
    * Shared YouTube timeline: undefined when sync is unavailable (not a
@@ -268,7 +290,7 @@ export async function roomSnapshot(
   if (membership.error) throw new Error("membership_unavailable");
   const members = z.array(memberRecord).parse(membership.data);
   if (!members.some((m) => m.user_id === userId)) return outside;
-  const [chat, profilesResult, playback, queue, browser, site, demo] =
+  const [chat, profilesResult, playback, queue, browser, site, demo, bots] =
     await Promise.all([
       roomMessages(client, id, after),
       client
@@ -283,8 +305,19 @@ export async function roomSnapshot(
       roomBrowser(client, id),
       roomSite(client, id),
       roomDemo(client, id),
+      roomBots(client, id),
     ]);
   if (profilesResult.error) throw new Error("room_unavailable");
+  // Bots who wrote in the chat window (guests may have left since): their
+  // profiles too, so every message has a name and its bot mark. Only bot
+  // profiles are readable this way (RLS); others simply do not come back.
+  const known = new Set(members.map((m) => m.user_id));
+  const authors = [
+    ...new Set(chat.messages.map((m) => m.sender_id).filter((s) => !known.has(s))),
+  ].slice(0, 50);
+  const botAuthors = authors.length
+    ? await client.from("profiles").select("*").in("id", authors).eq("is_bot", true)
+    : { data: [], error: null };
   const inviteResult =
     room.data.owner_id === userId
       ? await client
@@ -306,7 +339,10 @@ export async function roomSnapshot(
     invites: inviteResult ? inviteRecord.array().parse(inviteResult.data) : [],
     members,
     ...chat,
-    profiles: z.array(profileRecord).parse(profilesResult.data),
+    profiles: z
+      .array(profileRecord)
+      .parse([...(profilesResult.data ?? []), ...(botAuthors.error ? [] : botAuthors.data ?? [])]),
+    ...(bots.length ? { bots } : {}),
     ...(playback !== undefined ? { playback } : {}),
     ...(queue !== undefined ? { queue } : {}),
     ...(browser !== undefined ? { browser } : {}),

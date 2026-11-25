@@ -1076,6 +1076,11 @@ export function SharedRoom({
                           <div className="message-content">
                             <div className="message-meta">
                               <strong>{nameOf(message.sender_id)}</strong>
+                              {profilesById.get(message.sender_id)?.is_bot && (
+                                <span className="message-role role-bot" title={n.botMark}>
+                                  🤖 {n.botMark}
+                                </span>
+                              )}
                               {(role === "owner" || role === "moderator") && (
                                 <span className={`message-role role-${role}`}>
                                   {n[role]}
@@ -1101,7 +1106,9 @@ export function SharedRoom({
                             ) : message.kind === "image" ? (
                               <ChatImage id={message.id} />
                             ) : (
-                              <p className="message-bubble">{message.body}</p>
+                              <p className="message-bubble">
+                                <SpoilerText text={message.body} label={n.spoilerShow} />
+                              </p>
                             )}
                             {(message.sender_id === userId || canHost) && (
                               <DeleteMessage id={message.id} />
@@ -1296,5 +1303,27 @@ export function JoinInvitation({
         )}
       </div>
     </section>
+  );
+}
+
+/** Message text with ||spoilers|| hidden until clicked (bots hide plot answers this way). */
+function SpoilerText({ text, label }: { text: string; label: string }) {
+  const parts = text.split(/\|\|([\s\S]+?)\|\|/);
+  return (
+    <>
+      {parts.map((part, index) =>
+        index % 2 ? <Spoiler key={index} text={part} label={label} /> : part,
+      )}
+    </>
+  );
+}
+function Spoiler({ text, label }: { text: string; label: string }) {
+  const [shown, setShown] = useState(false);
+  return shown ? (
+    <span className="spoiler spoiler-shown">{text}</span>
+  ) : (
+    <button type="button" className="spoiler" onClick={() => setShown(true)} aria-label={label} title={label}>
+      {label}
+    </button>
   );
 }
