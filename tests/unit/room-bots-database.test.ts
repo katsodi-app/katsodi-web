@@ -3,7 +3,8 @@ import { PGlite } from "@electric-sql/pglite";
 import { afterAll, beforeAll, describe, expect, it } from "vitest";
 import { sql as seedSql } from "../../supabase/seed/bots/index.mjs";
 
-// Migrations 2500 (fandom rooms with bots) and 2600 (languages) and the seed, on PGlite.
+// Migrations 2500 (fandom rooms with bots), 2600 (languages) and 2700 (one
+// language per room: 45 English, 25 Russian) and the seed, on PGlite.
 let db: PGlite;
 const alice = "20000000-0000-4000-8000-000000000001",
   bob = "20000000-0000-4000-8000-000000000002";
@@ -12,12 +13,12 @@ async function asUser(id: string) {
   await db.query("select set_config('request.jwt.claim.sub',$1,false)", [id]);
   await db.exec("set role authenticated");
 }
-async function roomOf(fandom: string) {
+async function roomOf(fandom: string, lang: "ru" | "en" = "ru") {
   await db.exec("reset role");
   return (
     await db.query<{ id: string }>(
-      "select id from public.rooms where fandom_id=$1 and resident",
-      [fandom],
+      "select r.id from public.rooms r join public.room_bots b on b.room_id=r.id where r.fandom_id=$1 and r.resident and b.lang=$2",
+      [fandom, lang],
     )
   ).rows[0].id;
 }
@@ -75,6 +76,7 @@ beforeAll(async () => {
   await db.exec(readFileSync("supabase/migrations/20261125002500_room_bots.sql", "utf8"));
   // Languages came as a second migration (2500 was already applied).
   await db.exec(readFileSync("supabase/migrations/20261125002600_room_bots_languages.sql", "utf8"));
+  await db.exec(readFileSync("supabase/migrations/20261125002700_room_languages.sql", "utf8"));
   await db.exec("grant usage on schema public to service_role");
   for (const id of [alice, bob])
     await db.query("insert into auth.users(id, email_confirmed_at) values($1,now())", [id]);
@@ -87,11 +89,22 @@ afterAll(async () => {
 });
 
 describe("fandom rooms with bots", () => {
-  it("seeds 70 resident public rooms, each with its fandom bot", async () => {
-    const rooms = await db.query<{ n: number }>(
-      "select count(*)::int n from public.rooms r join public.room_bots b on b.room_id=r.id where r.resident and r.visibility='public'",
+  it("seeds 45 English and 25 Russian rooms, each with its bot and a YouTube video", async () => {
+    const rooms = await db.query<{ lang: string; n: number }>(
+      "select b.lang, count(*)::int n from public.rooms r join public.room_bots b on b.room_id=r.id where r.resident and r.visibility='public' group by b.lang order by b.lang",
     );
-    expect(rooms.rows[0].n).toBe(70);
+    expect(rooms.rows).toEqual([{ lang: "en", n: 45 }, { lang: "ru", n: 25 }]);
+    const videos = await db.query<{ n: number }>(
+      "select count(*)::int n from public.rooms where resident and url ~ '^https://www\\.youtube\\.com/watch\\?v=[A-Za-z0-9_-]{11}$'",
+    );
+    expect(videos.rows[0].n).toBe(70);
+    // A top fandom in both languages; the 26th on in English only.
+    expect(await roomOf("anime-1", "en")).not.toBe(await roomOf("anime-1", "ru"));
+    const friends = await db.query<{ name: string }>("select name from public.rooms where fandom_id='cinema-19' and resident");
+    expect(friends.rows.map((r) => r.name)).toEqual(["Friends: Central Perk"]);
+    // Fandoms past the top 45 have no room.
+    const gone = await db.query<{ n: number }>("select count(*)::int n from public.rooms where fandom_id in ('anime-10','sport-24')");
+    expect(gone.rows[0].n).toBe(0);
     const bots = await db.query<{ n: number }>("select count(*)::int n from public.profiles where is_bot");
     expect(bots.rows[0].n).toBe(82);
     // Running the seed again changes nothing in the counts.
@@ -132,8 +145,13 @@ describe("fandom rooms with bots", () => {
     expect((await chat(room)).length).toBe(before + 1);
   });
 
-  it("answers in English when asked in English, and greets in the person's language", async () => {
-    const room = await roomOf("anime-1");
+  it("speaks English in an English room", async () => {
+    const room = await roomOf("anime-1", "en");
+    await asUser(bob);
+    await db.query("select public.join_room($1)", [room]);
+    const welcome = (await chat(room)).find((m) => m.name === "LeafVillageFan");
+    expect(welcome?.body).toMatch(/Боб/);
+    expect(welcome?.body.replace("Боб", "")).not.toMatch(/[А-Яа-яЁё]/);
     const plain = await say(bob, room, "How many episodes does Naruto have?");
     expect(plain.bot).toBe(true);
     expect(plain.body).toContain("220 episodes");
@@ -142,14 +160,9 @@ describe("fandom rooms with bots", () => {
     // Commands answer in the person's language (Bob wrote English last).
     const help = await say(bob, room, "!help");
     expect(help.body).toMatch(/^I am this room's bot/);
-    // Bob comes into another room: greeted in English.
-    const other = await roomOf("cinema-0");
+    const other = await roomOf("cinema-0", "en");
     await asUser(bob);
     await db.query("select public.join_room($1)", [other]);
-    const greeting = (await chat(other)).find((m) => m.name === "Голокрон");
-    // His name stays as he wrote it; the words around it are English.
-    expect(greeting?.body).toContain("Боб");
-    expect(greeting?.body.replace("Боб", "")).not.toMatch(/[А-Яа-яЁё]/);
     // An English quiz question takes a Russian answer as well.
     const question = await say(bob, other, "!quiz");
     expect(question.body).toMatch(/^❓ .*\(answer in the chat, 10 minutes\)$/);
@@ -161,8 +174,9 @@ describe("fandom rooms with bots", () => {
       )
     ).rows[0].answers;
     const russian = answers.find((a) => /[А-Яа-яЁё]/.test(a)) ?? answers[0];
+    // Accepted, and answered in the room's language.
     const right = await say(alice, other, russian);
-    expect(right.body).toMatch(/^✅ Алиса, верно!/);
+    expect(right.body).toMatch(/^✅ Алиса, correct!/);
   });
 
   it("runs a quiz with scores", async () => {
@@ -198,7 +212,7 @@ describe("fandom rooms with bots", () => {
     expect(bots.rows.map((b) => b.role)).toContain("guest");
     // Anyone may read a bot's profile (it says it is a bot).
     const profile = await db.query<{ bio: string }>("select bio from public.profiles where is_bot limit 1");
-    expect(profile.rows[0].bio).toMatch(/бот/i);
+    expect(profile.rows[0].bio).toMatch(/bot|бот/i);
     await db.exec("reset role");
     await db.query("update public.bot_visits set until = now() - interval '1 minute' where room_id=$1", [room]);
     await db.exec("set role anon");
