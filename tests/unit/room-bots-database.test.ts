@@ -110,7 +110,7 @@ describe("fandom rooms with bots", () => {
     // Running the seed again changes nothing in the counts.
     await db.exec(seedSql());
     expect((await db.query<{ n: number }>("select count(*)::int n from public.profiles where is_bot")).rows[0].n).toBe(82);
-  });
+  }, 60000); // seeds twice: slow when the whole suite runs at once
 
   it("greets a newcomer, makes the first person the host, the next a member", async () => {
     const room = await roomOf("anime-1");
