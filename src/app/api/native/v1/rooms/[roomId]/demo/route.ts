@@ -25,9 +25,10 @@ export async function POST(
     const keys = Object.keys(body);
     if (keys.length !== 1 || keys[0] !== "url")
       return nativeError("invalid_request", requestId);
+    // { "url": null } asks for a window demo (no link, migration 2800).
     const result = await requestDemo(
       initialResult,
-      formFrom({ room: roomId, url: body.url }),
+      formFrom({ room: roomId, url: body.url === null ? "" : body.url }),
     );
     return result.status === "success"
       ? nativeOk({ requested: true }, requestId, 201)

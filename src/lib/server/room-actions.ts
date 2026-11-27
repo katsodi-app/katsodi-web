@@ -11,7 +11,7 @@ import { createRoom, importFailure } from "./room-operations";
 import { redeemInviteToken } from "./invite-operations";
 import { uuid, messageSchema, type ActionResult } from "./contracts";
 
-type RpcArgs = Record<string, string | number | boolean | string[]>;
+type RpcArgs = Record<string, string | number | boolean | string[] | null>;
 export async function updateRoomSource(
   _prev: ActionResult,
   form: FormData,
@@ -57,11 +57,14 @@ export async function requestDemo(
 ): Promise<ActionResult> {
   const id = uuid.safeParse(form.get("room")),
     raw = form.get("url"),
-    source = typeof raw === "string" ? inspectSource(raw.trim()) : null;
-  if (!id.success || !source) return { status: "error", code: "invalid" };
+    // No link: a window demo (the desktop app shows a window or a screen).
+    windowDemo = raw === "" || raw === null,
+    source = typeof raw === "string" && raw.trim() ? inspectSource(raw.trim()) : null;
+  if (!id.success || (!source && !windowDemo))
+    return { status: "error", code: "invalid" };
   const result = await mutate("request_room_demo", {
     p_room: id.data,
-    p_url: source.url,
+    p_url: source ? source.url : null,
   });
   if (result.status === "success") revalidatePath(`/room/${id.data}`);
   return result;

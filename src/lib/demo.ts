@@ -3,7 +3,8 @@ import { z } from "zod";
 /** A room's link demo, as members read it (see migration 1800). */
 export const demoRecord = z.object({
   user_id: z.string().uuid(),
-  url: z.string().url(),
+  /** The link shown; null for a window demo (migration 2800). */
+  url: z.string().url().nullable(),
   status: z.enum(["pending", "live", "paused"]),
   requested_at: z.string(),
   decided_by: z.string().uuid().nullable(),

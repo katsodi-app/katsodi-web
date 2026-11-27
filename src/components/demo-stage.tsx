@@ -397,8 +397,8 @@ export function DemoStage({
     let capture: MediaStream | null = null;
     try {
       if (captureMode === "in-app") await prepareTabCapture?.();
-      if (captureMode === "window")
-        window.open(demo!.url, "_blank", "noopener");
+      if (captureMode === "window" && demo?.url)
+        window.open(demo.url, "_blank", "noopener");
       capture = await navigator.mediaDevices.getDisplayMedia({
         video: {
           displaySurface: captureMode === "in-app" ? "browser" : "window",
@@ -574,9 +574,11 @@ export function DemoStage({
           {sharedBrowser ? n.cobrowseTitle : n.demoTitle}
         </span>
         <div className="demo-header-actions">
-          <span className="pill" title={demo.url}>
+          <span className="pill" title={demo.url ?? undefined}>
             {presenter
-              ? `${n.demoYouShare} · ${new URL(demo.url).hostname}`
+              ? demo.url
+                ? `${n.demoYouShare} · ${new URL(demo.url).hostname}`
+                : n.demoYouShare
               : sharedBrowser
                 ? `${sharer} · ${cobrowse ? n.cobrowseControlling : n.cobrowseAskAccess}`
                 : `${sharer} · ${running ? n.demoViewOnly : n.demoWaitingLabel}`}
@@ -623,7 +625,7 @@ export function DemoStage({
               ? n.demoPendingMine
               : `${sharer} ${canHost ? n.demoPendingHost : n.demoPendingOther}`}
           </h2>
-          <p className="demo-url">{demo.url}</p>
+          {demo.url && <p className="demo-url">{demo.url}</p>}
           {canHost && !presenter && (
             <div className="demo-decide">
               <button

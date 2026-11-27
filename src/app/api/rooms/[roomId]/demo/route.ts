@@ -20,11 +20,14 @@ export async function GET(
         { status: allowed.status, headers },
       );
     if (!allowed.demo) return Response.json({ demo: null }, { headers });
+    // A window demo (no link, migration 2800): nothing to embed.
+    if (!allowed.demo.url)
+      return Response.json({ demo: { url: null } }, { headers });
     return Response.json(
       {
         demo: {
           url: allowed.demo.url,
-          ...(await siteEmbedding(allowed.demo.url)),
+          ...(await siteEmbedding(allowed.demo.url as string)),
         },
       },
       { headers },
